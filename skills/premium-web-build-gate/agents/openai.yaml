@@ -1,0 +1,4 @@
+interface:
+  display_name: "Premium Web Build Gate"
+  short_description: "Locks premium website direction before code"
+  default_prompt: "Use premium-web-build-gate to produce a build-ready UI spec before implementing a premium website."

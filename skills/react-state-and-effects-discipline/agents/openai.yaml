@@ -1,0 +1,3 @@
+display_name: "React State And Effects Discipline"
+short_description: "Use React state and effects only where they belong"
+default_prompt: "Use react-state-and-effects-discipline to plan and implement this work with official framework guidance, premium UI standards, and a verification pass."

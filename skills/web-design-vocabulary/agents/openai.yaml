@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Design Vocabulary"
+  short_description: "Translate taste words into concrete rules"
+  default_prompt: "Use $web-design-vocabulary to guide a high-quality website build."

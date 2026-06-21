@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Site Architecture"
+  short_description: "Structure polished Next.js websites"
+  default_prompt: "Use $nextjs-site-architecture to improve a modern website."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website Blueprint First"
+  short_description: "Create a design contract before building"
+  default_prompt: "Use $website-blueprint-first to guide a high-quality website build."

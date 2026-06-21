@@ -1,0 +1,3 @@
+display_name: "Reduced Motion Design"
+short_description: "Design reduced-motion alternatives for premium interactions"
+default_prompt: "Use reduced-motion-design to design and implement this interaction with purposeful motion, reduced-motion support, cleanup, and visual QA."

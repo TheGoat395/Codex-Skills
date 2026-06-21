@@ -1,0 +1,4 @@
+interface:
+  display_name: "Content Structure Information Architecture"
+  short_description: "Organize pages and content flows"
+  default_prompt: "Use $content-structure-information-architecture to improve a modern website."

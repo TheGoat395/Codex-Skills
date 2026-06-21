@@ -1,0 +1,4 @@
+interface:
+  display_name: "Modern Site Engineering"
+  short_description: "Opinionated stack for polished web builds"
+  default_prompt: "Use $modern-site-engineering to implement a modern polished website."

@@ -1,0 +1,3 @@
+display_name: "Motion Performance Qa"
+short_description: "Audit animation performance, cleanup, accessibility, and jank"
+default_prompt: "Use motion-performance-qa to design and implement this interaction with purposeful motion, reduced-motion support, cleanup, and visual QA."

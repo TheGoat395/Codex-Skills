@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animation Tool Router"
+  short_description: "Choose the right motion stack"
+  default_prompt: "Use $animation-tool-router to decide whether this interaction needs CSS, Motion, GSAP, Lenis, Lottie, or R3F."

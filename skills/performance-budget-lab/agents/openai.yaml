@@ -1,0 +1,4 @@
+interface:
+  display_name: "Performance Budget Lab"
+  short_description: "Protect speed on polished sites"
+  default_prompt: "Use $performance-budget-lab to set and check performance budgets for this website."

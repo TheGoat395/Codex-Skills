@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Primitives Shadcn Lucide"
+  short_description: "Customize primitives without generic UI"
+  default_prompt: "Use $ui-primitives-shadcn-lucide to improve a modern website."

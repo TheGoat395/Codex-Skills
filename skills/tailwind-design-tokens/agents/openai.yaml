@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tailwind Design Tokens"
+  short_description: "Token-driven Tailwind visual systems"
+  default_prompt: "Use $tailwind-design-tokens to improve a modern website."

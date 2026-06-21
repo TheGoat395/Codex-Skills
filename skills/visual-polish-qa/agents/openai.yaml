@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Polish QA"
+  short_description: "Responsive visual review and polish loop"
+  default_prompt: "Use $visual-polish-qa to inspect and refine a website before delivery."

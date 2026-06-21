@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Reference Research"
+  short_description: "Turn website references into build rules"
+  default_prompt: "Use $web-reference-research to guide a high-quality website build."

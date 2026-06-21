@@ -1,0 +1,3 @@
+display_name: "Web Imagegen Prompting"
+short_description: "Prompt generated website imagery with art direction, composition, and crop safety"
+default_prompt: "Use $web-imagegen-prompting to direct, implement, and QA website media so it feels specific, responsive, accessible, and premium."

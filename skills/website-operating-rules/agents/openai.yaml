@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website Operating Rules"
+  short_description: "Core workflow for non-generic website builds"
+  default_prompt: "Use $website-operating-rules to guide a high-quality website build."

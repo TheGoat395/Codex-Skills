@@ -1,0 +1,3 @@
+display_name: "React Form Patterns"
+short_description: "Design React forms with validation, feedback, and polished states"
+default_prompt: "Use react-form-patterns to plan and implement this work with official framework guidance, premium UI standards, and a verification pass."
