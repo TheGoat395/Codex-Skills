@@ -1,6 +1,29 @@
 # Asteria Engine - Cinematic 3D Framework Landing Page
 
-A self-contained cinematic landing page reference demo for testing the Codex Premium Website Skills project.
+A complete self-contained cinematic landing page reference demo for testing the Codex Premium Website Skills project.
+
+## Local preview
+
+Open this file directly in a browser:
+
+```text
+index.html
+```
+
+No hosting, build step, package install, external image, or external video is required.
+
+Optional local server:
+
+```bash
+cd examples/cinematic-site-benchmarks/01-asteria-engine
+python3 -m http.server 4173
+```
+
+Then visit:
+
+```text
+http://localhost:4173
+```
 
 ## Status
 
@@ -11,6 +34,7 @@ This is a handcrafted reference target, not a completed baseline-vs-skill-assist
 The demo exercises frontend qualities that the public-core skills are designed to improve and evaluate:
 
 - cinematic hero composition
+- procedural immersive backdrop
 - scroll-reactive visual pacing
 - non-generic product positioning
 - responsive layout polish
