@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asteria Engine — Cinematic Web Demo</title>
+  <meta name="description" content="A self-contained cinematic landing page demo for a fictional dimensional web framework." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <canvas id="scene-canvas" aria-hidden="true"></canvas>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+  <div class="aurora aurora-left" aria-hidden="true"></div>
+  <div class="aurora aurora-right" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="brand" href="#top" aria-label="Asteria Engine home">
+      <span class="brand-mark"></span><span>Asteria</span>
+    </a>
+    <div class="nav-links" aria-label="Page sections">
+      <a href="#systems">Systems</a><a href="#runtime">Runtime</a><a href="#release">Release</a>
+    </div>
+    <a class="nav-cta" href="#install">Start building</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero" id="install">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Cinematic web systems</p>
+        <h1>Compose immersive <span class="underlined"><span class="line"></span><span>3D interfaces</span></span> without losing product velocity.</h1>
+        <p class="hero-copy">Asteria is a fictional framework demo for benchmark testing: declarative scenes, responsive motion, and production-minded interaction patterns for dimensional web apps.</p>
+        <div class="hero-actions">
+          <button class="code-pill" type="button" aria-label="Install command"><span>&gt;</span><code>npm create asteria@latest</code></button>
+          <a class="primary-cta" href="#systems">Explore systems <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="spacer" aria-hidden="true"></section>
+
+    <section id="systems" class="cards-stage" aria-labelledby="systems-title">
+      <div class="section-heading">
+        <p>Reference benchmark target</p>
+        <h2 id="systems-title">Three systems that turn motion into product clarity.</h2>
+      </div>
+      <div class="sticky-cards" id="feature-cards">
+        <article class="feature-card"><span class="card-index">01</span><h3>Scene language</h3><p>Build interface scenes from semantic layers: atmosphere, product object, narrative panels, and motion-safe transitions.</p></article>
+        <article class="feature-card"><span class="card-index">02</span><h3>Responsive depth</h3><p>Preserve cinematic hierarchy across desktop and mobile with fluid layout, reduced-motion support, and scroll-aware pacing.</p></article>
+        <article class="feature-card"><span class="card-index">03</span><h3>Launch discipline</h3><p>Keep demos accountable with visible CTAs, accessible contrast, concise copy, and a clear benchmark/reporting path.</p></article>
+      </div>
+    </section>
+
+    <section class="runtime" id="runtime" aria-labelledby="runtime-title">
+      <div class="runtime-panel">
+        <p class="eyebrow">Runtime preview</p>
+        <h2 id="runtime-title">Motion that feels expensive, not noisy.</h2>
+        <p>The page uses no hosted media. The orbital backdrop, particles, glow, and reveal choreography are generated locally so reviewers can clone the repo and open the demo from the filesystem.</p>
+        <div class="runtime-grid" aria-label="Demo metrics">
+          <div><strong>0</strong><span>external media files</span></div>
+          <div><strong>3</strong><span>local source files</span></div>
+          <div><strong>1</strong><span>click-to-preview entry</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="release" id="release" aria-labelledby="release-title">
+      <div class="release-inner" id="release-reveal">
+        <p>Presenting</p>
+        <h2 id="release-title">Asteria 1.0</h2>
+        <p class="release-copy">A local cinematic demo for testing visual direction, motion systems, responsive polish, and benchmark documentation.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
