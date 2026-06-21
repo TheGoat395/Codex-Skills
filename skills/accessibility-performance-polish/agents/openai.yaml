@@ -1,0 +1,4 @@
+interface:
+  display_name: "Accessibility Performance Polish"
+  short_description: "A11y and performance finish for sites"
+  default_prompt: "Use $accessibility-performance-polish to guide a high-quality website build."

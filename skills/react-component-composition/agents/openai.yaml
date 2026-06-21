@@ -1,0 +1,3 @@
+display_name: "React Component Composition"
+short_description: "Compose reusable React sections and primitives without overengineering"
+default_prompt: "Use react-component-composition to plan and implement this work with official framework guidance, premium UI standards, and a verification pass."

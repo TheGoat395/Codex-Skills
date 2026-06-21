@@ -1,0 +1,5 @@
+interface:
+  display_name: Web Design Direction System
+  short_description: Sets design mode, direction dials, redesign protocol, image-to-code protocol, and final preflight checks for premium frontend work.
+  icon: 🎛️
+  brand_color: '#111111'

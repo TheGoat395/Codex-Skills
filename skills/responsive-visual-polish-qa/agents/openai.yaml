@@ -1,0 +1,4 @@
+interface:
+  display_name: "Responsive Visual Polish QA"
+  short_description: "Final browser-based website polish"
+  default_prompt: "Use $responsive-visual-polish-qa to guide a high-quality website build."

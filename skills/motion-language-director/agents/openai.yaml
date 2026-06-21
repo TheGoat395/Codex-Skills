@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motion Language Director"
+  short_description: "Define tasteful website motion systems"
+  default_prompt: "Use $motion-language-director to guide a high-quality website build."

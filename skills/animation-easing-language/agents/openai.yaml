@@ -1,0 +1,3 @@
+display_name: "Animation Easing Language"
+short_description: "Define motion timing, easing, duration, delay, and rhythm"
+default_prompt: "Use animation-easing-language to design and implement this interaction with purposeful motion, reduced-motion support, cleanup, and visual QA."

@@ -1,0 +1,3 @@
+display_name: "Content Pruning Review"
+short_description: "Remove weak, redundant, generic, or unsupported website content"
+default_prompt: "Use $content-pruning-review to plan, write, revise, and QA website copy/content/IA so the page becomes specific, proof-backed, accessible, and non-generic."

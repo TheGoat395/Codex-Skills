@@ -1,0 +1,3 @@
+display_name: "Browser Inspection Workflow"
+short_description: "Inspect rendered pages in browser for console, network, layout, and interaction issues"
+default_prompt: "Use $browser-inspection-workflow to verify, QA, deploy, or hand off a website with concrete evidence, exact commands, honest risks, and production-grade polish."

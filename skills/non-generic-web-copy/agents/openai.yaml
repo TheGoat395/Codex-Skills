@@ -1,0 +1,4 @@
+interface:
+  display_name: "Non Generic Web Copy"
+  short_description: "Specific website copy and microcopy"
+  default_prompt: "Use $non-generic-web-copy to guide a high-quality website build."

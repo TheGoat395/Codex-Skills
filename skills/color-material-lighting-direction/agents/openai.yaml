@@ -1,0 +1,4 @@
+interface:
+  display_name: "Color Material Lighting Direction"
+  short_description: "Design palettes, surfaces, and contrast"
+  default_prompt: "Use $color-material-lighting-direction to guide a high-quality website build."

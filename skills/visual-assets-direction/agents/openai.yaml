@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Assets Direction"
+  short_description: "Direct image, video, and generated media"
+  default_prompt: "Use $visual-assets-direction to guide a high-quality website build."

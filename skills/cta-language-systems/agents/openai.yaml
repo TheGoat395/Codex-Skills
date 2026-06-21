@@ -1,0 +1,3 @@
+display_name: "CTA Language Systems"
+short_description: "Write button and link language that matches intent, risk, and user readiness"
+default_prompt: "Use $cta-language-systems to plan, write, revise, and QA website copy/content/IA so the page becomes specific, proof-backed, accessible, and non-generic."

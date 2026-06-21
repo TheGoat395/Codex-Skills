@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conversion Forms Checkout Polish"
+  short_description: "Polish CTAs, forms, booking, checkout"
+  default_prompt: "Use $conversion-forms-checkout-polish to improve a modern website."

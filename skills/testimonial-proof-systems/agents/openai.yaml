@@ -1,0 +1,3 @@
+display_name: "Testimonial Proof Systems"
+short_description: "Write and organize testimonials, reviews, logos, metrics, and proof without fakery"
+default_prompt: "Use $testimonial-proof-systems to plan, write, revise, and QA website copy/content/IA so the page becomes specific, proof-backed, accessible, and non-generic."

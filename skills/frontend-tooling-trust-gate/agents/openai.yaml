@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Tooling Trust Gate"
+  short_description: "Score packages before installing them"
+  default_prompt: "Use $frontend-tooling-trust-gate to inspect this frontend package or repo before installing it."

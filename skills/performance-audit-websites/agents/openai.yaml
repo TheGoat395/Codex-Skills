@@ -1,0 +1,3 @@
+display_name: "Performance Audit Websites"
+short_description: "Audit website performance, Core Web Vitals risks, bundles, media, and runtime cost"
+default_prompt: "Use $performance-audit-websites to verify, QA, deploy, or hand off a website with concrete evidence, exact commands, honest risks, and production-grade polish."

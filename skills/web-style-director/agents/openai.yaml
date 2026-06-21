@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Style Director"
+  short_description: "Choose precise art direction before coding"
+  default_prompt: "Use $web-style-director to guide a high-quality website build."

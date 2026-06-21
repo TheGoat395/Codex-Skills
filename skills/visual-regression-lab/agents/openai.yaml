@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Regression Lab"
+  short_description: "Verify rendered UI across viewports"
+  default_prompt: "Use $visual-regression-lab to inspect this site visually across desktop and mobile."

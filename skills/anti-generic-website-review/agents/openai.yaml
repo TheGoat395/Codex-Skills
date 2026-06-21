@@ -1,0 +1,4 @@
+interface:
+  display_name: "Anti Generic Website Review"
+  short_description: "Detect and remove AI website tells"
+  default_prompt: "Use $anti-generic-website-review to guide a high-quality website build."

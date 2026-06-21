@@ -1,0 +1,3 @@
+display_name: "Mobile Responsive QA"
+short_description: "Audit mobile layouts, crops, menus, tap targets, and overflow"
+default_prompt: "Use $mobile-responsive-qa to verify, QA, deploy, or hand off a website with concrete evidence, exact commands, honest risks, and production-grade polish."

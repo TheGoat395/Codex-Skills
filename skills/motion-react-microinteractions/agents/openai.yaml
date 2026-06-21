@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motion React Microinteractions"
+  short_description: "Refined React UI motion and states"
+  default_prompt: "Use $motion-react-microinteractions to improve a modern website."

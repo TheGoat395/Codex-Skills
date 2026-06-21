@@ -1,0 +1,3 @@
+display_name: "React Error Loading Empty States"
+short_description: "Design React loading, error, empty, and not-found states"
+default_prompt: "Use react-error-loading-empty-states to plan and implement this work with official framework guidance, premium UI standards, and a verification pass."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "React Component Craft"
+  short_description: "Craft reusable polished components"
+  default_prompt: "Use $react-component-craft to improve a modern website."
