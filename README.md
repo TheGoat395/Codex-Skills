@@ -4,6 +4,18 @@ An unofficial, open-source Codex skill library for premium frontend, website, an
 
 This repository is prepared around a lean `public-core` collection of 70 skills: design direction, frontend implementation, motion, accessibility, QA, content polish, and maintainer safety.
 
+## Premium Website Showcase
+
+The repo now includes a proof-of-output demo gallery:
+
+```text
+examples/premium-website-showcase/gallery/index.html
+```
+
+The showcase contains nine confirmed local websites and hero/portfolio demos generated through the premium website skill workflow. They are meant to show practical potential: install the skills, provide a prompt/reference/spec, and use the workflow to produce polished local frontend artifacts quickly.
+
+See `DEMOS.md` for the complete list and `INSTALL.md` for local install and preview instructions.
+
 ## What This Is
 
 - A domain-specific Codex skill pack for modern website and app work.
@@ -27,6 +39,9 @@ This repository is prepared around a lean `public-core` collection of 70 skills:
 - `THIRD_PARTY_NOTICES.md` records license and notice expectations for the public core.
 - `BENCHMARKS.md`, `SKILL_QUALITY_STANDARD.md`, and `SECURITY.md` define how this repo should be evaluated and maintained.
 - `manifest.json` and `SKILL_INVENTORY.md` are generated inventory files and should be regenerated before a public release.
+- `examples/premium-website-showcase/` contains the local proof-of-output gallery and demo preview files.
+- `DEMOS.md` documents the confirmed demo set and local preview paths.
+- `INSTALL.md` gives a compact install and demo-preview flow.
 
 ## Install
 
