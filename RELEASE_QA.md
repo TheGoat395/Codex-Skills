@@ -1,6 +1,6 @@
-# Release QA
+# Release Checks
 
-This document records the practical release checks for Codex Premium Website Skills. It gives maintainers and reviewers a clear view of the package structure, showcase assets, and verification flow.
+This document records the practical release checks for Codex Premium Website Skills. It gives reviewers a clear view of the package structure, showcase assets, and verification flow.
 
 ## Current Release State
 
@@ -21,7 +21,6 @@ This document records the practical release checks for Codex Premium Website Ski
 | Skill quality standard exists | `SKILL_QUALITY_STANDARD.md` defines acceptance and rejection criteria | Done |
 | Third-party notices exist | `THIRD_PARTY_NOTICES.md` defines notice expectations and excluded integrations | Done |
 | Benchmark standards exist | `BENCHMARKS.md` defines scoring, benchmark format, and estimate format | Done |
-| Application copy exists | `OPEN_SOURCE_APPLICATION_DRAFT.md` includes concise application and public-post copy | Done |
 
 ## Skill Inventory Checks
 
