@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mainframe® — Interactive Contact Hero</title>
+  <meta name="description" content="Modern interactive contact hero with native video scrubbing, typewriter text, and multi-select service pills." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/framer-motion@11.11.17/dist/framer-motion.js"></script>
+  <script>window.Motion = window.FramerMotion || window.Motion;</script>
+
+  <style>
+    :root {
+      --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    }
+
+    html,
+    body,
+    #root {
+      min-height: 100%;
+      margin: 0;
+      background: #fff;
+      font-family: var(--font-sans);
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .animate-blink {
+      animation: blink 1s step-end infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useEffect, useRef, useState } = React;
+    const { motion, AnimatePresence } = window.Motion;
+
+    function clamp(value, min, max) {
+      return Math.min(max, Math.max(min, value));
+    }
+
+    function BackgroundVideo() {
+      const videoRef = useRef(null);
+      const previousXRef = useRef(null);
+      const targetTimeRef = useRef(0);
+      const seekingRef = useRef(false);
+
+      useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+
+        function setupMobileAutoplay() {
+          if (window.innerWidth < 1024) {
+            video.autoplay = true;
+            video.play().catch(() => {});
+          } else {
+            video.autoplay = false;
+            video.pause();
+          }
+        }
+
+        setupMobileAutoplay();
+        window.addEventListener("resize", setupMobileAutoplay);
+
+        return () => window.removeEventListener("resize", setupMobileAutoplay);
+      }, []);
+
+      useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+
+        function handleSeeked() {
+          seekingRef.current = false;
+        }
+
+        function handleMouseMove(event) {
+          if (window.innerWidth < 1024) return;
+          if (!Number.isFinite(video.duration) || video.duration <= 0) return;
+
+          const previousX = previousXRef.current;
+          previousXRef.current = event.clientX;
+
+          if (previousX === null) {
+            targetTimeRef.current = video.currentTime || 0;
+            return;
+          }
+
+          const delta = event.clientX - previousX;
+          const change = (delta / window.innerWidth) * 0.8 * video.duration;
+          const next = clamp(targetTimeRef.current + change, 0, video.duration);
+
+          targetTimeRef.current = next;
+
+          if (!seekingRef.current) {
+            seekingRef.current = true;
+            video.currentTime = next;
+          }
+        }
+
+        video.addEventListener("seeked", handleSeeked);
+        window.addEventListener("mousemove", handleMouseMove);
+
+        return () => {
+          video.removeEventListener("seeked", handleSeeked);
+          window.removeEventListener("mousemove", handleMouseMove);
+        };
+      }, []);
+
+      return (
+        <div className="order-last lg:order-none relative lg:absolute lg:inset-0 lg:z-0 overflow-hidden pointer-events-none w-full aspect-square md:aspect-video lg:aspect-auto lg:h-full bg-neutral-50 lg:bg-transparent">
+          <video
+            ref={videoRef}
+            muted
+            playsInline
+            preload="auto"
+            src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260601_110537_3a579fa0-7bbc-4d94-9d25-0e816c7840f5.mp4"
+            className="w-full h-full object-cover object-right lg:object-right-bottom"
+          />
+        </div>
+      );
+    }
+
+    function useTypewriter(text, speed = 38, startDelay = 600) {
+      const [displayed, setDisplayed] = useState("");
+      const [done, setDone] = useState(false);
+
+      useEffect(() => {
+        let index = 0;
+        let intervalId;
+        let delayId;
+
+        setDisplayed("");
+        setDone(false);
+
+        delayId = setTimeout(() => {
+          intervalId = setInterval(() => {
+            index += 1;
+            setDisplayed(text.slice(0, index));
+
+            if (index >= text.length) {
+              clearInterval(intervalId);
+              setDone(true);
+            }
+          }, speed);
+        }, startDelay);
+
+        return () => {
+          clearTimeout(delayId);
+          clearInterval(intervalId);
+        };
+      }, [text, speed, startDelay]);
+
+      return { displayed, done };
+    }
+
+    function CheckIcon({ className = "h-4 w-4" }) {
+      return (
+        <motion.svg
+          initial={{ scale: 0, opacity: 0, y: 4 }}
+          animate={{ scale: 1, opacity: 1, y: 0 }}
+          exit={{ scale: 0, opacity: 0, y: 4 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          viewBox="0 0 24 24"
+          fill="none"
+          className={className}
+          aria-hidden="true"
+        >
+          <path d="M20 6 9 17l-5-5" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
+        </motion.svg>
+      );
+    }
+
+    function Navbar() {
+      const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+      const navLinks = ["Labs", "Studio", "Openings", "Shop"];
+
+      return (
+        <>
+          <header className="fixed top-0 inset-x-0 z-10 px-5 sm:px-8 py-4 sm:py-5 flex flex-row justify-between items-center bg-transparent">
+            <div className="flex flex-row gap-3 items-center">
+              <div className="text-[21px] sm:text-[26px] tracking-tight text-black font-medium select-none">
+                Mainframe&reg;
+              </div>
+              <div className="text-[25px] sm:text-[30px] text-black select-none tracking-[-0.02em] font-medium leading-none mb-1">
+                &#10033;
+              </div>
+            </div>
+
+            <nav className="hidden md:flex flex-row items-center text-[23px] text-black">
+              {navLinks.map((link, index) => (
+                <React.Fragment key={link}>
+                  <a href="#" className="hover:opacity-60 transition-opacity">{link}</a>
+                  {index < navLinks.length - 1 && <span className="opacity-40">,&nbsp;</span>}
+                </React.Fragment>
+              ))}
+            </nav>
+
+            <a href="#" className="hidden md:block text-[23px] text-black underline underline-offset-2 hover:opacity-60 transition-opacity">
+              Get in touch
+            </a>
+
+            <button
+              type="button"
+              aria-label="Toggle mobile menu"
+              aria-expanded={isMobileMenuOpen}
+              onClick={() => setIsMobileMenuOpen((open) => !open)}
+              className="md:hidden relative z-[11] flex flex-col gap-[5px] items-center justify-center h-8 w-8"
+            >
+              <span className={`w-6 h-[2px] bg-black transition-all duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
+              <span className={`w-6 h-[2px] bg-black transition-all duration-300 ${isMobileMenuOpen ? "opacity-0" : ""}`} />
+              <span className={`w-6 h-[2px] bg-black transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+            </button>
+          </header>
+
+          <div className={`md:hidden fixed inset-0 z-[9] bg-white/95 backdrop-blur-sm transition-all duration-300 ${isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
+            <div className="h-full flex flex-col justify-center px-8">
+              <nav className="flex flex-col gap-5 text-5xl tracking-tight text-black">
+                {navLinks.map((link) => (
+                  <a key={link} href="#" onClick={() => setIsMobileMenuOpen(false)}>{link}</a>
+                ))}
+                <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="underline underline-offset-4">Get in touch</a>
+              </nav>
+            </div>
+          </div>
+        </>
+      );
+    }
+
+    function ServicePills() {
+      const [services, setServices] = useState([]);
+      const options = ["Brand", "Digital", "Campaign", "Other"];
+
+      function toggleService(option) {
+        setServices((current) => (
+          current.includes(option)
+            ? current.filter((item) => item !== option)
+            : [...current, option]
+        ));
+      }
+
+      return (
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.22 }}
+          className="w-full max-w-3xl"
+        >
+          <h2 className="text-2xl font-medium tracking-tight mb-2">What sort of service?</h2>
+          <p className="opacity-85 text-[#738273] mb-8">Select all that apply</p>
+
+          <div className="flex flex-wrap gap-3">
+            {options.map((option) => {
+              const active = services.includes(option);
+
+              return (
+                <motion.button
+                  key={option}
+                  type="button"
+                  onClick={() => toggleService(option)}
+                  whileTap={{ scale: 0.96 }}
+                  whileHover={{ y: -1 }}
+                  className={`min-h-12 px-5 rounded-full text-base font-medium flex items-center gap-2 transition-colors ${
+                    active
+                      ? "bg-[#1C2E1E] text-white shadow-md shadow-emerald-950/5 transform"
+                      : "bg-white text-[#1C2E1E] border border-[#F1F3F1] hover:bg-[#F1F3F1]/55"
+                  }`}
+                >
+                  <AnimatePresence initial={false}>
+                    {active && <CheckIcon key="check" />}
+                  </AnimatePresence>
+                  <span>{option}</span>
+                </motion.button>
+              );
+            })}
+          </div>
+
+          <div className="mt-6 min-h-[72px]">
+            <AnimatePresence mode="wait">
+              {services.length === 0 ? (
+                <motion.p
+                  key="empty"
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 0.5, y: 0 }}
+                  exit={{ opacity: 0, y: -6 }}
+                  transition={{ duration: 0.22 }}
+                  className="italic text-xs text-[#5A635A]"
+                >
+                  Please click to select services above.
+                </motion.p>
+              ) : (
+                <motion.div
+                  key="active"
+                  initial={{ opacity: 0, height: 0, y: 6 }}
+                  animate={{ opacity: 1, height: "auto", y: 0 }}
+                  exit={{ opacity: 0, height: 0, y: -6 }}
+                  transition={{ type: "spring", stiffness: 260, damping: 24 }}
+                  className="bg-[#FAFBF9] border border-[#F1F3F1] rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 overflow-hidden"
+                >
+                  <p className="text-sm text-[#1C2E1E]">
+                    Ready to inquire about: <span className="font-medium">{services.join(", ")}</span>
+                  </p>
+                  <button type="button" className="text-[#4D6D47] uppercase text-xs tracking-[0.2em] font-semibold flex items-center gap-2 self-start sm:self-auto">
+                    Let&apos;s Go <span aria-hidden="true">→</span>
+                  </button>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        </motion.div>
+      );
+    }
+
+    function ContentLayer() {
+      const { displayed, done } = useTypewriter("we'd love to\nhear from you!", 38, 600);
+
+      return (
+        <div className="relative z-10 flex flex-col order-first lg:order-none w-full bg-white lg:bg-transparent pb-8 lg:pb-0 lg:min-h-screen">
+          <main id="spade-hero" className="w-full max-w-7xl mx-auto px-6 py-12 flex-1 flex flex-col justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <h1 className="text-5xl md:text-6xl lg:text-[76px] font-normal tracking-tight text-black leading-[1.08] mb-8 select-none w-full whitespace-pre-wrap">
+                {displayed}
+                {!done && <span className="inline-block w-[2px] h-[1.1em] bg-black align-middle ml-[2px] animate-blink" />}
+              </h1>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <p className="text-lg md:text-xl text-[#5A635A] leading-relaxed font-normal mb-14 max-w-2xl">
+                Whether you have questions, feedback, <br /> drop us a message and we&apos;ll get back to you as soon as possible.
+              </p>
+            </motion.div>
+
+            <ServicePills />
+          </main>
+        </div>
+      );
+    }
+
+    function App() {
+      return (
+        <div className="relative bg-white text-neutral-900 font-sans selection:bg-[#EAECE9] selection:text-[#1C2E1E] antialiased overflow-x-hidden flex flex-col lg:block lg:min-h-screen">
+          <Navbar />
+          <BackgroundVideo />
+          <ContentLayer />
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+</html>

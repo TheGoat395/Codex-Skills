@@ -1,15 +1,28 @@
 # Securify Hero Section
 
-Dark premium hero section for a trust-focused product concept.
+Cyber/security-themed hero section with dark premium styling.
 
 ## Local preview
 
-This demo is part of the Premium Website Showcase. The source artifact is tracked in the showcase manifest and can be packaged locally with:
+Open this file directly in a browser after cloning the repository:
+
+```text
+examples/premium-website-showcase/demos/securify-hero-section/preview.html
+```
+
+Optional local server from the repository root:
 
 ```bash
-python3 examples/premium-website-showcase/scripts/package_demos.py
+cd examples/premium-website-showcase/demos/securify-hero-section
+python3 -m http.server 4173
+```
+
+Then visit:
+
+```text
+http://localhost:4173/preview.html
 ```
 
 ## Why this demo exists
 
-This demo shows product visual direction and premium hero-section styling from the website skill workflow.
+This demo is part of the public proof-of-output gallery for the Codex Premium Website Skills library. It demonstrates how the skill collection can move from a prompt, reference, spec, or visual direction into a polished local web artifact quickly.

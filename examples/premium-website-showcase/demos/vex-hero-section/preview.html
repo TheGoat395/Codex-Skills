@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>VEX — Shaping Tomorrow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>tailwind={theme:{extend:{fontFamily:{sans:["Inter","sans-serif"]}}}};</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<style>
+html,body,#root{width:100%;min-height:100%;margin:0}
+body{font-family:'Inter',sans-serif;background:#000;color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.liquid-glass{background:rgba(0,0,0,.4);background-blend-mode:luminosity;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:none;box-shadow:inset 0 1px 1px rgba(255,255,255,.1);position:relative;overflow:hidden}
+.liquid-glass:before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.1) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 60%,rgba(255,255,255,.1) 80%,rgba(255,255,255,.3) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const VIDEO_URL="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260403_050628_c4e32401-fab4-4a27-b7a8-6e9291cd5959.mp4";
+
+function FadeIn({children,delay=0,duration=1000,className=""}){
+  const [visible,setVisible]=React.useState(false);
+  React.useEffect(()=>{const id=setTimeout(()=>setVisible(true),delay);return()=>clearTimeout(id)},[delay]);
+  return <div className={`transition-opacity ${className} ${visible?"opacity-100":"opacity-0"}`} style={{transitionDuration:`${duration}ms`}}>{children}</div>;
+}
+
+function AnimatedHeading({text,initialDelay=200,charDelay=30}){
+  const [active,setActive]=React.useState(false);
+  const lines=text.split("\n");
+  React.useEffect(()=>{const id=setTimeout(()=>setActive(true),initialDelay);return()=>clearTimeout(id)},[initialDelay]);
+  return <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal mb-4 leading-[1.03]" style={{letterSpacing:"-0.04em"}}>
+    {lines.map((line,lineIndex)=>{
+      const previousLength=lines.slice(0,lineIndex).reduce((sum,current)=>sum+current.length,0);
+      return <span key={lineIndex} className="block">{Array.from(line).map((char,charIndex)=>{
+        const delay=previousLength*charDelay+charIndex*charDelay;
+        return <span key={`${lineIndex}-${charIndex}`} className="inline-block transition-all ease-out" style={{opacity:active?1:0,transform:active?"translateX(0)":"translateX(-18px)",transitionDuration:"500ms",transitionDelay:active?`${delay}ms`:"0ms"}}>{char===" "?"\u00A0":char}</span>;
+      })}</span>;
+    })}
+  </h1>;
+}
+
+function Navbar(){
+  const links=["Story","Investing","Building","Advisory"];
+  return <div className="relative z-10 px-6 md:px-12 lg:px-16 pt-6">
+    <nav className="liquid-glass rounded-xl px-4 py-2 flex items-center justify-between">
+      <a href="#" className="text-2xl font-semibold tracking-tight">VEX</a>
+      <div className="hidden md:flex items-center gap-8 text-sm">
+        {links.map(link=><a key={link} href="#" className="transition-colors hover:text-gray-300">{link}</a>)}
+      </div>
+      <a href="#" className="bg-white text-black px-6 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-gray-100">Start a Chat</a>
+    </nav>
+  </div>;
+}
+
+function Hero(){
+  return <main className="relative min-h-screen bg-black text-white overflow-hidden font-sans">
+    <video className="absolute inset-0 w-full h-full object-cover" src={VIDEO_URL} autoPlay loop muted playsInline preload="auto"></video>
+    <div className="relative z-10 min-h-screen flex flex-col">
+      <Navbar/>
+      <section className="px-6 md:px-12 lg:px-16 flex-1 flex flex-col justify-end pb-12 lg:pb-16">
+        <div className="lg:grid lg:grid-cols-2 lg:items-end gap-8">
+          <div>
+            <AnimatedHeading text={"Shaping tomorrow\nwith vision and action."}/>
+            <FadeIn delay={800} duration={1000}>
+              <p className="text-base md:text-lg text-gray-300 mb-5 max-w-2xl">We back visionaries and craft ventures that define what comes next.</p>
+            </FadeIn>
+            <FadeIn delay={1200} duration={1000}>
+              <div className="flex flex-wrap gap-4">
+                <a href="#" className="bg-white text-black px-8 py-3 rounded-lg font-medium transition-colors hover:bg-gray-100">Start a Chat</a>
+                <a href="#" className="liquid-glass border border-white/20 text-white px-8 py-3 rounded-lg font-medium transition-colors hover:bg-white hover:text-black">Explore Now</a>
+              </div>
+            </FadeIn>
+          </div>
+          <FadeIn delay={1400} duration={1000} className="mt-8 lg:mt-0 flex items-end justify-start lg:justify-end">
+            <div className="liquid-glass border border-white/20 px-6 py-3 rounded-xl">
+              <p className="text-lg md:text-xl lg:text-2xl font-light">Investing. Building. Advisory.</p>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+    </div>
+  </main>;
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<Hero/>);
+</script>
+</body>
+</html>
