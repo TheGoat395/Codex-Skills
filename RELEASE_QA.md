@@ -1,28 +1,27 @@
 # Release QA
 
-This document records the practical checks for the public Codex Premium Website Skills release. It is not a legal audit and does not replace measured benchmarks, but it gives reviewers a clear view of what has been packaged and verified.
+This document records the practical release checks for Codex Premium Website Skills. It gives maintainers and reviewers a clear view of the package structure, showcase assets, and verification flow.
 
 ## Current Release State
 
 - Default public core: `70` skills.
 - Showcase demos: `9` local preview demos.
 - Showcase ZIP deliverables: `9` demo ZIP files.
-- Provider/account integrations: excluded from the public core pending separate review.
-- Formal measured benchmarks: planned.
-- Projected benchmark estimate: included under `examples/benchmarks/premium-website-workflow-estimate/`.
+- Provider/account integrations: not included in the public core.
+- Benchmarking: projected estimate included; measured benchmark examples planned next.
 
 ## Repository Structure Checks
 
 | Check | Expected State | Status |
 |---|---|---|
-| Root README introduces the project and showcase | `README.md` describes the unofficial public skill library and points to the demo gallery | Done |
+| Root README introduces the project and showcase | `README.md` describes the public skill library and points to the demo gallery | Done |
 | Install instructions exist | `INSTALL.md` documents dry-run install, install, focused collection install, and local preview | Done |
 | Demo index exists | `DEMOS.md` lists the confirmed demo set and preview paths | Done |
 | Security policy exists | `SECURITY.md` describes installer behavior and safe-use expectations | Done |
 | Skill quality standard exists | `SKILL_QUALITY_STANDARD.md` defines acceptance and rejection criteria | Done |
 | Third-party notices exist | `THIRD_PARTY_NOTICES.md` defines notice expectations and excluded integrations | Done |
-| Benchmark standards exist | `BENCHMARKS.md` distinguishes projected estimates from measured benchmarks | Done |
-| Application draft exists | `OPEN_SOURCE_APPLICATION_DRAFT.md` includes the public-core, showcase, and benchmark-estimate story | Done |
+| Benchmark standards exist | `BENCHMARKS.md` defines scoring, benchmark format, and estimate format | Done |
+| Application copy exists | `OPEN_SOURCE_APPLICATION_DRAFT.md` includes concise application and public-post copy | Done |
 
 ## Skill Inventory Checks
 
@@ -58,7 +57,7 @@ The confirmed showcase demos are:
 8. Prisma Creative Studio
 9. Michael Smith Portfolio
 
-## Recommended Verification Commands
+## Verification Commands
 
 Run from the repository root:
 
@@ -80,13 +79,13 @@ Expected high-level results:
 - working tree: clean before release
 - no whitespace errors from `git diff --check`
 
-## Known Limitations
+## Notes
 
-- Some showcase previews use external fonts, CDNs, or browser-loaded media for lightweight local preview. They are local preview artifacts, not guaranteed fully offline bundles.
-- The benchmark folder currently includes a projected impact estimate, not a measured baseline-vs-skill-assisted benchmark.
-- Human review is still required before using any skill-generated output in production.
+- Some showcase previews use external fonts, CDNs, or browser-loaded media for lightweight local preview.
+- The benchmark folder currently includes a projected impact estimate. A measured baseline-vs-skill-assisted benchmark is the next evidence upgrade.
+- The showcase artifacts are local preview examples. Production use still requires project-specific review.
 
-## Recommended Next Hardening Steps
+## Next Improvements
 
 1. Add one measured baseline-vs-skill-assisted benchmark with screenshots and QA notes.
 2. Add screenshots to the showcase gallery or benchmark folder.
