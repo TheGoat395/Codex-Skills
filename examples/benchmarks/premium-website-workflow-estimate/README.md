@@ -1,14 +1,12 @@
-# Projected Impact Estimate: Premium Website Workflow
+# Workflow Impact Estimate: Premium Website Workflow
 
-This document estimates where Codex Premium Website Skills should improve frontend and website work based on skill coverage, checklist coverage, and common failure modes in AI-assisted website generation.
+This estimate summarizes where Codex Premium Website Skills is expected to improve frontend and website work based on skill coverage, checklist coverage, and common failure modes in AI-assisted website generation.
 
-## Task Type
+## Workflow
 
 Create a polished local website, landing page, hero section, or portfolio from a prompt, reference, spec, or rough direction.
 
-## Selected Collections
-
-Recommended collections for this workflow:
+## Recommended Collections
 
 - `taste-and-build-gates`
 - `visual-direction`
@@ -16,7 +14,7 @@ Recommended collections for this workflow:
 - `motion-core`
 - `qa-production-core`
 
-Representative skills involved include:
+## Representative Skills
 
 - `anti-generic-website-review`
 - `website-blueprint-planner`
@@ -32,7 +30,7 @@ Representative skills involved include:
 - `image-video-loading-qa`
 - `final-client-handoff`
 
-## Expected Improvement Estimate
+## Expected Improvement Areas
 
 | Category | Baseline Risk Without Skills | Expected Skill-Assisted Effect | Confidence |
 |---|---|---|---|
@@ -68,28 +66,3 @@ The strongest expected gains come from adding disciplined workflow stages around
 6. document verification, limitations, and handoff notes
 
 Those stages target common failure points in AI-assisted frontend work.
-
-## Benchmark Upgrade Path
-
-Convert this estimate into a measured benchmark by running the same task twice: once without the skills and once with the selected collections installed.
-
-## Recommended First Measured Benchmark
-
-Use the same prompt for both runs:
-
-```text
-Build a premium landing page for a fictional AI design studio. It should feel editorial, cinematic, responsive, accessible, and non-generic. Include a hero, service section, proof section, selected work, contact CTA, and final handoff notes.
-```
-
-Baseline run:
-
-- no Codex skills installed or skills disabled
-- save output, screenshots, command logs, and notes
-
-Skill-assisted run:
-
-- install `taste-and-build-gates`, `visual-direction`, `frontend-implementation`, `motion-core`, and `qa-production-core`
-- use the same prompt and comparable time budget
-- save output, screenshots, command logs, and notes
-
-Compare with the rubric in `BENCHMARKS.md`.
