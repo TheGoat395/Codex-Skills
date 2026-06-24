@@ -1,16 +1,16 @@
 # Benchmark Examples
 
-This folder separates two kinds of evidence:
-
-- **Projected impact estimates**: reasoned forecasts based on skill coverage and expected workflow failure modes.
-- **Measured benchmarks**: completed baseline-vs-skill-assisted runs with saved outputs, screenshots, and verification notes.
-
-Projected estimates are useful for planning, but they are not proof. Measured benchmarks should be added over time as reproducible runs are completed.
+This folder contains benchmark-related materials for evaluating Codex Premium Website Skills.
 
 ## Included
 
-- `premium-website-workflow-estimate/` — an honest projected impact estimate for premium website generation workflows.
+- `premium-website-workflow-estimate/` — a workflow impact estimate for premium website generation.
 
-## Recommended Next Measured Benchmark
+## Benchmark Types
 
-A strong first measured benchmark would compare the same landing-page prompt with and without the `taste-and-build-gates`, `visual-direction`, `frontend-implementation`, `motion-core`, and `qa-production-core` collections.
+| Type | Description |
+|---|---|
+| Workflow impact estimate | A structured estimate of where the skill collection should improve a workflow. |
+| Measured benchmark | A completed baseline-vs-skill-assisted comparison with saved outputs and verification notes. |
+
+Measured benchmarks should be added as reproducible runs are completed.
