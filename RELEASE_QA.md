@@ -1,50 +1,48 @@
 # Release Checks
 
-This document records the practical release checks for Codex Premium Website Skills. It gives reviewers a clear view of the package structure, showcase assets, and verification flow.
+This document summarizes the public release package for Codex Premium Website Skills and the checks used to verify it.
 
-## Current Release State
+## Package Summary
 
 - Default public core: `70` skills.
 - Showcase demos: `9` local preview demos.
 - Showcase ZIP deliverables: `9` demo ZIP files.
 - Provider/account integrations: not included in the public core.
-- Benchmarking: projected estimate included; measured benchmark examples planned next.
+- Benchmarking: workflow impact estimate included; measured benchmark examples are tracked as future work.
 
-## Repository Structure Checks
+## Repository Structure
 
 | Check | Expected State | Status |
 |---|---|---|
-| Root README introduces the project and showcase | `README.md` describes the public skill library and points to the demo gallery | Done |
-| Install instructions exist | `INSTALL.md` documents dry-run install, install, focused collection install, and local preview | Done |
-| Demo index exists | `DEMOS.md` lists the confirmed demo set and preview paths | Done |
-| Security policy exists | `SECURITY.md` describes installer behavior and safe-use expectations | Done |
-| Skill quality standard exists | `SKILL_QUALITY_STANDARD.md` defines acceptance and rejection criteria | Done |
-| Third-party notices exist | `THIRD_PARTY_NOTICES.md` defines notice expectations and excluded integrations | Done |
-| Benchmark standards exist | `BENCHMARKS.md` defines scoring, benchmark format, and estimate format | Done |
+| Root README | Introduces the project and points to the demo gallery | Done |
+| Install instructions | Documents dry-run install, install, focused collection install, and local preview | Done |
+| Demo index | Lists the confirmed demo set and preview paths | Done |
+| Security policy | Describes installer behavior and safe-use expectations | Done |
+| Skill quality standard | Defines acceptance and rejection criteria | Done |
+| Third-party notices | Describes notice expectations and excluded integrations | Done |
+| Benchmark standards | Defines scoring, benchmark format, and estimate format | Done |
 
-## Skill Inventory Checks
+## Skill Inventory
 
 | Check | Expected State | Status |
 |---|---|---|
 | Public core count | `curated_collections.json` defines a 70-skill public core | Done |
 | Manifest count | `manifest.json` reports `"skill_count": 70` | Done |
 | Inventory count | `SKILL_INVENTORY.md` reports `Total skills: 70` | Done |
-| Public release checklist exists | `PUBLIC_RELEASE_CHECKLIST.md` documents release checks before publishing | Done |
+| Release checklist | `PUBLIC_RELEASE_CHECKLIST.md` documents release checks | Done |
 
-## Showcase Checks
+## Showcase
 
 | Check | Expected State | Status |
 |---|---|---|
-| Gallery page exists | `examples/premium-website-showcase/gallery/index.html` | Done |
-| Demo manifest exists | `examples/premium-website-showcase/demo-manifest.json` | Done |
-| Demo README exists | `examples/premium-website-showcase/README.md` | Done |
-| Packaging script exists | `examples/premium-website-showcase/scripts/package_demos.py` | Done |
-| Preview files exist | 9 `preview.html` files under `examples/premium-website-showcase/demos/` | Done |
-| Demo ZIP files exist | 9 ZIP files under `examples/premium-website-showcase/demo-zips/` | Done |
+| Gallery page | `examples/premium-website-showcase/gallery/index.html` | Done |
+| Demo manifest | `examples/premium-website-showcase/demo-manifest.json` | Done |
+| Showcase README | `examples/premium-website-showcase/README.md` | Done |
+| Packaging script | `examples/premium-website-showcase/scripts/package_demos.py` | Done |
+| Preview files | 9 `preview.html` files under `examples/premium-website-showcase/demos/` | Done |
+| Demo ZIP files | 9 ZIP files under `examples/premium-website-showcase/demo-zips/` | Done |
 
-## Showcase Demo Set
-
-The confirmed showcase demos are:
+## Confirmed Showcase Demos
 
 1. Asteria Capital
 2. Asteria Space Travel
@@ -81,12 +79,5 @@ Expected high-level results:
 ## Notes
 
 - Some showcase previews use external fonts, CDNs, or browser-loaded media for lightweight local preview.
-- The benchmark folder currently includes a projected impact estimate. A measured baseline-vs-skill-assisted benchmark is the next evidence upgrade.
+- The benchmark folder currently includes a workflow impact estimate. A measured baseline-vs-skill-assisted benchmark is the next evidence upgrade.
 - The showcase artifacts are local preview examples. Production use still requires project-specific review.
-
-## Next Improvements
-
-1. Add one measured baseline-vs-skill-assisted benchmark with screenshots and QA notes.
-2. Add screenshots to the showcase gallery or benchmark folder.
-3. Run the full `PUBLIC_RELEASE_CHECKLIST.md` before any major public announcement.
-4. Add GitHub repository topics for discovery, such as `codex`, `codex-skills`, `frontend`, `web-design`, `accessibility`, `motion`, and `design-engineering`.
