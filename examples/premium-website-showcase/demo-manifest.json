@@ -2,14 +2,68 @@
   "name": "premium-website-showcase",
   "purpose": "proof-of-output demos for the Codex Premium Website Skills library",
   "demos": [
-    {"slug":"asteria-capital","title":"Asteria Capital","description":"Renamed/cleaned capital landing page with a polished premium finance feel.","preview":"demos/asteria-capital/preview.html","zip_name":"asteria-capital.zip"},
-    {"slug":"asteria-space-travel","title":"Asteria Space Travel","description":"Cinematic space-travel landing page with immersive visual direction.","preview":"demos/asteria-space-travel/preview.html","zip_name":"asteria-space-travel.zip"},
-    {"slug":"mainframe-contact-hero","title":"Mainframe Contact Hero","description":"Dark contact/hero section with mainframe-inspired visual styling.","preview":"demos/mainframe-contact-hero/preview.html","zip_name":"mainframe-contact-hero.zip"},
-    {"slug":"vex-hero-section","title":"VEX Hero Section","description":"Polished dark hero section for a VEX-style product/brand concept.","preview":"demos/vex-hero-section/preview.html","zip_name":"vex-hero-section.zip"},
-    {"slug":"securify-hero-section","title":"Securify Hero Section","description":"Cyber/security-themed hero section with dark premium styling.","preview":"demos/securify-hero-section/preview.html","zip_name":"securify-hero-section.zip"},
-    {"slug":"linkflow-hero-section","title":"LinkFlow Hero Section","description":"Modern SaaS-style hero section for a link/workflow automation product.","preview":"demos/linkflow-hero-section/preview.html","zip_name":"linkflow-hero-section.zip"},
-    {"slug":"halo-usd-landing","title":"Halo / USD Halo Landing Page","description":"Full landing page build based on the Halo USD spec and visual requirements.","preview":"demos/halo-usd-landing/preview.html","zip_name":"halo-usd-landing.zip"},
-    {"slug":"prisma-creative-studio","title":"Prisma Creative Studio","description":"Creative studio landing page with Lucius copy update and expressive visual direction.","preview":"demos/prisma-creative-studio/preview.html","zip_name":"prisma-creative-studio.zip"},
-    {"slug":"michael-smith-portfolio","title":"Michael Smith Portfolio","description":"Final corrected portfolio with approved generated media, hover effects, Visual Playground motion, and restored original loader/counter.","preview":"demos/michael-smith-portfolio/preview.html","zip_name":"michael-smith-portfolio.zip"}
+    {
+      "slug": "asteria-capital",
+      "title": "Asteria Capital",
+      "description": "Renamed/cleaned capital landing page with a polished premium finance feel.",
+      "preview": "demos/asteria-capital/preview.html",
+      "zip_name": "asteria-capital.zip"
+    },
+    {
+      "slug": "asteria-space-travel",
+      "title": "Asteria Space Travel",
+      "description": "Cinematic space-travel landing page with immersive visual direction.",
+      "preview": "demos/asteria-space-travel/preview.html",
+      "zip_name": "asteria-space-travel.zip"
+    },
+    {
+      "slug": "mainframe-contact-hero",
+      "title": "Mainframe Contact Hero",
+      "description": "Dark contact/hero section with mainframe-inspired visual styling.",
+      "preview": "demos/mainframe-contact-hero/preview.html",
+      "zip_name": "mainframe-contact-hero.zip"
+    },
+    {
+      "slug": "vex-hero-section",
+      "title": "VEX Hero Section",
+      "description": "Polished dark hero section for a VEX-style product/brand concept.",
+      "preview": "demos/vex-hero-section/preview.html",
+      "zip_name": "vex-hero-section.zip"
+    },
+    {
+      "slug": "securify-hero-section",
+      "title": "Securify Hero Section",
+      "description": "Cyber/security-themed hero section with dark premium styling.",
+      "preview": "demos/securify-hero-section/preview.html",
+      "zip_name": "securify-hero-section.zip"
+    },
+    {
+      "slug": "linkflow-hero-section",
+      "title": "LinkFlow Hero Section",
+      "description": "Modern SaaS-style hero section for a link/workflow automation product.",
+      "preview": "demos/linkflow-hero-section/preview.html",
+      "zip_name": "linkflow-hero-section.zip"
+    },
+    {
+      "slug": "halo-usd-landing",
+      "title": "Halo / USD Halo Landing Page",
+      "description": "Full landing page build based on the Halo USD spec and visual requirements.",
+      "preview": "demos/halo-usd-landing/preview.html",
+      "zip_name": "halo-usd-landing.zip"
+    },
+    {
+      "slug": "prisma-creative-studio",
+      "title": "Prisma Creative Studio",
+      "description": "Creative studio landing page with Lucius copy update and expressive visual direction.",
+      "preview": "demos/prisma-creative-studio/preview.html",
+      "zip_name": "prisma-creative-studio.zip"
+    },
+    {
+      "slug": "michael-smith-portfolio",
+      "title": "Michael Smith Portfolio",
+      "description": "Final corrected portfolio with approved generated media, hover effects, Visual Playground motion, and restored original loader/counter.",
+      "preview": "demos/michael-smith-portfolio/preview.html",
+      "zip_name": "michael-smith-portfolio.zip"
+    }
   ]
 }
