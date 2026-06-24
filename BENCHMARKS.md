@@ -1,15 +1,15 @@
 # Benchmarks
 
-Benchmarks are how this project earns trust. Do not claim that a large skill library is useful because it is large. Show that selected skills improve real workflows.
+Benchmarks keep the project grounded in observable workflow quality. The goal is to compare real outputs, not to rely on skill count as a proxy for usefulness.
 
-## Evidence Standard
+## Evidence Types
 
-This repository uses two separate labels:
+This repository uses two benchmark evidence types:
 
-1. **Projected impact estimate** — a reasoned hypothesis based on the skill instructions, checklist coverage, and expected workflow failure modes. This is useful for planning and review, but it is not proof.
+1. **Projected impact estimate** — a structured forecast based on skill coverage, checklist coverage, and common workflow failure modes.
 2. **Measured benchmark** — a completed baseline-vs-skill-assisted run with saved prompt, task context, outputs, screenshots or screen recordings, and verification notes.
 
-Do not present projected estimates as measured results. A public claim should clearly say whether it is an estimate or a measured benchmark.
+Projected estimates are useful planning documents. Measured benchmarks are the stronger evidence format and should be added as reproducible examples over time.
 
 ## Benchmark Format
 
@@ -59,7 +59,7 @@ Recommended categories:
 
 ## Projected Impact Estimate Template
 
-Use this only before a measured run exists.
+Use this format before a measured run exists.
 
 ```md
 # Projected Impact Estimate: [Task Name]
@@ -80,8 +80,8 @@ Use this only before a measured run exists.
 | Accessibility |  |  | Low/Medium/High |
 | QA and handoff |  |  | Low/Medium/High |
 
-## Why This Is Only an Estimate
-This is a forecast based on skill coverage and expected failure modes. It is not measured performance. Convert it into a measured benchmark by running the same task with and without the selected skills and saving the outputs.
+## Benchmark Upgrade Path
+Convert this estimate into a measured benchmark by running the same task with and without the selected skills and saving the outputs.
 ```
 
 ## Example Benchmark Template
@@ -119,4 +119,4 @@ Build a landing page for [product] in [repo].
 
 ## Current Status
 
-The repo includes a proof-of-output showcase under `examples/premium-website-showcase/` and a projected benchmark estimate under `examples/benchmarks/`. Treat estimate documents as planning evidence, not measured performance proof, until baseline-vs-skill-assisted benchmark runs are added.
+The repo includes a proof-of-output showcase under `examples/premium-website-showcase/` and a projected benchmark estimate under `examples/benchmarks/`. A measured baseline-vs-skill-assisted benchmark is the next evidence upgrade.
