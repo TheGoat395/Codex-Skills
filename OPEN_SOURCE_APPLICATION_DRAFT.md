@@ -1,6 +1,6 @@
 # Open Source Application Draft
 
-This file is a working draft for describing the project in public forums or applications. Keep it factual and update it as measured benchmarks and examples are added.
+This page provides copy blocks for applications, public posts, and repository descriptions. The language is written for the maintainer to adapt before submission.
 
 ## Short Description
 
@@ -8,15 +8,17 @@ An open-source Codex skill library for premium frontend, website, and design-eng
 
 ## Project Summary
 
-This repository packages a default 70-skill `public-core` collection for modern website work: design direction, frontend implementation, copy, motion, accessibility, performance, browser QA, rollback discipline, and production handoff. It also includes a local proof-of-output showcase with nine website, hero-section, landing-page, and portfolio demos under `examples/premium-website-showcase/`.
+Codex Premium Website Skills is a curated 70-skill public core for modern website work: design direction, frontend implementation, copy, motion, accessibility, performance, browser QA, rollback discipline, and production handoff.
 
-Provider/account integrations are kept out of the public core pending separate review. The repo is designed to be inspectable, selectively installable, and benchmarked over time.
+The repository also includes a nine-demo Premium Website Showcase under `examples/premium-website-showcase/`, with local preview files and ZIP deliverables for website, hero-section, landing-page, and portfolio examples.
+
+Provider/account integrations are not part of the public core. The public release is designed to be inspectable, selectively installable, and easy to benchmark over time.
 
 ## Why It Matters
 
-Frontend and website work often fails in small qualitative ways: generic layouts, weak copy, missing states, inaccessible controls, untested responsive behavior, unverified animation, and handoffs without production checks. This project turns those recurring gaps into reusable Codex workflows that can be installed selectively, reviewed, improved, and measured.
+Frontend and website work often breaks down in repeatable ways: generic layouts, weak copy, missing states, inaccessible controls, untested responsive behavior, unverified animation, and handoffs without production checks.
 
-The included showcase demonstrates the kind of local frontend artifacts the workflow is intended to support. The benchmark section separates projected impact estimates from measured benchmark results so the project can make useful claims without overstating evidence.
+This project turns those recurring failure points into reusable Codex workflows. The goal is to make high-quality frontend work more systematic: clearer direction, stronger implementation, better QA, and cleaner handoff.
 
 ## What Is Included
 
@@ -25,17 +27,23 @@ The included showcase demonstrates the kind of local frontend artifacts the work
 - A nine-demo Premium Website Showcase with local `preview.html` files.
 - ZIP deliverables for each showcase demo.
 - Documentation for install, local preview, release QA, security posture, skill quality, and benchmark standards.
-- A projected impact estimate for premium website workflows, clearly labeled as an estimate rather than measured proof.
+- A projected impact estimate for premium website workflows, with measured benchmarks planned as a next step.
 
-## Evidence and Honesty Standard
+## Evidence Snapshot
 
-The repo currently includes proof-of-output examples and a projected benchmark estimate. Formal measured benchmarks should be added next as baseline-vs-skill-assisted runs with saved prompts, screenshots, command output, and QA notes.
+The repository currently includes:
 
-Do not claim that the project is officially affiliated with OpenAI, legally audited, or proven by measured benchmarks until those statements are actually true.
+- a packaged public-core skill release
+- local proof-of-output demos
+- demo ZIP deliverables
+- benchmark standards and a projected impact estimate
+- release QA documentation
+
+The next major evidence upgrade is a measured baseline-vs-skill-assisted benchmark with saved prompts, screenshots, command output, and QA notes.
 
 ## 500 Character Qualification Draft
 
-I maintain an open-source Codex skill library for premium frontend and website workflows. It defaults to a curated 70-skill public core covering design direction, implementation, motion, accessibility, performance QA, content polish, rollback discipline, and handoff. The repo also includes a 9-demo local website showcase and honest benchmark-estimate framework.
+I maintain an open-source Codex skill library for premium frontend and website workflows. It defaults to a curated 70-skill public core covering design direction, implementation, motion, accessibility, performance QA, content polish, rollback discipline, and handoff. The repo also includes a 9-demo local website showcase and a benchmark framework for measuring workflow impact.
 
 ## 500 Character API Credit Draft
 
@@ -49,9 +57,9 @@ Open-sourcing a 70-skill Codex public core for premium frontend and website work
 
 Post:
 
-I am preparing to open-source a Codex skill library focused on premium frontend, website, and design-engineering workflows.
+I maintain an open-source Codex skill library focused on premium frontend, website, and design-engineering workflows.
 
-The project defaults to a lean 70-skill `public-core`, not the full local export. The core is designed to be easier to inspect, install, benchmark, and improve.
+The project defaults to a lean 70-skill `public-core`, not a full local export. The core is designed to be easier to inspect, install, benchmark, and improve.
 
 The public core covers:
 
@@ -63,6 +71,6 @@ The public core covers:
 - accessibility, performance, browser QA, visual regression, SEO, and handoff
 - maintainer safety workflows such as checkpointing, undo/revert, and install-safety review
 
-The repo also includes a Premium Website Showcase with nine local demo artifacts, preview files, and ZIP deliverables. The benchmark docs currently include an honest projected impact estimate, with measured baseline-vs-skill-assisted benchmarks planned next.
+The repo also includes a Premium Website Showcase with nine local demo artifacts, preview files, and ZIP deliverables. Benchmark docs include scoring criteria and a projected impact estimate, with measured baseline-vs-skill-assisted benchmarks planned next.
 
-Provider/account integrations and deployment skills are excluded from the default core pending separate review. I am especially interested in feedback on measuring skill effectiveness, keeping routing quality high, and publishing honest before/after benchmarks.
+I am especially interested in feedback on measuring skill effectiveness, improving routing quality, and publishing clear before/after benchmarks for frontend workflows.
