@@ -4,14 +4,14 @@ Benchmarks keep the project grounded in observable workflow quality. The goal is
 
 ## Evidence Types
 
-This repository uses two benchmark evidence types:
+This repository uses two evidence types:
 
-1. **Projected impact estimate** — a structured forecast based on skill coverage, checklist coverage, and common workflow failure modes.
-2. **Measured benchmark** — a completed baseline-vs-skill-assisted run with saved prompt, task context, outputs, screenshots or screen recordings, and verification notes.
+| Type | Purpose | Contents |
+|---|---|---|
+| Workflow impact estimate | Sets expectations for where the skills should help. | Skill coverage, expected failure modes, category-level improvement estimates. |
+| Measured benchmark | Compares actual baseline and skill-assisted outputs. | Prompt, context, outputs, screenshots or recordings, verification notes, and comparison scores. |
 
-Projected estimates are useful planning documents. Measured benchmarks are the stronger evidence format and should be added as reproducible examples over time.
-
-## Benchmark Format
+## Measured Benchmark Format
 
 Each measured benchmark should include:
 
@@ -23,7 +23,7 @@ Each measured benchmark should include:
 - build, lint, test, accessibility, or browser QA output
 - notes on failures, regressions, and where human judgment still mattered
 
-## Suggested Evaluation Areas
+## Evaluation Areas
 
 - non-generic website composition
 - responsive layout quality
@@ -57,66 +57,12 @@ Recommended categories:
 | Accessibility | Keyboard behavior, focus visibility, headings, labels, contrast, reduced-motion support. |
 | QA and handoff | Browser inspection, console/network checks, commands run, known limitations, delivery notes. |
 
-## Projected Impact Estimate Template
+## Current Evidence
 
-Use this format before a measured run exists.
+The repo includes:
 
-```md
-# Projected Impact Estimate: [Task Name]
+- a proof-of-output showcase under `examples/premium-website-showcase/`
+- a workflow impact estimate under `examples/benchmarks/`
+- benchmark scoring criteria for future measured runs
 
-## Task
-[Describe the frontend or website task.]
-
-## Selected Skills / Collections
-[List skills or collections expected to help.]
-
-## Expected Improvement Areas
-| Category | Baseline Risk Without Skills | Expected Skill-Assisted Effect | Confidence |
-|---|---|---|---|
-| Visual direction |  |  | Low/Medium/High |
-| Content quality |  |  | Low/Medium/High |
-| Frontend implementation |  |  | Low/Medium/High |
-| Motion and interaction |  |  | Low/Medium/High |
-| Accessibility |  |  | Low/Medium/High |
-| QA and handoff |  |  | Low/Medium/High |
-
-## Benchmark Upgrade Path
-Convert this estimate into a measured benchmark by running the same task with and without the selected skills and saving the outputs.
-```
-
-## Example Benchmark Template
-
-```md
-# Benchmark: Product Site Landing Page
-
-## Task
-
-Build a landing page for [product] in [repo].
-
-## Baseline
-
-- Command/session:
-- Skills disabled or not installed:
-- Result summary:
-- Screenshots:
-- Build/test output:
-
-## Skill-Assisted Run
-
-- Collections installed:
-- Skills observed:
-- Result summary:
-- Screenshots:
-- Build/test output:
-
-## Comparison
-
-- What improved:
-- What did not improve:
-- Remaining manual work:
-- Reproducibility notes:
-```
-
-## Current Status
-
-The repo includes a proof-of-output showcase under `examples/premium-website-showcase/` and a projected benchmark estimate under `examples/benchmarks/`. A measured baseline-vs-skill-assisted benchmark is the next evidence upgrade.
+A measured baseline-vs-skill-assisted benchmark is the next evidence upgrade.
