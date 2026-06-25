@@ -23,8 +23,8 @@ examples/premium-website-showcase/gallery/index.html
 | 5 | Securify Hero Section | Cyber/security-themed hero section with dark premium styling. | `examples/premium-website-showcase/demos/securify-hero-section/preview.html` |
 | 6 | LinkFlow Hero Section | Modern SaaS-style hero section for a link/workflow automation product. | `examples/premium-website-showcase/demos/linkflow-hero-section/preview.html` |
 | 7 | Halo / USD Halo Landing Page | Full landing page build based on the Halo USD spec and visual requirements. | `examples/premium-website-showcase/demos/halo-usd-landing/preview.html` |
-| 8 | Prisma Creative Studio | Creative studio landing page with Lucius copy update and expressive visual direction. | `examples/premium-website-showcase/demos/prisma-creative-studio/preview.html` |
-| 9 | Michael Smith Portfolio | Final corrected portfolio with approved generated media, hover effects, Visual Playground motion, and restored original loader/counter. | `examples/premium-website-showcase/demos/michael-smith-portfolio/preview.html` |
+| 8 | Prisma Creative Studio | Creative studio landing page with refined copy and expressive visual direction. | `examples/premium-website-showcase/demos/prisma-creative-studio/preview.html` |
+| 9 | Michael Smith Portfolio | Portfolio demo with generated media, hover effects, motion polish, and custom loader/counter behavior. | `examples/premium-website-showcase/demos/michael-smith-portfolio/preview.html` |
 
 ## ZIP deliverables
 
