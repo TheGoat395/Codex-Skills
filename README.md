@@ -6,6 +6,29 @@ This repository is prepared around a lean `public-core` collection of 70 skills:
 
 ![Codex Skills modular capabilities visualized](assets/codex_skills_modular_capabilities_visualized.png)
 
+## Quick Start
+
+Get value in under 3 minutes:
+
+```bash
+git clone https://github.com/TheGoat395/Codex-Skills.git
+cd Codex-Skills
+python3 scripts/install_skills.py --dry-run
+python3 scripts/install_skills.py
+```
+
+Start a new Codex conversation so skill discovery refreshes, then ask:
+
+```text
+Use the Codex website skills to review my homepage and tell me the highest-impact improvements before launch.
+```
+
+For a smaller first install:
+
+```bash
+python3 scripts/install_skills.py --collection taste-and-build-gates
+```
+
 ## Premium Website Showcase
 
 The repo now includes a proof-of-output demo gallery:
