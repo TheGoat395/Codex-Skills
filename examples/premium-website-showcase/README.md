@@ -47,7 +47,7 @@ The intended message is simple: install the skills, provide a prompt/reference/s
 | 5 | Securify Hero Section | Cyber/security-themed hero section with dark premium styling. | `demos/securify-hero-section/preview.html` |
 | 6 | LinkFlow Hero Section | Modern SaaS-style hero section for a link/workflow automation product. | `demos/linkflow-hero-section/preview.html` |
 | 7 | Halo / USD Halo Landing Page | Full landing page build based on the Halo USD spec and visual requirements. | `demos/halo-usd-landing/preview.html` |
-| 8 | Prisma Creative Studio | Creative studio landing page with Lucius copy update and expressive visual direction. | `demos/prisma-creative-studio/preview.html` |
+| 8 | Prisma Creative Studio | Creative studio landing page with editorial copy and expressive visual direction. | `demos/prisma-creative-studio/preview.html` |
 | 9 | Michael Smith Portfolio | Final corrected portfolio with approved generated media, hover effects, Visual Playground motion, and restored original loader/counter. | `demos/michael-smith-portfolio/preview.html` |
 
 ## Skills and collections represented

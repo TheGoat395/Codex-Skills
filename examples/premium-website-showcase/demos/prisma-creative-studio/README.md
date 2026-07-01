@@ -1,6 +1,6 @@
 # Prisma Creative Studio
 
-Creative studio landing page with Lucius copy update and expressive visual direction.
+Creative studio landing page with editorial copy and expressive visual direction.
 
 ## Local preview
 
