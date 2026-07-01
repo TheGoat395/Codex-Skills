@@ -1,0 +1,45 @@
+name: Skill request
+description: Suggest a new skill or a focused improvement to an existing skill.
+title: "[Skill]: "
+labels: ["skill-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Skill requests are strongest when they describe a repeatable workflow gap, not just a topic area.
+  - type: input
+    id: name
+    attributes:
+      label: Proposed skill name
+      description: Use clear lowercase kebab-case if you already have a name in mind.
+      placeholder: frontend-launch-checklist
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow gap
+      description: What should this skill help Codex do repeatedly?
+      placeholder: Describe the task, audience, and expected outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example prompts or use cases
+      description: Provide realistic prompts or scenarios where this skill should trigger.
+      placeholder: |
+        - Review this pricing page before launch.
+        - Convert this brand voice into UI microcopy.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected output
+      description: What should a good answer or workflow produce?
+      placeholder: Audit report, implementation plan, code changes, QA checklist, etc.
+  - type: textarea
+    id: overlap
+    attributes:
+      label: Related skills
+      description: List any existing skills that seem related or overlapping.
+

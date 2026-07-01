@@ -1,0 +1,36 @@
+name: Showcase or result
+description: Share an example, benchmark, demo, or result created with the skill library.
+title: "[Showcase]: "
+labels: ["showcase"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share concrete results that help others evaluate the skill library in real workflows.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What did you build, review, or improve?
+      placeholder: Describe the project and result.
+    validations:
+      required: true
+  - type: textarea
+    id: skills
+    attributes:
+      label: Skills or collections used
+      description: List the skills, collections, or prompts involved.
+      placeholder: public-core, taste-and-build-gates, motion-core
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Add screenshots, links, before/after notes, benchmark output, or a short workflow summary.
+  - type: textarea
+    id: notes
+    attributes:
+      label: What worked or could improve?
+      description: Share practical feedback for maintainers and users.
+

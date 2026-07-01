@@ -1,0 +1,47 @@
+name: Bug report
+description: Report a problem with installation, validation, documentation, or a skill workflow.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Codex Premium Website Skills. Please include enough detail for maintainers to reproduce or verify the issue.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect instead?
+      placeholder: Describe the issue clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the commands, prompt, skill, collection, or repo path involved.
+      placeholder: |
+        1. Run ...
+        2. Install ...
+        3. Ask Codex ...
+    validations:
+      required: true
+  - type: input
+    id: skill
+    attributes:
+      label: Skill or collection
+      description: Name the affected skill or collection, if known.
+      placeholder: public-core, motion-core, frontend-quality-auditor
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Paste relevant command output, error text, screenshots, or links.
+      render: shell
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, Python version, Codex environment, and anything else relevant.
+      placeholder: macOS, Python 3.12, Codex desktop, etc.
+
