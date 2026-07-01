@@ -1,6 +1,6 @@
 {
   "name": "codex-premium-website-skills",
-  "generated_at": "2026-06-21T18:15:46.002916+00:00",
+  "generated_at": "2026-07-01T03:45:14.951483+00:00",
   "source": "skills/",
   "skill_count": 70,
   "skills": [
@@ -14,7 +14,7 @@
       "name": "accessibility-performance-polish",
       "description": "Improve website accessibility and performance polish. Use for semantic HTML, keyboard navigation, focus states, contrast, alt text, reduced motion, image/video loading, canvas fallbacks, bundle caution, animation performance, and final production readiness for polished websites.",
       "file_count": 3,
-      "bytes": 4612
+      "bytes": 4611
     },
     {
       "name": "animation-easing-language",
@@ -38,7 +38,7 @@
       "name": "anti-generic-website-review",
       "description": "Detect and remove generic AI website output. Use to review or improve any site with default SaaS structure, weak typography, generic cards, fake browser chrome, placeholder copy, random gradients, overused bento grids, repetitive bullets, basic buttons, bland mobile layouts, or template-like sections.",
       "file_count": 3,
-      "bytes": 4770
+      "bytes": 4769
     },
     {
       "name": "brand-voice-to-ui-copy",
@@ -68,7 +68,7 @@
       "name": "color-material-lighting-direction",
       "description": "Design website color, material, surface, and lighting direction. Use for premium visual systems, avoiding one-note palettes, defining luxury or cinematic color without cliches, setting contrast, backgrounds, gradients, surfaces, shadows, glass, and material accents.",
       "file_count": 3,
-      "bytes": 4821
+      "bytes": 4820
     },
     {
       "name": "content-pruning-review",
@@ -80,13 +80,13 @@
       "name": "content-structure-information-architecture",
       "description": "Plan website content structure and information architecture. Use for page maps, nav, section sequencing, user questions, service pages, product pages, portfolios, case studies, blogs, docs, ecommerce, and any site where content order and naming affect clarity and perceived quality.",
       "file_count": 3,
-      "bytes": 4188
+      "bytes": 4187
     },
     {
       "name": "conversion-forms-checkout-polish",
       "description": "Design and polish website conversion flows. Use for CTAs, lead forms, booking forms, newsletter signup, checkout, pricing, contact pages, service inquiries, ecommerce purchase paths, error states, validation, trust signals, and conversion sections that must feel complete and credible.",
       "file_count": 3,
-      "bytes": 4241
+      "bytes": 4240
     },
     {
       "name": "cross-browser-qa",
@@ -116,13 +116,19 @@
       "name": "editorial-typography-systems",
       "description": "Create refined typography for websites. Use for premium, editorial, luxury, portfolio, product, Squarespace-like, Vercel-like, Raycast-like, Linear-like, and modern sites needing font pairing, type scale, responsive headings, line length, hierarchy, captions, labels, and text polish.",
       "file_count": 3,
-      "bytes": 4669
+      "bytes": 4668
     },
     {
       "name": "final-client-handoff",
       "description": "Prepare final website handoff. Use after completing a site, app, landing page, redesign, deployment, or production QA to summarize changed files, commands run, checks passed, local/deployed URLs, environment variables, content/CMS notes, known limitations, untested areas, and recommended next steps.",
       "file_count": 3,
       "bytes": 5578
+    },
+    {
+      "name": "frontend-quality-auditor",
+      "description": "Audit frontend websites and apps before launch. Use for production-readiness reviews, visual polish checks, responsive QA, accessibility risks, performance and SEO basics, interaction states, forms, media, copy clarity, trust signals, and ship/no-ship recommendations for React, Next.js, static sites, dashboards, landing pages, portfolios, and product UI.",
+      "file_count": 3,
+      "bytes": 8411
     },
     {
       "name": "frontend-tooling-trust-gate",
@@ -132,9 +138,9 @@
     },
     {
       "name": "gsap-performance",
-      "description": "Official GSAP skill for performance \u2014 prefer transforms, avoid layout thrashing, will-change, batching. Use when optimizing GSAP animations, reducing jank, or when the user asks about animation performance, FPS, or smooth 60fps.",
+      "description": "GSAP performance guidance \u2014 prefer transforms, avoid layout thrashing, use will-change selectively, and batch animation work. Use when optimizing GSAP animations, reducing jank, or when the user asks about animation performance, FPS, or smooth 60fps.",
       "file_count": 1,
-      "bytes": 4138
+      "bytes": 4155
     },
     {
       "name": "hero-image-art-direction",
@@ -155,12 +161,6 @@
       "bytes": 5789
     },
     {
-      "name": "impeccable",
-      "description": "Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend interface. Covers websites, landing pages, dashboards, product UI, app shells, components, forms, settings, onboarding, and empty states. Handles UX review, visual hierarchy, information architecture, cognitive load, accessibility, performance, responsive behavior, theming, anti-patterns, typography, fonts, spacing, layout, alignment, color, motion, micro-interactions, UX copy, error states, edge cases, i18n, and reusable design systems or tokens. Also use for bland designs that need to become bolder or more delightful, loud designs that should become quieter, live browser iteration on UI elements, or ambitious visual effects that should feel technically extraordinary. Not for backend-only or non-UI tasks.",
-      "file_count": 96,
-      "bytes": 2081425
-    },
-    {
       "name": "mobile-responsive-qa",
       "description": "Run mobile responsive QA for websites and apps. Use after layout, media, navigation, form, pricing, dashboard, gallery, checkout, or motion changes to inspect phone and tablet viewports, prevent horizontal overflow, fix crop issues, verify touch targets, and make mobile feel intentionally composed.",
       "file_count": 3,
@@ -176,7 +176,7 @@
       "name": "motion-language-director",
       "description": "Define website motion direction before implementation. Use for cinematic websites, Viktor-style motion, GSAP/ScrollTrigger pages, Motion for React microinteractions, Framer-like transitions, scroll reveals, product storytelling, luxury pacing, and any site where animation should feel intentional rather than generic.",
       "file_count": 3,
-      "bytes": 4732
+      "bytes": 4731
     },
     {
       "name": "motion-performance-qa",
@@ -194,7 +194,7 @@
       "name": "motion-react-microinteractions",
       "description": "Implement refined React and Motion for React microinteractions. Use for buttons, menus, nav, modals, tabs, cards, accordions, layout transitions, reveal wrappers, hover/tap states, mobile menus, and interactive UI that should feel premium without heavy GSAP timelines.",
       "file_count": 3,
-      "bytes": 4154
+      "bytes": 4153
     },
     {
       "name": "motion-react-page-transitions",
@@ -224,13 +224,13 @@
       "name": "nextjs-site-architecture",
       "description": "Structure modern Next.js websites and landing pages. Use for App Router projects, TypeScript, metadata, fonts, images, static pages, route groups, sections, component organization, performance, SEO basics, and production-ready architecture for premium websites.",
       "file_count": 3,
-      "bytes": 4211
+      "bytes": 4210
     },
     {
       "name": "non-generic-web-copy",
       "description": "Write and revise website copy so it feels specific, credible, and non-generic. Use for headlines, subheads, CTAs, navigation, product copy, service copy, luxury/editorial language, testimonials, empty states, forms, pricing, and any website where placeholder marketing or AI-sounding copy would weaken the design.",
       "file_count": 3,
-      "bytes": 4552
+      "bytes": 4551
     },
     {
       "name": "performance-audit-websites",
@@ -278,7 +278,7 @@
       "name": "react-component-craft",
       "description": "Craft polished React components for websites and apps. Use for reusable sections, UI primitives, composition, props, state, responsive behavior, interaction states, accessibility, and avoiding monolithic or brittle frontend implementations.",
       "file_count": 3,
-      "bytes": 4093
+      "bytes": 4092
     },
     {
       "name": "react-error-loading-empty-states",
@@ -314,13 +314,13 @@
       "name": "responsive-visual-polish-qa",
       "description": "Run responsive visual QA and polish for websites and apps. Use after building or editing any frontend to inspect desktop, laptop, tablet, and mobile widths; fix typography, spacing, overlaps, media crops, interactions, motion, forms, canvas rendering, accessibility, and final build quality.",
       "file_count": 3,
-      "bytes": 4388
+      "bytes": 4387
     },
     {
       "name": "section-layout-systems",
       "description": "Design non-generic website section layouts. Use when a page needs alternatives to card grids, bento overuse, generic feature blocks, repetitive centered sections, bland stat strips, or template-like section sequencing.",
       "file_count": 3,
-      "bytes": 4564
+      "bytes": 4563
     },
     {
       "name": "seo-technical-qa",
@@ -338,7 +338,7 @@
       "name": "tailwind-design-tokens",
       "description": "Create token-driven Tailwind and CSS variable systems for premium websites. Use for color tokens, typography tokens, spacing rhythm, radius, shadows, gradients, surfaces, responsive constraints, dark/light modes, and avoiding random utility-class styling.",
       "file_count": 3,
-      "bytes": 4084
+      "bytes": 4083
     },
     {
       "name": "tailwind-responsive-layouts",
@@ -356,7 +356,7 @@
       "name": "ui-primitives-shadcn-lucide",
       "description": "Use shadcn/ui, Radix-style primitives, and lucide-react icons without producing generic default UI. Use for dialogs, menus, accordions, tabs, forms, buttons, toolbars, icons, inputs, and app controls that need accessibility and polished custom styling.",
       "file_count": 3,
-      "bytes": 4194
+      "bytes": 4193
     },
     {
       "name": "ui-screenshot-composition",
@@ -368,7 +368,7 @@
       "name": "visual-assets-direction",
       "description": "Direct website imagery, video, generative visuals, product renders, screenshots, gallery crops, hero media, thumbnails, and visual assets. Use when a site needs real or generated media rather than generic gradients, stock-like backgrounds, placeholder images, or uninspected crops.",
       "file_count": 3,
-      "bytes": 4881
+      "bytes": 4880
     },
     {
       "name": "visual-polish-qa",
@@ -392,7 +392,7 @@
       "name": "web-design-vocabulary",
       "description": "Define vague website taste words as concrete design decisions. Use when prompts include premium, luxury, cinematic, modern, editorial, minimal, polished, brutalist, avant-garde, classy, clean, high-end, professional, Squarespace-like, Framer-like, or any subjective visual adjective that Codex must translate into layout, typography, color, media, and motion rules.",
       "file_count": 3,
-      "bytes": 5328
+      "bytes": 5327
     },
     {
       "name": "web-imagegen-prompting",
@@ -404,25 +404,25 @@
       "name": "web-reference-research",
       "description": "Research and translate website references into reusable design constraints. Use when the user mentions Viktor Oddy, Squarespace, Raycast, Linear, Vercel, Framer, Awwwards, Codrops, luxury sites, cinematic websites, product-led sites, portfolios, or any external web design reference that should influence a build.",
       "file_count": 3,
-      "bytes": 5572
+      "bytes": 5571
     },
     {
       "name": "web-style-director",
       "description": "Choose and enforce a precise art direction for modern websites. Use when the user asks for beautiful, premium, luxury, cinematic, editorial, Squarespace-like, Viktor-style, Framer-like, Raycast-like, Linear-like, Vercel-like, portfolio, product, service, agency, commerce, or brand websites.",
       "file_count": 3,
-      "bytes": 5199
+      "bytes": 5198
     },
     {
       "name": "website-blueprint-first",
       "description": "Create a website blueprint before coding. Use for new sites, redesigns, image-to-site work, premium landing pages, portfolios, brand sites, product sites, and any frontend project where Codex should define pages, sections, assets, tokens, layout, motion, and QA criteria before implementation.",
       "file_count": 3,
-      "bytes": 4735
+      "bytes": 4734
     },
     {
       "name": "website-operating-rules",
       "description": "Apply strict website-building operating rules for any frontend, website, landing page, portfolio, product site, luxury site, Squarespace-like site, modern SaaS/devtool site, or UI build. Use when Codex must inspect first, avoid generic design, explain planned files, run local verification, perform a second visual polish pass, and report tests honestly.",
       "file_count": 3,
-      "bytes": 5664
+      "bytes": 5663
     }
   ],
   "notes": [

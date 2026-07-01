@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Quality Auditor"
+  short_description: "Launch-readiness audit for frontend websites and apps"
+  default_prompt: "Use $frontend-quality-auditor to review this frontend and tell me what must be fixed before launch."
