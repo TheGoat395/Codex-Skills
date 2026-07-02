@@ -1,5 +1,7 @@
 # Codex Premium Website Skills
 
+[![Validate Skills](https://github.com/TheGoat395/Codex-Skills/actions/workflows/validate.yml/badge.svg)](https://github.com/TheGoat395/Codex-Skills/actions/workflows/validate.yml)
+
 An unofficial, open-source Codex skill library for premium frontend, website, and design-engineering workflows.
 
 This repository is prepared around a lean `public-core` collection of 70 skills: design direction, frontend implementation, motion, accessibility, QA, content polish, and maintainer safety.
@@ -40,6 +42,10 @@ examples/premium-website-showcase/gallery/index.html
 The showcase contains nine confirmed local websites and hero/portfolio demos generated through the premium website skill workflow. They are meant to show practical potential: install the skills, provide a prompt/reference/spec, and use the workflow to produce polished local frontend artifacts quickly.
 
 See `DEMOS.md` for the complete list and `INSTALL.md` for local install and preview instructions.
+
+## Share Your Work
+
+Used these skills on a real project? [Open a Showcase issue](https://github.com/TheGoat395/Codex-Skills/issues/new?template=showcase.yml) with the skills used, what changed, and any screenshots, links, or workflow notes that would help others evaluate the library.
 
 ## What This Is
 

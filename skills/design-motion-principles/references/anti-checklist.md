@@ -1,14 +1,14 @@
 # Anti-Checklist
 
-This file is the audit's quality gate. The categories below describe motion patterns to **flag** in audited code — AI-slop tells at the top (where most 2026 motion problems live), followed by perspective-specific anti-patterns from Emil, Jakub, and Jhey, then general motion mistakes and code-shaped red flags. When audited code matches a pattern here, the audit surfaces a finding and the agent generates a per-finding motion suggestion by reading the relevant philosophy reference (`emil-kowalski.md`, `jakub-krehel.md`, `jhey-tompkins.md`).
+This file is the audit's quality gate. The categories below describe motion patterns to **flag** in audited code — AI-generated motion anti-patterns at the top (where many 2026 motion problems live), followed by perspective-specific anti-patterns from Emil, Jakub, and Jhey, then general motion mistakes and code-shaped red flags. When audited code matches a pattern here, the audit surfaces a finding and the agent generates a per-finding motion suggestion by reading the relevant philosophy reference (`emil-kowalski.md`, `jakub-krehel.md`, `jhey-tompkins.md`).
 
 The file frames patterns as "things to flag," not "mistakes to avoid" — language that makes the audit's adversarial posture explicit.
 
 ---
 
-## AI-Slop Motion Patterns
+## AI-Generated Motion Anti-Patterns
 
-These are the recognizable motion fingerprints of AI-generated UIs in 2026. They're not always wrong in isolation — what makes them slop is *frequency* and *uniformity*. Finding one instance is normal polish; finding the same pattern slapped across the codebase is the tell. Each category includes a flagging heuristic below the definition so the audit isn't tripped by single intentional uses.
+These are recognizable motion fingerprints of AI-generated UIs in 2026. They are not always wrong in isolation; what makes them low quality is *frequency* and *uniformity*. Finding one instance is normal polish; finding the same pattern repeated across the codebase is the tell. Each category includes a flagging heuristic below the definition so the audit is not tripped by single intentional uses.
 
 ---
 
@@ -22,7 +22,7 @@ Glowing dots, breathing CTAs, throbbing rings, "live"/"online"/"recording"/"AI a
 - `box-shadow` or `opacity` loops on status icons
 - Tailwind `animate-pulse` on indicator dots or active-state elements
 
-**Heuristic:** Flag *any* instance. Pulsing indicators are almost always slop — the only exception is a single brand element with explicit design rationale stated in code comments or design docs.
+**Heuristic:** Flag *any* instance. Pulsing indicators often signal low-quality generated motion — the only exception is a single brand element with explicit design rationale stated in code comments or design docs.
 
 **Fix lens:** Emil — purposeful restraint. See `references/emil-kowalski.md`.
 
@@ -30,7 +30,7 @@ Glowing dots, breathing CTAs, throbbing rings, "live"/"online"/"recording"/"AI a
 
 ### Blur-everywhere entrances
 
-`filter: blur(Npx)` applied to every entering element on mount — sections, cards, images, paragraphs. Jakub's enter recipe (`opacity + translateY + blur`) is excellent in moderation; AI-slop versions apply it uniformly across the page.
+`filter: blur(Npx)` applied to every entering element on mount — sections, cards, images, paragraphs. Jakub's enter recipe (`opacity + translateY + blur`) is excellent in moderation; low-quality generated versions apply it uniformly across the page.
 
 **Flag when you see:**
 - `initial={{ filter: 'blur(Npx)' }}` or `from { filter: blur(Npx); }` on multiple distinct components in the same view
@@ -45,7 +45,7 @@ Glowing dots, breathing CTAs, throbbing rings, "live"/"online"/"recording"/"AI a
 
 ### Hover-scale-on-everything
 
-`transform: scale(1.0X)` on `:hover` applied to every card, button, and image without intent. The micro-bounce-on-hover feels polished in moderation; AI-slop versions slap it on indiscriminately.
+`transform: scale(1.0X)` on `:hover` applied to every card, button, and image without intent. The micro-bounce-on-hover feels polished in moderation; low-quality generated versions apply it indiscriminately.
 
 **Flag when you see:**
 - `transition` rules with `transform: scale(1.0X)` on `:hover` across multiple card/button/image components
@@ -60,7 +60,7 @@ Glowing dots, breathing CTAs, throbbing rings, "live"/"online"/"recording"/"AI a
 
 ### Stagger-spam-on-every-list
 
-`stagger`, `staggerChildren`, or hand-rolled `animation-delay: calc(var(--i) * 50ms)` patterns applied to every list, grid, or repeated-element block. Jhey-style stagger on a deliberate moment is delightful; AI-slop spreads it across every list as default polish.
+`stagger`, `staggerChildren`, or hand-rolled `animation-delay: calc(var(--i) * 50ms)` patterns applied to every list, grid, or repeated-element block. Jhey-style stagger on a deliberate moment is delightful; low-quality generated motion spreads it across every list as default polish.
 
 **Flag when you see:**
 - `staggerChildren` in framer-motion `variants` across multiple list components
@@ -97,7 +97,7 @@ Identical `opacity + translateY` (with or without blur) enter animations applied
 - `whileInView` with identical viewport options applied to every block on a page
 - CSS keyframes with generic names (`fadeInUp`, `enter`, `reveal`) attached to many selectors
 
-**Heuristic:** Flag when ≥4 distinct components share identical enter animations (same opacity, same translateY, same duration, same easing). Three is acceptable polish baseline; four is uniformity slop.
+**Heuristic:** Flag when ≥4 distinct components share identical enter animations (same opacity, same translateY, same duration, same easing). Three is acceptable polish baseline; four is a uniformity problem.
 
 **Fix lens:** Jakub — selective polish with hierarchy. See `references/jakub-krehel.md`.
 
