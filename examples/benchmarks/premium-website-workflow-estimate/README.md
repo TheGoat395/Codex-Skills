@@ -17,12 +17,12 @@ Create a polished local website, landing page, hero section, or portfolio from a
 ## Representative Skills
 
 - `anti-generic-website-review`
-- `website-blueprint-planner`
+- `website-blueprint-first`
 - `hero-image-art-direction`
 - `editorial-typography-systems`
 - `color-material-lighting-direction`
 - `modern-site-engineering`
-- `responsive-layout-polish`
+- `responsive-visual-polish-qa`
 - `animation-tool-router`
 - `animation-jank-qa`
 - `accessibility-audit-websites`
@@ -66,3 +66,9 @@ The strongest expected gains come from adding disciplined workflow stages around
 6. document verification, limitations, and handoff notes
 
 Those stages target common failure points in AI-assisted frontend work.
+
+## Evidence Status
+
+This document is a workflow impact estimate, not a completed measured benchmark. It should be read alongside the proof-of-output showcase in `examples/premium-website-showcase/` and the measured benchmark template in `examples/benchmarks/measured-premium-website-template/`.
+
+Measured results should include the same prompt, a baseline run, a skill-assisted run, saved screenshots or recordings, verification notes, and the scoring rubric from `BENCHMARKS.md`.

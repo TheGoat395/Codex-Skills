@@ -2,6 +2,8 @@
 
 These demos are proof-of-output examples for the Codex Premium Website Skills library. They are not generic templates. They show the kind of polished local websites, hero sections, landing pages, and portfolios the skill collection is meant to help produce quickly from prompts, references, specs, and iterative QA.
 
+These artifacts are visual evidence of output quality. They are not presented as controlled baseline-vs-skill-assisted benchmark results; measured comparisons should use `../benchmarks/measured-premium-website-template/`.
+
 ## How to preview locally
 
 Clone the repository, then open the gallery:

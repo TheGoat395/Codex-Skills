@@ -1,6 +1,6 @@
 ---
 name: design-motion-principles
-description: "Motion and interaction design expert based on Emil Kowalski, Jakub Krehel, and Jhey Tompkins' techniques. Two modes — build interactive components with purposeful motion, or audit existing animations to catch AI-generated motion anti-patterns (audit emits a branded HTML report with looping demos). Use when creating, adding, animating, or reviewing UI motion: transitions, hover states, micro-interactions, enter/exit animations, or any motion design work in React, Framer Motion, CSS, or HTML. Provides per-designer perspectives with context-aware weighting."
+description: "Motion and interaction design skill using interpretive lenses informed by publicly available work from Emil Kowalski, Jakub Krehel, and Jhey Tompkins. Two modes: build interactive components with purposeful motion, or audit existing animations to catch AI-generated motion anti-patterns. Use when creating, adding, animating, or reviewing UI motion: transitions, hover states, micro-interactions, enter/exit animations, or motion design work in React, Framer Motion, CSS, or HTML. This skill is not authored, reviewed, or endorsed by the referenced designers."
 ---
 
 # Design Motion Principles
@@ -32,13 +32,13 @@ Otherwise ask in plain text: "Should I build/improve the motion (Create mode), o
 
 ---
 
-## The Three Designers
+## Public Reference Lenses
 
 - **Emil Kowalski** (Linear, ex-Vercel) — Restraint, speed, purposeful motion. Best for productivity tools.
 - **Jakub Krehel** (jakub.kr) — Subtle production polish, professional refinement. Best for shipped consumer apps.
 - **Jhey Tompkins** (@jh3yy) — Playful experimentation, CSS innovation. Best for creative sites, kids apps, portfolios.
 
-> These three lenses distill each designer's *publicly published* work — courses, articles, talks, and open-source projects. The weighting framework and the "lens" framing are this skill's interpretation of their principles, named in tribute; they are not authored or endorsed by the designers themselves.
+> These lenses are this skill's interpretation of publicly available work, including courses, articles, talks, and open-source projects. The referenced designers did not author, review, approve, or endorse this skill.
 
 Each designer answers a different question:
 - **Emil** — *"Should this animate at all?"*

@@ -63,6 +63,7 @@ The repo includes:
 
 - a proof-of-output showcase under `examples/premium-website-showcase/`
 - a workflow impact estimate under `examples/benchmarks/`
+- a measured benchmark template under `examples/benchmarks/measured-premium-website-template/`
 - benchmark scoring criteria for future measured runs
 
 A measured baseline-vs-skill-assisted benchmark is the next evidence upgrade.
