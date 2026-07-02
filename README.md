@@ -1,6 +1,7 @@
 # Codex Premium Website Skills
 
 [![Validate Skills](https://github.com/TheGoat395/Codex-Skills/actions/workflows/validate.yml/badge.svg)](https://github.com/TheGoat395/Codex-Skills/actions/workflows/validate.yml)
+[![Latest Release](https://img.shields.io/github/v/release/TheGoat395/Codex-Skills?label=release)](https://github.com/TheGoat395/Codex-Skills/releases/latest)
 
 An unofficial, open-source Codex skill library for premium frontend, website, and design-engineering workflows.
 
@@ -30,6 +31,8 @@ For a smaller first install:
 ```bash
 python3 scripts/install_skills.py --collection taste-and-build-gates
 ```
+
+Prefer a packaged archive? Download the latest release from [GitHub Releases](https://github.com/TheGoat395/Codex-Skills/releases/latest), extract it, then run the same install commands from the extracted folder.
 
 ## Premium Website Showcase
 

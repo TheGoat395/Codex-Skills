@@ -1,0 +1,6 @@
+# Keep generated showcase output from dominating GitHub language stats.
+examples/premium-website-showcase/demos/** linguist-generated=true
+examples/premium-website-showcase/gallery/** linguist-generated=true
+examples/cinematic-site-benchmarks/** linguist-generated=true
+
+*.zip binary
