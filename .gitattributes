@@ -3,4 +3,7 @@ examples/premium-website-showcase/demos/** linguist-generated=true
 examples/premium-website-showcase/gallery/** linguist-generated=true
 examples/cinematic-site-benchmarks/** linguist-generated=true
 
+# Treat HTML reference templates as documentation assets, not implementation language.
+skills/**/references/*.html linguist-documentation=true
+
 *.zip binary
