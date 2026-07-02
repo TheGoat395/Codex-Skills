@@ -4,6 +4,8 @@ This repository includes a local proof-of-output gallery at `examples/premium-we
 
 These sites were produced as demonstrations of the Codex Premium Website Skills workflow: prompt/reference/spec in, polished local frontend artifact out.
 
+They are proof-of-output artifacts, not controlled baseline-vs-skill-assisted benchmark results. For measured comparisons, use `examples/benchmarks/measured-premium-website-template/`.
+
 ## Local preview
 
 Open this file after cloning the repo:

@@ -50,6 +50,8 @@ See `DEMOS.md` for the complete list and `INSTALL.md` for local install and prev
 
 Used these skills on a real project? [Open a Showcase issue](https://github.com/TheGoat395/Codex-Skills/issues/new?template=showcase.yml) with the skills used, what changed, and any screenshots, links, or workflow notes that would help others evaluate the library.
 
+For stronger evidence, submit a measured benchmark using `examples/benchmarks/measured-premium-website-template/`.
+
 ## What This Is
 
 - A domain-specific Codex skill pack for modern website and app work.
@@ -76,6 +78,7 @@ Used these skills on a real project? [Open a Showcase issue](https://github.com/
 - `examples/premium-website-showcase/` contains the local proof-of-output gallery and demo preview files.
 - `DEMOS.md` documents the confirmed demo set and local preview paths.
 - `INSTALL.md` gives a compact install and demo-preview flow.
+- `MAINTAINERS.md`, `docs/maintainer-workflow.md`, and `docs/usage-signals.md` document release checks, evidence levels, and public usage signals.
 
 ## Install
 
@@ -148,7 +151,7 @@ The root `LICENSE` covers original repository packaging, docs, scripts, and skil
 
 The goal is not to claim that more skills automatically make better output. The goal is to show measurable workflow improvement. Benchmarks should compare the same task with and without selected skill collections, including screenshots, build logs, accessibility checks, browser QA notes, and final code links.
 
-Use `BENCHMARKS.md` and `examples/README.md` as the reporting template.
+Use `BENCHMARKS.md`, `examples/README.md`, and `examples/benchmarks/measured-premium-website-template/` as the reporting template.
 
 ## Open Source Positioning
 
