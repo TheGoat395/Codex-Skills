@@ -1,6 +1,6 @@
 ---
 name: design-motion-principles
-description: "Motion and interaction design expert based on Emil Kowalski, Jakub Krehel, and Jhey Tompkins' techniques. Two modes — build interactive components with purposeful motion, or audit existing animations to catch AI-slop motion patterns (audit emits a branded HTML report with looping demos). Use when creating, adding, animating, or reviewing UI motion: transitions, hover states, micro-interactions, enter/exit animations, or any motion design work in React, Framer Motion, CSS, or HTML. Provides per-designer perspectives with context-aware weighting."
+description: "Motion and interaction design expert based on Emil Kowalski, Jakub Krehel, and Jhey Tompkins' techniques. Two modes — build interactive components with purposeful motion, or audit existing animations to catch AI-generated motion anti-patterns (audit emits a branded HTML report with looping demos). Use when creating, adding, animating, or reviewing UI motion: transitions, hover states, micro-interactions, enter/exit animations, or any motion design work in React, Framer Motion, CSS, or HTML. Provides per-designer perspectives with context-aware weighting."
 ---
 
 # Design Motion Principles
@@ -105,7 +105,7 @@ Every animation — generated in Create mode or reviewed in Audit mode — must 
 | [Motion Cookbook](references/motion-cookbook.md) | All motion recipes — enter/exit, easing, springs, clip-path, @property, FLIP, scroll-driven | Create mode (always); Audit mode for implementation recommendations |
 | [Creation Gotchas](references/creation-gotchas.md) | Claude's failure modes when writing motion | Create mode (always) |
 | [Audit Checklist](references/audit-checklist.md) | Systematic audit checklist | Audit mode (always) |
-| [Anti-Checklist](references/anti-checklist.md) | Quality gate — AI-slop motion categories + anti-patterns to flag | Audit mode (always) |
+| [Anti-Checklist](references/anti-checklist.md) | Quality gate — AI-generated motion anti-pattern categories and motion issues to flag | Audit mode (always) |
 | [Emil Kowalski](references/emil-kowalski.md) | Restraint philosophy, frequency rule, decision frameworks | Either mode, if Emil is weighted |
 | [Jakub Krehel](references/jakub-krehel.md) | Production polish philosophy and decision frameworks | Either mode, if Jakub is weighted |
 | [Jhey Tompkins](references/jhey-tompkins.md) | Playful experimentation philosophy and frameworks | Either mode, if Jhey is weighted |

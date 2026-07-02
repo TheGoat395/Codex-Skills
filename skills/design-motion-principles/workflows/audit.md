@@ -8,7 +8,7 @@ Read as you reach each step (not all upfront):
 1. `references/audit-checklist.md` — your systematic guide (STEP 2)
 2. The weighted designer file(s) — `emil-kowalski.md`, `jakub-krehel.md`, `jhey-tompkins.md` (STEP 2)
 3. `references/accessibility.md` — mandatory every audit (STEP 2)
-4. `references/anti-checklist.md` — the quality gate: AI-slop motion categories + anti-patterns to flag (STEP 2)
+4. `references/anti-checklist.md` — the quality gate: AI-generated motion anti-pattern categories and motion issues to flag (STEP 2)
 5. `references/output-format.md` — the report template, HTML mode + terminal mode (STEP 3)
 6. `references/demo-shell.html` — the demo-card template for HTML-mode per-finding demos (STEP 3)
 
@@ -115,7 +115,7 @@ Based on your context weighting, read the relevant designer files:
 
 ### 2c. Read Topical References as Needed
 - **Read `references/accessibility.md`** — MANDATORY. Always check for prefers-reduced-motion. No exceptions.
-- **Read `references/anti-checklist.md`** — Apply this as the audit's quality gate. AI-slop categories at the top (pulsing indicators, hover-scale-on-everything, stagger-spam, etc.) trigger findings; perspective-specific and general anti-patterns sit below. Each category includes a frequency heuristic so single intentional uses don't trip the gate.
+- **Read `references/anti-checklist.md`** — Apply this as the audit's quality gate. AI-generated motion anti-pattern categories at the top (pulsing indicators, hover-scale-on-everything, stagger-spam, etc.) trigger findings; perspective-specific and general anti-patterns sit below. Each category includes a frequency heuristic so single intentional uses don't trip the gate.
 - **Read `references/performance.md`** — If you see complex animations, check for GPU optimization issues
 - **Read `references/motion-cookbook.md`** — Reference when making specific implementation recommendations (the recommended fix code, including the per-finding demo motion in HTML mode)
 
@@ -183,7 +183,7 @@ Common failure modes during HTML report generation. Most break silently or only 
 - **Don't redefine the shell's CSS variables.** Per-finding code uses `var(--bg)`, `var(--fg)`, `var(--border)`, `var(--accent)`, `var(--loop-dim)`, `var(--sans)`, `var(--mono)`. Hard-coding colors or fonts breaks dark mode and typography consistency.
 - **Don't write per-finding overrides inside the `prefers-reduced-motion` block.** The shell's guard collapses all `[class*="__motion-target"]` animations. Make the `@keyframes` 100% state match the motion-target's default static rendering instead.
 - **Don't include demo cards for Opportunities.** Demos are reserved for Critical and Important. Surface Opportunities in text only.
-- **Don't animate the report itself.** No entrance, scroll, or mount animations on the report chrome — only the demo cards animate. Animating the report reproduces the AI-slop patterns the audit exists to catch.
+- **Don't animate the report itself.** No entrance, scroll, or mount animations on the report chrome — only the demo cards animate. Animating the report reproduces the AI-generated motion anti-patterns the audit exists to catch.
 - **Don't write to cwd if `git rev-parse --show-toplevel` succeeds.** The report goes to `{project-root}/motion-audits/`. Only fall back to cwd when git returns nonzero.
 - **Don't abort the audit if browser-open fails.** A non-zero exit code is a "no default handler" condition, not an error. Print the path and continue.
 - **Don't modify `.gitignore`.** The skill never touches it. The user adds `motion-audits/` themselves if they want.
@@ -197,7 +197,7 @@ Common failure modes during HTML report generation. Most break silently or only 
 - [ ] Motion gap analysis run — conditional renders checked for missing animation
 - [ ] Weighting proposed and confirmed by the user
 - [ ] Audit checklist worked through systematically
-- [ ] Anti-checklist applied — AI-slop categories checked against the codebase
+- [ ] Anti-checklist applied — AI-generated motion anti-pattern categories checked against the codebase
 - [ ] Accessibility checked — prefers-reduced-motion verified (mandatory)
 - [ ] HTML report written to `motion-audits/`, opened in browser, 3-line summary printed (or terminal-mode report rendered inline when flagged)
 - [ ] Report follows output-format.md with full per-lens sections; Critical + Important findings have looping demo cards

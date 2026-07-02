@@ -74,7 +74,7 @@ The global toggle's visual control is a segmented `Dark / Light` pill, top-right
 
 ### The report's motion posture
 
-**The report itself has no entrance, scroll, or mount animation.** No staggered reveals. No fade-in-on-scroll. No motion on mount outside the demo cards. The demo cards are the only animated elements in the document — anything else would reproduce the AI-slop patterns this skill audits against.
+**The report itself has no entrance, scroll, or mount animation.** No staggered reveals. No fade-in-on-scroll. No motion on mount outside the demo cards. The demo cards are the only animated elements in the document — anything else would reproduce the AI-generated motion anti-patterns this skill audits against.
 
 The one allowed transition: `border-color 0.2s ease` on lens-table rows and finding-rows for hover feedback. That's it.
 

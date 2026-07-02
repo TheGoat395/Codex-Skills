@@ -1,0 +1,12 @@
+# Changelog
+
+All notable changes to Codex Premium Website Skills are documented here.
+
+## [0.1.0] - 2026-07-02
+
+- Initial public release of the curated 70-skill public core.
+- Added eight installable collections for design direction, frontend implementation, QA, motion, content, and maintainer safety workflows.
+- Added the local installer with dry-run, selected-collection, and replace-with-backup behavior.
+- Added the premium website showcase gallery with nine local demo previews.
+- Added public quality, security, benchmark, contribution, and community-health documentation.
+- Added automated skill validation through GitHub Actions.
