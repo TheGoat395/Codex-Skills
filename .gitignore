@@ -1,3 +1,5 @@
 .DS_Store
+__MACOSX/
 __pycache__/
 *.pyc
+/skills.zip
