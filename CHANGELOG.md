@@ -2,6 +2,15 @@
 
 All notable changes to Codex Premium Website Skills are documented here.
 
+## [0.1.1] - 2026-07-02
+
+- Added `EVIDENCE.md` to summarize proof-of-output, workflow estimates, benchmark readiness, and evidence status.
+- Added maintainer workflow, usage-signal, and measured benchmark template documentation.
+- Improved install documentation for clone-based and release-archive usage.
+- Corrected stale benchmark skill references.
+- Refined public attribution language in `design-motion-principles`.
+- Added repository hygiene for release artifacts and GitHub language classification.
+
 ## [0.1.0] - 2026-07-02
 
 - Initial public release of the curated 70-skill public core.
