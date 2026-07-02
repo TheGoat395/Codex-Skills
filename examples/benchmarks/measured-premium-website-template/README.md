@@ -5,8 +5,8 @@ This template is for a controlled baseline-vs-skill-assisted benchmark. It is in
 ## Status
 
 - Type: measured benchmark template
-- Result status: pending measured run
-- Evidence level: scaffold only
+- Result status: awaiting first measured run
+- Evidence level: benchmark-ready template
 
 ## Test Prompt
 
@@ -59,12 +59,12 @@ Use the rubric in `BENCHMARKS.md`.
 
 | Category | Baseline Score | Skill-Assisted Score | Notes |
 |---|---:|---:|---|
-| Visual direction | TBD | TBD | TBD |
-| Content quality | TBD | TBD | TBD |
-| Frontend implementation | TBD | TBD | TBD |
-| Motion and interaction | TBD | TBD | TBD |
-| Accessibility | TBD | TBD | TBD |
-| QA and handoff | TBD | TBD | TBD |
+| Visual direction | Pending run | Pending run | Record brand fit, originality, hierarchy, and composition. |
+| Content quality | Pending run | Pending run | Record specificity, IA clarity, CTA quality, and filler reduction. |
+| Frontend implementation | Pending run | Pending run | Record structure, responsiveness, maintainability, and build health. |
+| Motion and interaction | Pending run | Pending run | Record intent, jank, reduced-motion support, and interaction states. |
+| Accessibility | Pending run | Pending run | Record keyboard behavior, labels, headings, contrast, and reduced motion. |
+| QA and handoff | Pending run | Pending run | Record browser checks, commands, limitations, and delivery notes. |
 
 ## Evidence Checklist
 
