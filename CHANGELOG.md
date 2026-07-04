@@ -2,6 +2,14 @@
 
 All notable changes to Codex Premium Website Skills are documented here.
 
+## [0.1.2] - 2026-07-03
+
+- Added `COMPATIBILITY.md` with Codex, Claude Code, Cursor, Gemini CLI, and generic `SKILL.md` support levels.
+- Added `CATALOG.md` as a cleaner audience-facing map of collections and high-value skills.
+- Added `adapters/` documentation for Claude Code, Cursor project rules, and Gemini CLI context files.
+- Added Cursor and Gemini CLI adapter files for project-level use.
+- Updated README, evidence, docs, and usage-signal guidance for broader agent ecosystem adoption.
+
 ## [0.1.1] - 2026-07-02
 
 - Added `EVIDENCE.md` to summarize proof-of-output, workflow estimates, benchmark readiness, and evidence status.

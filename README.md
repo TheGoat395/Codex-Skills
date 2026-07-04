@@ -3,11 +3,24 @@
 [![Validate Skills](https://github.com/TheGoat395/Codex-Skills/actions/workflows/validate.yml/badge.svg)](https://github.com/TheGoat395/Codex-Skills/actions/workflows/validate.yml)
 [![Latest Release](https://img.shields.io/github/v/release/TheGoat395/Codex-Skills?label=release)](https://github.com/TheGoat395/Codex-Skills/releases/latest)
 
-An unofficial, open-source Codex skill library for premium frontend, website, and design-engineering workflows.
+An unofficial, open-source, Codex-first Agent Skills library for premium frontend, website, and design-engineering workflows.
 
 This repository is prepared around a lean `public-core` collection of 70 skills: design direction, frontend implementation, motion, accessibility, QA, content polish, and maintainer safety.
 
 ![Codex Skills modular capabilities visualized](assets/codex_skills_modular_capabilities_visualized.png)
+
+## Works With
+
+Built for Codex first. Portable to Agent Skills-compatible workflows and adaptable for Claude Code, Cursor, and Gemini CLI.
+
+| Tool | Support Level | Path |
+|---|---|---|
+| Codex | Native supported | `scripts/install_skills.py` |
+| Claude Code | Native-compatible `SKILL.md` folders | `adapters/claude-code/` |
+| Cursor | Project rules adapter | `adapters/cursor/` |
+| Gemini CLI | Project context adapter | `adapters/gemini-cli/` |
+
+See `COMPATIBILITY.md` for support levels and setup notes.
 
 ## Quick Start
 
@@ -55,6 +68,7 @@ For stronger evidence, submit a measured benchmark using `examples/benchmarks/me
 ## What This Is
 
 - A domain-specific Codex skill pack for modern website and app work.
+- A Codex-first skill library with adapter paths for Claude Code, Cursor, and Gemini CLI workflows.
 - A curated public core, not a loose dump of every local skill.
 - A practical toolkit for React, Next.js, Tailwind, GSAP/Motion, QA, copy, accessibility, source research, and visual polish.
 - A repo designed to be inspected, installed selectively, benchmarked, and improved in public.
@@ -70,6 +84,9 @@ For stronger evidence, submit a measured benchmark using `examples/benchmarks/me
 ## Repository Contents
 
 - `skills/` contains individual Codex skill folders.
+- `COMPATIBILITY.md` documents Codex, Claude Code, Cursor, and Gemini CLI usage paths.
+- `CATALOG.md` gives a cleaner audience-facing map of collections and high-value skills.
+- `adapters/` contains Claude Code, Cursor, and Gemini CLI adapter guidance.
 - `curated_collections.json` defines the default 70-skill public core and smaller installable subcollections.
 - `scripts/install_skills.py` installs `public-core` by default or selected collections with `--collection`.
 - `THIRD_PARTY_NOTICES.md` records license and notice expectations for the public core.
@@ -128,7 +145,7 @@ After installing, start a new Codex conversation so skill discovery refreshes.
 - `content-conversion-core`: copy, IA, CTA language, conversion polish, proof.
 - `maintainer-safety-core`: checkpoint, undo/revert, install-safety review.
 
-See `CURATED_COLLECTIONS.md` for the full map.
+See `CATALOG.md` for the audience-facing catalog and `CURATED_COLLECTIONS.md` for the full map.
 
 ## Quality Bar
 

@@ -31,6 +31,15 @@ python3 scripts/install_skills.py --list-collections
 
 After installing, start a new Codex conversation so skill discovery refreshes.
 
+## Other agent environments
+
+For Claude Code, Cursor, Gemini CLI, and generic `SKILL.md` agent workflows, see:
+
+```text
+COMPATIBILITY.md
+adapters/
+```
+
 ## Install from a release archive
 
 If you prefer not to clone the repository, download the latest packaged archive from:
