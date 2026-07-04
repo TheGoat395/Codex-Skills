@@ -1,0 +1,56 @@
+---
+description: Apply Codex Premium Website Skills standards to frontend, website, motion, accessibility, QA, and handoff work.
+globs:
+  - "**/*.{ts,tsx,js,jsx,css,scss,html,md,mdx,json}"
+alwaysApply: false
+---
+
+# Codex Premium Website Skills Rules
+
+Use these rules when building or reviewing websites, landing pages, portfolios, product UI, frontend components, motion systems, or launch-ready web experiences.
+
+## Operating Standard
+
+- Read the brief before building.
+- Infer audience, product category, visual tone, content needs, and interaction depth.
+- Make the first viewport visually decisive.
+- Avoid generic AI website patterns: centered hero plus three feature cards, vague SaaS copy, decorative blobs, weak buttons, placeholder testimonials, fake metrics, and random gradients.
+- Prefer concrete design decisions over vague adjectives.
+
+## Design Direction
+
+- Establish a clear visual direction before implementation.
+- Use typography, spacing, color, imagery, material, and layout as a coherent system.
+- Use visual assets when the subject benefits from them.
+- Keep mobile layouts intentionally composed, not merely stacked.
+- Avoid one-note palettes and unsupported decorative effects.
+
+## Frontend Implementation
+
+- Follow the project's existing framework and conventions.
+- Prefer project-local dependencies.
+- Use semantic structure, accessible controls, responsive constraints, and maintainable components.
+- Add stable dimensions for fixed-format UI elements so states do not shift layout.
+- Keep text readable and prevent overflow at common viewport sizes.
+
+## Motion
+
+- Use motion to clarify sequence, depth, focus, state, or tactility.
+- Respect `prefers-reduced-motion`.
+- Prefer CSS for simple state transitions, Motion for React state/layout transitions, and GSAP only when timeline or scroll choreography needs it.
+- Avoid janky scroll listeners and unnecessary animation on frequent or keyboard-driven actions.
+
+## QA And Handoff
+
+- Inspect rendered output when frontend changes matter.
+- Check desktop and mobile viewports.
+- Check console/network errors when possible.
+- Verify focus states, labels, contrast, reduced motion, and responsive media.
+- End with changed files, commands run, checks passed, checks not run, known limitations, and next risks.
+
+## Safety
+
+- Preserve user work.
+- Avoid destructive edits unless explicitly requested.
+- Create a checkpoint or clear rollback path before risky changes.
+- Do not invent proof, metrics, testimonials, logos, or unsupported claims.

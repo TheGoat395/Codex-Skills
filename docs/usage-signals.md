@@ -13,6 +13,7 @@ This document explains which public actions help future users and reviewers unde
 | Open a Bug Report issue | Helps improve installer, docs, safety, or skill behavior. |
 | Submit a benchmark PR | Adds controlled evidence of value. |
 | Submit a focused improvement PR | Shows community contribution beyond passive interest. |
+| Submit an adapter improvement | Shows the library is useful beyond one agent environment. |
 
 ## Clone-Based Install
 
@@ -61,3 +62,13 @@ Useful benchmark submissions include:
 - build/lint/test/browser QA notes
 - scoring table from `BENCHMARKS.md`
 - honest limitations
+
+## Adapter Feedback
+
+Users of Claude Code, Cursor, and Gemini CLI can help by opening issues or PRs with:
+
+- which adapter they used
+- what project type they tested it on
+- what worked clearly
+- what wording was confusing
+- what tool-specific setup should be improved

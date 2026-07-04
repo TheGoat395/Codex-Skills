@@ -8,6 +8,7 @@ This repository is an unofficial open-source Codex skill library. Its evidence i
 |---|---|---|
 | Public skill core | Complete public core of 70 installable skills. | `skills/`, `curated_collections.json`, `SKILL_INVENTORY.md` |
 | Installer safety | Dry-run support, collection selection, default skip behavior, and backup-on-replace behavior. | `scripts/install_skills.py`, `INSTALL.md` |
+| Ecosystem compatibility | Codex-native install plus Claude Code, Cursor, and Gemini CLI adapter paths. | `COMPATIBILITY.md`, `adapters/` |
 | Proof-of-output gallery | Nine checked-in local frontend demos showing the type of output the workflow is meant to support. | `DEMOS.md`, `examples/premium-website-showcase/` |
 | Workflow impact estimate | Category-level estimate of expected improvements and risks based on skill coverage. | `examples/benchmarks/premium-website-workflow-estimate/` |
 | Measured benchmark readiness | Controlled baseline-vs-skill-assisted benchmark template is ready for first measured submissions. | `examples/benchmarks/measured-premium-website-template/` |
@@ -35,6 +36,7 @@ Based on the current public core, the strongest expected gains are:
 - clearer motion/tooling decisions
 - more systematic final handoff notes
 - safer install and maintainer workflows
+- broader reuse through Claude Code, Cursor, and Gemini CLI adapter paths
 
 This is an assessment of expected workflow impact, not a completed controlled benchmark.
 
