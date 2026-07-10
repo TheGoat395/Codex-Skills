@@ -63,6 +63,68 @@ Useful benchmark submissions include:
 - scoring table from `BENCHMARKS.md`
 - honest limitations
 
+## GitHub Analytics Snapshot
+
+This is an owner-only GitHub Insights snapshot recorded on 2026-07-10. It is a dated observation, not a lifetime guarantee.
+
+### Public Repository Surface
+
+| Metric | Value |
+|---|---:|
+| Public skills | 70 |
+| Curated collections | 8 |
+| Showcase demos | 9 demos plus 9 demo archives |
+| Stars | 104 |
+| Public forks | 46 |
+| Network count | 46 |
+| Subscribers | 0 |
+| Open issues | 0 |
+| Pull requests | 1 total, merged |
+| Contributors | 1 GitHub contributor |
+| Commits | 61 |
+| Releases | 3: `v0.1.0`, `v0.1.1`, `v0.1.2` |
+| Release asset downloads | 7 total: 6, 1, and 0 |
+| License | MIT |
+| Topics | 15 |
+
+### Traffic, June 26-July 9
+
+| Metric | Value |
+|---|---:|
+| Clones | 796 |
+| Unique cloners | 119 |
+| Views | 111 |
+| Unique visitors | 49 |
+
+Daily clone events were `17, 17, 8, 7, 25, 182, 136, 77, 47, 32, 150, 6, 10, 82` across the 14-day window. Daily unique cloners were `4, 2, 3, 1, 5, 36, 31, 13, 14, 11, 11, 6, 7, 4`. Referrers were GitHub: 79 views / 37 unique, Yandex: 6 / 1, and Perplexity: 1 / 1.
+
+The native dashboard does not expose lifetime traffic totals. The available snapshots support the following derived view:
+
+| Derived launch-to-July-9 signal | Value | Confidence |
+|---|---:|---|
+| Clone events | Approximately 1,298 | High: 1,018 through July 4 plus 280 non-overlapping events from July 5-9 |
+| Distinct cloner bound | 269-308 | High as a bound: 269 observed in the earlier window, plus at most 39 new daily unique observations from July 5-9 |
+| Working distinct-cloner estimate | Approximately 280-300 | Moderate: modeled within the observed bound because daily and rolling-window uniques can repeat |
+
+Clone events are not people. The working distinct-cloner estimate is not a GitHub lifetime metric and should always be presented as an estimate. The available evidence does not support a claim of more than 400 unique cloners.
+
+### Activity and Automation
+
+| Dashboard | Snapshot |
+|---|---|
+| Actions runs | 10 total, 10 successful, 0 failed |
+| Actions usage | 10 minutes, 10 job runs, one job per run |
+| Actions performance | 6s average runtime, 2s average queue, 0% failure rate |
+| Pulse, July 3-July 10 | 1 commit, 1 release, 14 files changed, 486 additions, 2 deletions |
+| Active work in Pulse window | 0 active PRs, 0 active issues, 0 new/closed issues |
+| Contributors dashboard | 61 commits, 65,798 additions, 49,903 deletions |
+| Weekly commit activity | 49 commits in week of June 21, 12 in week of June 28, 0 in week of July 5 |
+| Code frequency | June 21: +64,367/-480; June 28: +1,431/-49,423; July 5: 0/0 |
+
+### Security and Dependency Baseline
+
+At the time of the snapshot, the security policy and advisories were enabled, the dependency graph was enabled with two Actions dependencies, Discussions were disabled, Dependabot alerts were disabled, private vulnerability reporting was disabled, secret scanning was disabled, and code scanning still needed setup. Discussions remain intentionally disabled because they are not required for the current contribution flow.
+
 ## Adapter Feedback
 
 Users of Claude Code, Cursor, and Gemini CLI can help by opening issues or PRs with:

@@ -1,12 +1,14 @@
 # Measured Benchmark Template: Premium Website Workflow
 
-This template is for a controlled baseline-vs-skill-assisted benchmark. It is intentionally empty of results until a real run is completed.
+This template is the reusable protocol for controlled baseline-vs-skill-assisted benchmarks.
+
+Completed examples are available at [`runs/2026-07-10-atlas/`](runs/2026-07-10-atlas/) and [`runs/2026-07-10-signal-matter/`](runs/2026-07-10-signal-matter/). Keep this file as the reusable protocol for future tasks.
 
 ## Status
 
 - Type: measured benchmark template
-- Result status: awaiting first measured run
-- Evidence level: benchmark-ready template
+- Result status: reusable after two completed runs
+- Evidence level: measured examples plus reusable template
 
 ## Test Prompt
 

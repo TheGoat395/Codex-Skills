@@ -63,7 +63,8 @@ The repo includes:
 
 - a proof-of-output showcase under `examples/premium-website-showcase/`
 - a workflow impact estimate under `examples/benchmarks/`
-- a measured benchmark template under `examples/benchmarks/measured-premium-website-template/`
-- benchmark scoring criteria for future measured runs
+- two measured runs plus a reusable protocol under `examples/benchmarks/measured-premium-website-template/`
+- saved baseline and skill-assisted outputs, explicit limitations, desktop/mobile screenshots, and raw Chromium QA results
+- benchmark scoring criteria for future measured runs and outside submissions
 
-A measured baseline-vs-skill-assisted benchmark is the next evidence upgrade.
+The next evidence upgrade is an independently submitted showcase, benchmark, or focused improvement pull request.

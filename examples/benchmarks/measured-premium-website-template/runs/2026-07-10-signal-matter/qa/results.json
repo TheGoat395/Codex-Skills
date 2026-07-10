@@ -1,0 +1,278 @@
+[
+  {
+    "condition": "baseline",
+    "viewport": {
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 1000
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "failedRequests": [],
+    "metrics": {
+      "title": "SIGNAL / MATTER — Sound is architecture",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "canvas": {
+        "width": 631,
+        "height": 618,
+        "sampledColors": 5
+      },
+      "heroBottom": 972,
+      "nextTop": 972,
+      "nextVisibleAtFold": true,
+      "headingCount": 8,
+      "landmarkCount": 9
+    },
+    "menuCheck": null,
+    "motionCheck": {
+      "pressed": "true",
+      "label": "Resume motion"
+    }
+  },
+  {
+    "condition": "baseline",
+    "viewport": {
+      "name": "desktop-1280",
+      "width": 1280,
+      "height": 900
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "metrics": {
+      "title": "SIGNAL / MATTER — Sound is architecture",
+      "overflow": false,
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "canvas": {
+        "width": 561,
+        "height": 618,
+        "sampledColors": 4
+      },
+      "heroBottom": 872,
+      "nextTop": 872,
+      "nextVisibleAtFold": true,
+      "headingCount": 8,
+      "landmarkCount": 9
+    },
+    "menuCheck": null,
+    "motionCheck": {
+      "pressed": "true",
+      "label": "Resume motion"
+    }
+  },
+  {
+    "condition": "baseline",
+    "viewport": {
+      "name": "tablet-900",
+      "width": 900,
+      "height": 1100
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "metrics": {
+      "title": "SIGNAL / MATTER — Sound is architecture",
+      "overflow": false,
+      "scrollWidth": 900,
+      "innerWidth": 900,
+      "canvas": {
+        "width": 418,
+        "height": 556,
+        "sampledColors": 5
+      },
+      "heroBottom": 1072,
+      "nextTop": 1072,
+      "nextVisibleAtFold": true,
+      "headingCount": 8,
+      "landmarkCount": 9
+    },
+    "menuCheck": null,
+    "motionCheck": {
+      "pressed": "true",
+      "label": "Resume motion"
+    }
+  },
+  {
+    "condition": "baseline",
+    "viewport": {
+      "name": "mobile-390",
+      "width": 390,
+      "height": 844
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "metrics": {
+      "title": "SIGNAL / MATTER — Sound is architecture",
+      "overflow": false,
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "canvas": {
+        "width": 349,
+        "height": 278,
+        "sampledColors": 9
+      },
+      "heroBottom": 962.765625,
+      "nextTop": 962.765625,
+      "nextVisibleAtFold": false,
+      "headingCount": 8,
+      "landmarkCount": 9
+    },
+    "menuCheck": {
+      "expanded": "true",
+      "controlled": "site-menu",
+      "navVisible": true,
+      "escapeClosed": true
+    },
+    "motionCheck": {
+      "pressed": "true",
+      "label": "Resume motion"
+    }
+  },
+  {
+    "condition": "baseline",
+    "reducedCheck": {
+      "mediaMatches": true,
+      "revealOpacity": "1"
+    },
+    "reducedErrors": []
+  },
+  {
+    "condition": "skill-assisted",
+    "viewport": {
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 1000
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "metrics": {
+      "title": "Signal / Matter — Sound as architecture",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "canvas": {
+        "width": 686,
+        "height": 580,
+        "sampledColors": 14
+      },
+      "heroBottom": 1000,
+      "nextTop": 902.24560546875,
+      "nextVisibleAtFold": true,
+      "headingCount": 8,
+      "landmarkCount": 9
+    },
+    "menuCheck": null,
+    "motionCheck": {
+      "pressed": "true",
+      "label": "Motion is paused. Activate to resume motion."
+    }
+  },
+  {
+    "condition": "skill-assisted",
+    "viewport": {
+      "name": "desktop-1280",
+      "width": 1280,
+      "height": 900
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "metrics": {
+      "title": "Signal / Matter — Sound as architecture",
+      "overflow": false,
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "canvas": {
+        "width": 609,
+        "height": 522,
+        "sampledColors": 11
+      },
+      "heroBottom": 900,
+      "nextTop": 802.2416381835938,
+      "nextVisibleAtFold": true,
+      "headingCount": 8,
+      "landmarkCount": 9
+    },
+    "menuCheck": null,
+    "motionCheck": {
+      "pressed": "true",
+      "label": "Motion is paused. Activate to resume motion."
+    }
+  },
+  {
+    "condition": "skill-assisted",
+    "viewport": {
+      "name": "tablet-900",
+      "width": 900,
+      "height": 1100
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "metrics": {
+      "title": "Signal / Matter — Sound as architecture",
+      "overflow": false,
+      "scrollWidth": 900,
+      "innerWidth": 900,
+      "canvas": {
+        "width": 806,
+        "height": 288,
+        "sampledColors": 15
+      },
+      "heroBottom": 1100,
+      "nextTop": 1002.2456665039062,
+      "nextVisibleAtFold": true,
+      "headingCount": 8,
+      "landmarkCount": 9
+    },
+    "menuCheck": null,
+    "motionCheck": {
+      "pressed": "true",
+      "label": "Motion is paused. Activate to resume motion."
+    }
+  },
+  {
+    "condition": "skill-assisted",
+    "viewport": {
+      "name": "mobile-390",
+      "width": 390,
+      "height": 844
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "metrics": {
+      "title": "Signal / Matter — Sound as architecture",
+      "overflow": false,
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "canvas": {
+        "width": 349,
+        "height": 176,
+        "sampledColors": 39
+      },
+      "heroBottom": 856.203125,
+      "nextTop": 804.069580078125,
+      "nextVisibleAtFold": true,
+      "headingCount": 8,
+      "landmarkCount": 9
+    },
+    "menuCheck": {
+      "expanded": "true",
+      "controlled": "primary-nav",
+      "navVisible": true,
+      "escapeClosed": true
+    },
+    "motionCheck": {
+      "pressed": "true",
+      "label": "Motion is paused. Activate to resume motion."
+    }
+  },
+  {
+    "condition": "skill-assisted",
+    "reducedCheck": {
+      "mediaMatches": true,
+      "revealOpacity": "1"
+    },
+    "reducedErrors": []
+  }
+]

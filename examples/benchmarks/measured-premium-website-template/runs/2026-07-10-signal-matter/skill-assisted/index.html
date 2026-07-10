@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1010">
+    <meta name="description" content="Signal / Matter is an independent spatial-audio label and installation studio.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b1010'/%3E%3Crect x='10' y='10' width='12' height='12' fill='%23f06b52'/%3E%3C/svg%3E">
+    <title>Signal / Matter — Sound as architecture</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="scroll-progress" aria-hidden="true">
+      <span class="scroll-progress__track"></span>
+      <span class="scroll-progress__fill" data-scroll-progress></span>
+    </div>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="SIGNAL / MATTER home">
+        <span>SIGNAL</span><span class="wordmark__slash" aria-hidden="true">/</span><span>MATTER</span>
+      </a>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#work">Index</a>
+        <a href="#method">Method</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-tools">
+        <p class="header-readout" aria-hidden="true"><span data-section-state>Field</span><span class="header-readout__slash">/</span> 01</p>
+        <button class="motion-toggle" type="button" data-motion-toggle aria-pressed="false">
+          <span class="motion-toggle__mark" aria-hidden="true"></span>
+          <span class="motion-toggle__label">Motion</span>
+        </button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav">
+          <span class="menu-toggle__label">Menu</span>
+          <span class="menu-toggle__mark" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__eyebrow" data-reveal="1">
+          <span class="eyebrow-rule" aria-hidden="true"></span>
+          <p>Independent spatial-audio label<br>and installation studio</p>
+          <p class="eyebrow-code">SM—001 / New York · Everywhere</p>
+        </div>
+
+        <div class="hero__layout">
+          <div class="hero__copy">
+            <p class="hero__kicker" data-reveal="2">A practice in listening</p>
+            <h1 id="hero-title" aria-label="Sound is not background. It is architecture." data-reveal="3">Sound is not <em>background.</em><br><span>It is architecture.</span></h1>
+            <p class="hero__dek" data-reveal="4">We shape invisible pressure into places you can enter, remember, and feel from the inside.</p>
+            <div class="hero__actions" data-reveal="5">
+              <a class="button button--primary" href="#work">Explore the index <span aria-hidden="true">↘</span></a>
+              <button class="button button--quiet" type="button" data-play-field aria-pressed="false">
+                <span class="play-mark" aria-hidden="true"></span>
+                <span data-play-label>Play the field</span>
+              </button>
+            </div>
+            <div class="hero__metadata" data-reveal="6" aria-label="Current field metadata">
+              <span>Field / 01</span>
+              <span>48.8566° N</span>
+              <span data-field-state>Standby</span>
+            </div>
+          </div>
+
+          <div class="field-stage" data-field-stage role="img" aria-describedby="field-description" data-reveal="4">
+            <div class="field-fallback" aria-hidden="true">
+              <span class="field-fallback__orbit field-fallback__orbit--one"></span>
+              <span class="field-fallback__orbit field-fallback__orbit--two"></span>
+              <span class="field-fallback__source"></span>
+            </div>
+            <canvas id="field-canvas" aria-hidden="true"></canvas>
+            <div class="field-stage__topline" aria-hidden="true">
+              <span>Spatial field / active plane</span>
+              <span>Cursor input <i></i></span>
+            </div>
+            <div class="field-stage__axis field-stage__axis--x" aria-hidden="true"><span>x / 04</span></div>
+            <div class="field-stage__axis field-stage__axis--y" aria-hidden="true"><span>y / 11</span></div>
+            <div class="field-stage__center" aria-hidden="true">
+              <span class="field-stage__crosshair"></span>
+              <span class="field-stage__center-label">origin / 00:00:04</span>
+            </div>
+            <div class="field-stage__bottomline" aria-hidden="true">
+              <span>Interference map</span>
+              <span>Amplitude <b>0.72</b></span>
+            </div>
+            <p id="field-description" class="sr-only">A procedural spatial field with intersecting contour lines. Move across it to shift the field; use Play the field to activate its movement.</p>
+          </div>
+        </div>
+
+        <a class="next-cue" href="#work" data-reveal="7">
+          <span>02 / Selected work</span>
+          <span class="next-cue__line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <section class="work-section section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-intro">
+          <p class="section-index">01 <span>/</span> Index</p>
+          <div>
+            <h2 id="work-title">Selected work<br><em>in sonic space.</em></h2>
+            <p class="section-intro__note">Commissions, transmissions, and experiments where the room is part of the instrument.</p>
+          </div>
+        </div>
+
+        <ul class="work-list" aria-label="Selected projects">
+          <li>
+            <a class="work-row work-row--tidal" href="#contact" data-project="tidal">
+              <span class="work-row__number">01</span>
+              <span class="work-row__copy">
+                <span class="work-row__title">Tidal Memory <span aria-hidden="true">↗</span></span>
+                <span class="work-row__description">A low-frequency shoreline composed for the rooms between departure and return.</span>
+              </span>
+              <span class="work-row__visual" aria-hidden="true"><span class="project-visual"></span></span>
+              <span class="work-row__meta"><span>2024</span><span>Spatial composition</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="work-row work-row--room" href="#contact" data-project="room">
+              <span class="work-row__number">02</span>
+              <span class="work-row__copy">
+                <span class="work-row__title">Room Tone 04 <span aria-hidden="true">↗</span></span>
+                <span class="work-row__description">An acoustic study of the pause after a room empties, recorded as a four-channel score.</span>
+              </span>
+              <span class="work-row__visual" aria-hidden="true"><span class="project-visual"></span></span>
+              <span class="work-row__meta"><span>2023</span><span>Field recording / edition</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="work-row work-row--afterimage" href="#contact" data-project="afterimage">
+              <span class="work-row__number">03</span>
+              <span class="work-row__copy">
+                <span class="work-row__title">Afterimage Choir <span aria-hidden="true">↗</span></span>
+                <span class="work-row__description">Seven voices delayed by the architecture itself, leaving a trace you can walk through.</span>
+              </span>
+              <span class="work-row__visual" aria-hidden="true"><span class="project-visual"></span></span>
+              <span class="work-row__meta"><span>2022</span><span>Installation / voice</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="work-row work-row--fault" href="#contact" data-project="fault">
+              <span class="work-row__number">04</span>
+              <span class="work-row__copy">
+                <span class="work-row__title">Fault Line FM <span aria-hidden="true">↗</span></span>
+                <span class="work-row__description">A pirate transmission for tectonic listening: static, pressure, and the shape of a break.</span>
+              </span>
+              <span class="work-row__visual" aria-hidden="true"><span class="project-visual"></span></span>
+              <span class="work-row__meta"><span>2021</span><span>Broadcast / public work</span></span>
+            </a>
+          </li>
+        </ul>
+
+        <p class="work-footnote"><span>Hover or focus a work</span><span>— the field will answer</span></p>
+      </section>
+
+      <section class="method-section section-shell" id="method" aria-labelledby="method-title">
+        <div class="method-section__head">
+          <p class="section-index">02 <span>/</span> Method</p>
+          <p class="method-section__aside">No preset sound.<br>No fixed room.</p>
+        </div>
+
+        <div class="method-layout">
+          <div class="method-intro">
+            <p class="method-intro__code">SM / Process / 03</p>
+            <h2 id="method-title">Built in<br><em>three passes.</em></h2>
+            <p>Every project starts with attention. We find the signal, chart its edges, and give it somewhere to live.</p>
+            <div class="method-readout" aria-live="polite"><span data-method-index>01</span><span data-method-state>Listening now</span></div>
+          </div>
+
+          <ol class="method-list">
+            <li class="method-step is-active" data-method-step="01">
+              <span class="method-step__number">01</span>
+              <div>
+                <h3>Listen</h3>
+                <p>We stay with the room long enough to hear what is already moving through it: the hum, the gap, the held breath.</p>
+              </div>
+              <span class="method-step__mark" aria-hidden="true"></span>
+            </li>
+            <li class="method-step" data-method-step="02">
+              <span class="method-step__number">02</span>
+              <div>
+                <h3>Map</h3>
+                <p>We translate those observations into coordinates, pathways, and a score that lets the architecture participate.</p>
+              </div>
+              <span class="method-step__mark" aria-hidden="true"></span>
+            </li>
+            <li class="method-step" data-method-step="03">
+              <span class="method-step__number">03</span>
+              <div>
+                <h3>Materialize</h3>
+                <p>We install the invisible: calibrated sound, responsive light, and a field that changes when you enter it.</p>
+              </div>
+              <span class="method-step__mark" aria-hidden="true"></span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="statement-section section-shell" aria-labelledby="statement-title">
+        <p class="section-index">03 <span>/</span> Studio note</p>
+        <div class="statement-layout">
+          <h2 id="statement-title">We make <em>places</em><br>for listening.</h2>
+          <div class="statement-copy">
+            <p>Signal / Matter is an independent label and installation practice for artists, architects, and curious rooms.</p>
+            <p>We release field recordings, build responsive environments, and work with the physical world as a collaborator.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title">
+        <div class="contact-section__line" aria-hidden="true"></div>
+        <p class="section-index">04 <span>/</span> Contact</p>
+        <div class="contact-layout">
+          <h2 id="contact-title">Bring us a<br><em>room to hear.</em></h2>
+          <div class="contact-cta">
+            <p>For commissions, installations, and releases that need a little more space.</p>
+            <a class="button button--primary" href="mailto:hello@signalmatter.studio?subject=Field%20note">Start a field note <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__brand"><span>SIGNAL</span><span class="wordmark__slash" aria-hidden="true">/</span><span>MATTER</span></div>
+      <p>New York · NY / working globally</p>
+      <p><span class="status-dot" aria-hidden="true"></span> Accepting autumn 2026 inquiries</p>
+      <p>© 2026 Signal / Matter. All fields reserved.</p>
+    </footer>
+
+    <p class="sr-only" aria-live="polite" data-motion-status>Motion is active.</p>
+    <p class="sr-only" aria-live="polite" data-field-live-status>The field is on standby.</p>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

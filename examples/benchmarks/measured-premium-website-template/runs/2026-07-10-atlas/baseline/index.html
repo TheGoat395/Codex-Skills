@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Atlas is the calm command center for open-source maintenance.">
+  <title>Atlas — maintenance, mapped</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="wordmark" href="#top" aria-label="Atlas home"><span class="mark" aria-hidden="true">✦</span> atlas<span class="wordmark-dot">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Toggle navigation</span><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="#features">Capabilities</a><a href="#workflow">Workflow</a><a href="#install">Install</a>
+        <a class="nav-github" href="#install">View on GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> open-source maintenance, in orbit</p>
+        <h1 id="hero-title">Keep the work<br><em>moving forward.</em></h1>
+        <p class="hero-intro">Atlas turns the quiet, recurring work of maintaining open source into a clear, navigable path—from first issue to final release.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#install">Start with Atlas <span aria-hidden="true">→</span></a><a class="text-link" href="#workflow">See how it works <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="orbit-art" aria-label="Abstract illustration of Atlas tracking a repository through maintenance cycles" role="img">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="planet"><span>AT</span></div><span class="orbit-label label-one">issues · 24</span><span class="orbit-label label-two">release · v4.8</span><span class="orbit-label label-three">health · 98%</span>
+        <span class="orbital-dot dot-one"></span><span class="orbital-dot dot-two"></span><span class="orbital-dot dot-three"></span>
+      </div>
+    </section>
+
+    <section class="feature-section shell" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><p class="eyebrow">A better maintenance loop</p><h2 id="features-title">Less noise. More signal.</h2></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-number">01</div><div class="feature-icon" aria-hidden="true">⌁</div><h3>See what matters</h3><p>Surface the issues, pull requests, and dependencies that need attention—before they become surprises.</p><a href="#workflow" class="card-link">Explore triage <span aria-hidden="true">↗</span></a></article>
+        <article class="feature-card feature-card-highlight"><div class="feature-number">02</div><div class="feature-icon" aria-hidden="true">◌</div><h3>Make progress legible</h3><p>Give every contribution a next step. Atlas makes the state of your project understandable at a glance.</p><a href="#workflow" class="card-link">Explore flow <span aria-hidden="true">↗</span></a></article>
+        <article class="feature-card"><div class="feature-number">03</div><div class="feature-icon" aria-hidden="true">✳</div><h3>Ship with confidence</h3><p>Use release-ready signals and lightweight checks to turn a good change into a dependable release.</p><a href="#install" class="card-link">Explore releases <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="install-section shell" id="install" aria-labelledby="install-title">
+      <div><p class="eyebrow">One command to begin</p><h2 id="install-title">Install the<br><em>calm.</em></h2></div>
+      <div class="command-card"><div class="command-top"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>terminal</span><button id="copy-button" class="copy-button" type="button" data-copy="npm install -g @atlas/cli"><span class="copy-label">Copy</span><span class="check-label" aria-hidden="true">Copied</span></button></div><code><span class="prompt">$</span> npm install -g @atlas/cli</code><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p></div>
+    </section>
+
+    <section class="workflow-section shell" id="workflow" aria-labelledby="workflow-title">
+      <div class="workflow-intro"><p class="eyebrow">The maintainer workflow</p><h2 id="workflow-title">A project that<br>knows its <em>way.</em></h2><p>Atlas gives maintainers a shared language for the work between releases. A simple rhythm that keeps contributors aligned and projects healthy.</p><a class="text-link" href="#install">Read the field guide <span aria-hidden="true">↗</span></a></div>
+      <ol class="workflow-list"><li><span class="step-index">01</span><div><h3>Observe</h3><p>Collect the signals from your repository.</p></div><span class="step-arrow" aria-hidden="true">↗</span></li><li><span class="step-index">02</span><div><h3>Orient</h3><p>Find the highest-leverage next move.</p></div><span class="step-arrow" aria-hidden="true">↗</span></li><li><span class="step-index">03</span><div><h3>Advance</h3><p>Move the work forward, together.</p></div><span class="step-arrow" aria-hidden="true">↗</span></li></ol>
+    </section>
+
+    <section class="final-cta shell" aria-labelledby="cta-title"><div class="cta-inner"><p class="eyebrow">Your next release starts here</p><h2 id="cta-title">Maintain with<br><em>intention.</em></h2><a class="button button-dark" href="#install">Bring Atlas home <span aria-hidden="true">→</span></a></div></section>
+  </main>
+  <footer class="site-footer shell"><a class="wordmark" href="#top"><span class="mark" aria-hidden="true">✦</span> atlas<span class="wordmark-dot">.</span></a><p>Open source maintenance, mapped.</p><p>© 2024 Atlas Project</p></footer>
+</body>
+</html>
