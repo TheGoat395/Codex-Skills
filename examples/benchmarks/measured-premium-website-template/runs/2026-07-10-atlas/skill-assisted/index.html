@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#12130f" />
+    <meta
+      name="description"
+      content="Atlas is an open-source maintenance tool for seeing, sequencing, and proving change in long-lived codebases."
+    />
+    <title>Atlas — maintenance, with a map</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="Atlas home">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16 3.5 28 9.75v12.5L16 28.5 4 22.25V9.75L16 3.5Z" />
+            <path d="m10 20 6-11 6 11M12.6 16.2h6.8" />
+          </svg>
+          <span>ATLAS</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation"
+          data-menu-toggle
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation" data-nav>
+          <a href="#features">Why Atlas</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#install">Install</a>
+          <a class="nav-source" href="#footer">Source <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Open-source maintenance / v0.9</p>
+          <h1 id="hero-title">Keep the old code<br /><em>on purpose.</em></h1>
+          <p class="hero-lede">
+            Atlas turns maintenance from a backlog of guesses into a visible, reviewable practice. See what drifted,
+            decide what matters, and leave a trail for the next maintainer.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#install">Install Atlas <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#workflow">See the maintainer workflow <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Atlas qualities">
+            <span>Local-first</span>
+            <span>Composable</span>
+            <span>Auditable</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustration of an Atlas maintenance run" role="img">
+          <div class="visual-grid" aria-hidden="true"></div>
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="console-card">
+            <div class="console-topline">
+              <span class="console-kicker">ATLAS / RUN 014</span>
+              <span class="console-status"><span class="status-pip" aria-hidden="true"></span> clean exit</span>
+            </div>
+            <div class="console-title">Maintenance map</div>
+            <div class="console-path"><span class="path-line" aria-hidden="true"></span> /packages/core</div>
+            <div class="map-graphic" aria-hidden="true">
+              <span class="map-line map-line-a"></span>
+              <span class="map-line map-line-b"></span>
+              <span class="map-line map-line-c"></span>
+              <span class="map-node map-node-a"></span>
+              <span class="map-node map-node-b"></span>
+              <span class="map-node map-node-c"></span>
+              <span class="map-node map-node-d"></span>
+              <span class="map-node map-node-e"></span>
+            </div>
+            <div class="console-rows">
+              <div><span>dependency drift</span><strong class="signal-text">03 found</strong></div>
+              <div><span>stale paths</span><strong>11 mapped</strong></div>
+              <div><span>next safe move</span><strong class="accent-text">extract / cache</strong></div>
+            </div>
+            <div class="console-footer"><span>snapshot 2025-03-18</span><span>read-only scan</span></div>
+          </div>
+          <div class="visual-caption"><span>01</span><span>Make the invisible legible.</span></div>
+        </div>
+      </section>
+
+      <section class="features section shell" id="features" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / A calmer way to maintain</p>
+          <h2 id="features-title">A map before<br /><span>the move.</span></h2>
+          <p class="section-intro">Atlas gives maintainers enough context to make small, high-confidence changes in systems that have outlived their original authors.</p>
+        </div>
+
+        <ol class="feature-list">
+          <li class="feature-item">
+            <div class="feature-index">01</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M6 8.5h20M6 16h13M6 23.5h8" /><circle cx="24" cy="16" r="3.5" /><circle cx="18" cy="23.5" r="3.5" /></svg>
+            </div>
+            <h3>Find the drift</h3>
+            <p>Scan dependencies, ownership clues, dead paths, and quiet hotspots without changing a byte.</p>
+            <a class="feature-link" href="#install">Start with a scan <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="feature-item">
+            <div class="feature-index">02</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M7 8h18M7 16h11M7 24h18" /><path d="m21 13 4 3-4 3" /><path d="m14 21 4 3-4 3" /></svg>
+            </div>
+            <h3>Sequence the work</h3>
+            <p>Turn a noisy issue list into an ordered runbook with one clear next move at a time.</p>
+            <a class="feature-link" href="#workflow">See the method <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="feature-item">
+            <div class="feature-index">03</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="m8 17 5 5 11-12" /><path d="M16 4.5 26 8v7.5c0 5.2-4.2 9.8-10 12-5.8-2.2-10-6.8-10-12V8l10-3.5Z" /></svg>
+            </div>
+            <h3>Leave proof behind</h3>
+            <p>Export a small, readable record of what was checked, what changed, and why it was safe.</p>
+            <a class="feature-link" href="#install">Read the output <span aria-hidden="true">↗</span></a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="install-band" id="install" aria-labelledby="install-title">
+        <div class="shell install-layout">
+          <div class="install-copy">
+            <p class="eyebrow eyebrow-dark">02 / Start local</p>
+            <h2 id="install-title">One command.<br /><em>Zero ceremony.</em></h2>
+            <p>Atlas runs beside your repository, not between it and your team. Install the CLI, point it at a codebase, and keep the first pass read-only.</p>
+          </div>
+          <div class="command-wrap">
+            <div class="command-label"><span>terminal</span><span>macOS · Linux · WSL</span></div>
+            <div class="command-block">
+              <code><span class="prompt">$</span> npm install --global @atlas/cli</code>
+              <button class="copy-button" type="button" data-copy-button data-copy-text="npm install --global @atlas/cli">
+                <span class="copy-icon" aria-hidden="true"></span>
+                <span data-copy-label>Copy command</span>
+              </button>
+            </div>
+            <p class="command-note" data-copy-status aria-live="polite">Then run <code>atlas map</code> in the root of your repository.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow section shell" id="workflow" aria-labelledby="workflow-title">
+        <div class="workflow-heading">
+          <p class="eyebrow">03 / The maintainer workflow</p>
+          <h2 id="workflow-title">Maintenance is a<br /><span>sequence, not a mood.</span></h2>
+        </div>
+        <div class="workflow-body">
+          <ol class="workflow-list">
+            <li class="workflow-step is-active">
+              <span class="step-number">01</span>
+              <div><h3>Survey</h3><p>Build a current map of the terrain before touching the code.</p></div>
+              <span class="step-mark" aria-hidden="true">↗</span>
+            </li>
+            <li class="workflow-step">
+              <span class="step-number">02</span>
+              <div><h3>Classify</h3><p>Separate drift, risk, and ordinary noise into useful signals.</p></div>
+              <span class="step-mark" aria-hidden="true">↗</span>
+            </li>
+            <li class="workflow-step">
+              <span class="step-number">03</span>
+              <div><h3>Sequence</h3><p>Choose the smallest next move that makes the following move easier.</p></div>
+              <span class="step-mark" aria-hidden="true">↗</span>
+            </li>
+            <li class="workflow-step">
+              <span class="step-number">04</span>
+              <div><h3>Record</h3><p>Leave a durable trail so future context does not have to be rediscovered.</p></div>
+              <span class="step-mark" aria-hidden="true">↗</span>
+            </li>
+          </ol>
+          <aside class="ledger" aria-label="Example Atlas run ledger">
+            <div class="ledger-header"><span>RUN LEDGER</span><span>local / read-only</span></div>
+            <div class="ledger-stamp">A</div>
+            <p class="ledger-title">The next move<br /><strong>is legible.</strong></p>
+            <div class="ledger-rule"></div>
+            <dl class="ledger-details">
+              <div><dt>scope</dt><dd>packages/core</dd></div>
+              <div><dt>signal</dt><dd>cache boundary</dd></div>
+              <div><dt>confidence</dt><dd><span class="confidence-bar"><i></i><i></i><i></i><i></i><i></i></span></dd></div>
+            </dl>
+            <div class="ledger-foot"><span>atlas map --explain</span><span>14:02:07</span></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="final-cta shell" aria-labelledby="cta-title">
+        <div class="cta-mark" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="cta-copy">
+          <p class="eyebrow">Keep the context</p>
+          <h2 id="cta-title">Give the next<br /><em>maintainer a map.</em></h2>
+        </div>
+        <a class="button button-light" href="#install">Get Atlas <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="shell footer-inner">
+        <div class="footer-brand"><span class="footer-mark" aria-hidden="true">A</span><span>Atlas</span></div>
+        <p>Open-source maintenance for long-lived codebases.</p>
+        <div class="footer-meta"><span>Built for the people who stay.</span><span>© 2025 Atlas</span></div>
+      </div>
+    </footer>
+  </body>
+</html>

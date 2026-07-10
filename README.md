@@ -59,6 +59,17 @@ The showcase contains nine confirmed local websites and hero/portfolio demos gen
 
 See `DEMOS.md` for the complete list, `EVIDENCE.md` for the current evidence summary, and `INSTALL.md` for local install and preview instructions.
 
+## Measured Benchmarks
+
+Two paired baseline-vs-skill-assisted runs are checked in with fixed prompts, saved source, explicit limitations, and scoring against `BENCHMARKS.md`.
+
+| Run | Baseline | Skill-assisted | Change | Evidence |
+|---|---:|---:|---:|---|
+| [Atlas](examples/benchmarks/measured-premium-website-template/runs/2026-07-10-atlas/) | 19/30 | 23/30 | +4 | Source and structural checks |
+| [Signal / Matter](examples/benchmarks/measured-premium-website-template/runs/2026-07-10-signal-matter/) | 23/30 | 28/30 | +5 | Desktop/mobile screenshots and automated Chromium QA |
+
+The Signal / Matter run used the same prompt, model, and three-file constraint in isolated directories. Both conditions were capable; the assisted workflow produced stronger visual differentiation, implementation detail, accessible state language, and first-viewport behavior. These are repository rubric scores, not an OpenAI evaluation, endorsement, or universal causal claim.
+
 ## Share Your Work
 
 Used these skills on a real project? [Open a Showcase issue](https://github.com/TheGoat395/Codex-Skills/issues/new?template=showcase.yml) with the skills used, what changed, and any screenshots, links, or workflow notes that would help others evaluate the library.
@@ -168,7 +179,7 @@ The root `LICENSE` covers original repository packaging, docs, scripts, and skil
 
 The goal is not to claim that more skills automatically make better output. The goal is to show measurable workflow improvement. Benchmarks should compare the same task with and without selected skill collections, including screenshots, build logs, accessibility checks, browser QA notes, and final code links.
 
-Use `BENCHMARKS.md`, `examples/README.md`, and `examples/benchmarks/measured-premium-website-template/` as the reporting template.
+Use `BENCHMARKS.md`, `examples/README.md`, and `examples/benchmarks/measured-premium-website-template/` as the reporting protocol. Atlas is the first source-checked comparison; Signal / Matter adds rendered desktop/mobile evidence and automated Chromium QA. Future runs should preserve the same controls and disclose operator corrections and browser limitations.
 
 ## Open Source Positioning
 
