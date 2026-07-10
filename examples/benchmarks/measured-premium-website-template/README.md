@@ -2,6 +2,8 @@
 
 This template is for a controlled baseline-vs-skill-assisted benchmark. It is intentionally empty of results until a real run is completed.
 
+The first completed run is available at [`runs/2026-07-10-atlas/`](runs/2026-07-10-atlas/). Keep this file as the reusable protocol for future tasks.
+
 ## Status
 
 - Type: measured benchmark template

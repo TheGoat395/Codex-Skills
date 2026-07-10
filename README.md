@@ -59,6 +59,22 @@ The showcase contains nine confirmed local websites and hero/portfolio demos gen
 
 See `DEMOS.md` for the complete list, `EVIDENCE.md` for the current evidence summary, and `INSTALL.md` for local install and preview instructions.
 
+## Measured Benchmark
+
+The first completed repository benchmark is now checked in under [`examples/benchmarks/measured-premium-website-template/runs/2026-07-10-atlas/`](examples/benchmarks/measured-premium-website-template/runs/2026-07-10-atlas/). It compares the same fixed Atlas maintenance-tool website task in Codex CLI with no skill library and with the public-core website skills available.
+
+| Category | Baseline | Skill-assisted | Change |
+|---|---:|---:|---:|
+| Visual direction | 4/5 | 4/5 | 0 |
+| Content quality | 4/5 | 4/5 | 0 |
+| Frontend implementation | 3/5 | 4/5 | +1 |
+| Motion and interaction | 3/5 | 4/5 | +1 |
+| Accessibility | 3/5 | 4/5 | +1 |
+| QA and handoff | 2/5 | 3/5 | +1 |
+| **Total** | **19/30** | **23/30** | **+4** |
+
+Both runs produced the required three-file site, passed JavaScript syntax and structural checks, and used no network assets. The skill-assisted run added stronger interaction states, responsive rules, accessibility annotations, and reduced-motion handling. Browser rendering was not available in this run, so these are repository rubric scores, not an OpenAI evaluation, endorsement, or causal claim about every task.
+
 ## Share Your Work
 
 Used these skills on a real project? [Open a Showcase issue](https://github.com/TheGoat395/Codex-Skills/issues/new?template=showcase.yml) with the skills used, what changed, and any screenshots, links, or workflow notes that would help others evaluate the library.
@@ -168,7 +184,7 @@ The root `LICENSE` covers original repository packaging, docs, scripts, and skil
 
 The goal is not to claim that more skills automatically make better output. The goal is to show measurable workflow improvement. Benchmarks should compare the same task with and without selected skill collections, including screenshots, build logs, accessibility checks, browser QA notes, and final code links.
 
-Use `BENCHMARKS.md`, `examples/README.md`, and `examples/benchmarks/measured-premium-website-template/` as the reporting template.
+Use `BENCHMARKS.md`, `examples/README.md`, and `examples/benchmarks/measured-premium-website-template/` as the reporting template. The Atlas run is the first completed comparison; future runs should preserve the same evidence standard and record browser QA when the environment permits it.
 
 ## Open Source Positioning
 

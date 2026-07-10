@@ -15,3 +15,5 @@ This folder contains benchmark-related materials for evaluating Codex Premium We
 | Measured benchmark | A completed baseline-vs-skill-assisted comparison with saved outputs and verification notes. |
 
 Measured benchmarks should be added as reproducible runs are completed.
+
+The first completed run is [`measured-premium-website-template/runs/2026-07-10-atlas/`](measured-premium-website-template/runs/2026-07-10-atlas/). It is a real paired run with saved outputs and recorded limitations, not a projected result.

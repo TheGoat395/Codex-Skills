@@ -22,5 +22,13 @@ jobs:
       - name: Validate skill catalog
         run: python3 scripts/validate_skills.py
 
+      - name: Validate installer paths
+        run: |
+          python3 scripts/install_skills.py --list-collections
+          python3 scripts/install_skills.py --dry-run
+
+      - name: Compile maintainer scripts
+        run: python3 -m py_compile scripts/*.py
+
       - name: Check whitespace
         run: git diff --check
