@@ -123,7 +123,16 @@ Clone events are not people. The working distinct-cloner estimate is not a GitHu
 
 ### Security and Dependency Baseline
 
-At the time of the snapshot, the security policy and advisories were enabled, the dependency graph was enabled with two Actions dependencies, Discussions were disabled, Dependabot alerts were disabled, private vulnerability reporting was disabled, secret scanning was disabled, and code scanning still needed setup. Discussions remain intentionally disabled because they are not required for the current contribution flow.
+The pre-hardening snapshot showed the security policy, advisories, and dependency graph enabled, while Dependabot alerts, private vulnerability reporting, secret scanning, and code scanning still needed setup.
+
+After the 2026-07-10 hardening pass:
+
+- `main` is protected and changes are merged through pull requests.
+- Private vulnerability reporting and Dependabot alerts are enabled.
+- CodeQL scans Python and JavaScript/TypeScript; the benchmark pull request passed both analyses.
+- Secret scanning and push protection are enabled for the public repository.
+- The dependency graph remains enabled.
+- Discussions remain intentionally disabled because issues and pull requests cover the current contribution workflow.
 
 ## Adapter Feedback
 
