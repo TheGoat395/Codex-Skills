@@ -98,7 +98,15 @@ This is an owner-only GitHub Insights snapshot recorded on 2026-07-10. It is a d
 
 Daily clone events were `17, 17, 8, 7, 25, 182, 136, 77, 47, 32, 150, 6, 10, 82` across the 14-day window. Daily unique cloners were `4, 2, 3, 1, 5, 36, 31, 13, 14, 11, 11, 6, 7, 4`. Referrers were GitHub: 79 views / 37 unique, Yandex: 6 / 1, and Perplexity: 1 / 1.
 
-The native dashboard does not expose a lifetime clone total. Adding the non-overlapping June 21-July 4 window (1,018 clone events) to July 5-9 (280) gives an approximate 1,298 clone events since the repository launch. This is a derived clone-event estimate, not 1,298 unique people. The available windows support an upper bound of about 308 distinct cloner observations, not a claim of more than 400 unique cloners.
+The native dashboard does not expose lifetime traffic totals. The available snapshots support the following derived view:
+
+| Derived launch-to-July-9 signal | Value | Confidence |
+|---|---:|---|
+| Clone events | Approximately 1,298 | High: 1,018 through July 4 plus 280 non-overlapping events from July 5-9 |
+| Distinct cloner bound | 269-308 | High as a bound: 269 observed in the earlier window, plus at most 39 new daily unique observations from July 5-9 |
+| Working distinct-cloner estimate | Approximately 280-300 | Moderate: modeled within the observed bound because daily and rolling-window uniques can repeat |
+
+Clone events are not people. The working distinct-cloner estimate is not a GitHub lifetime metric and should always be presented as an estimate. The available evidence does not support a claim of more than 400 unique cloners.
 
 ### Activity and Automation
 

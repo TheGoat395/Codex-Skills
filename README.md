@@ -59,21 +59,16 @@ The showcase contains nine confirmed local websites and hero/portfolio demos gen
 
 See `DEMOS.md` for the complete list, `EVIDENCE.md` for the current evidence summary, and `INSTALL.md` for local install and preview instructions.
 
-## Measured Benchmark
+## Measured Benchmarks
 
-The first completed repository benchmark is now checked in under [`examples/benchmarks/measured-premium-website-template/runs/2026-07-10-atlas/`](examples/benchmarks/measured-premium-website-template/runs/2026-07-10-atlas/). It compares the same fixed Atlas maintenance-tool website task in Codex CLI with no skill library and with the public-core website skills available.
+Two paired baseline-vs-skill-assisted runs are checked in with fixed prompts, saved source, explicit limitations, and scoring against `BENCHMARKS.md`.
 
-| Category | Baseline | Skill-assisted | Change |
-|---|---:|---:|---:|
-| Visual direction | 4/5 | 4/5 | 0 |
-| Content quality | 4/5 | 4/5 | 0 |
-| Frontend implementation | 3/5 | 4/5 | +1 |
-| Motion and interaction | 3/5 | 4/5 | +1 |
-| Accessibility | 3/5 | 4/5 | +1 |
-| QA and handoff | 2/5 | 3/5 | +1 |
-| **Total** | **19/30** | **23/30** | **+4** |
+| Run | Baseline | Skill-assisted | Change | Evidence |
+|---|---:|---:|---:|---|
+| [Atlas](examples/benchmarks/measured-premium-website-template/runs/2026-07-10-atlas/) | 19/30 | 23/30 | +4 | Source and structural checks |
+| [Signal / Matter](examples/benchmarks/measured-premium-website-template/runs/2026-07-10-signal-matter/) | 23/30 | 28/30 | +5 | Desktop/mobile screenshots and automated Chromium QA |
 
-Both runs produced the required three-file site, passed JavaScript syntax and structural checks, and used no network assets. The skill-assisted run added stronger interaction states, responsive rules, accessibility annotations, and reduced-motion handling. Browser rendering was not available in this run, so these are repository rubric scores, not an OpenAI evaluation, endorsement, or causal claim about every task.
+The Signal / Matter run used the same prompt, model, and three-file constraint in isolated directories. Both conditions were capable; the assisted workflow produced stronger visual differentiation, implementation detail, accessible state language, and first-viewport behavior. These are repository rubric scores, not an OpenAI evaluation, endorsement, or universal causal claim.
 
 ## Share Your Work
 
@@ -184,7 +179,7 @@ The root `LICENSE` covers original repository packaging, docs, scripts, and skil
 
 The goal is not to claim that more skills automatically make better output. The goal is to show measurable workflow improvement. Benchmarks should compare the same task with and without selected skill collections, including screenshots, build logs, accessibility checks, browser QA notes, and final code links.
 
-Use `BENCHMARKS.md`, `examples/README.md`, and `examples/benchmarks/measured-premium-website-template/` as the reporting template. The Atlas run is the first completed comparison; future runs should preserve the same evidence standard and record browser QA when the environment permits it.
+Use `BENCHMARKS.md`, `examples/README.md`, and `examples/benchmarks/measured-premium-website-template/` as the reporting protocol. Atlas is the first source-checked comparison; Signal / Matter adds rendered desktop/mobile evidence and automated Chromium QA. Future runs should preserve the same controls and disclose operator corrections and browser limitations.
 
 ## Open Source Positioning
 

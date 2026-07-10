@@ -5,7 +5,7 @@ This folder contains benchmark-related materials for evaluating Codex Premium We
 ## Included
 
 - `premium-website-workflow-estimate/` — a workflow impact estimate for premium website generation.
-- `measured-premium-website-template/` — a ready-to-fill template for the first controlled baseline-vs-skill-assisted benchmark.
+- `measured-premium-website-template/` — a reusable protocol plus completed controlled baseline-vs-skill-assisted runs.
 
 ## Benchmark Types
 
@@ -16,4 +16,7 @@ This folder contains benchmark-related materials for evaluating Codex Premium We
 
 Measured benchmarks should be added as reproducible runs are completed.
 
-The first completed run is [`measured-premium-website-template/runs/2026-07-10-atlas/`](measured-premium-website-template/runs/2026-07-10-atlas/). It is a real paired run with saved outputs and recorded limitations, not a projected result.
+Completed runs:
+
+- [`2026-07-10-atlas/`](measured-premium-website-template/runs/2026-07-10-atlas/) — paired source and structural evidence
+- [`2026-07-10-signal-matter/`](measured-premium-website-template/runs/2026-07-10-signal-matter/) — paired rendered desktop/mobile evidence and Chromium QA

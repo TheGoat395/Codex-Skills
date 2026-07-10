@@ -11,7 +11,7 @@ This repository is an unofficial open-source Codex skill library. Its evidence i
 | Ecosystem compatibility | Codex-native install plus Claude Code, Cursor, and Gemini CLI adapter paths. | `COMPATIBILITY.md`, `adapters/` |
 | Proof-of-output gallery | Nine checked-in local frontend demos showing the type of output the workflow is meant to support. | `DEMOS.md`, `examples/premium-website-showcase/` |
 | Workflow impact estimate | Category-level estimate of expected improvements and risks based on skill coverage. | `examples/benchmarks/premium-website-workflow-estimate/` |
-| Measured benchmark | One completed paired baseline-vs-skill-assisted run with saved outputs, checks, scores, and limitations. | `examples/benchmarks/measured-premium-website-template/runs/2026-07-10-atlas/` |
+| Measured benchmarks | Two completed paired runs with fixed prompts, saved outputs, checks, scores, limitations, and rendered evidence in the second run. | `examples/benchmarks/measured-premium-website-template/runs/` |
 | Maintainer validation | Skill validation workflow runs through GitHub Actions. | `.github/workflows/validate.yml` |
 
 ## Proof-of-Output
@@ -42,7 +42,7 @@ This is an assessment of expected workflow impact, not a completed controlled be
 
 ## Measured Benchmark Status
 
-The first controlled baseline-vs-skill-assisted benchmark is complete and saved under `examples/benchmarks/measured-premium-website-template/runs/2026-07-10-atlas/`. It uses the same prompt, the same Codex CLI model, the same three-file output constraint, and a shared six-category rubric. It is a repository measurement, not an OpenAI evaluation or endorsement.
+Two controlled baseline-vs-skill-assisted benchmarks are complete. Atlas records source and structural evidence; Signal / Matter adds rendered desktop/mobile screenshots and automated Chromium checks. Both use the same prompt, model, output constraint, and shared six-category rubric within each pair. They are repository measurements, not OpenAI evaluations or endorsements.
 
 The run includes:
 
@@ -51,16 +51,16 @@ The run includes:
 - saved skill-assisted output
 - JavaScript syntax and structural/accessibility/content checks
 - a score table with category-level notes
-- browser QA limitations recorded explicitly
+- rendered browser QA in the Signal / Matter run, with limitations recorded explicitly
 - scoring against `BENCHMARKS.md`
 
-The missing piece is rendered browser inspection: no Playwright/Puppeteer runtime was available in the benchmark environment, so no screenshot or browser-console claim is made.
+Signal / Matter improved from 23/30 to 28/30 on the repository rubric. The run includes four final screenshots, raw browser results, no-overflow checks at four widths, canvas-pixel checks, mobile menu and Escape checks, motion-state checks, and reduced-motion checks.
 
 ## What Would Strengthen The Evidence
 
 The next evidence upgrades are:
 
-1. A second benchmark task with rendered desktop/mobile screenshots and browser-console notes.
-2. Showcase issues from users with screenshots, links, or local preview notes.
-3. Focused pull requests that add benchmark results, improve installer safety, or refine skill boundaries.
+1. Showcase issues from users with screenshots, links, or local preview notes.
+2. An independently submitted benchmark or focused improvement pull request.
+3. Safari and Firefox coverage for a future rendered benchmark.
 4. Release downloads and clone traffic from users who inspect or install the public core.
