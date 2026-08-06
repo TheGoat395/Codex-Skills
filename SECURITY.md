@@ -33,13 +33,13 @@ python3 scripts/install_skills.py --dry-run
 
 ## Reporting Issues
 
-Open a GitHub issue if you find:
+For a potential vulnerability, use this repository's private vulnerability reporting flow. Do not include secrets, exploit steps, or sensitive paths in a public issue.
 
-- secrets, private paths, or personal data
-- unsafe installer behavior
-- instructions that encourage bypassing access controls
-- skills that perform destructive actions without checkpoint or confirmation guidance
-- dependency guidance that would pollute global environments
+Open a public GitHub issue for:
+
+- non-sensitive installer behavior
+- documentation errors
+- skill-quality or usability issues
 
 ## Maintainer Safety Standard
 
