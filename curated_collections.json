@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "default_collection": "public-core",
   "collections": [
     {
@@ -77,6 +77,21 @@
         "code-change-safety-checkpoint",
         "code-change-undo-revert",
         "frontend-tooling-trust-gate"
+      ]
+    },
+    {
+      "id": "website-operations",
+      "title": "Website Operations",
+      "description": "Client intake, local-business delivery, launch readiness, security, privacy, DNS, analytics, and maintenance workflows.",
+      "skills": [
+        "local-business-website-workflow",
+        "client-intake-asset-readiness",
+        "website-launch-readiness-audit",
+        "web-security-paywall-audit",
+        "privacy-consent-audit",
+        "domain-dns-launch-safety",
+        "analytics-conversion-verification",
+        "website-maintenance-review"
       ]
     },
     {

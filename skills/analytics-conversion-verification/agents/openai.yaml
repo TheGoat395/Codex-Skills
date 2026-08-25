@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analytics Conversion Verification"
+  short_description: "Verify meaningful, consent-aware website conversions"
+  default_prompt: "Use $analytics-conversion-verification to verify this site's business conversion tracking end to end."

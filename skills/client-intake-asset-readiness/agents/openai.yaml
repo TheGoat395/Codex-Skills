@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client Intake and Asset Readiness"
+  short_description: "Find missing facts, assets, ownership, and approvals"
+  default_prompt: "Use $client-intake-asset-readiness to determine what this website project still needs before build or launch."

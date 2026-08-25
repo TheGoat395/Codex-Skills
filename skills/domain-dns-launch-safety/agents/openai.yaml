@@ -1,0 +1,4 @@
+interface:
+  display_name: "Domain and DNS Launch Safety"
+  short_description: "Plan safe DNS, HTTPS, and domain cutovers"
+  default_prompt: "Use $domain-dns-launch-safety to plan and verify this website's domain cutover without breaking email or existing services."

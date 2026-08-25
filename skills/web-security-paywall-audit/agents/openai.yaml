@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Security and Paywall Audit"
+  short_description: "Audit web, payment, API, and data exposure"
+  default_prompt: "Use $web-security-paywall-audit to inspect this application's security and paid-content boundaries."

@@ -7,3 +7,5 @@ The root `LICENSE` applies to original repository packaging, documentation, scri
 Provider/account integrations, deployment-specific skills, local OS tooling, and broader operational/security workflows are intentionally not included in this public-core release. They should be reviewed separately before any future redistribution.
 
 Before publishing a new release, review every file in `skills/` for private paths, credentials, non-public links, bundled assets, and third-party materials that require attribution or separate licensing.
+
+Per-skill and historical provenance is recorded in `PROVENANCE.md`.

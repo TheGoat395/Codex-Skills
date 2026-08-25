@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local Business Website Workflow"
+  short_description: "Coordinate intake, build, launch, and maintenance"
+  default_prompt: "Use $local-business-website-workflow to coordinate this local-business website from verified intake through launch."
