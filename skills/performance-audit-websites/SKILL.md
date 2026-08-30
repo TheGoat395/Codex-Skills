@@ -1,19 +1,23 @@
 ---
 name: performance-audit-websites
-description: "Audit website performance. Use for Core Web Vitals, LCP, INP, CLS, Lighthouse or browser performance checks, bundle and asset weight, image/video loading, font loading, third-party scripts, animation cost, hydration cost, and production-readiness performance review."
+description: "Measure, diagnose, or improve website runtime performance. Use for Core Web Vitals, LCP, INP, CLS, Lighthouse/browser diagnosis, React or Next.js waterfalls and rendering, bundle and hydration cost, media/fonts, third parties, animation cost, and evidence-backed implementation fixes; not for defining the project's initial performance-budget policy."
 ---
 
 # Performance Audit Websites
 
-Use this skill to keep premium sites fast enough that visual ambition does not punish users.
+Use this skill to keep premium sites fast enough that visual ambition does not punish users. Measure first and optimize the dominant constraint; do not apply framework folklore as proof.
+
+Own measured diagnosis and implementation. Route pre-build numeric budgets, acceptance thresholds, and visual-richness policy to `$performance-budget-lab`.
 
 ## Workflow
 
 1. Inspect the project, scripts, routes, local/deployed URL, production surfaces, and available QA/deployment tooling.
-2. Read [Performance Audit Websites Guide](references/performance-audit-websites-guide.md) before claiming the site is ready.
+2. Read [Performance Audit Websites Guide](references/performance-audit-websites-guide.md) before claiming the site is ready. For React or Next.js implementation work, also read [React and Next.js performance](references/react-next-performance.md).
 3. Run the narrowest meaningful checks for the risk: visual, mobile, accessibility, performance, forms, media, SEO, analytics, deployment, or handoff.
 4. Fix issues when they are in scope; otherwise record exact evidence and remaining risk.
 5. Summarize commands, URLs, screenshots/checks, changed files, and what was not tested.
+
+Separate field data, controlled lab data, source inspection, and inference. A Lighthouse score from one machine is not a field-performance guarantee; an optimized source pattern is not a measured user improvement.
 
 ## Always Protect
 

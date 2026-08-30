@@ -32,4 +32,4 @@ Use append-only event records for auditability. Compact only with an explicit su
 
 ## Verify and deliver
 
-Test cross-session recall, source citation, a conflicting-source case, a sensitive-record exclusion, retention behavior, and tenant isolation. Deliver a memory map, data dictionary, retention matrix, and example evidence receipt. Use `$agent-orchestration-architecture` for runtime ownership. For durable research capture, preserve source records and evidence receipts with the same provenance fields.
+Test cross-session recall, source citation, a conflicting-source case, a sensitive-record exclusion, retention behavior, and tenant isolation. Deliver a memory map, data dictionary, retention matrix, and example evidence receipt. Use `$agent-orchestration-architecture` for runtime ownership and `$research-provenance-archive` for durable research capture.

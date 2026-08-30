@@ -1,11 +1,13 @@
 ---
 name: performance-budget-lab
-description: "Use for website performance planning, Lighthouse/web-vitals checks, bundle/media/font budgets, Core Web Vitals triage, image/video optimization, animation performance, deployment readiness, and premium-site speed audits."
+description: "Define website performance budgets and pre-build acceptance constraints. Use for numeric bundle/media/font/route budgets, Core Web Vitals targets, visual-richness tradeoffs, CI budget policy, and deciding what a premium site may spend before implementation; not for diagnosing or fixing a measured React/Next/runtime regression."
 ---
 
 # Performance Budget Lab
 
 Use this skill to keep visually rich sites fast.
+
+Own the budget and acceptance policy. Route measured runtime diagnosis, implementation fixes, and React/Next performance work to `$performance-audit-websites`.
 
 ## Budget Areas
 
@@ -29,6 +31,8 @@ Use this skill to keep visually rich sites fast.
 6. Optimize media before adding more JS.
 7. Prefer CSS and Motion for small interactions; reserve GSAP/R3F/video for clear value.
 8. Report tradeoffs honestly when visual richness costs performance.
+
+Use Lighthouse or browser checks here to validate a budget decision, not to take ownership of deep runtime diagnosis. When the work shifts from setting thresholds to locating and repairing the bottleneck, hand off to `$performance-audit-websites`.
 
 ## Output
 

@@ -15,6 +15,8 @@ Use this skill to give the user a calm, accurate closeout they can trust and act
 4. Fix issues when they are in scope; otherwise record exact evidence and remaining risk.
 5. Summarize commands, URLs, screenshots/checks, changed files, and what was not tested.
 
+Use [references/release-handoff-template.md](references/release-handoff-template.md) for the release, monitoring, recovery, and ownership record. Validate it with `python3 scripts/verify-handoff.py <handoff.json>`.
+
 ## Always Protect
 
 - Inspect before changing or shipping: framework, package scripts, build output, routes, forms, media, animation stack, deployment target, environment variables, analytics, SEO metadata, accessibility risks, and available browser QA tooling.

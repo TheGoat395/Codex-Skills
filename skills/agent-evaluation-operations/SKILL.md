@@ -1,26 +1,57 @@
 ---
 name: agent-evaluation-operations
-description: Evaluate, observe, and release AI-agent workflows. Use for agent regression suites, prompt or model comparisons, scenario simulation, tool-call verification, traces, quality thresholds, cost and latency budgets, red-team cases, or release gates for AI systems.
+description: Evaluate, compare, observe, and release AI-agent workflows or Codex skills. Use for regression suites, prompt/model/skill comparisons, trigger collisions, scenario simulation, adversarial or red-team cases, tool-call verification, traces, quality thresholds, cost and latency budgets, or release gates.
 ---
 
 # Agent Evaluation Operations
 
-## Start from real failure modes
+Evaluate the claim the change is supposed to support, not the amount of new prompt text or the number of passing examples.
 
-Create a test inventory covering ordinary success, ambiguous input, missing data, conflicting evidence, unavailable tool, duplicate event, unsafe external action, escalation, and recovery. For each case record input, allowed sources/tools, expected structured result, prohibited outcome, scorer, and acceptance threshold.
+## Choose the evaluation mode
 
-## Measure the whole workflow
+- **Agent workflow:** test the real prompt, model, tools, approvals, state, and failure paths.
+- **Skill behavior:** test whether the skill triggers on the right requests, stays out of unrelated requests, cooperates with adjacent skills, and improves outcomes without excessive context or rigidity.
+- **Release comparison:** hold the harness constant and compare the current baseline with the proposed change.
 
-Evaluate factual grounding, action correctness, policy and approval adherence, tool selection, completion state, latency, cost, and recoverability. Use deterministic assertions whenever possible; use model grading only with a written rubric and calibration examples.
+For skill creation or modification, read [skill behavior evaluation](references/skill-behavior-evaluation.md). Use [the regression corpus](references/regression-corpus.json) when testing Red Sphere or global Codex operating behavior. Validate the corpus with `python3 scripts/validate_regression_corpus.py`.
 
-Trace run ID, model, prompt/version, tools, input class, outputs, error, latency, cost, and approval path. Redact or avoid sensitive payload capture by default.
+## Specify before measuring
+
+Record the evaluation claim, tested system, model/reasoning setting, prompt and skill versions, tool access, side-effect policy, attempt budget, acceptance threshold, and what would falsify the claim. Do not compare two runs that silently differ on these dimensions.
+
+Build cases from real work: ordinary success, ambiguous input, missing data, conflicting evidence, missing access, unavailable tools, duplicate events, unsafe external actions, escalation, recovery, and every confirmed historical failure. Keep a small smoke set plus a growing regression set.
+
+Trace run ID, tested-system version, model/reasoning setting, prompt and skill versions, tools, input class, structured result, error, latency, cost, and approval path. Redact or avoid sensitive payload capture by default.
+
+## Score observable behavior
+
+Prefer deterministic assertions for file state, structured fields, tool calls, authorization boundaries, and exact completion status. Use written rubrics for judgment. Calibrate model graders against examples and human review; do not let the candidate skill be the sole judge of its own success.
+
+Measure:
+
+- factual grounding and evidence quality;
+- scope coverage and completion-state accuracy;
+- tool and skill routing, including false-positive triggers;
+- action correctness, policy/approval adherence, and reversibility;
+- correction quality after contradictory evidence;
+- latency, tokens/cost, retries, and human review;
+- privacy, recoverability, and sensitive-data handling.
+
+## Test collisions, not only positive triggers
+
+Run positive, negative, adjacent, overlap, precedence, and co-invocation cases. Use `python3 scripts/analyze_skill_collisions.py --root ~/.codex/skills` only to generate candidate pairs; lexical similarity is discovery evidence, not proof of a semantic collision.
+
+Reject a skill change when it attracts unrelated work, duplicates an existing owner without a routing reason, weakens a capability floor, improves only the curated examples, or adds more context cost than demonstrated value.
 
 ## Gate releases
 
-- Keep a small deterministic smoke suite for every change.
-- Keep regression cases for every confirmed failure.
-- Test external calls in sandbox or dry-run mode before production.
-- Fail release when required scenario, approval, cost, or quality thresholds are not met.
-- Separate test evidence from production evidence.
+- Run baseline and treatment under the same harness.
+- Require the proposed change to fix its target regressions without material degradation elsewhere.
+- Fail the release when a required scenario, authorization boundary, cost budget, or quality threshold is missed.
+- Test external calls in a sandbox, fixture, or dry-run path before production.
+- Separate local structural validation, simulated behavior, and live production evidence.
+- Preserve run identifiers, versions, aggregate scores, failures, and reviewer overrides while redacting sensitive payloads.
 
-Use Promptfoo project-locally when its capabilities fit and its telemetry, remote-generation, configuration, and credentials have been reviewed. Do not claim safety or production readiness from one successful demo. Route system design to `$agent-orchestration-architecture` and run the repository's applicable security checks before release.
+Do not infer safety, production readiness, or broad behavioral improvement from one successful demonstration.
+
+Use Promptfoo or another project-local harness only when its telemetry, credentials, remote execution, and configuration have been reviewed. Route agent-system architecture to `$agent-orchestration-architecture`; route repository security to `$repository-release-security`.

@@ -1,6 +1,6 @@
 ---
 name: visual-polish-qa
-description: Inspect, test, and refine frontend visual quality before delivery. Use after building or editing websites, landing pages, portfolios, dashboards, games, interactive tools, cinematic sites, luxury sites, or any UI where Codex should run a second polish pass for responsive layout, typography, spacing, hierarchy, motion, accessibility, and browser-rendered correctness.
+description: Inspect and refine the general visual finish of a rendered frontend before delivery. Use for hierarchy, typography, spacing rhythm, imagery, surface treatment, component composition, interaction finish, and obvious rendered defects at accepted target viewports. Use responsive-visual-polish-qa when the primary problem is cross-breakpoint behavior.
 ---
 
 # Visual Polish QA
@@ -13,7 +13,7 @@ Do not stop when the code compiles. Inspect the rendered result, identify visibl
 
 1. Start or locate the dev server when the project needs one.
 2. Open the site in a browser or capture screenshots when tooling is available.
-3. Check desktop and mobile widths.
+3. Check the accepted target viewports; route a systematic breakpoint problem to `responsive-visual-polish-qa`.
 4. Inspect hero, navigation, major sections, interactive states, forms, media, and footer.
 5. Fix obvious visual defects and weak polish.
 6. Re-run build/lint/test commands available in the repo.

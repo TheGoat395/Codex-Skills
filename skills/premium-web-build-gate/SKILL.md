@@ -15,18 +15,20 @@ Follow this sequence for premium web work:
 
 1. Inspect the current project, repo instructions, design docs, route structure, live/local render, assets, and existing copy.
 2. Research or re-check current reference sources when the references, tools, product standards, or external sites may have changed.
-3. Classify sources as `use`, `distill`, `inspiration only`, or `avoid`.
-4. Produce the Build-Ready UI Spec.
-5. Wait for user confirmation unless the user explicitly said to proceed, build, implement, continue, or fix.
-6. Build version 1 using the approved spec.
-7. Run local browser QA on desktop and mobile, then perform a second polish pass.
-8. Report files changed, commands run, visual QA status, and anything blocked.
+3. Select Tier 1, Tier 2, or Tier 3 from `enforce-complete-scope/references/website-quality-tiers.md`; higher tiers inherit lower-tier requirements.
+4. Classify sources as `use`, `distill`, `inspiration only`, or `avoid`.
+5. Produce the Build-Ready UI Spec.
+6. Wait for user confirmation unless the user explicitly said to proceed, build, implement, continue, or fix.
+7. Build version 1 using the approved spec.
+8. Run local browser QA on desktop and mobile, then perform a second polish pass.
+9. Report files changed, commands run, visual QA status, and anything blocked.
 
 ## Build-Ready UI Spec
 
 Before coding, write a concise spec with these headings:
 
 - `Current System`: framework, entry files, styling system, interaction/motion system, source vs generated assets, junk folders, and planned edit files.
+- `Quality Tier`: selected tier, inherited gates, and why the requested commercial outcome maps to it.
 - `Business Truth`: what the organization actually does, stated without invented specifics, fake proof, or copied claims.
 - `Page Scope`: what belongs on this page, what belongs on later subpages, and what must be removed to avoid content crowding.
 - `Reference Contract`: 3-5 concrete reference behaviors to borrow, 3-5 to avoid, and which references are verified vs user shorthand.
@@ -88,6 +90,7 @@ Before installing or adopting a new tool/skill:
 - Do not install broad style packs that overlap existing skills unless they add a clear missing gate.
 - Install frontend libraries per project, not globally, unless the tool is a CLI or Codex skill.
 - Explain why the new dependency or skill materially improves the result.
+- Cables Standalone intentionally permits unsandboxed Node integration and external operator code. Use only trusted patches, operators, and npm dependencies; keep client assets separated and export audited web bundles for delivery.
 
 ## Final QA
 

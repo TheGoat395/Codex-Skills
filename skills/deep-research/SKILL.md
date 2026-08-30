@@ -110,14 +110,16 @@ For long, multi-surface, or compaction-prone work, maintain a task-scoped checkp
 
 Resume from the checkpoint instead of restarting or relying on compressed conversation memory. Do not create durable files for a small task when an internal ledger is sufficient. Remove temporary artifacts after delivery unless they remain useful to the project or the user asks to retain them.
 
-## Make Consecutive Passes Additive
+## Make Consecutive Maximum-Reasoning Passes Additive
 
-When a research task is exceptionally ambiguous, high-impact, system-wide, or repeatedly unresolved, divide consecutive passes deliberately:
+When the user selects the available maximum-reasoning route for an exceptionally ambiguous, high-impact, system-wide, or repeatedly unresolved decision, divide consecutive passes deliberately:
 
 - **Pass 1 — Discovery and thesis:** map the field, build the evidence-backed working model, and identify decisive unknowns.
 - **Pass 2 — Challenger and completion:** pursue omissions, counterevidence, weak identities, alternate interpretations, and unresolved branches; record what changed, survived, or remained uncertain.
 
 Do not use the second pass to restate the first. De-escalate implementation or repetition once the difficult direction is settled.
+
+When `$deep-research` and `$godmode` are invoked together, use Deep Research to establish the defensible decision and GODMODE to execute and verify every feasible in-scope component.
 
 ## Run the Autonomous Completion Check
 
@@ -129,7 +131,7 @@ Before delivery, test whether a rigorous reviewer could expose a material omissi
 - current constraints, total cost, operational burden, ownership, scale, or failure behavior;
 - duplication, regression, or an unjustified change from the existing baseline;
 - an untried practical access route;
-- evidence that points away from the initial belief or the working thesis.
+- evidence that points away from the user's initial belief or the working thesis.
 
 Continue automatically when the omission is material and in scope. Do not expand into a different objective.
 

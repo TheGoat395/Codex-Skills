@@ -24,3 +24,5 @@ Use this skill when the trigger description applies. Keep the `SKILL.md` lean, t
 ## Detailed Guide
 
 Read `references/web-reference-research-guide.md` when this skill is active for a build, redesign, review, or implementation plan.
+
+For item-level motion references, also read [references/reconstruction-manifest.md](references/reconstruction-manifest.md) and validate the research record with `python3 scripts/verify-reference-record.py <record.json>`.

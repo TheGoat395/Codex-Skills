@@ -1,6 +1,6 @@
 ---
 name: visual-regression-lab
-description: "Use after frontend changes or before delivery to run rendered visual QA with Playwright/browser screenshots, viewport checks, console/network checks, overflow detection, canvas/media verification, before/after comparisons, and responsive polish review."
+description: "Use after frontend changes or before delivery for rendered visual QA with Playwright/browser screenshots, viewport checks, console/network checks, overflow and canvas/media verification, before/after comparison, and reliable stitched capture of lazy or scroll-animated full pages."
 ---
 
 # Visual Regression Lab
@@ -18,6 +18,10 @@ Use this skill to prove the site looks right in a browser, not just in code.
 7. For animation-heavy work, test reduced-motion behavior and watch for jank.
 8. For canvas/WebGL/video, verify nonblank rendered pixels and stable framing.
 9. Do one second-pass polish edit when the result feels generic or cramped.
+
+Read [baseline contract](references/baseline-contract.md). When a project has Playwright installed, run `node scripts/capture-settled-baseline.mjs <url> <output-dir>` to capture settled desktop/mobile/reduced-motion states and a machine-readable inspection manifest.
+
+When native full-page capture is blank, sparse, incomplete, or inconsistent with real scrolling, read [stitched full-page capture](references/stitched-full-page-capture.md) and run `node scripts/capture-stitched-full-page.mjs --url <url> --output <image>`. Treat the stitched image as evidence only after visual inspection.
 
 ## Output
 

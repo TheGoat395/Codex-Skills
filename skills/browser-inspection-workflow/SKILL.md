@@ -1,6 +1,6 @@
 ---
 name: browser-inspection-workflow
-description: "Run browser inspection for websites and apps. Use after building or changing frontend work to open the rendered site, inspect console and network errors, verify layout and interactions, test links/forms/media, capture screenshots, check responsive behavior, and perform the second visual polish pass before final delivery."
+description: "Run browser inspection for websites and apps. Use after frontend changes to inspect console/network state, layout, interactions, links/forms/media, screenshots, responsive behavior, or scroll/lazy-rendered pages; route unreliable one-shot full-page captures to settled viewport stitching."
 ---
 
 # Browser Inspection Workflow
@@ -13,7 +13,10 @@ Use this skill to make rendered-browser inspection a default part of shipping fr
 2. Read [Browser Inspection Workflow Guide](references/browser-inspection-workflow-guide.md) before claiming the site is ready.
 3. Run the narrowest meaningful checks for the risk: visual, mobile, accessibility, performance, forms, media, SEO, analytics, deployment, or handoff.
 4. Fix issues when they are in scope; otherwise record exact evidence and remaining risk.
-5. Summarize commands, URLs, screenshots/checks, changed files, and what was not tested.
+5. When visible UI changed, perform a second rendered polish pass after the first fixes.
+6. Summarize commands, URLs, screenshots/checks, changed files, and what was not tested.
+
+If a native `fullPage` screenshot is blank, sparse, missing lower content, frozen before reveal animation, or inconsistent with the working scroll experience, do not use it as visual proof. Route the capture through `$visual-regression-lab` and its stitched viewport workflow.
 
 ## Always Protect
 

@@ -1,13 +1,13 @@
 ---
 name: "responsive-visual-polish-qa"
-description: "Run responsive visual QA and polish for websites and apps. Use after building or editing any frontend to inspect desktop, laptop, tablet, and mobile widths; fix typography, spacing, overlaps, media crops, interactions, motion, forms, canvas rendering, accessibility, and final build quality."
+description: "Run cross-breakpoint visual QA for websites and apps. Use when layout, typography, media crops, navigation, forms, canvas framing, or interaction composition must remain coherent across desktop, laptop, tablet, and mobile widths. Use visual-polish-qa for general art-direction and finish problems at already accepted breakpoints."
 ---
 
 # Responsive Visual Polish QA
 
 ## Purpose
 
-Make the browser-rendered result the final quality gate.
+Make cross-breakpoint behavior the quality gate. This skill owns responsive composition, not every category of frontend polish.
 
 ## Required Use
 
@@ -16,9 +16,9 @@ Use this skill when the trigger description applies. Keep the `SKILL.md` lean, t
 ## Operating Contract
 
 1. Inspect before coding when code exists.
-2. Convert vague taste into concrete rules.
+2. Define the representative viewport matrix and the responsive invariants that must hold.
 3. Explain planned files before major changes unless the user clearly said to proceed.
-4. Build, inspect, polish, and verify.
+4. Inspect and repair transitions between breakpoints, not only one desktop and one mobile screenshot.
 5. Report commands run, files changed, and anything not tested.
 
 ## Detailed Guide

@@ -35,9 +35,13 @@ Parallelize only independent work whose outputs can be reconciled without confli
 - Use a manager when one agent must enforce shared policy, combine specialist work, or own the user-facing answer.
 - Use a handoff when the specialist needs a focused interaction and clear transfer of responsibility.
 - Pass structured task packets, not vague conversation history. Minimize context to the specialist's need.
+- Delegate only a concrete, independent workstream with a defined output. Parallelism can reduce latency, but every subagent performs separate model and tool work and therefore increases usage.
+- When the delegation tool supports inherited-turn controls, use no inherited history or the smallest recent-turn window that preserves the task. Use full-history inheritance only when a compact task packet cannot preserve an indispensable dependency.
+- Give each specialist the exact sources, constraints, output schema, stopping condition, and useful result-size limit. Ask for distilled findings instead of raw logs or copied source material.
+- Keep the parent thread as the canonical decision owner. Do not spawn several agents to reread the same corpus, and do not use subagents merely to avoid doing a bounded task locally.
 - Keep external writes, money, sending, publishing, and irreversible operations behind explicit approval gates.
 - Design every loop with a maximum attempt count and a useful terminal state.
 
 ## Required outputs
 
-Produce an execution diagram, role/tool matrix, state and approval map, operating limits, and an evaluation plan. Route persistent-context design to `$agent-memory-provenance`; route quality and release testing to `$agent-evaluation-operations`; define explicit integration contracts for external events.
+For a material architecture request, produce the smallest useful combination of an execution diagram, role/tool matrix, state/approval map, operating limits, and evaluation plan. Do not create every artifact for a simple routing decision. Route persistent-context design to `$agent-memory-provenance`; route quality and release testing to `$agent-evaluation-operations`; route external events to `$integration-contract-reliability`.

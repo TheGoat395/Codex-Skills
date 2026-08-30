@@ -13,10 +13,12 @@
 
 ## Implementation Rules
 
+- Establish a baseline before changing implementation and rerun the same measurement afterward.
 - Prioritize the actual first viewport and LCP media.
 - Reserve space for media and dynamic content.
 - Do not add heavy libraries for small effects.
 - Reduce third-party and animation cost.
+- For React or Next.js, inspect waterfalls, server/client boundaries, serialized props, route-level loading, and initial JavaScript before micro-optimizing component code.
 - Report lab-only limits honestly.
 
 ## Useful Patterns
@@ -25,6 +27,7 @@
 - LCP image/font/preload check.
 - CLS check for images, embeds, cookie bars, and dynamic sections.
 - Runtime interaction check for menus/forms/animations.
+- Route/server timing plus bundle inspection for React/Next.js work.
 
 ## Anti-Patterns
 
@@ -44,6 +47,7 @@
 
 - Major performance risks are identified and reduced.
 - Media and layout stability are handled.
+- The same relevant measurement is compared before and after a claimed optimization.
 - Performance claims are evidence-backed.
 
 ## Shared Website Requirements
