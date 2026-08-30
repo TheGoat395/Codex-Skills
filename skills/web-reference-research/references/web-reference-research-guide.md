@@ -45,7 +45,7 @@ Convert taste references into concrete, verifiable design decisions.
 - Raycast: command surface, fast ergonomic interactions, product UI details, controlled playfulness.
 - Linear: dense product realism, restrained glow, workflow clarity, serious speed language.
 - Vercel: monochrome precision, strong type, developer trust, minimal surfaces, system clarity.
-- Viktor-style motion shorthand: smooth scroll choreography, layered reveals, precise timing, non-template composition.
+- Viktor Oddy/MotionSites: verified public sources include `motionsites.ai`, `x.com/viktoroddy`, `youtube.com/@ViktorOddy`, and `designrocket.io`. Extract cinematic hero concepts, prompt-to-build workflows, scroll/video/3D choreography, disciplined type, conversion intent, and delivery limits from the current source—not from the name alone.
 - Codrops/Awwwards: sticky scenes, masks, WebGL galleries, scroll rhythm, experimental transitions.
 
 ## Anti-Patterns

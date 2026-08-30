@@ -1,6 +1,6 @@
 {
   "name": "codex-premium-website-skills",
-  "generated_at": "2026-08-30T15:02:30.037809+00:00",
+  "generated_at": "2026-08-30T22:04:51.895616+00:00",
   "source": "skills/",
   "skill_count": 80,
   "skills": [
@@ -18,21 +18,21 @@
     },
     {
       "name": "agent-evaluation-operations",
-      "description": "Evaluate, observe, and release AI-agent workflows. Use for agent regression suites, prompt or model comparisons, scenario simulation, tool-call verification, traces, quality thresholds, cost and latency budgets, red-team cases, or release gates for AI systems.",
-      "file_count": 2,
-      "bytes": 2062
+      "description": "Evaluate, compare, observe, and release AI-agent workflows or Codex skills. Use for regression suites, prompt/model/skill comparisons, trigger collisions, scenario simulation, adversarial or red-team cases, tool-call verification, traces, quality thresholds, cost and latency budgets, or release gates.",
+      "file_count": 6,
+      "bytes": 31602
     },
     {
       "name": "agent-memory-provenance",
       "description": "Design attributable, privacy-aware memory for AI agents. Use when an agent needs session context, durable memory, retrieval, summaries, source citations, client isolation, compaction, retention rules, or an append-only decision and evidence record.",
       "file_count": 2,
-      "bytes": 2340
+      "bytes": 2295
     },
     {
       "name": "agent-orchestration-architecture",
       "description": "Design reliable AI-agent and multi-agent systems. Use when deciding whether a workflow needs one agent, tools, specialist agents, manager control, handoffs, durable execution, human approval, model routing, retries, or an operating boundary for an AI workflow.",
       "file_count": 2,
-      "bytes": 2502
+      "bytes": 3454
     },
     {
       "name": "animation-easing-language",
@@ -42,9 +42,9 @@
     },
     {
       "name": "animation-jank-qa",
-      "description": "Run animation jank QA. Use for GSAP, Motion, CSS transitions, scroll animation, pinned scenes, parallax, hover states, page transitions, mobile motion, reduced-motion fallbacks, performance-heavy animations, and final motion polish before delivery.",
+      "description": "Diagnose and repair a concrete animation-jank symptom in a rendered website or app. Use for stutter, frame drops, scroll hitching, pinned-scene jumps, parallax lag, input delay, or a reproducible transition problem. Use motion-performance-qa for a broad pre-delivery motion-system review.",
       "file_count": 3,
-      "bytes": 5651
+      "bytes": 5603
     },
     {
       "name": "animation-tool-router",
@@ -66,9 +66,9 @@
     },
     {
       "name": "browser-inspection-workflow",
-      "description": "Run browser inspection for websites and apps. Use after building or changing frontend work to open the rendered site, inspect console and network errors, verify layout and interactions, test links/forms/media, capture screenshots, check responsive behavior, and perform the second visual polish pass before final delivery.",
+      "description": "Run browser inspection for websites and apps. Use after frontend changes to inspect console/network state, layout, interactions, links/forms/media, screenshots, responsive behavior, or scroll/lazy-rendered pages; route unreliable one-shot full-page captures to settled viewport stitching.",
       "file_count": 3,
-      "bytes": 5703
+      "bytes": 6396
     },
     {
       "name": "code-change-safety-checkpoint",
@@ -140,7 +140,7 @@
       "name": "deep-research",
       "description": "Run adaptive, evidence-led, multi-pass research for consequential, complex, disputed, niche, or fast-changing questions without requiring repeated prompts for missing depth. Use for exhaustive research, due diligence, investigations, audits, fact checking, landscape mapping, comparative ranking, or source-backed decisions across any domain where coverage, freshness, contradictions, confidence, access recovery, and traceable claims matter.",
       "file_count": 3,
-      "bytes": 14825
+      "bytes": 15088
     },
     {
       "name": "design-motion-principles",
@@ -163,8 +163,8 @@
     {
       "name": "final-client-handoff",
       "description": "Prepare final website handoff. Use after completing a site, app, landing page, redesign, deployment, or production QA to summarize changed files, commands run, checks passed, local/deployed URLs, environment variables, content/CMS notes, known limitations, untested areas, and recommended next steps.",
-      "file_count": 3,
-      "bytes": 5578
+      "file_count": 5,
+      "bytes": 7169
     },
     {
       "name": "frontend-quality-auditor",
@@ -228,9 +228,9 @@
     },
     {
       "name": "motion-performance-qa",
-      "description": "Run motion performance QA for websites and apps. Use after adding Motion, GSAP, Lenis, scroll scenes, page transitions, hover states, carousels, WebGL sync, observers, timers, RAF loops, or any animation-heavy UI to catch jank, layout shift, leaks, cleanup bugs, reduced-motion gaps, and mobile issues.",
+      "description": "Run a broad pre-delivery motion-system performance review for websites and apps. Use after substantial Motion, GSAP, Lenis, scroll-scene, transition, carousel, or WebGL work to check lifecycle cleanup, competing systems, layout shift, reduced motion, mobile behavior, and performance budgets. Use animation-jank-qa for one reproducible stutter or hitch.",
       "file_count": 3,
-      "bytes": 5359
+      "bytes": 5606
     },
     {
       "name": "motion-react-layout-transitions",
@@ -282,27 +282,27 @@
     },
     {
       "name": "performance-audit-websites",
-      "description": "Audit website performance. Use for Core Web Vitals, LCP, INP, CLS, Lighthouse or browser performance checks, bundle and asset weight, image/video loading, font loading, third-party scripts, animation cost, hydration cost, and production-readiness performance review.",
-      "file_count": 3,
-      "bytes": 5611
+      "description": "Measure, diagnose, or improve website runtime performance. Use for Core Web Vitals, LCP, INP, CLS, Lighthouse/browser diagnosis, React or Next.js waterfalls and rendering, bundle and hydration cost, media/fonts, third parties, animation cost, and evidence-backed implementation fixes; not for defining the project's initial performance-budget policy.",
+      "file_count": 4,
+      "bytes": 11428
     },
     {
       "name": "performance-budget-lab",
-      "description": "Use for website performance planning, Lighthouse/web-vitals checks, bundle/media/font budgets, Core Web Vitals triage, image/video optimization, animation performance, deployment readiness, and premium-site speed audits.",
+      "description": "Define website performance budgets and pre-build acceptance constraints. Use for numeric bundle/media/font/route budgets, Core Web Vitals targets, visual-richness tradeoffs, CI budget policy, and deciding what a premium site may spend before implementation; not for diagnosing or fixing a measured React/Next/runtime regression.",
       "file_count": 2,
-      "bytes": 1484
+      "bytes": 2002
     },
     {
       "name": "premium-visual-reference-library",
       "description": "Use when Codex needs premium visual inspiration sources, website galleries, studio references, product-site references, motion references, UI examples, luxury/editorial/Squarespace/Raycast/Linear/Vercel-level references, or a non-generic reference set before designing a website.",
-      "file_count": 3,
-      "bytes": 5887
+      "file_count": 10,
+      "bytes": 268003
     },
     {
       "name": "premium-web-build-gate",
       "description": "Premium website pre-build gate for cinematic, editorial, Squarespace-polished, Raycast/Linear/Vercel-precise, or motion-heavy web work. Use before implementing or redesigning a homepage, landing page, portfolio, product site, agency/studio site, or high-polish web app when the user wants non-generic visual quality, strong scroll/motion choreography, strict content scope, or an award-level result. Produces a build-ready UI spec, source-trust decisions, motion storyboard, and QA gates before code.",
       "file_count": 2,
-      "bytes": 7457
+      "bytes": 7941
     },
     {
       "name": "radix-accessible-primitives",
@@ -360,9 +360,9 @@
     },
     {
       "name": "responsive-visual-polish-qa",
-      "description": "Run responsive visual QA and polish for websites and apps. Use after building or editing any frontend to inspect desktop, laptop, tablet, and mobile widths; fix typography, spacing, overlaps, media crops, interactions, motion, forms, canvas rendering, accessibility, and final build quality.",
+      "description": "Run cross-breakpoint visual QA for websites and apps. Use when layout, typography, media crops, navigation, forms, canvas framing, or interaction composition must remain coherent across desktop, laptop, tablet, and mobile widths. Use visual-polish-qa for general art-direction and finish problems at already accepted breakpoints.",
       "file_count": 3,
-      "bytes": 4387
+      "bytes": 4607
     },
     {
       "name": "section-layout-systems",
@@ -386,7 +386,7 @@
       "name": "systematic-debugging",
       "description": "Diagnose reproducible or intermittent software failures through evidence, hypothesis testing, localization, root-cause repair, and regression verification. Use for failing tests, builds, runtime behavior, integrations, performance regressions, or unexplained errors; not for ordinary implementation with no failure.",
       "file_count": 3,
-      "bytes": 6893
+      "bytes": 6933
     },
     {
       "name": "tailwind-design-tokens",
@@ -420,9 +420,9 @@
     },
     {
       "name": "verification-before-completion",
-      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+      "description": "Verify the evidence needed for a completion, fix, or passing claim before reporting it. Use the smallest fresh check that is decisive for the actual consequence; state exact coverage and limitations instead of running every possible test.",
       "file_count": 1,
-      "bytes": 3646
+      "bytes": 2621
     },
     {
       "name": "visual-assets-direction",
@@ -432,15 +432,15 @@
     },
     {
       "name": "visual-polish-qa",
-      "description": "Inspect, test, and refine frontend visual quality before delivery. Use after building or editing websites, landing pages, portfolios, dashboards, games, interactive tools, cinematic sites, luxury sites, or any UI where Codex should run a second polish pass for responsive layout, typography, spacing, hierarchy, motion, accessibility, and browser-rendered correctness.",
+      "description": "Inspect and refine the general visual finish of a rendered frontend before delivery. Use for hierarchy, typography, spacing rhythm, imagery, surface treatment, component composition, interaction finish, and obvious rendered defects at accepted target viewports. Use responsive-visual-polish-qa when the primary problem is cross-breakpoint behavior.",
       "file_count": 3,
-      "bytes": 3914
+      "bytes": 3970
     },
     {
       "name": "visual-regression-lab",
-      "description": "Use after frontend changes or before delivery to run rendered visual QA with Playwright/browser screenshots, viewport checks, console/network checks, overflow detection, canvas/media verification, before/after comparisons, and responsive polish review.",
-      "file_count": 2,
-      "bytes": 1466
+      "description": "Use after frontend changes or before delivery for rendered visual QA with Playwright/browser screenshots, viewport checks, console/network checks, overflow and canvas/media verification, before/after comparison, and reliable stitched capture of lazy or scroll-animated full pages.",
+      "file_count": 6,
+      "bytes": 22499
     },
     {
       "name": "web-design-direction-system",
@@ -463,8 +463,8 @@
     {
       "name": "web-reference-research",
       "description": "Research and translate website references into reusable design constraints. Use when the user mentions Viktor Oddy, Squarespace, Raycast, Linear, Vercel, Framer, Awwwards, Codrops, luxury sites, cinematic websites, product-led sites, portfolios, or any external web design reference that should influence a build.",
-      "file_count": 3,
-      "bytes": 5571
+      "file_count": 5,
+      "bytes": 7472
     },
     {
       "name": "web-style-director",

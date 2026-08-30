@@ -28,7 +28,7 @@ Read [debugging playbook](references/debugging-playbook.md) for layer-specific p
 
 - Repair the root cause or the closest controllable cause; label containment or mitigation honestly.
 - Make one logically related change at a time where practical.
-- Add a regression guard at the lowest stable observable seam when the behavior is testable.
+- Add a regression guard at the lowest stable observable seam. Use `$selective-test-driven-development` when a behavior is testable.
 - Re-run the focused reproduction, relevant broader suite/build, and the original end-to-end scenario.
 - Check for side effects created by instrumentation, temporary configuration, caches, or test fixtures.
 

@@ -1,13 +1,13 @@
 ---
 name: motion-performance-qa
-description: Run motion performance QA for websites and apps. Use after adding Motion, GSAP, Lenis, scroll scenes, page transitions, hover states, carousels, WebGL sync, observers, timers, RAF loops, or any animation-heavy UI to catch jank, layout shift, leaks, cleanup bugs, reduced-motion gaps, and mobile issues.
+description: Run a broad pre-delivery motion-system performance review for websites and apps. Use after substantial Motion, GSAP, Lenis, scroll-scene, transition, carousel, or WebGL work to check lifecycle cleanup, competing systems, layout shift, reduced motion, mobile behavior, and performance budgets. Use animation-jank-qa for one reproducible stutter or hitch.
 ---
 
 # Motion Performance QA
 
 ## Use This Skill
 
-Use this skill for audit animation performance, cleanup, accessibility, and jank.
+Use this skill for release-level coverage across the complete motion system, not for diagnosing one isolated jank symptom.
 
 ## Operating Contract
 
@@ -16,6 +16,7 @@ Use this skill for audit animation performance, cleanup, accessibility, and jank
 3. Keep motion purposeful: clarify sequence, focus, depth, tactility, or product understanding.
 4. Follow existing project conventions unless a change clearly improves the result.
 5. Run available checks and visually inspect responsive/reduced-motion output when the change affects UI.
+6. Record the routes, interactions, devices/viewports, budgets, and lifecycle paths actually covered; do not imply whole-site certification from a sample.
 
 ## Required Reference
 

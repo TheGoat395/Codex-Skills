@@ -17,6 +17,8 @@
 - Check console and failed requests.
 - Test links/buttons/forms, not just static appearance.
 - Use screenshots for visual claims.
+- Warm lazy and reveal-heavy pages by scrolling through them before final captures.
+- Reject native full-page screenshots that disagree with settled viewport behavior; use the stitched workflow in `$visual-regression-lab`.
 - Report what was not inspectable.
 
 ## Useful Patterns
@@ -25,6 +27,7 @@
 - Desktop and mobile smoke path through homepage, nav, CTA, form.
 - Console/network capture before final answer.
 - Screenshot proof for hero, mid-page, and mobile menu.
+- Settled viewport stitching for Framer, WebGL, lazy media, pinned scenes, or scroll-reveal pages when one-shot full-page capture fails.
 
 ## Anti-Patterns
 
