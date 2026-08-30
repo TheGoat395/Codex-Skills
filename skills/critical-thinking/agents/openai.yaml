@@ -1,0 +1,7 @@
+interface:
+  display_name: "Critical Thinking"
+  short_description: "Map arguments and test evidence independently"
+  default_prompt: "Use $critical-thinking to reconstruct this argument, test its evidence, and give the strongest defensible judgment."
+
+policy:
+  allow_implicit_invocation: true

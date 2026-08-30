@@ -1,0 +1,7 @@
+interface:
+  display_name: "Creativity"
+  short_description: "Escape fixation and develop useful original ideas"
+  default_prompt: "Use $creativity to frame the search, escape fixation, develop structurally different concepts, and validate the strongest direction."
+
+policy:
+  allow_implicit_invocation: true

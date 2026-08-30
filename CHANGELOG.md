@@ -2,6 +2,13 @@
 
 All notable changes to Codex Premium Website Skills are documented here.
 
+## [0.2.0] - 2026-08-30
+
+- Added ten public `agent-quality-core` skills for critical and logical thinking, creativity, evidence-led research, debugging, agent architecture, memory provenance, evaluation, and completion verification.
+- Added the `agent-quality-core` collection and expanded the default `public-core` from 70 to 80 skills.
+- Sanitized copied skill content to remove personal, machine-specific, and unavailable cross-references before public packaging.
+- Updated the catalog, compatibility notes, release checks, evidence summary, and generated inventories for the 80-skill release.
+
 ## [0.1.2] - 2026-07-03
 
 - Added `COMPATIBILITY.md` with Codex, Claude Code, Cursor, Gemini CLI, and generic `SKILL.md` support levels.

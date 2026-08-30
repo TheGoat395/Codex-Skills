@@ -1,0 +1,7 @@
+interface:
+  display_name: "Evidence Reconciliation"
+  short_description: "Resolve source conflicts and prevent unsupported claims"
+  default_prompt: "Use $evidence-reconciliation to reconcile these sources before reaching a conclusion or updating the plan."
+
+policy:
+  allow_implicit_invocation: true

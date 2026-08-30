@@ -1,12 +1,12 @@
 # Curated Collections
 
-Large skill libraries should be installed intentionally. This public release defaults to `public-core`: exactly 70 skills selected for frontend, website, design-engineering, QA, motion, content, and maintainer-safety workflows.
+Large skill libraries should be installed intentionally. This public release defaults to `public-core`: exactly 80 skills selected for frontend, website, design-engineering, QA, motion, content, maintainer-safety, and agent-quality workflows.
 
 The source of truth is `curated_collections.json`. This file explains the intent behind each public collection.
 
 ## public-core
 
-The full public release collection: 70 skills covering premium website strategy, design direction, frontend implementation, motion, QA, content polish, and maintainer safety.
+The full public release collection: 80 skills covering premium website strategy, design direction, frontend implementation, motion, QA, content polish, maintainer safety, and agent quality.
 
 This public release intentionally excludes provider/account integrations, deployment-specific skills, local OS screenshot tooling, and broad security/ops workflows that require separate review.
 
@@ -93,3 +93,16 @@ Focus:
 - undo and revert workflow
 - project-local installation preference
 - tool/repo/package trust checks
+
+## agent-quality-core
+
+For evidence-led reasoning, research, debugging, agent design, persistent context, evaluation, and completion verification.
+
+Focus:
+
+- reconstructing claims and selecting the right inference structure
+- generating useful alternatives without losing evidence discipline
+- source-backed research and contradiction handling
+- root-cause debugging and regression verification
+- bounded agent architecture, memory provenance, and evaluation gates
+- fresh verification before completion claims

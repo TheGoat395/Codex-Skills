@@ -1,8 +1,8 @@
 {
   "name": "codex-premium-website-skills",
-  "generated_at": "2026-07-02T03:43:21.141644+00:00",
+  "generated_at": "2026-08-30T15:02:30.037809+00:00",
   "source": "skills/",
-  "skill_count": 70,
+  "skill_count": 80,
   "skills": [
     {
       "name": "accessibility-audit-websites",
@@ -15,6 +15,24 @@
       "description": "Improve website accessibility and performance polish. Use for semantic HTML, keyboard navigation, focus states, contrast, alt text, reduced motion, image/video loading, canvas fallbacks, bundle caution, animation performance, and final production readiness for polished websites.",
       "file_count": 3,
       "bytes": 4611
+    },
+    {
+      "name": "agent-evaluation-operations",
+      "description": "Evaluate, observe, and release AI-agent workflows. Use for agent regression suites, prompt or model comparisons, scenario simulation, tool-call verification, traces, quality thresholds, cost and latency budgets, red-team cases, or release gates for AI systems.",
+      "file_count": 2,
+      "bytes": 2062
+    },
+    {
+      "name": "agent-memory-provenance",
+      "description": "Design attributable, privacy-aware memory for AI agents. Use when an agent needs session context, durable memory, retrieval, summaries, source citations, client isolation, compaction, retention rules, or an append-only decision and evidence record.",
+      "file_count": 2,
+      "bytes": 2340
+    },
+    {
+      "name": "agent-orchestration-architecture",
+      "description": "Design reliable AI-agent and multi-agent systems. Use when deciding whether a workflow needs one agent, tools, specialist agents, manager control, handoffs, durable execution, human approval, model routing, retries, or an operating boundary for an AI workflow.",
+      "file_count": 2,
+      "bytes": 2502
     },
     {
       "name": "animation-easing-language",
@@ -89,6 +107,18 @@
       "bytes": 4240
     },
     {
+      "name": "creativity",
+      "description": "Generate, explore, and develop original but useful possibilities when an ordinary answer would underserve the objective. Use for ideation, reframing, synthesis, invention, adaptation, creative problem-solving, or escaping fixation across writing, strategy, products, research, design, and technical work. Do not invoke for routine variation, factual retrieval, or final evidence adjudication.",
+      "file_count": 4,
+      "bytes": 19684
+    },
+    {
+      "name": "critical-thinking",
+      "description": "Evaluate a material claim, argument, explanation, forecast, or recommendation by reconstructing its reasoning, testing evidence and assumptions, and comparing the strongest alternatives. Use when the task centers on whether something deserves belief or confidence. Do not invoke for routine retrieval, simple editing, or a purely formal entailment problem.",
+      "file_count": 4,
+      "bytes": 17416
+    },
+    {
       "name": "cross-browser-qa",
       "description": "Run cross-browser QA for websites and apps. Use before production or after CSS, media, forms, animation, canvas, layout, or interaction changes to test Chromium, WebKit/Safari-like, and Firefox behavior, browser-specific CSS/media issues, focus/keyboard differences, and responsive rendering.",
       "file_count": 3,
@@ -107,6 +137,12 @@
       "bytes": 6278
     },
     {
+      "name": "deep-research",
+      "description": "Run adaptive, evidence-led, multi-pass research for consequential, complex, disputed, niche, or fast-changing questions without requiring repeated prompts for missing depth. Use for exhaustive research, due diligence, investigations, audits, fact checking, landscape mapping, comparative ranking, or source-backed decisions across any domain where coverage, freshness, contradictions, confidence, access recovery, and traceable claims matter.",
+      "file_count": 3,
+      "bytes": 14825
+    },
+    {
       "name": "design-motion-principles",
       "description": "Motion and interaction design skill using interpretive lenses informed by publicly available work from Emil Kowalski, Jakub Krehel, and Jhey Tompkins. Two modes: build interactive components with purposeful motion, or audit existing animations to catch AI-generated motion anti-patterns. Use when creating, adding, animating, or reviewing UI motion: transitions, hover states, micro-interactions, enter/exit animations, or motion design work in React, Framer Motion, CSS, or HTML. This skill is not authored, reviewed, or endorsed by the referenced designers.",
       "file_count": 15,
@@ -117,6 +153,12 @@
       "description": "Create refined typography for websites. Use for premium, editorial, luxury, portfolio, product, Squarespace-like, Vercel-like, Raycast-like, Linear-like, and modern sites needing font pairing, type scale, responsive headings, line length, hierarchy, captions, labels, and text polish.",
       "file_count": 3,
       "bytes": 4668
+    },
+    {
+      "name": "evidence-reconciliation",
+      "description": "Resolve conflicting, stale, or ambiguous sources before answering, revising plans, or making claims; use when accuracy depends on distinguishing current fact, governing authority, inference, and recommendation.",
+      "file_count": 3,
+      "bytes": 11359
     },
     {
       "name": "final-client-handoff",
@@ -159,6 +201,12 @@
       "description": "Run image and video loading QA. Use after adding or changing images, videos, posters, responsive sources, lazy loading, galleries, hero media, product media, background videos, image sequences, or CMS media to verify loading, dimensions, crops, network errors, alt/captions, and performance.",
       "file_count": 3,
       "bytes": 5789
+    },
+    {
+      "name": "logical-thinking",
+      "description": "Determine what follows from explicit premises, rules, evidence, documentation, or observations by selecting and executing the appropriate inference structure. Use when validity, entailment, contradiction, causality, probability, explanation, or the exact strength of a conclusion is central. Do not invoke merely to gather missing facts or broadly critique source quality.",
+      "file_count": 5,
+      "bytes": 23624
     },
     {
       "name": "mobile-responsive-qa",
@@ -335,6 +383,12 @@
       "bytes": 5279
     },
     {
+      "name": "systematic-debugging",
+      "description": "Diagnose reproducible or intermittent software failures through evidence, hypothesis testing, localization, root-cause repair, and regression verification. Use for failing tests, builds, runtime behavior, integrations, performance regressions, or unexplained errors; not for ordinary implementation with no failure.",
+      "file_count": 3,
+      "bytes": 6893
+    },
+    {
       "name": "tailwind-design-tokens",
       "description": "Create token-driven Tailwind and CSS variable systems for premium websites. Use for color tokens, typography tokens, spacing rhythm, radius, shadows, gradients, surfaces, responsive constraints, dark/light modes, and avoiding random utility-class styling.",
       "file_count": 3,
@@ -363,6 +417,12 @@
       "description": "Compose UI screenshots inside website layouts. Use for product sections, feature blocks, app showcases, case studies, dashboards, mockup stacks, detail crops, callout overlays, annotation systems, responsive screenshot art direction, and avoiding generic SaaS screenshot-card sections.",
       "file_count": 3,
       "bytes": 6423
+    },
+    {
+      "name": "verification-before-completion",
+      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+      "file_count": 1,
+      "bytes": 3646
     },
     {
       "name": "visual-assets-direction",

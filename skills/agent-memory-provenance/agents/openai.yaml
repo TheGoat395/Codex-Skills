@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Memory & Provenance"
+  short_description: "Design durable, attributable agent context."
+  default_prompt: "Use $agent-memory-provenance to define persistent agent context."

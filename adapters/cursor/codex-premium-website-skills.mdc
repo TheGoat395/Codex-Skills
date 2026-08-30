@@ -1,11 +1,11 @@
 ---
-description: Apply Codex Premium Website Skills standards to frontend, website, motion, accessibility, QA, and handoff work.
+description: Apply Codex Skills standards to frontend, website, motion, accessibility, QA, agent reasoning, and handoff work.
 globs:
   - "**/*.{ts,tsx,js,jsx,css,scss,html,md,mdx,json}"
 alwaysApply: false
 ---
 
-# Codex Premium Website Skills Rules
+# Codex Skills Rules
 
 Use these rules when building or reviewing websites, landing pages, portfolios, product UI, frontend components, motion systems, or launch-ready web experiences.
 
@@ -47,6 +47,15 @@ Use these rules when building or reviewing websites, landing pages, portfolios, 
 - Check console/network errors when possible.
 - Verify focus states, labels, contrast, reduced motion, and responsive media.
 - End with changed files, commands run, checks passed, checks not run, known limitations, and next risks.
+
+## Agent Quality
+
+- Separate verified facts, source-supported inferences, assumptions, recommendations, and unknowns.
+- Use the narrowest conclusion the evidence warrants; test strong claims with an independent check.
+- For research, preserve source, date, scope, contradictions, and confidence rather than counting repeated sources.
+- For failures, reproduce and localize with competing hypotheses before changing code; add a regression guard when possible.
+- For agent workflows, define permitted tools, output ownership, approval gates, retry limits, and evaluation evidence.
+- Do not claim completion, correctness, or production readiness without fresh verification.
 
 ## Safety
 
