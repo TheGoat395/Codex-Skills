@@ -12,7 +12,7 @@ The core repo is built around installable `SKILL.md` folders. Some tools can use
 
 ## Adapter Philosophy
 
-- Keep the 70-skill public core as the source of truth.
+- Keep the 80-skill public core as the source of truth.
 - Use adapters for tools that do not consume the full skill tree directly.
 - Keep adapter files compact enough to fit normal project context.
 - Prefer clear support levels over inflated compatibility claims.

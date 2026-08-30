@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deep Research"
+  short_description: "Evidence-led multi-pass research and synthesis"
+  default_prompt: "Use $deep-research to investigate this question thoroughly and return a source-backed decision."

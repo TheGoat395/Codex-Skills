@@ -1,0 +1,4 @@
+interface:
+  display_name: "Systematic Debugging"
+  short_description: "Find root causes with discriminating evidence"
+  default_prompt: "Use $systematic-debugging to reproduce, localize, and verify the root cause of this failure."

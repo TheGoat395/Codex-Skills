@@ -1,6 +1,6 @@
 # Gemini CLI Adapter
 
-Gemini CLI supports project context files such as `GEMINI.md`. This adapter provides a compact project context file based on the public core of Codex Premium Website Skills.
+Gemini CLI supports project context files such as `GEMINI.md`. This adapter provides a compact project context file based on the public core's website and agent-quality standards.
 
 ## Install
 
@@ -25,6 +25,7 @@ Use this adapter for:
 - non-generic UI review
 - responsive and accessibility checks
 - motion discipline
+- evidence-led reasoning and completion verification
 - final handoff summaries
 
 ## What This Adapter Is
@@ -35,7 +36,7 @@ Use this adapter for:
 
 ## What This Adapter Is Not
 
-- Not a full install of all 70 `SKILL.md` folders.
+- Not a full install of all 80 `SKILL.md` folders.
 - Not a replacement for the generated inventory or curated collections.
 - Not an endorsement by Google.
 

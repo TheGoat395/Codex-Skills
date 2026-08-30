@@ -47,6 +47,15 @@ Before final delivery, report:
 - known limitations
 - recommended next steps
 
+## Agent Quality
+
+- Separate verified facts, inferences, assumptions, recommendations, and unknowns.
+- Use explicit premises and the narrowest conclusion the evidence supports.
+- Preserve source, date, scope, contradictions, and confidence in research work.
+- Reproduce and localize failures before changing code, then verify a regression guard.
+- Define tool limits, approval gates, retry bounds, and evaluation evidence for agent workflows.
+- Verify before claiming completion or production readiness.
+
 ## Safety
 
 - Preserve user work.

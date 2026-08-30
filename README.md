@@ -3,9 +3,9 @@
 [![Validate Skills](https://github.com/TheGoat395/Codex-Skills/actions/workflows/validate.yml/badge.svg)](https://github.com/TheGoat395/Codex-Skills/actions/workflows/validate.yml)
 [![Latest Release](https://img.shields.io/github/v/release/TheGoat395/Codex-Skills?label=release)](https://github.com/TheGoat395/Codex-Skills/releases/latest)
 
-An unofficial, open-source, Codex-first Agent Skills library for premium frontend, website, and design-engineering workflows.
+An unofficial, open-source, Codex-first Agent Skills library for premium frontend, website, design-engineering, and reliable agent workflows.
 
-This repository is prepared around a lean `public-core` collection of 70 skills: design direction, frontend implementation, motion, accessibility, QA, content polish, and maintainer safety.
+This repository is prepared around a curated `public-core` collection of 80 skills: design direction, frontend implementation, motion, accessibility, QA, content polish, maintainer safety, and agent-quality workflows.
 
 ![Codex Skills modular capabilities visualized](assets/codex_skills_modular_capabilities_visualized.png)
 
@@ -81,7 +81,7 @@ For stronger evidence, submit a measured benchmark using `examples/benchmarks/me
 - A domain-specific Codex skill pack for modern website and app work.
 - A Codex-first skill library with adapter paths for Claude Code, Cursor, and Gemini CLI workflows.
 - A curated public core, not a loose dump of every local skill.
-- A practical toolkit for React, Next.js, Tailwind, GSAP/Motion, QA, copy, accessibility, source research, and visual polish.
+- A practical toolkit for React, Next.js, Tailwind, GSAP/Motion, QA, copy, accessibility, source research, visual polish, and evidence-led agent work.
 - A repo designed to be inspected, installed selectively, benchmarked, and improved in public.
 
 ## What This Is Not
@@ -98,7 +98,7 @@ For stronger evidence, submit a measured benchmark using `examples/benchmarks/me
 - `COMPATIBILITY.md` documents Codex, Claude Code, Cursor, and Gemini CLI usage paths.
 - `CATALOG.md` gives a cleaner audience-facing map of collections and high-value skills.
 - `adapters/` contains Claude Code, Cursor, and Gemini CLI adapter guidance.
-- `curated_collections.json` defines the default 70-skill public core and smaller installable subcollections.
+- `curated_collections.json` defines the default 80-skill public core and smaller installable subcollections.
 - `scripts/install_skills.py` installs `public-core` by default or selected collections with `--collection`.
 - `THIRD_PARTY_NOTICES.md` records license and notice expectations for the public core.
 - `EVIDENCE.md`, `BENCHMARKS.md`, `SKILL_QUALITY_STANDARD.md`, and `SECURITY.md` define how this repo should be evaluated and maintained.
@@ -116,7 +116,7 @@ Clone the repo, inspect it, then dry-run the default public core:
 python3 scripts/install_skills.py --dry-run
 ```
 
-Install the default 70-skill public core:
+Install the default 80-skill public core:
 
 ```bash
 python3 scripts/install_skills.py
@@ -147,7 +147,7 @@ After installing, start a new Codex conversation so skill discovery refreshes.
 
 ## Public Core Collections
 
-- `public-core`: the full 70-skill public release.
+- `public-core`: the full 80-skill public release.
 - `taste-and-build-gates`: design direction, build gates, anti-generic review, browser inspection, handoff.
 - `visual-direction`: references, art direction, typography, color, layout, imagery.
 - `frontend-implementation`: React, Next.js, Tailwind, primitives, states, forms, accessibility.
@@ -155,6 +155,7 @@ After installing, start a new Codex conversation so skill discovery refreshes.
 - `motion-core`: motion language, React motion, easing, jank prevention, reduced motion, GSAP performance.
 - `content-conversion-core`: copy, IA, CTA language, conversion polish, proof.
 - `maintainer-safety-core`: checkpoint, undo/revert, install-safety review.
+- `agent-quality-core`: critical and logical thinking, creativity, research, evidence reconciliation, debugging, agent architecture, memory provenance, evaluation, and completion verification.
 
 See `CATALOG.md` for the audience-facing catalog and `CURATED_COLLECTIONS.md` for the full map.
 
@@ -167,7 +168,7 @@ Every skill should have:
 - explicit boundaries for when it should not run
 - no hidden network, filesystem, or dependency side effects
 - project-local dependency guidance
-- verification steps when it changes code or frontend output
+- verification steps when it changes code, frontend output, or agent workflow state
 
 See `SKILL_QUALITY_STANDARD.md` for contribution criteria.
 
@@ -185,6 +186,6 @@ Use `BENCHMARKS.md`, `examples/README.md`, and `examples/benchmarks/measured-pre
 
 This project is best described as:
 
-> An open-source Codex skill library for premium frontend, website, and design-engineering workflows.
+> An open-source Codex skill library for premium frontend, website, design-engineering, and evidence-led agent workflows.
 
-The strongest public contribution is not the size of the library. It is the curation: a lean public core, installable groups, quality standards, safety policy, benchmarks, examples, and real maintenance practices for people building frontend work with Codex.
+The strongest public contribution is not the size of the library. It is the curation: an installable public core, focused groups, quality standards, safety policy, benchmarks, examples, and real maintenance practices for people building with Codex.
