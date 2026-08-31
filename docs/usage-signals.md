@@ -67,7 +67,9 @@ Useful benchmark submissions include:
 
 This is an owner-only GitHub Insights snapshot recorded on 2026-07-10. It is a dated observation, not a lifetime guarantee.
 
-### Public Repository Surface
+### Public Repository Surface (2026-07-10 snapshot)
+
+This snapshot predates the `agent-quality-core` expansion and records the 70-skill public core that existed on 2026-07-10. The current public core is 80 skills, as defined in `curated_collections.json`; the historical traffic and activity values below are intentionally preserved as recorded.
 
 | Metric | Value |
 |---|---:|

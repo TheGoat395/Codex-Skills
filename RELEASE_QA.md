@@ -4,7 +4,7 @@ This document summarizes the public release package for Codex Premium Website Sk
 
 ## Package Summary
 
-- Default public core: `70` skills.
+- Default public core: `80` skills.
 - Showcase demos: `9` local preview demos.
 - Showcase ZIP deliverables: `9` demo ZIP files.
 - Provider/account integrations: not included in the public core.
@@ -26,9 +26,9 @@ This document summarizes the public release package for Codex Premium Website Sk
 
 | Check | Expected State | Status |
 |---|---|---|
-| Public core count | `curated_collections.json` defines a 70-skill public core | Done |
-| Manifest count | `manifest.json` reports `"skill_count": 70` | Done |
-| Inventory count | `SKILL_INVENTORY.md` reports `Total skills: 70` | Done |
+| Public core count | `curated_collections.json` defines an 80-skill public core | Done |
+| Manifest count | `manifest.json` reports `"skill_count": 80` | Done |
+| Inventory count | `SKILL_INVENTORY.md` reports `Total skills: 80` | Done |
 | Release checklist | `PUBLIC_RELEASE_CHECKLIST.md` documents release checks | Done |
 
 ## Showcase

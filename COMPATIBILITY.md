@@ -29,6 +29,7 @@ Codex Premium Website Skills is built for Codex first and organized around porta
 | Claude Code project skill setup | `adapters/claude-code/README.md` |
 | Cursor project rules | `adapters/cursor/codex-premium-website-skills.mdc` |
 | Gemini CLI project context | `adapters/gemini-cli/GEMINI.md` |
+| Evidence-led reasoning and agent quality | `python3 scripts/install_skills.py --collection agent-quality-core` |
 | Browse the public core | `CATALOG.md` |
 
 ## Tool Notes
@@ -57,7 +58,7 @@ See `adapters/gemini-cli/README.md`.
 
 ## What This Does Not Claim
 
-- Cursor and Gemini adapters are not full one-to-one installs of all 70 skills.
+- Cursor and Gemini adapters are not full one-to-one installs of all 80 skills.
 - Adapter files summarize the repo's standards; they do not replace the complete `skills/` directory.
 - Users should inspect any third-party skill or adapter before installing it into an agent environment.
 - This project is unofficial and is not endorsed by OpenAI, Anthropic, Cursor, Google, or any other platform vendor.

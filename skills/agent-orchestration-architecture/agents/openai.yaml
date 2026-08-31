@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Orchestration"
+  short_description: "Design reliable multi-agent operating patterns."
+  default_prompt: "Use $agent-orchestration-architecture to design a bounded agent workflow."

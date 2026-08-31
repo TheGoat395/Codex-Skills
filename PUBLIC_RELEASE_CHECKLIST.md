@@ -4,9 +4,9 @@ Use this checklist to verify the repository before a public release.
 
 ## Required Checks
 
-- Confirm `skills/` contains exactly 70 public-core skill folders.
-- Confirm `manifest.json` reports `"skill_count": 70`.
-- Confirm `SKILL_INVENTORY.md` reports `Total skills: 70`.
+- Confirm `skills/` contains exactly 80 public-core skill folders.
+- Confirm `manifest.json` reports `"skill_count": 80`.
+- Confirm `SKILL_INVENTORY.md` reports `Total skills: 80`.
 - Run `python3 scripts/validate_skills.py`.
 - Run `python3 scripts/install_skills.py --list-collections`.
 - Run `python3 scripts/install_skills.py --dry-run` and confirm it installs `public-core` only.
@@ -18,6 +18,7 @@ Use this checklist to verify the repository before a public release.
 - Confirm `SKILL_QUALITY_STANDARD.md` defines contribution criteria.
 - Confirm `CURATED_COLLECTIONS.md` and `curated_collections.json` define `public-core` as the default public release.
 - Confirm `THIRD_PARTY_NOTICES.md` describes notice expectations and excluded integrations.
+- Confirm `agent-quality-core` contains exactly the ten public reasoning and agent-quality skills.
 
 ## Showcase Checks
 

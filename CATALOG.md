@@ -1,6 +1,6 @@
 # Skill Catalog
 
-Codex Premium Website Skills ships a curated `public-core` of 70 skills. The public core is organized as installable collections so users can start small, then add more capability as their workflow needs it.
+Codex Premium Website Skills ships a curated `public-core` of 80 skills. The public core is organized as installable collections so users can start small, then add more capability as their workflow needs it.
 
 ## Collections
 
@@ -8,6 +8,7 @@ Codex Premium Website Skills ships a curated `public-core` of 70 skills. The pub
 |---|---|---|
 | `public-core` | Stable public core | Full 70-skill install for premium frontend and website workflows. |
 | `website-operations` | Candidate | Intake, launch readiness, security, privacy, DNS, analytics, and maintenance. |
+| `public-core` | Stable public core | Full 80-skill install for premium frontend, website, and agent-quality workflows. |
 | `taste-and-build-gates` | Stable | Design direction, build gates, anti-generic review, browser inspection, and handoff. |
 | `visual-direction` | Stable | References, art direction, typography, color, layout, imagery, and screenshot composition. |
 | `frontend-implementation` | Stable | React, Next.js, Tailwind, UI primitives, responsive components, state, forms, and accessibility. |
@@ -15,6 +16,7 @@ Codex Premium Website Skills ships a curated `public-core` of 70 skills. The pub
 | `motion-core` | Stable | Motion language, React motion, easing, jank prevention, reduced motion, and GSAP performance. |
 | `content-conversion-core` | Stable | Non-generic copy, IA, content pruning, voice, CTA language, conversion polish, and proof. |
 | `maintainer-safety-core` | Stable | Checkpoints, undo/revert behavior, and install-safety review. |
+| `agent-quality-core` | Stable | Evidence-led reasoning, research, debugging, agent architecture, memory provenance, evaluation, and completion verification. |
 
 ## Recommended Entry Points
 
@@ -28,6 +30,7 @@ Codex Premium Website Skills ships a curated `public-core` of 70 skills. The pub
 | I want better animation and interaction quality. | `motion-core` |
 | I need sharper landing-page copy and proof. | `content-conversion-core` |
 | I want safer code-change workflows. | `maintainer-safety-core` |
+| I need more rigorous reasoning, research, and agent verification. | `agent-quality-core` |
 
 ## High-Value Skills
 
@@ -48,6 +51,11 @@ Codex Premium Website Skills ships a curated `public-core` of 70 skills. The pub
 | `testimonial-proof-systems` | Structures proof without unsupported testimonials or fake metrics. |
 | `code-change-safety-checkpoint` | Preserves rollback options before risky edits. |
 | `code-change-undo-revert` | Helps undo or revert changes without destroying user work. |
+| `critical-thinking` | Reconstructs material claims and tests their evidence before accepting a conclusion. |
+| `logical-thinking` | Selects the right inference structure and prevents conclusions from outrunning their premises. |
+| `deep-research` | Runs adaptive, source-backed research with explicit coverage, contradiction, and confidence handling. |
+| `systematic-debugging` | Localizes failures with competing hypotheses and regression verification. |
+| `agent-evaluation-operations` | Turns agent workflows into measurable, reproducible release gates. |
 
 ## Install Examples
 

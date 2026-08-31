@@ -4,8 +4,8 @@
   "collections": [
     {
       "id": "public-core",
-      "title": "Public Core 70",
-      "description": "The public release: seventy installable skills for premium frontend, website, design-engineering, QA, motion, content, and maintainer safety workflows.",
+      "title": "Public Core 80",
+      "description": "The public release: eighty installable skills for premium frontend, website, design-engineering, QA, motion, content, maintainer safety, and agent-quality workflows.",
       "skills": [
         "web-design-direction-system",
         "premium-web-build-gate",
@@ -76,7 +76,17 @@
         "testimonial-proof-systems",
         "code-change-safety-checkpoint",
         "code-change-undo-revert",
-        "frontend-tooling-trust-gate"
+        "frontend-tooling-trust-gate",
+        "critical-thinking",
+        "logical-thinking",
+        "creativity",
+        "deep-research",
+        "evidence-reconciliation",
+        "systematic-debugging",
+        "verification-before-completion",
+        "agent-evaluation-operations",
+        "agent-orchestration-architecture",
+        "agent-memory-provenance"
       ]
     },
     {
@@ -211,6 +221,23 @@
         "code-change-safety-checkpoint",
         "code-change-undo-revert",
         "frontend-tooling-trust-gate"
+      ]
+    },
+    {
+      "id": "agent-quality-core",
+      "title": "Agent Quality Core",
+      "description": "Evidence-led reasoning, research, debugging, agent architecture, memory provenance, evaluation, and completion verification.",
+      "skills": [
+        "critical-thinking",
+        "logical-thinking",
+        "creativity",
+        "deep-research",
+        "evidence-reconciliation",
+        "systematic-debugging",
+        "verification-before-completion",
+        "agent-evaluation-operations",
+        "agent-orchestration-architecture",
+        "agent-memory-provenance"
       ]
     }
   ]

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Logical Thinking"
+  short_description: "Select the right inference and warranted conclusion"
+  default_prompt: "Use $logical-thinking to select the correct inference structure, verify decisive steps, and state the strongest warranted conclusion."
+
+policy:
+  allow_implicit_invocation: true
