@@ -1,5 +1,8 @@
 {
   "name": "codex-premium-website-skills",
+  "generated_at": "2026-08-25T04:44:21.623957+00:00",
+  "source": "skills/",
+  "skill_count": 78,
   "generated_at": "2026-08-30T15:02:30.037809+00:00",
   "source": "skills/",
   "skill_count": 80,
@@ -17,6 +20,10 @@
       "bytes": 4611
     },
     {
+      "name": "analytics-conversion-verification",
+      "description": "Define, inspect, and verify website conversion measurement for calls, forms, directions, bookings, orders, reservations, purchases, and other qualified actions. Use for analytics implementation or QA, event naming, ownership, consent-aware loading, production debugging, and reporting that must connect traffic to business outcomes.",
+      "file_count": 2,
+      "bytes": 1890
       "name": "agent-evaluation-operations",
       "description": "Evaluate, observe, and release AI-agent workflows. Use for agent regression suites, prompt or model comparisons, scenario simulation, tool-call verification, traces, quality thresholds, cost and latency budgets, red-team cases, or release gates for AI systems.",
       "file_count": 2,
@@ -69,6 +76,12 @@
       "description": "Run browser inspection for websites and apps. Use after building or changing frontend work to open the rendered site, inspect console and network errors, verify layout and interactions, test links/forms/media, capture screenshots, check responsive behavior, and perform the second visual polish pass before final delivery.",
       "file_count": 3,
       "bytes": 5703
+    },
+    {
+      "name": "client-intake-asset-readiness",
+      "description": "Assess whether a client website project has enough verified business information, content, assets, account ownership, scope, approvals, and access to begin or launch safely. Use during onboarding, discovery, project rescue, pre-build planning, or before replacing placeholders; never invent missing client facts.",
+      "file_count": 2,
+      "bytes": 1848
     },
     {
       "name": "code-change-safety-checkpoint",
@@ -149,6 +162,12 @@
       "bytes": 176258
     },
     {
+      "name": "domain-dns-launch-safety",
+      "description": "Plan and verify safe domain, DNS, hosting, HTTPS, canonical-host, and redirect changes for a website launch. Use for registrar or nameserver changes, Porkbun or other DNS providers, apex and www configuration, email-preserving migrations, SSL issues, and production cutovers where existing records and rollback matter.",
+      "file_count": 2,
+      "bytes": 2035
+    },
+    {
       "name": "editorial-typography-systems",
       "description": "Create refined typography for websites. Use for premium, editorial, luxury, portfolio, product, Squarespace-like, Vercel-like, Raycast-like, Linear-like, and modern sites needing font pairing, type scale, responsive headings, line length, hierarchy, captions, labels, and text polish.",
       "file_count": 3,
@@ -203,6 +222,10 @@
       "bytes": 5789
     },
     {
+      "name": "local-business-website-workflow",
+      "description": "Plan and coordinate a local-business website from verified intake through scope, build, launch, handoff, and maintenance. Use for restaurants, trades, professional services, shops, and other location or service-area businesses where business facts, ownership, conversions, local SEO, and post-launch operations matter.",
+      "file_count": 2,
+      "bytes": 2732
       "name": "logical-thinking",
       "description": "Determine what follows from explicit premises, rules, evidence, documentation, or observations by selecting and executing the appropriate inference structure. Use when validity, entailment, contradiction, causality, probability, explanation, or the exact strength of a conclusion is central. Do not invoke merely to gather missing facts or broadly critique source quality.",
       "file_count": 5,
@@ -303,6 +326,12 @@
       "description": "Premium website pre-build gate for cinematic, editorial, Squarespace-polished, Raycast/Linear/Vercel-precise, or motion-heavy web work. Use before implementing or redesigning a homepage, landing page, portfolio, product site, agency/studio site, or high-polish web app when the user wants non-generic visual quality, strong scroll/motion choreography, strict content scope, or an award-level result. Produces a build-ready UI spec, source-trust decisions, motion storyboard, and QA gates before code.",
       "file_count": 2,
       "bytes": 7457
+    },
+    {
+      "name": "privacy-consent-audit",
+      "description": "Audit a website's tracking, consent behavior, third-party scripts, data collection, deletion path, and policy-to-implementation consistency. Use when analytics, advertising, embeds, forms, cookies, pixels, session replay, or regulated audiences may be involved; verify current legal requirements from primary sources rather than relying on hard-coded thresholds.",
+      "file_count": 2,
+      "bytes": 1970
     },
     {
       "name": "radix-accessible-primitives",
@@ -467,6 +496,12 @@
       "bytes": 5571
     },
     {
+      "name": "web-security-paywall-audit",
+      "description": "Audit web security for secrets, authentication, authorization, paid-content enforcement, payment replay, database access controls, webhooks, API abuse, rate limits, sensitive logs, headers, and production exposure. Use for websites or apps with accounts, payments, AI endpoints, private data, uploads, or server APIs; remain read-only unless fixes are requested.",
+      "file_count": 2,
+      "bytes": 2459
+    },
+    {
       "name": "web-style-director",
       "description": "Choose and enforce a precise art direction for modern websites. Use when the user asks for beautiful, premium, luxury, cinematic, editorial, Squarespace-like, Viktor-style, Framer-like, Raycast-like, Linear-like, Vercel-like, portfolio, product, service, agency, commerce, or brand websites.",
       "file_count": 3,
@@ -477,6 +512,18 @@
       "description": "Create a website blueprint before coding. Use for new sites, redesigns, image-to-site work, premium landing pages, portfolios, brand sites, product sites, and any frontend project where Codex should define pages, sections, assets, tokens, layout, motion, and QA criteria before implementation.",
       "file_count": 3,
       "bytes": 4734
+    },
+    {
+      "name": "website-launch-readiness-audit",
+      "description": "Run a read-only, evidence-based website launch audit spanning functionality, responsive behavior, accessibility, performance, SEO, security, privacy, analytics, infrastructure, content, and operational readiness. Use before production launch or after major changes; do not implement fixes unless the user separately authorizes changes.",
+      "file_count": 2,
+      "bytes": 2888
+    },
+    {
+      "name": "website-maintenance-review",
+      "description": "Run a periodic website maintenance review covering uptime and HTTPS, primary conversions, business facts, broken links, forms, analytics anomalies, dependencies or CMS updates, backups, security exposure, indexing, ownership, and change history. Use for monthly, quarterly, post-incident, or contract-based maintenance without silently expanding scope.",
+      "file_count": 2,
+      "bytes": 1971
     },
     {
       "name": "website-operating-rules",

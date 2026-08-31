@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website Launch Readiness Audit"
+  short_description: "Evidence-based pre-launch website audit"
+  default_prompt: "Use $website-launch-readiness-audit to tell me whether this website is ready to launch and why."

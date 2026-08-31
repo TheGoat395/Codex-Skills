@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website Maintenance Review"
+  short_description: "Review website health, conversions, upkeep, and ownership"
+  default_prompt: "Use $website-maintenance-review to run the next maintenance review for this site and separate urgent, included, and out-of-scope work."

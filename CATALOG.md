@@ -6,6 +6,8 @@ Codex Premium Website Skills ships a curated `public-core` of 80 skills. The pub
 
 | Collection | Status | Best For |
 |---|---|---|
+| `public-core` | Stable public core | Full 70-skill install for premium frontend and website workflows. |
+| `website-operations` | Candidate | Intake, launch readiness, security, privacy, DNS, analytics, and maintenance. |
 | `public-core` | Stable public core | Full 80-skill install for premium frontend, website, and agent-quality workflows. |
 | `taste-and-build-gates` | Stable | Design direction, build gates, anti-generic review, browser inspection, and handoff. |
 | `visual-direction` | Stable | References, art direction, typography, color, layout, imagery, and screenshot composition. |
@@ -23,7 +25,8 @@ Codex Premium Website Skills ships a curated `public-core` of 80 skills. The pub
 | I want Codex to stop producing generic websites. | `taste-and-build-gates` |
 | I need stronger art direction and visual taste. | `visual-direction` |
 | I am implementing React or Next.js UI. | `frontend-implementation` |
-| I need launch-readiness checks. | `qa-production-core` |
+| I need launch-readiness checks. | `website-operations` + `qa-production-core` |
+| I am delivering a local-business website. | `website-operations` |
 | I want better animation and interaction quality. | `motion-core` |
 | I need sharper landing-page copy and proof. | `content-conversion-core` |
 | I want safer code-change workflows. | `maintainer-safety-core` |

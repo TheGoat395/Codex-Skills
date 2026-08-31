@@ -1,0 +1,4 @@
+interface:
+  display_name: "Privacy and Consent Audit"
+  short_description: "Audit tracking, consent, data, and disclosures"
+  default_prompt: "Use $privacy-consent-audit to compare this site's real tracking behavior with its consent and privacy claims."

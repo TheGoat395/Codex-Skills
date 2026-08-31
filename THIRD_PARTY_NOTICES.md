@@ -8,4 +8,5 @@ Provider/account integrations, deployment-specific skills, local OS tooling, and
 
 Before publishing a new release, review every file in `skills/` for private paths, credentials, non-public links, bundled assets, and third-party materials that require attribution or separate licensing.
 
+Per-skill and historical provenance is recorded in `PROVENANCE.md`.
 The added reasoning and agent-quality skills cite public research and inspiration sources for context; they do not bundle third-party source text, code, or assets.

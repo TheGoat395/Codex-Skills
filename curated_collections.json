@@ -90,6 +90,21 @@
       ]
     },
     {
+      "id": "website-operations",
+      "title": "Website Operations",
+      "description": "Client intake, local-business delivery, launch readiness, security, privacy, DNS, analytics, and maintenance workflows.",
+      "skills": [
+        "local-business-website-workflow",
+        "client-intake-asset-readiness",
+        "website-launch-readiness-audit",
+        "web-security-paywall-audit",
+        "privacy-consent-audit",
+        "domain-dns-launch-safety",
+        "analytics-conversion-verification",
+        "website-maintenance-review"
+      ]
+    },
+    {
       "id": "taste-and-build-gates",
       "title": "Taste And Build Gates",
       "description": "High-level operating rules, brief inference, visual direction, anti-generic review, browser inspection, and final handoff.",
