@@ -7,6 +7,12 @@ description: Use for premium frontend, website, app UI, landing page, dashboard,
 
 Use this as the high-level router before detailed build, redesign, or polish work.
 
+## Design Guidance Contract
+
+When a project has repeated design decisions, a named design system, or a recurring review failure, read [the design guidance evidence loop](references/design-guidance-evidence-loop-guide.md) before changing the standard. Start with the reader's job and the strongest supported answer, then choose the smallest destination that can enforce the decision: guidance, a component primitive, a deterministic check, an exemplar, or an evaluation case.
+
+Do not turn one screenshot, one reviewer preference, or one shipped implementation into a universal rule. Record scope, rationale, evidence, exceptions, and a bad/good example. Keep unresolved decisions visible instead of hiding them inside CSS or component code.
+
 ## Infer The Design Mode
 
 Before choosing components or CSS, write a compact design read:
@@ -84,6 +90,12 @@ Motion must explain sequence, focus, depth, state, or continuity. If it does not
 
 Prefer one memorable motion idea over many identical entrance effects. Always define reduced-motion behavior. Never hide content behind animation that may fail in a paused tab, slow browser, or headless QA run.
 
+## Evidence Loop
+
+For a repeated design correction, freeze a representative prompt, inputs, viewport, model, and skill version. Save one baseline without the proposed guidance, then compare first-attempt treatment output under the same conditions. Review the pair against a written rubric, keep a small holdout case, and encode only corrections that generalize.
+
+Separate retrieval from application: confirm that the right skill or reference loaded before judging whether the rule was followed. Keep deterministic checks for observable mechanics and keep product judgment in scoped prose. Feed repeated production corrections back into a pending review record rather than editing the standard automatically.
+
 ## Preflight Before Handoff
 
 Check:
@@ -98,3 +110,5 @@ Check:
 - motion has purpose and reduced-motion fallback
 - no unsupported claims were added
 - final summary says what was changed and what was not verified
+
+Read the evidence-loop reference when a change updates a shared design standard, evaluation protocol, or recurring correction pattern.

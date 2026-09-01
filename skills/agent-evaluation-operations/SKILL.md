@@ -23,6 +23,8 @@ Build cases from real work: ordinary success, ambiguous input, missing data, con
 
 Trace run ID, tested-system version, model/reasoning setting, prompt and skill versions, tools, input class, structured result, error, latency, cost, and approval path. Redact or avoid sensitive payload capture by default.
 
+Test retrieval and application separately. A skill may fail to trigger even when its rules are sound, or it may trigger and still fail to change behavior. Keep a small matched baseline and treatment set with identical prompts, inputs, model settings, tools, and viewports; score first attempts blind when subjective judgment matters.
+
 ## Score observable behavior
 
 Prefer deterministic assertions for file state, structured fields, tool calls, authorization boundaries, and exact completion status. Use written rubrics for judgment. Calibrate model graders against examples and human review; do not let the candidate skill be the sole judge of its own success.
@@ -53,5 +55,9 @@ Reject a skill change when it attracts unrelated work, duplicates an existing ow
 - Preserve run identifiers, versions, aggregate scores, failures, and reviewer overrides while redacting sensitive payloads.
 
 Do not infer safety, production readiness, or broad behavioral improvement from one successful demonstration.
+
+## Correction loop
+
+For recurring review feedback, preserve the original artifact, the correction, its source, the proposed destination, exceptions, and a holdout case. Let a collector gather raw evidence, a separate reviewer verify and group it, and a maintainer decide whether it becomes guidance, a component or token, a deterministic check, an exemplar, an evaluation fixture, a coverage gap, or no change. Rerun affected cases after accepted changes and watch whether the same complaint actually becomes less common.
 
 Use Promptfoo or another project-local harness only when its telemetry, credentials, remote execution, and configuration have been reviewed. Route agent-system architecture to `$agent-orchestration-architecture`; route repository security to `$repository-release-security`.

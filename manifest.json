@@ -1,6 +1,6 @@
 {
   "name": "codex-premium-website-skills",
-  "generated_at": "2026-08-30T22:04:51.895616+00:00",
+  "generated_at": "2026-09-01T03:05:26.345576+00:00",
   "source": "skills/",
   "skill_count": 80,
   "skills": [
@@ -20,7 +20,7 @@
       "name": "agent-evaluation-operations",
       "description": "Evaluate, compare, observe, and release AI-agent workflows or Codex skills. Use for regression suites, prompt/model/skill comparisons, trigger collisions, scenario simulation, adversarial or red-team cases, tool-call verification, traces, quality thresholds, cost and latency budgets, or release gates.",
       "file_count": 6,
-      "bytes": 31602
+      "bytes": 32460
     },
     {
       "name": "agent-memory-provenance",
@@ -247,8 +247,8 @@
     {
       "name": "motion-react-page-transitions",
       "description": "Create Motion for React page transitions and route transitions. Use for AnimatePresence, route-level enter/exit, view transitions, shared page elements, Next.js client navigation, loading transitions, portfolio detail transitions, and cinematic but accessible navigation motion.",
-      "file_count": 3,
-      "bytes": 5751
+      "file_count": 4,
+      "bytes": 11082
     },
     {
       "name": "motion-react-patterns",
@@ -445,8 +445,8 @@
     {
       "name": "web-design-direction-system",
       "description": "Use for premium frontend, website, app UI, landing page, dashboard, redesign, image-to-code, or visual-polish work that needs clearer design intent, adjustable visual direction, motion discipline, less generic output, and a final preflight check before handoff.",
-      "file_count": 2,
-      "bytes": 5205
+      "file_count": 3,
+      "bytes": 11951
     },
     {
       "name": "web-design-vocabulary",
