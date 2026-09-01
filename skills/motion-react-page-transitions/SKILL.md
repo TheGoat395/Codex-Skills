@@ -20,3 +20,5 @@ Use this skill for design page and route transitions without breaking navigation
 ## Required Reference
 
 Read [references/motion-react-page-transitions-guide.md](references/motion-react-page-transitions-guide.md) before making architectural or visible UI changes with this skill.
+
+When the project uses React's native `<ViewTransition>` API, also read [the native View Transition reference](references/native-view-transitions.md). It covers activation, shared-element naming, Suspense, transition types, reduced motion, and browser fallbacks without requiring a third-party motion library.

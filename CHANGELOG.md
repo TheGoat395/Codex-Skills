@@ -2,6 +2,12 @@
 
 All notable changes to Codex Premium Website Skills are documented here.
 
+## [Unreleased]
+
+- Added a provider-neutral design-guidance evidence loop with decision records, matched baseline/treatment comparisons, holdouts, trigger testing, and production-feedback review.
+- Added a native React View Transition reference covering activation, shared elements, Suspense, transition types, reduced motion, and fallback verification.
+- Strengthened agent-evaluation guidance to separate skill retrieval from skill application and to preserve recurring corrections as evidence.
+
 ## [0.2.0] - 2026-08-30
 
 - Added ten public `agent-quality-core` skills for critical and logical thinking, creativity, evidence-led research, debugging, agent architecture, memory provenance, evaluation, and completion verification.
