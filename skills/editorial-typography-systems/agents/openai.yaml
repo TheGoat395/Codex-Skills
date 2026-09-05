@@ -1,4 +1,4 @@
 interface:
   display_name: "Editorial Typography Systems"
   short_description: "Build refined responsive type systems"
-  default_prompt: "Use $editorial-typography-systems to guide a high-quality website build."
+  default_prompt: "Use $editorial-typography-systems to create readable, expressive responsive typography within the requested scope."

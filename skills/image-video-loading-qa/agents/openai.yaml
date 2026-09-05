@@ -1,3 +1,4 @@
-display_name: "Image Video Loading QA"
-short_description: "Verify image and video loading, dimensions, posters, crops, and errors"
-default_prompt: "Use $image-video-loading-qa to verify, QA, deploy, or hand off a website with concrete evidence, exact commands, honest risks, and production-grade polish."
+interface:
+  display_name: "Image Video Loading QA"
+  short_description: "Verify image and video loading, dimensions, posters, crops, and errors"
+  default_prompt: "Use $image-video-loading-qa to verify media loading, posters and fallback states within the requested scope."

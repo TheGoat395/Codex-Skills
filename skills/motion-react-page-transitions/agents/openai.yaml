@@ -1,3 +1,4 @@
-display_name: "Motion React Page Transitions"
-short_description: "Design page and route transitions without breaking navigation"
-default_prompt: "Use motion-react-page-transitions to design and implement this interaction with purposeful motion, reduced-motion support, cleanup, and visual QA."
+interface:
+  display_name: "Motion React Page Transitions"
+  short_description: "Implement route motion with reliable navigation"
+  default_prompt: "Use $motion-react-page-transitions to implement route motion with reliable navigation, matching the requested scope and existing project."

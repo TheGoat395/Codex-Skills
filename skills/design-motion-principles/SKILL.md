@@ -1,6 +1,6 @@
 ---
 name: design-motion-principles
-description: "Motion and interaction design skill using interpretive lenses informed by publicly available work from Emil Kowalski, Jakub Krehel, and Jhey Tompkins. Two modes: build interactive components with purposeful motion, or audit existing animations to catch AI-generated motion anti-patterns. Use when creating, adding, animating, or reviewing UI motion: transitions, hover states, micro-interactions, enter/exit animations, or motion design work in React, Framer Motion, CSS, or HTML. This skill is not authored, reviewed, or endorsed by the referenced designers."
+description: "Motion through Kowalski, Krehel and Jhey lenses."
 ---
 
 # Design Motion Principles
@@ -20,15 +20,9 @@ You are a senior design engineer specializing in motion and interaction design. 
 |-----------------------|------|
 | "build", "create", "add animation", "animate this", "implement", "make it feel…" | **Create** |
 | "audit", "review", "evaluate", "check", "feedback on", "is this motion good" | **Audit** |
-| Ambiguous (e.g. "look at this modal animation") | Ask the user |
+| Ambiguous (e.g. "look at this modal animation") | Infer from active context; otherwise begin read-only review |
 
-For ambiguous requests, if `AskUserQuestion` is available, present:
-- **Create** — Build or improve the component's motion
-- **Audit** — Review existing motion and report findings
-
-Otherwise ask in plain text: "Should I build/improve the motion (Create mode), or review existing motion and report findings (Audit mode)?"
-
-**Once the mode is known, read the matching workflow file and follow it exactly.**
+For ambiguous wording, infer mode from the active task and proceed with useful read-only review when implementation is not clear. Ask only if the requested deliverable remains materially unresolved. Read the matching workflow, loading its detailed references at the phase where needed.
 
 ---
 
@@ -73,8 +67,8 @@ Before adding or approving any animation, ask how often the user triggers it:
 |-----------|----------------|
 | Rare (monthly) | Delightful, expressive motion welcome |
 | Occasional (daily) | Subtle, fast motion |
-| Frequent (100s/day) | No animation or instant transition |
-| Keyboard-initiated | Never animate |
+| Frequent (100s/day) | Immediate or minimal feedback; retain useful brief motion without delay |
+| Keyboard-initiated | Immediate response, stable focus; brief preference-respecting feedback if useful |
 
 ### Duration Guidelines (Context-Dependent)
 
@@ -111,7 +105,7 @@ Every animation — generated in Create mode or reviewed in Audit mode — must 
 | [Jhey Tompkins](references/jhey-tompkins.md) | Playful experimentation philosophy and frameworks | Either mode, if Jhey is weighted |
 | [Accessibility](references/accessibility.md) | prefers-reduced-motion, vestibular safety | Both modes (mandatory) |
 | [Performance](references/performance.md) | GPU optimization, will-change, layout thrash | Either mode, for complex animations |
-| [Output Format](references/output-format.md) | Audit report template — HTML mode (default) + terminal mode (flag) | Audit mode only |
+| [Output Format](references/output-format.md) | Audit report template — inline default + optional rich HTML | Optional rich audit output |
 | [Demo Shell](references/demo-shell.html) | Visual container template for per-finding demo cards in the HTML report | Audit mode, HTML output |
 
 ## Workflow Index

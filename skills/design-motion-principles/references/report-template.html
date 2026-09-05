@@ -11,8 +11,8 @@
   worked example: "Tally" (habit & streak tracker · React + Framer Motion)
   ════════════════════════════════════════════════════════════════════
   Canonical HTML report for the motion audit. Self-contained: one file,
-  no local asset dependencies. Fonts load from a CDN with a robust
-  fallback stack and degrade gracefully offline.
+  no local asset dependencies. System/local font stacks work offline
+  without external requests.
 
   DISTINCT SIBLING of thumb-first's report-template.html — same system
   architecture (OKLCH tokens, mono micro-labels, severity channel,
@@ -28,7 +28,7 @@
                           NEVER used for severity or the timing ramp.
     • Severity .......... fixed: --crit / --imp / --opp. Never adaptive.
     • Timing ramp ....... fixed: instant/responsive (green) · deliberate
-                          (amber) · sluggish (red). Diagram + legend only.
+                          (amber) · extended (red). Diagram + legend only.
     • Verdict chips ..... fixed: strong / concern / problem / mixed.
 
   THE DEMO CARDS are the centerpiece — the only animated elements in the
@@ -42,9 +42,6 @@
   MODULAR SECTIONS — render a section ONLY if the audit produced it.
 -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
   :root {
@@ -81,7 +78,7 @@
     /* ——— Timing-budget ramp (FIXED — diagram + its legend only) ——— */
     --t-good:  oklch(0.745 0.135 152);  /* instant + responsive */
     --t-mid:   oklch(0.805 0.125 78);   /* deliberate           */
-    --t-slow:  oklch(0.655 0.185 25);   /* sluggish             */
+    --t-slow:  oklch(0.655 0.185 25);   /* extended             */
 
     /* ——— Verdict (FIXED — lens table) ——— */
     --strong:  var(--opp);
@@ -92,9 +89,9 @@
     --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px;
     --s6:32px; --s7:48px; --s8:64px; --s9:96px;
 
-    --display: "Familjen Grotesk", "Hanken Grotesk", system-ui, sans-serif;
-    --sans: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-    --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --display: system-ui, sans-serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
   }
 
   /* ═══════════════ LIGHT-MODE OVERRIDES ═══════════════
@@ -408,7 +405,7 @@
     /* 01 · quick tab crossfade — 180ms ease-out */
     @keyframes m1 {
       0%   { opacity: 0; transform: translateX(7px); }
-      55%  { opacity: 1; transform: translateX(0); }
+      6%  { opacity: 1; transform: translateX(0); }
       100% { opacity: 1; transform: translateX(0); }
     }
     .demo-1__mt { animation: m1 3s cubic-bezier(0.22,1,0.36,1) infinite; }
@@ -416,7 +413,7 @@
     /* 02 · sheet enter (mirror for exit) — 300ms ease-out-quint */
     @keyframes m2 {
       0%   { opacity: 0; transform: translateY(115%); }
-      45%  { opacity: 1; transform: translateY(0); }
+      10%  { opacity: 1; transform: translateY(0); }
       100% { opacity: 1; transform: translateY(0); }
     }
     .demo-2__mt { animation: m2 3s cubic-bezier(0.22,1,0.36,1) infinite; }
@@ -424,7 +421,7 @@
     /* 03 · calm check — 200ms ease-out, no bounce */
     @keyframes m3 {
       0%   { opacity: 0; transform: scale(0.9); }
-      55%  { opacity: 1; transform: scale(1); }
+      6.666667%  { opacity: 1; transform: scale(1); }
       100% { opacity: 1; transform: scale(1); }
     }
     .demo-3__mt .ui-check { animation: m3 3s cubic-bezier(0.33,1,0.68,1) infinite; transform-origin: center; }
@@ -432,7 +429,7 @@
     /* 04 · number roll — 220ms, opacity + translateY + blur */
     @keyframes m4 {
       0%   { opacity: 0; transform: translateY(10px); filter: blur(5px); }
-      55%  { opacity: 1; transform: translateY(0);   filter: blur(0); }
+      7.333333%  { opacity: 1; transform: translateY(0);   filter: blur(0); }
       100% { opacity: 1; transform: translateY(0);   filter: blur(0); }
     }
     .demo-4__mt .ui-num { animation: m4 3s cubic-bezier(0.22,1,0.36,1) infinite; display: inline-block; }
@@ -440,13 +437,13 @@
     /* 05 · milestone badge enter — 260ms ease-out + one-shot sparkle */
     @keyframes m5 {
       0%   { opacity: 0; transform: scale(0.8); }
-      50%  { opacity: 1; transform: scale(1); }
+      8.666667%  { opacity: 1; transform: scale(1); }
       100% { opacity: 1; transform: scale(1); }
     }
     @keyframes m5spark {
       0%   { opacity: 0; transform: translate(0,0) scale(0.4); }
-      35%  { opacity: 1; }
-      70%  { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(1); }
+      3%  { opacity: 1; }
+      8.666667%  { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(1); }
       100% { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(1); }
     }
     .demo-5__mt .badge { animation: m5 3s cubic-bezier(0.34,1.0,0.5,1) infinite; transform-origin: center; }
@@ -458,9 +455,20 @@
     [class*="__mt"], [class*="__mt"] * { animation: none !important; transition: none !important; }
     .demo-5__mt .spark { opacity: 0; }
   }
+
+  .theme-switch input:focus-visible ~ .theme-switch__pill { outline:2px solid var(--paper); outline-offset:3px; }
+  .demo input:focus-visible ~ .demo__bar .seg { outline: 2px solid var(--paper); outline-offset: 3px; }
+  button:focus-visible, input:focus-visible + label { outline: 2px solid currentColor; outline-offset: 3px; }
+  .demo[data-paused="true"] [class*="__mt"], .demo[data-paused="true"] [class*="__mt"] * { animation-play-state: paused !important; }
+  .demo__playback { display:flex; gap:8px; margin-top:10px; }
+  .demo__playback button { font:inherit; font-size:12px; color:var(--paper); background:var(--surface-2); border:1px solid var(--line-strong); border-radius:6px; padding:6px 10px; }
+  @media(max-width:600px) { body { padding:20px; } .demo { max-width:100%; } .demo__bar { flex-wrap:wrap; } }
+.table-scroll { overflow-x:auto; max-width:100%; }
+.table-scroll:focus-visible { outline:2px solid var(--paper); outline-offset:3px; }
 </style>
 </head>
 <body>
+<p style="padding:16px;margin:0">Illustrative report template with fictional findings; replace every project claim with inspected evidence.</p>
 <div class="wrap">
 
   <!-- ═══════════ GLOBAL THEME TOGGLE ═══════════ -->
@@ -511,7 +519,7 @@
       Three lenses, weighted for this context — a frequently-opened utility where most motion should get out of
       the way, and a little should be memorable. The read is what each would push on hardest today.
     </p>
-    <table class="lens-table">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable audit table"><table class="lens-table">
       <thead><tr><th>Lens</th><th>Verdict</th><th>One-line read</th></tr></thead>
       <tbody>
         <tr>
@@ -530,7 +538,7 @@
           <td class="lens-read">Restraint is mostly right. The open prize is making the streak milestones actually feel earned.</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
 
   <!-- ═══════════ 02 · TIMING-BUDGET DIAGRAM ═══════════
@@ -546,7 +554,7 @@
       where it runs today.
     </p>
     <div class="timing-grid">
-      <svg class="timing-figure" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Duration scale from 0 to 600 milliseconds showing where Tally's animations fall across instant, responsive, deliberate and sluggish zones">
+      <svg class="timing-figure" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Duration scale from 0 to 600 milliseconds showing where Tally's animations fall across instant, responsive, deliberate and extended zones">
         <style>
           /* Theme-aware: every fill below resolves via the report's CSS vars,
              so the diagram re-tones when the global Light/Dark toggle flips. */
@@ -569,7 +577,8 @@
           .tf-dot-text  { fill: oklch(0.165 0.006 255); }
           .tf-missing-ring { stroke: var(--faint); }
           .tf-missing-text { fill: var(--muted); }
-        </style>
+
+</style>
         <defs>
           <linearGradient id="track" x1="0" y1="0" x2="1" y2="0">
             <stop offset="0%"   class="tf-track-stop-good" stop-opacity="0.30"/>
@@ -605,7 +614,7 @@
           <text x="90"  y="106" text-anchor="middle" class="tf-zone-good">INSTANT</text>
           <text x="240" y="106" text-anchor="middle" class="tf-zone-good">RESPONSIVE</text>
           <text x="440" y="106" text-anchor="middle" class="tf-zone-mid">DELIBERATE</text>
-          <text x="592" y="106" text-anchor="middle" class="tf-zone-slow">SLUGGISH</text>
+          <text x="592" y="106" text-anchor="middle" class="tf-zone-slow">EXTENDED</text>
         </g>
 
         <!-- "missing" marker for the no-transition streak counter, parked at 0 -->
@@ -624,7 +633,7 @@
           <circle cx="360" cy="147" r="12" class="tf-dot-mid"/><text x="360" y="151" class="tf-dot-text">4</text>
           <!-- 2 · check-off bounce 450ms (deliberate, too long for frequency) -->
           <circle cx="490" cy="147" r="12" class="tf-dot-mid"/><text x="490" y="151" class="tf-dot-text">2</text>
-          <!-- 1 · tab switch 600ms (sluggish) -->
+          <!-- 1 · tab switch 600ms (extended) -->
           <circle cx="632" cy="147" r="12" class="tf-dot-slow"/><text x="632" y="151" class="tf-dot-text">1</text>
         </g>
 
@@ -649,14 +658,14 @@
         </ol>
 
         <div class="zone-defs">
-          <div class="zone-def"><span class="dot" style="background:var(--t-good)"></span><div><span class="zt">Instant / Responsive</span> · 0–300ms — <span class="zd">where almost everything belongs. Taps, toggles, tabs, hovers.</span></div></div>
+          <div class="zone-def"><span class="dot" style="background:var(--t-good)"></span><div><span class="zt">Instant / Responsive</span> · 0–300ms — <span class="zd">often appropriate for frequent productivity controls; assess the actual context.</span></div></div>
           <div class="zone-def"><span class="dot" style="background:var(--t-mid)"></span><div><span class="zt">Deliberate</span> · 300–500ms — <span class="zd">earned by large surfaces: sheets, modals, full-screen routes.</span></div></div>
-          <div class="zone-def"><span class="dot" style="background:var(--t-slow)"></span><div><span class="zt">Sluggish</span> · 500ms+ — <span class="zd">feels laggy. Reserve for rare, deliberately cinematic moments — or nothing.</span></div></div>
+          <div class="zone-def"><span class="dot" style="background:var(--t-slow)"></span><div><span class="zt">Extended</span> · 500ms+ — <span class="zd">may suit narrative or expressive motion; assess frequency and user control.</span></div></div>
         </div>
 
         <div class="whats-off">
           <span class="mono-label">What's off</span>
-          <p>The two dots furthest right — tab switch (1) and check-off (2) — are the actions that fire most. Frequency and duration are inversely related: the more often it runs, the faster it should be. And the streak counter (5) has no transition at all.</p>
+          <p>The two dots furthest right — tab switch (1) and check-off (2) — are the actions that fire most. Frequency and duration are inversely related: the more often it runs, the faster it should be. The streak counter (5) needs an accessible success status; missing visual motion alone is not a finding.</p>
         </div>
       </div>
     </div>
@@ -687,11 +696,11 @@
         <div class="finding-row" data-sev="crit" id="finding-2">
           <div class="finding-row__prose">
             <div class="find-tags"><span class="severity crit">Critical</span><span class="lens-chip">Jakub</span></div>
-            <h4 class="find-title">The add-habit sheet enters, then snaps shut with no exit</h4>
+            <h4 class="find-title">Closing the add-habit sheet loses keyboard focus</h4>
             <div class="find-body">
-              <p><span class="label">What</span>The bottom sheet animates up on open (320ms, good), but on dismiss it's removed from the tree instantly — no exit. The component renders conditionally with no <code>AnimatePresence</code> wrapper, so Framer Motion never gets to play the exit.</p>
-              <p><span class="label">Why it matters</span>A surface that glides in and <em>vanishes</em> reads as broken — the eye expects symmetry. It's the single most common "half-built motion" tell, and it's on the app's primary create flow.</p>
-              <div class="fix"><p><span class="label">Recommended motion</span>Wrap the sheet in <code>AnimatePresence</code> and mirror the enter: slide down + fade over 300ms with the same <code>ease-out-quint</code>. The demo shows the enter; the exit is its reverse.</p></div>
+              <p><span class="label">What</span>Illustrative test result: dismissing the sheet returns focus to the document start, so keyboard users must traverse navigation again. The sheet also closes instantly; that alone is not a defect.</p>
+              <p><span class="label">Why it matters</span>The primary create flow loses its interaction position. Severity comes from the demonstrated focus disruption, not missing animation or a library wrapper.</p>
+              <div class="fix"><p><span class="label">Recommended motion</span>Restore focus to the trigger on dismissal and test keyboard/reduced-motion paths. If continuity needs motion, coordinate presence and a brief exit. This 300ms enter demo illustrates one optional visual treatment; it does not prove the focus fix.</p></div>
               <p class="find-loc"><code>screens/Habits/AddSheet.tsx:48</code></p>
             </div>
           </div>
@@ -724,11 +733,11 @@
         <div class="finding-row" data-sev="imp" id="finding-4">
           <div class="finding-row__prose">
             <div class="find-tags"><span class="severity imp">Important</span><span class="lens-chip">Jakub</span></div>
-            <h4 class="find-title">Streak counter jumps between values with no transition</h4>
+            <h4 class="find-title">Streak updates lack an accessible success status</h4>
             <div class="find-body">
-              <p><span class="label">What</span>When a streak increments, the number is replaced in place — a hard swap. There's no transition on the value change, so the most rewarding number in the app updates with the least ceremony.</p>
-              <p><span class="label">Why it matters</span>The streak count is the payoff of the whole interaction. A snap makes a hard-won number feel like a re-render, not an achievement.</p>
-              <div class="fix"><p><span class="label">Recommended motion</span>Roll the new value in: opacity + 10px translateY + a 5px blur that clears, 220ms. Subtle, but it tells the eye <em>something changed and it's good</em>.</p></div>
+              <p><span class="label">What</span>Illustrative test result: the visible streak changes but no semantic status announces the successful action. An instant visual number update is acceptable if confirmation remains perceivable.</p>
+              <p><span class="label">Why it matters</span>The missing success feedback affects the assistive-technology path. A decorative roll cannot substitute for a semantic status or correct focus handling.</p>
+              <div class="fix"><p><span class="label">Recommended motion</span>Add a concise semantic success status. An optional 220ms roll can reinforce the visual change; instant or opacity-only treatment is also valid, and reduced motion must preserve the same confirmation.</p></div>
               <p class="find-loc"><code>components/StreakBadge.tsx:22</code></p>
             </div>
           </div>
@@ -795,7 +804,7 @@
             <div class="find-tags"><span class="severity crit">Critical</span><span class="lens-chip">Emil</span></div>
             <h4 class="find-title">Tab switches slide for 600ms — far too slow for the most frequent action</h4>
             <div class="find-body">
-              <p><span class="label">What</span>The four bottom tabs cross-slide the full panel width over 600ms with an <code>ease-in-out</code>. Tabs are the app's highest-frequency navigation; a 600ms slide means every switch holds the user behind an animation.</p>
+              <p><span class="label">What</span>The four bottom tabs cross-slide the full panel width over 600ms with an <code>ease-in-out</code>. In this illustrative test, input is disabled until that 600ms slide completes; repeated navigation therefore blocks the next action.</p>
               <p><span class="label">Why it matters</span>Emil's rule: the more often an action fires, the less it should animate. At this duration the motion stops being feedback and becomes a toll. <code>ease-in-out</code> also adds a slow start, compounding the lag.</p>
               <div class="fix"><p><span class="label">Recommended motion</span>Drop to a 180ms opacity crossfade with a 7px slide, <code>ease-out</code>. Better still: consider no slide at all — a fast crossfade is plenty of orientation for a tab.</p></div>
               <p class="find-loc"><code>navigation/TabView.tsx:63</code></p>
@@ -886,11 +895,11 @@
         <div class="finding-row" data-sev="imp" id="finding-5">
           <div class="finding-row__prose">
             <div class="find-tags"><span class="severity imp">Important</span><span class="lens-chip">Jhey</span></div>
-            <h4 class="find-title">Hitting a milestone streak passes by with no celebration</h4>
+            <h4 class="find-title">Milestone achievement is not distinguished by the promised feedback</h4>
             <div class="find-body">
-              <p><span class="label">What</span>Crossing a 7-, 30-, or 100-day streak looks identical to any other day — the number just increments. The one moment in the app that has genuinely earned a flourish gets none.</p>
-              <p><span class="label">Why it matters</span>This is where delight pays for itself. A milestone is rare, emotionally loaded, and shareable — exactly the place to spend motion the rest of the app withholds. Skipping it leaves the payoff flat.</p>
-              <div class="fix"><p><span class="label">Recommended motion</span>On a milestone only: a badge that scales <code>0.8 → 1</code> (260ms <code>ease-out</code>) with a short, one-shot sparkle burst. Fires once on the event — not a looping pulse.</p></div>
+              <p><span class="label">What</span>In this fictional brief, the product promises distinct milestone feedback, but the tested 7-, 30-, and 100-day event exposes only the ordinary number update with no milestone status. Missing animation alone would be an opportunity, not a defect.</p>
+              <p><span class="label">Why it matters</span>Users cannot perceive the promised milestone outcome. Provide a clear visible and semantic milestone status in both motion modes; optional celebratory motion may reinforce it.</p>
+              <div class="fix"><p><span class="label">Recommended motion</span>First add visible and semantic milestone status. If the brief calls for delight, on a milestone only use a badge that scales <code>0.8 → 1</code> (260ms <code>ease-out</code>) with a short, one-shot sparkle burst. Fires once on the event — not a looping pulse.</p></div>
               <p class="find-loc"><code>components/StreakBadge.tsx:40</code></p>
             </div>
           </div>
@@ -947,36 +956,36 @@
 
     <div class="rec crit" id="rec-crit">
       <div class="tier-label"><span class="mono-label">Critical · must fix</span><span class="rule"></span><span class="count">2</span></div>
-      <table class="rec-table">
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable audit table"><table class="rec-table">
         <thead><tr><th>Issue</th><th>File</th><th>Fix</th></tr></thead>
         <tbody>
           <tr><td>Tab switch runs 600ms on the highest-frequency action</td><td><code>TabView.tsx:63</code></td><td>180ms opacity crossfade + 7px slide, ease-out</td></tr>
-          <tr><td>Add-habit sheet has no exit — snaps shut</td><td><code>AddSheet.tsx:48</code></td><td>Wrap in AnimatePresence; mirror the 300ms enter on exit</td></tr>
+          <tr><td>Add-habit dismissal loses keyboard focus</td><td><code>AddSheet.tsx:48</code></td><td>Restore trigger focus; optional exit preserves continuity</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </div>
 
     <div class="rec imp" id="rec-imp">
       <div class="tier-label"><span class="mono-label">Important · should fix</span><span class="rule"></span><span class="count">3</span></div>
-      <table class="rec-table">
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable audit table"><table class="rec-table">
         <thead><tr><th>Issue</th><th>File</th><th>Fix</th></tr></thead>
         <tbody>
           <tr><td>Check-off pops from scale(0) with a bounce</td><td><code>HabitCheck.tsx:27</code></td><td>scale 0.9→1 + opacity, 200ms ease-out, no overshoot</td></tr>
-          <tr><td>Streak counter swaps with no transition</td><td><code>StreakBadge.tsx:22</code></td><td>220ms opacity + translateY + blur roll-in</td></tr>
-          <tr><td>Milestone streaks have no celebration moment</td><td><code>StreakBadge.tsx:40</code></td><td>One-shot badge scale-in + sparkle, milestones only</td></tr>
+          <tr><td>Streak success is not announced</td><td><code>StreakBadge.tsx:22</code></td><td>Add semantic success status; optional 220ms visual reinforcement</td></tr>
+          <tr><td>Promised milestone outcome lacks distinct feedback</td><td><code>StreakBadge.tsx:40</code></td><td>Visible and semantic milestone status; optional one-shot celebration</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </div>
 
     <div class="rec opp" id="rec-opp">
       <div class="tier-label"><span class="mono-label">Opportunities · could enhance</span><span class="rule"></span><span class="count">2</span></div>
-      <table class="rec-table">
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable audit table"><table class="rec-table">
         <thead><tr><th>Enhancement</th><th>Where</th><th>Impact</th></tr></thead>
         <tbody>
           <tr><td>Habit-card elevation invisible on dark theme</td><td><code>HabitCard.tsx:9</code></td><td>1px border carries elevation on both themes</td></tr>
           <tr><td>Today-list could stagger in on first paint</td><td><code>Today.tsx:51</code></td><td>30ms stagger, opacity + 6px rise — one orchestrated load</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </div>
   </section>
 
@@ -1002,5 +1011,16 @@
   </footer>
 
 </div>
+<script>
+// Local-only controls; no external requests. Reduced motion still disables playback.
+for (const demo of document.querySelectorAll('.demo')) {
+  const controls=document.createElement('div');controls.className='demo__playback';
+  const pause=document.createElement('button');pause.type='button';pause.textContent='Pause';pause.setAttribute('aria-pressed','false');
+  pause.addEventListener('click',()=>{const paused=demo.dataset.paused!=='true';demo.dataset.paused=String(paused);pause.textContent=paused?'Resume':'Pause';pause.setAttribute('aria-pressed',String(paused));});
+  const replay=document.createElement('button');replay.type='button';replay.textContent='Replay';
+  replay.addEventListener('click',()=>{for(const animation of demo.getAnimations({subtree:true})){animation.currentTime=0;} });
+  controls.append(pause,replay);demo.append(controls);
+}
+</script>
 </body>
 </html>

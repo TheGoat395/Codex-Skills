@@ -66,15 +66,9 @@ Use grid to create hierarchy, rhythm, and editorial taste instead of default equ
 - The layout feels authored and site-specific.
 - Mobile keeps the editorial rhythm instead of collapsing into generic cards.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, styling system, token files, component primitives, entry CSS, build commands, and existing visual conventions.
-- Prefer the existing styling approach before introducing Tailwind, shadcn/ui, Radix, class-variance tools, or custom CSS architecture.
-- Use design tokens to make choices repeatable, but keep the site-specific art direction alive. Tokens should support taste, not flatten it.
-- Avoid generic AI website tells: default card grids, template spacing, random gradients, one-note palettes, weak buttons, unstyled forms, and placeholder copy.
-- Check desktop and mobile. Prevent overflow, text collisions, unstable control sizes, inaccessible focus, and broken media crops.
-- Respect accessibility, color contrast, keyboard navigation, focus-visible states, and reduced-motion preferences.
-- Run available lint, build, test, and local browser checks when possible; report exact commands and untested areas.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
 
 ## Official Source Anchors
 

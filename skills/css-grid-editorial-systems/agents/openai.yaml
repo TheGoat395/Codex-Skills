@@ -1,3 +1,4 @@
-display_name: "CSS Grid Editorial Systems"
-short_description: "Build editorial grids beyond generic card layouts"
-default_prompt: "Use css-grid-editorial-systems to shape this styling or design-system work with premium visual constraints, accessible states, and a verification pass."
+interface:
+  display_name: "CSS Grid Editorial Systems"
+  short_description: "Build editorial grids beyond generic card layouts"
+  default_prompt: "Use $css-grid-editorial-systems to use grid to express content hierarchy within the requested scope."

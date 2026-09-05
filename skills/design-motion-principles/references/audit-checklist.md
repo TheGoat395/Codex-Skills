@@ -7,8 +7,8 @@ Use this checklist when reviewing motion design in any UI code.
 ## Philosophy Check (Do First)
 
 - [ ] **How often will users trigger this?** (Frequent = less/no animation — Emil's rule)
-- [ ] **Is this keyboard-initiated?** (If yes, don't animate — Emil's rule)
-- [ ] **Does this animation serve a purpose?** (orientation, feedback, continuity—not just decoration)
+- [ ] **Is this keyboard-initiated?** (Immediate response and stable focus; useful brief feedback can remain)
+- [ ] **Does this animation serve a purpose?** (orientation, feedback, continuity, narrative or approved artistic expression)
 - [ ] **Will users notice this animation consciously?** (If yes for production UI, probably too much)
 - [ ] **Have I tested this with `prefers-reduced-motion: reduce`?**
 - [ ] **Does this feel natural after the 10th interaction?** (Test repeatedly, not just once)
@@ -19,22 +19,22 @@ Use this checklist when reviewing motion design in any UI code.
 
 ## Motion Gap Analysis (Check BEFORE Reviewing Existing Animations)
 
-Conditional UI changes that **lack** animation are often worse than poorly-tuned animations:
+Conditional UI changes are candidates for inspection, not findings. Instant transitions may be correct; evaluate demonstrated feedback, comprehension, focus and continuity first.
 
 - [ ] **Searched for conditional renders** — `{condition && <Component />}` patterns
 - [ ] **Searched for ternary swaps** — `{condition ? <A /> : <B />}` patterns
 - [ ] **Searched for dynamic inline styles** — `style={{ prop: dynamicValue }}` without transition
-- [ ] **Each conditional render** either has AnimatePresence wrapper OR doesn't need animation (static content)
-- [ ] **Mode switches** (tabs, toggles) animate their content changes, not just the switch itself
-- [ ] **Settings panels** with conditional controls have enter/exit animations
-- [ ] **Expandable sections** animate height, not just show/hide
-- [ ] **Loading → Content** transitions are smooth, not instant swaps
+- [ ] **Each conditional render** uses an appropriate transition or justified instant state
+- [ ] **Mode switches** (tabs, toggles) preserve comprehensible state and focus; animate content only when useful
+- [ ] **Settings panels** with conditional controls preserve useful state feedback, with motion only where warranted
+- [ ] **Expandable sections** preserve content flow using instant state, measured layout/FLIP or bounded size animation
+- [ ] **Loading → Content** transitions communicate readiness without delaying access
 
 ---
 
 ## Enter/Exit States
 
-- [ ] Enter animations combine opacity + translateY + blur
+- [ ] Enter treatment fits purpose; opacity-only and instant are valid, blur optional
 - [ ] Exit animations are subtler than enters (smaller translateY, same blur/opacity)
 - [ ] `animation-fill-mode: backwards` used for delayed sequences
 - [ ] Elements don't flash before their delayed animation starts
@@ -44,8 +44,8 @@ Conditional UI changes that **lack** animation are often worse than poorly-tuned
 ## Easing & Timing
 
 - [ ] Appropriate easing for context (not default `ease` everywhere)
-- [ ] Custom Bézier curves used instead of built-in easing (Emil's rule)
-- [ ] Spring animations for interactive elements
+- [ ] Built-in/custom easing fits continuity and context; custom curves are available when useful
+- [ ] Spring, timed or instant feedback selected for the interaction
 - [ ] Durations appropriate for context (Emil: under 300ms; others: whatever serves the design)
 - [ ] Consistent timing values across related animations
 - [ ] Transform-origin matches interaction source (dropdowns from trigger)
@@ -70,11 +70,11 @@ Conditional UI changes that **lack** animation are often worse than poorly-tuned
 
 ## State Transitions
 
-- [ ] Icon swaps are animated (opacity, scale, blur)
-- [ ] Loading states have smooth transitions
-- [ ] Hover states have transitions (150-200ms minimum)
-- [ ] Button press has scale feedback (`scale(0.97)` on `:active`)
-- [ ] Elements don't animate from `scale(0)` (use `0.9+` instead)
+- [ ] Icon swaps preserve understandable state and accessible feedback; motion is optional
+- [ ] Loading states communicate readiness without delaying content
+- [ ] Hover/focus states respond immediately; any transition duration fits frequency and preference
+- [ ] Button press has clear feedback; subtle scale is one option when appropriate
+- [ ] Scale distance supports the intended effect without disorientation; 0.9+ is a restraint option
 
 ---
 
@@ -82,16 +82,16 @@ Conditional UI changes that **lack** animation are often worse than poorly-tuned
 
 - [ ] Tooltips: first delayed + animated, subsequent instant
 - [ ] Animations are interruptible (can change mid-animation)
-- [ ] Clip-path used for reveals instead of width/height
+- [ ] Reveal method fits content flow; clip-path and bounded size/layout alternatives are measured
 - [ ] High-frequency actions have minimal or no animation
-- [ ] Keyboard shortcuts don't animate
+- [ ] Keyboard shortcuts respond immediately and preserve focus
 
 ---
 
 ## Performance
 
 - [ ] `will-change` used sparingly and specifically
-- [ ] Animations use transform/opacity (not layout properties)
+- [ ] Prefer transform/opacity; measure rendering cost and justify layout/effect exceptions
 - [ ] Tested on low-end devices
 - [ ] No continuous animations without purpose
 - [ ] CSS transitions (not keyframes) for interruptible animations (Emil)
@@ -111,27 +111,10 @@ Conditional UI changes that **lack** animation are often worse than poorly-tuned
 
 ## Quick Reference: Severity Levels
 
-**Critical (Must Fix)**:
-- Missing `prefers-reduced-motion` support
-- Animating layout properties (width, height, top, left)
-- No exit animations (elements just disappear)
-- **Motion gaps in primary UI** — Conditional controls/panels that snap in/out without animation
-- Animating keyboard-initiated actions (Emil)
-- Animations on high-frequency actions (100s/day)
+**Critical:** demonstrated blocked actions/content, severe focus disruption, harmful unavoidable motion without equivalent reduced-motion access, or severe measured performance failure.
 
-**Important (Should Fix)**:
-- Exit animations as prominent as enter animations
-- Missing blur in enter animations
-- Animating from `scale(0)` instead of `0.9+` (Emil)
-- Default CSS easing instead of custom curves (Emil)
-- Wrong transform-origin on dropdowns/popovers (Emil)
+**Important:** observed comprehension, continuity, readability or repeated-interaction friction; include evidence and context, not a rule-name alone.
 
-**Context-Dependent (Check Against Designer Perspective)**:
-- Durations over 300ms (Emil flags this; Jakub/Jhey may approve for polish)
+**Context-dependent candidates:** instant state, missing exit or blur, size/layout animation, durations over 300ms, default easing, strong press scale or high-frequency feedback. Any can be correct. Test the purpose and consequence before reporting a defect.
 
-**Nice to Have**:
-- Optical alignment refinements
-- oklch color space for gradients
-- Spring animations instead of ease
-- Button scale feedback on press
-- Tooltip delay pattern (first delayed, subsequent instant)
+**Opportunities:** optical alignment, suitable color space, springs, tooltip patterns, expressive authored motion. Keep artistic alternatives available; do not turn optional polish into release blockers.

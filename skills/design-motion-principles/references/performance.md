@@ -1,82 +1,17 @@
 # Performance
 
----
+## will-change
 
-## will-change Explained (Jakub)
+`will-change` is a targeted hint, not a guaranteed compositor layer. `auto` is the normal default; `all` is not a useful supported value here. Do not set hints globally. If profiling reveals first-frame preparation cost, apply `will-change: transform, opacity` shortly before the relevant interaction and remove it afterward. Persistent hints and large/many layers can consume memory. Do not use them to hide an unexplained bottleneck.
 
-A hint to the browser: "I'm about to animate these properties, please prepare."
+## Rendering cost
 
-```css
-/* Good - specific properties that will animate */
-.animated-button {
-  will-change: transform, opacity;
-}
+Prefer transform and opacity when they match the design; compositing depends on the browser and element. Background-position/background-size, gradient changes, filter, clip-path and masks can require paint or expensive raster work. For moving gradients, consider a transform/opacity-driven pseudo-element and compare actual traces. CSS custom properties do not bypass the rendering pipeline.
 
-/* Bad - too broad, wastes resources */
-* { will-change: auto; }
-.element { will-change: all; }
-```
+Width/height, offsets, margin/padding and font-size can trigger layout. Measured bounded size animation or layout/FLIP is valid when content flow needs it; scaling text is not an automatic substitute. Batch layout reads before writes and avoid repeated forced layout.
 
-**Properties that benefit from will-change**:
-- transform
-- opacity
-- filter (blur, brightness)
-- clip-path
-- mask
+## Budget and checks
 
-**Why it matters**: Without the hint, the browser promotes elements to GPU layers only when animation starts, causing first-frame stutter. With `will-change`, it pre-promotes during idle time.
+Use actual frame work, painted area, layer memory, route lifecycle and target device classes rather than a universal element-count limit. Check interruption, resize, route return, cleanup and reduced-motion states. A few huge filtered layers may cost more than many tiny transform elements. Record source-only advice separately from measured runtime evidence.
 
-**When NOT to use**:
-- On elements that won't animate
-- On too many elements (each GPU layer uses memory)
-- As a "fix" for janky animations (find the real cause)
-
----
-
-## Gradient Animation Performance (Jakub)
-
-**Cheap to animate (GPU-accelerated)**:
-- background-position
-- background-size
-- opacity
-
-**Expensive to animate**:
-- Color stops
-- Adding/removing gradient layers
-- Switching gradient types
-
-**Tip**: Animate a pseudo-element overlay or use CSS variables that transition indirectly.
-
----
-
-## Animation Performance Budget
-
-As a rough guide:
-- **0-3 elements** with `will-change`: Fine
-- **4-10 elements**: Careful, test on low-end devices
-- **10+ elements**: Reconsider approach, use virtualization or stagger
-
----
-
-## Properties to Avoid Animating
-
-These trigger layout recalculation (expensive):
-- `width`, `height`
-- `top`, `left`, `right`, `bottom`
-- `margin`, `padding`
-- `font-size`
-
-**Always prefer**:
-- `transform: translate()` instead of `top`/`left`
-- `transform: scale()` instead of `width`/`height`
-- `opacity` for visibility changes
-
----
-
-## Performance Checklist
-
-- [ ] `will-change` used sparingly and specifically
-- [ ] Animations use transform/opacity (not layout properties)
-- [ ] Tested on low-end devices
-- [ ] No continuous animations without purpose
-- [ ] GPU layer count is reasonable (< 10 animated elements)
+Primary technical references: https://web.dev/articles/animations-guide ; https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/will-change

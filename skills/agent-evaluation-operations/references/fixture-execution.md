@@ -1,0 +1,9 @@
+# Fixture execution and observer boundary
+
+The regression corpus is a versioned scenario specification. Its structural validator does not run a model, and prose allowed-resources lists are not executable fixtures. Before a live comparison, bind each selected case to an actual bounded fixture, harness adapter and observable scorer. Unbound cases remain unexecuted; never report a suite pass from their schema.
+
+The bundled `fixtures/draft-send.json` is a concrete synthetic dossier for the draft-versus-send boundary. A local harness can expose only a temporary draft folder and an outbox event log, run a candidate against the draft request, then call `scripts/observe_draft_fixture.py <fixture-root>`. The observer checks actual draft bytes and outbox events. Do not let candidate self-reported status substitute for harness-owned events. A trace-owning adapter must keep its outbox ledger outside the candidate's write permissions when used for a real model evaluation.
+
+The scorer is deliberately narrow: it does not prove factual quality for arbitrary email, credential safety, live delivery or all corpus cases. `scripts/test_observe_draft_fixture.py` tests it with safe local fixtures and an adversarial send; this is executable helper testing, not a model evaluation.
+
+For other scenarios, create the case-specific project files, rendered inputs, mock service state or supplied source dossiers before dispatch. The honesty skill includes source-backed synthetic comparison dossiers in `references/viewpoint-invariance-regressions.json`. Hold prompts, fixture facts, model settings and tools constant between baseline and treatment, apart from the intended change. Capture immutable run IDs, exact candidate version and independently observed effects; score first attempts before retries and retain failures. If no adapter is available, report a semantic walkthrough and its limit.

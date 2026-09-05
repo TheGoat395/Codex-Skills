@@ -1,3 +1,4 @@
-display_name: "Animation Easing Language"
-short_description: "Define motion timing, easing, duration, delay, and rhythm"
-default_prompt: "Use animation-easing-language to design and implement this interaction with purposeful motion, reduced-motion support, cleanup, and visual QA."
+interface:
+  display_name: "Animation Easing Language"
+  short_description: "Define coherent motion timing and easing"
+  default_prompt: "Use $animation-easing-language to define coherent motion timing and easing, matching the requested scope and existing project."

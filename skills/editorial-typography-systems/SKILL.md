@@ -1,6 +1,6 @@
 ---
 name: "editorial-typography-systems"
-description: "Create refined typography for websites. Use for premium, editorial, luxury, portfolio, product, Squarespace-like, Vercel-like, Raycast-like, Linear-like, and modern sites needing font pairing, type scale, responsive headings, line length, hierarchy, captions, labels, and text polish."
+description: "Define font pairing and responsive hierarchy."
 ---
 
 # Editorial Typography Systems
@@ -13,13 +13,9 @@ Make typography carry hierarchy, mood, and polish without breaking responsive la
 
 Use this skill when the trigger description applies. Keep the `SKILL.md` lean, then read `references/editorial-typography-systems-guide.md` for concrete rules before planning or editing a meaningful website change.
 
-## Operating Contract
+## Scoped execution
 
-1. Inspect before coding when code exists.
-2. Convert vague taste into concrete rules.
-3. Explain planned files before major changes unless the user clearly said to proceed.
-4. Build, inspect, polish, and verify.
-5. Report commands run, files changed, and anything not tested.
+Apply the [shared web contract](../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
 
 ## Detailed Guide
 

@@ -1,3 +1,4 @@
-display_name: "Nextjs Server Client Boundaries"
-short_description: "Draw precise Server and Client Component boundaries"
-default_prompt: "Use nextjs-server-client-boundaries to plan and implement this work with official framework guidance, premium UI standards, and a verification pass."
+interface:
+  display_name: "Nextjs Server Client Boundaries"
+  short_description: "Define Next.js server and client component boundaries"
+  default_prompt: "Use $nextjs-server-client-boundaries to define Next.js server and client component boundaries, matching the requested scope and existing project."

@@ -1,488 +1,488 @@
 {
   "name": "codex-premium-website-skills",
-  "generated_at": "2026-08-30T15:02:30.037809+00:00",
+  "generated_at": "2026-09-05T23:10:57.863628+00:00",
   "source": "skills/",
   "skill_count": 80,
   "skills": [
     {
       "name": "accessibility-audit-websites",
-      "description": "Audit website accessibility. Use for semantic structure, headings, alt text, forms, focus states, keyboard navigation, color contrast, labels, ARIA misuse, reduced motion, captions, skip links, modals, menus, carousels, and final frontend QA aligned with WCAG-style accessibility expectations.",
+      "description": "Audit semantic and keyboard accessibility.",
       "file_count": 3,
-      "bytes": 5483
+      "bytes": 3387
     },
     {
       "name": "accessibility-performance-polish",
-      "description": "Improve website accessibility and performance polish. Use for semantic HTML, keyboard navigation, focus states, contrast, alt text, reduced motion, image/video loading, canvas fallbacks, bundle caution, animation performance, and final production readiness for polished websites.",
+      "description": "Finish accessibility and performance details.",
       "file_count": 3,
-      "bytes": 4611
+      "bytes": 3982
     },
     {
       "name": "agent-evaluation-operations",
-      "description": "Evaluate, observe, and release AI-agent workflows. Use for agent regression suites, prompt or model comparisons, scenario simulation, tool-call verification, traces, quality thresholds, cost and latency budgets, red-team cases, or release gates for AI systems.",
-      "file_count": 2,
-      "bytes": 2062
+      "description": "Evaluate agent and skill behavior or routing.",
+      "file_count": 10,
+      "bytes": 40954
     },
     {
       "name": "agent-memory-provenance",
-      "description": "Design attributable, privacy-aware memory for AI agents. Use when an agent needs session context, durable memory, retrieval, summaries, source citations, client isolation, compaction, retention rules, or an append-only decision and evidence record.",
+      "description": "Design memory provenance and tenant isolation.",
       "file_count": 2,
-      "bytes": 2340
+      "bytes": 2657
     },
     {
       "name": "agent-orchestration-architecture",
-      "description": "Design reliable AI-agent and multi-agent systems. Use when deciding whether a workflow needs one agent, tools, specialist agents, manager control, handoffs, durable execution, human approval, model routing, retries, or an operating boundary for an AI workflow.",
+      "description": "Resolve agent ownership and handoff design.",
       "file_count": 2,
-      "bytes": 2502
+      "bytes": 3896
     },
     {
       "name": "animation-easing-language",
-      "description": "Define animation easing language for premium websites and apps. Use for motion timing systems, easing curves, spring feel, duration scales, stagger rhythm, delay strategy, entrance/exit timing, tactile controls, cinematic sections, and translating luxury, modern, fast, calm, or playful motion words into concrete values.",
+      "description": "Define coherent motion timing and rhythm.",
       "file_count": 3,
-      "bytes": 5201
+      "bytes": 3877
     },
     {
       "name": "animation-jank-qa",
-      "description": "Run animation jank QA. Use for GSAP, Motion, CSS transitions, scroll animation, pinned scenes, parallax, hover states, page transitions, mobile motion, reduced-motion fallbacks, performance-heavy animations, and final motion polish before delivery.",
+      "description": "Diagnose a concrete rendered hitch or stutter.",
       "file_count": 3,
-      "bytes": 5651
+      "bytes": 4363
     },
     {
       "name": "animation-tool-router",
-      "description": "Use when planning or implementing website motion, scroll choreography, microinteractions, page transitions, text reveals, pinned sections, smooth scrolling, Lottie, Three.js/R3F, WebGL, or animation-heavy premium sites. Chooses the lightest appropriate tool and defines reduced-motion fallbacks.",
+      "description": "Resolve motion tools or native View Transitions.",
       "file_count": 2,
-      "bytes": 1746
+      "bytes": 2060
     },
     {
       "name": "anti-generic-website-review",
-      "description": "Detect and remove generic AI website output. Use to review or improve any site with default SaaS structure, weak typography, generic cards, fake browser chrome, placeholder copy, random gradients, overused bento grids, repetitive bullets, basic buttons, bland mobile layouts, or template-like sections.",
+      "description": "Repair interchangeable website design patterns.",
       "file_count": 3,
-      "bytes": 4769
+      "bytes": 4000
     },
     {
       "name": "brand-voice-to-ui-copy",
-      "description": "Translate brand voice into UI copy for websites and apps. Use for buttons, labels, empty states, loading states, errors, tooltips, form help, nav labels, product copy, onboarding microcopy, premium tone systems, and making brand voice usable in interface text instead of only marketing prose.",
+      "description": "Translate brand voice into interface microcopy.",
       "file_count": 3,
-      "bytes": 6332
+      "bytes": 3954
     },
     {
       "name": "browser-inspection-workflow",
-      "description": "Run browser inspection for websites and apps. Use after building or changing frontend work to open the rendered site, inspect console and network errors, verify layout and interactions, test links/forms/media, capture screenshots, check responsive behavior, and perform the second visual polish pass before final delivery.",
+      "description": "Coordinate rendered behavior and state evidence.",
       "file_count": 3,
-      "bytes": 5703
+      "bytes": 4397
     },
     {
       "name": "code-change-safety-checkpoint",
-      "description": "Preserve a rollback path before risky code or website edits. Use when changes may touch many files, delete files, overwrite generated output, alter user work, refactor shared behavior, modify deployment config, or otherwise risk losing working code.",
-      "file_count": 1,
-      "bytes": 2476
+      "description": "Preserve rollback before materially risky edits.",
+      "file_count": 2,
+      "bytes": 2862
     },
     {
       "name": "code-change-undo-revert",
-      "description": "Undo or revert code changes safely. Use when the user asks to undo, revert, roll back, restore, recover, go back, remove recent changes, or compare current work against a previous checkpoint.",
-      "file_count": 1,
-      "bytes": 2123
+      "description": "Restore requested code changes or checkpoints.",
+      "file_count": 2,
+      "bytes": 2541
     },
     {
       "name": "color-material-lighting-direction",
-      "description": "Design website color, material, surface, and lighting direction. Use for premium visual systems, avoiding one-note palettes, defining luxury or cinematic color without cliches, setting contrast, backgrounds, gradients, surfaces, shadows, glass, and material accents.",
+      "description": "Define palette, material and lighting roles.",
       "file_count": 3,
-      "bytes": 4820
+      "bytes": 4029
     },
     {
       "name": "content-pruning-review",
-      "description": "Review and prune website content. Use for removing generic copy, duplicate sections, weak feature cards, unsupported claims, placeholder content, bloated FAQs, repeated testimonials, excessive prose, stale pages, low-value sections, and AI-generated filler before final visual polish.",
+      "description": "Remove redundant or unsupported page content.",
       "file_count": 3,
-      "bytes": 6317
+      "bytes": 4032
     },
     {
       "name": "content-structure-information-architecture",
-      "description": "Plan website content structure and information architecture. Use for page maps, nav, section sequencing, user questions, service pages, product pages, portfolios, case studies, blogs, docs, ecommerce, and any site where content order and naming affect clarity and perceived quality.",
+      "description": "Plan pages, navigation and content sequence.",
       "file_count": 3,
-      "bytes": 4187
+      "bytes": 2816
     },
     {
       "name": "conversion-forms-checkout-polish",
-      "description": "Design and polish website conversion flows. Use for CTAs, lead forms, booking forms, newsletter signup, checkout, pricing, contact pages, service inquiries, ecommerce purchase paths, error states, validation, trust signals, and conversion sections that must feel complete and credible.",
+      "description": "Polish conversion journeys and visible states.",
       "file_count": 3,
-      "bytes": 4240
+      "bytes": 3152
     },
     {
       "name": "creativity",
-      "description": "Generate, explore, and develop original but useful possibilities when an ordinary answer would underserve the objective. Use for ideation, reframing, synthesis, invention, adaptation, creative problem-solving, or escaping fixation across writing, strategy, products, research, design, and technical work. Do not invoke for routine variation, factual retrieval, or final evidence adjudication.",
-      "file_count": 4,
-      "bytes": 19684
+      "description": "Generate original ideas or escape fixation.",
+      "file_count": 6,
+      "bytes": 20484
     },
     {
       "name": "critical-thinking",
-      "description": "Evaluate a material claim, argument, explanation, forecast, or recommendation by reconstructing its reasoning, testing evidence and assumptions, and comparing the strongest alternatives. Use when the task centers on whether something deserves belief or confidence. Do not invoke for routine retrieval, simple editing, or a purely formal entailment problem.",
-      "file_count": 4,
-      "bytes": 17416
+      "description": "Judge claims through evidence and alternatives.",
+      "file_count": 6,
+      "bytes": 18426
     },
     {
       "name": "cross-browser-qa",
-      "description": "Run cross-browser QA for websites and apps. Use before production or after CSS, media, forms, animation, canvas, layout, or interaction changes to test Chromium, WebKit/Safari-like, and Firefox behavior, browser-specific CSS/media issues, focus/keyboard differences, and responsive rendering.",
+      "description": "Verify browser-engine compatibility.",
       "file_count": 3,
-      "bytes": 5828
+      "bytes": 3741
     },
     {
       "name": "css-grid-editorial-systems",
-      "description": "Create CSS Grid editorial layout systems for premium websites. Use for asymmetric grids, magazine layouts, portfolio indexes, case-study plates, image galleries, hero compositions, feature narratives, product proof layouts, masonry-like rhythms, and replacing generic card grids with stronger hierarchy.",
+      "description": "Implement asymmetric editorial CSS Grid layouts.",
       "file_count": 3,
-      "bytes": 5437
+      "bytes": 4200
     },
     {
       "name": "cta-language-systems",
-      "description": "Write CTA language systems for websites and apps. Use for primary buttons, secondary links, hero CTAs, pricing CTAs, booking CTAs, forms, checkout actions, navigation links, waitlists, demo requests, product tours, and conversion copy that must be clear, honest, and specific.",
-      "file_count": 3,
-      "bytes": 6278
-    },
-    {
-      "name": "deep-research",
-      "description": "Run adaptive, evidence-led, multi-pass research for consequential, complex, disputed, niche, or fast-changing questions without requiring repeated prompts for missing depth. Use for exhaustive research, due diligence, investigations, audits, fact checking, landscape mapping, comparative ranking, or source-backed decisions across any domain where coverage, freshness, contradictions, confidence, access recovery, and traceable claims matter.",
-      "file_count": 3,
-      "bytes": 14825
-    },
-    {
-      "name": "design-motion-principles",
-      "description": "Motion and interaction design skill using interpretive lenses informed by publicly available work from Emil Kowalski, Jakub Krehel, and Jhey Tompkins. Two modes: build interactive components with purposeful motion, or audit existing animations to catch AI-generated motion anti-patterns. Use when creating, adding, animating, or reviewing UI motion: transitions, hover states, micro-interactions, enter/exit animations, or motion design work in React, Framer Motion, CSS, or HTML. This skill is not authored, reviewed, or endorsed by the referenced designers.",
-      "file_count": 15,
-      "bytes": 176258
-    },
-    {
-      "name": "editorial-typography-systems",
-      "description": "Create refined typography for websites. Use for premium, editorial, luxury, portfolio, product, Squarespace-like, Vercel-like, Raycast-like, Linear-like, and modern sites needing font pairing, type scale, responsive headings, line length, hierarchy, captions, labels, and text polish.",
-      "file_count": 3,
-      "bytes": 4668
-    },
-    {
-      "name": "evidence-reconciliation",
-      "description": "Resolve conflicting, stale, or ambiguous sources before answering, revising plans, or making claims; use when accuracy depends on distinguishing current fact, governing authority, inference, and recommendation.",
-      "file_count": 3,
-      "bytes": 11359
-    },
-    {
-      "name": "final-client-handoff",
-      "description": "Prepare final website handoff. Use after completing a site, app, landing page, redesign, deployment, or production QA to summarize changed files, commands run, checks passed, local/deployed URLs, environment variables, content/CMS notes, known limitations, untested areas, and recommended next steps.",
-      "file_count": 3,
-      "bytes": 5578
-    },
-    {
-      "name": "frontend-quality-auditor",
-      "description": "Audit frontend websites and apps before launch. Use for production-readiness reviews, visual polish checks, responsive QA, accessibility risks, performance and SEO basics, interaction states, forms, media, copy clarity, trust signals, and ship/no-ship recommendations for React, Next.js, static sites, dashboards, landing pages, portfolios, and product UI.",
-      "file_count": 3,
-      "bytes": 8411
-    },
-    {
-      "name": "frontend-tooling-trust-gate",
-      "description": "Use before installing or recommending npm packages, GitHub repos, templates, MCP servers, plugins, Codex skills, ChatGPT skills, scripts, CLI tools, design libraries, scraping tools, or AI agent tools for frontend or website work. Produces trust classifications, install-safety decisions, safer alternatives, and project-local/global install guidance.",
-      "file_count": 2,
-      "bytes": 2056
-    },
-    {
-      "name": "gsap-performance",
-      "description": "GSAP performance guidance \u2014 prefer transforms, avoid layout thrashing, use will-change selectively, and batch animation work. Use when optimizing GSAP animations, reducing jank, or when the user asks about animation performance, FPS, or smooth 60fps.",
-      "file_count": 1,
-      "bytes": 4155
-    },
-    {
-      "name": "hero-image-art-direction",
-      "description": "Art-direct website hero imagery. Use for landing pages, homepages, product pages, portfolios, venue sites, editorial pages, and premium first viewports that need real or generated media, text-safe composition, responsive focal points, visual hierarchy, contrast, aspect ratios, and anti-generic image selection.",
-      "file_count": 3,
-      "bytes": 6673
-    },
-    {
-      "name": "image-crop-responsive-qa",
-      "description": "Run responsive image crop QA for websites. Use after adding or changing images, hero media, galleries, product grids, portraits, venue photos, screenshots, background images, object-fit/object-position rules, art-directed picture sources, image dimensions, layout stability, and mobile crop polish.",
-      "file_count": 3,
-      "bytes": 6601
-    },
-    {
-      "name": "image-video-loading-qa",
-      "description": "Run image and video loading QA. Use after adding or changing images, videos, posters, responsive sources, lazy loading, galleries, hero media, product media, background videos, image sequences, or CMS media to verify loading, dimensions, crops, network errors, alt/captions, and performance.",
-      "file_count": 3,
-      "bytes": 5789
-    },
-    {
-      "name": "logical-thinking",
-      "description": "Determine what follows from explicit premises, rules, evidence, documentation, or observations by selecting and executing the appropriate inference structure. Use when validity, entailment, contradiction, causality, probability, explanation, or the exact strength of a conclusion is central. Do not invoke merely to gather missing facts or broadly critique source quality.",
-      "file_count": 5,
-      "bytes": 23624
-    },
-    {
-      "name": "mobile-responsive-qa",
-      "description": "Run mobile responsive QA for websites and apps. Use after layout, media, navigation, form, pricing, dashboard, gallery, checkout, or motion changes to inspect phone and tablet viewports, prevent horizontal overflow, fix crop issues, verify touch targets, and make mobile feel intentionally composed.",
-      "file_count": 3,
-      "bytes": 5806
-    },
-    {
-      "name": "modern-site-engineering",
-      "description": "Implement beautiful modern websites and web apps with an opinionated premium frontend stack. Use for Next.js, React, Tailwind, Motion, GSAP, Lenis, Three.js/React Three Fiber, shadcn/ui customization, responsive layouts, landing pages, portfolios, cinematic sites, luxury brand sites, Squarespace-like sites, and any frontend build where Codex should produce polished modern UI by default.",
-      "file_count": 3,
-      "bytes": 5542
-    },
-    {
-      "name": "motion-language-director",
-      "description": "Define website motion direction before implementation. Use for cinematic websites, Viktor-style motion, GSAP/ScrollTrigger pages, Motion for React microinteractions, Framer-like transitions, scroll reveals, product storytelling, luxury pacing, and any site where animation should feel intentional rather than generic.",
-      "file_count": 3,
-      "bytes": 4731
-    },
-    {
-      "name": "motion-performance-qa",
-      "description": "Run motion performance QA for websites and apps. Use after adding Motion, GSAP, Lenis, scroll scenes, page transitions, hover states, carousels, WebGL sync, observers, timers, RAF loops, or any animation-heavy UI to catch jank, layout shift, leaks, cleanup bugs, reduced-motion gaps, and mobile issues.",
-      "file_count": 3,
-      "bytes": 5359
-    },
-    {
-      "name": "motion-react-layout-transitions",
-      "description": "Implement Motion for React layout transitions. Use for layout prop, layoutId, shared element transitions, tabs, expanding cards, accordions, reordering lists, filterable grids, animated underline nav, product UI panels, portfolio previews, and smooth size/position changes in React.",
-      "file_count": 3,
-      "bytes": 5507
-    },
-    {
-      "name": "motion-react-microinteractions",
-      "description": "Implement refined React and Motion for React microinteractions. Use for buttons, menus, nav, modals, tabs, cards, accordions, layout transitions, reveal wrappers, hover/tap states, mobile menus, and interactive UI that should feel premium without heavy GSAP timelines.",
-      "file_count": 3,
-      "bytes": 4153
-    },
-    {
-      "name": "motion-react-page-transitions",
-      "description": "Create Motion for React page transitions and route transitions. Use for AnimatePresence, route-level enter/exit, view transitions, shared page elements, Next.js client navigation, loading transitions, portfolio detail transitions, and cinematic but accessible navigation motion.",
-      "file_count": 3,
-      "bytes": 5751
-    },
-    {
-      "name": "motion-react-patterns",
-      "description": "Implement Motion for React animation patterns for premium websites and apps. Use for motion/react, motion components, variants, initial/animate/exit, whileHover, whileTap, whileInView, useAnimate, useInView, useReducedMotion, MotionConfig, LazyMotion, microinteractions, reveal animations, and React-state-driven UI motion.",
-      "file_count": 3,
-      "bytes": 5707
-    },
-    {
-      "name": "nextjs-app-router-routing",
-      "description": "Plan and implement Next.js App Router routing for premium websites and apps. Use when working with app/ routes, pages, layouts, templates, loading, error, not-found files, route groups, dynamic segments, nested navigation, Link usage, or homepage structure in a Next.js project.",
-      "file_count": 3,
-      "bytes": 5858
-    },
-    {
-      "name": "nextjs-server-client-boundaries",
-      "description": "Design Next.js Server Component and Client Component boundaries. Use when deciding where to add use client, how to pass props from server to client, how to keep secrets off the client, how to reduce bundle size, how to interleave interactive components, or how to structure React components in App Router projects.",
-      "file_count": 3,
-      "bytes": 5819
-    },
-    {
-      "name": "nextjs-site-architecture",
-      "description": "Structure modern Next.js websites and landing pages. Use for App Router projects, TypeScript, metadata, fonts, images, static pages, route groups, sections, component organization, performance, SEO basics, and production-ready architecture for premium websites.",
-      "file_count": 3,
-      "bytes": 4210
-    },
-    {
-      "name": "non-generic-web-copy",
-      "description": "Write and revise website copy so it feels specific, credible, and non-generic. Use for headlines, subheads, CTAs, navigation, product copy, service copy, luxury/editorial language, testimonials, empty states, forms, pricing, and any website where placeholder marketing or AI-sounding copy would weaken the design.",
-      "file_count": 3,
-      "bytes": 4551
-    },
-    {
-      "name": "performance-audit-websites",
-      "description": "Audit website performance. Use for Core Web Vitals, LCP, INP, CLS, Lighthouse or browser performance checks, bundle and asset weight, image/video loading, font loading, third-party scripts, animation cost, hydration cost, and production-readiness performance review.",
-      "file_count": 3,
-      "bytes": 5611
-    },
-    {
-      "name": "performance-budget-lab",
-      "description": "Use for website performance planning, Lighthouse/web-vitals checks, bundle/media/font budgets, Core Web Vitals triage, image/video optimization, animation performance, deployment readiness, and premium-site speed audits.",
-      "file_count": 2,
-      "bytes": 1484
-    },
-    {
-      "name": "premium-visual-reference-library",
-      "description": "Use when Codex needs premium visual inspiration sources, website galleries, studio references, product-site references, motion references, UI examples, luxury/editorial/Squarespace/Raycast/Linear/Vercel-level references, or a non-generic reference set before designing a website.",
-      "file_count": 3,
-      "bytes": 5887
-    },
-    {
-      "name": "premium-web-build-gate",
-      "description": "Premium website pre-build gate for cinematic, editorial, Squarespace-polished, Raycast/Linear/Vercel-precise, or motion-heavy web work. Use before implementing or redesigning a homepage, landing page, portfolio, product site, agency/studio site, or high-polish web app when the user wants non-generic visual quality, strong scroll/motion choreography, strict content scope, or an award-level result. Produces a build-ready UI spec, source-trust decisions, motion storyboard, and QA gates before code.",
-      "file_count": 2,
-      "bytes": 7457
-    },
-    {
-      "name": "radix-accessible-primitives",
-      "description": "Use Radix Primitives for accessible custom React UI. Use for dialogs, dropdown menus, popovers, tooltips, tabs, accordions, switches, sliders, radio groups, checkboxes, select menus, navigation menus, focus management, keyboard interactions, and unstyled primitives that need premium custom styling.",
-      "file_count": 3,
-      "bytes": 5447
-    },
-    {
-      "name": "react-accessible-components",
-      "description": "Build accessible React components for websites and apps. Use when creating buttons, links, menus, dialogs, tabs, accordions, carousels, forms, icon buttons, nav, skip links, focus states, keyboard behavior, ARIA, semantic markup, or reusable UI primitives.",
-      "file_count": 3,
-      "bytes": 5112
-    },
-    {
-      "name": "react-component-composition",
-      "description": "Craft React component composition for websites and apps. Use when splitting large JSX files, creating reusable sections, primitives, slots, children-based composition, product UI components, portfolio sections, landing-page modules, design-system primitives, or maintainable component structure.",
-      "file_count": 3,
-      "bytes": 5501
-    },
-    {
-      "name": "react-component-craft",
-      "description": "Craft polished React components for websites and apps. Use for reusable sections, UI primitives, composition, props, state, responsive behavior, interaction states, accessibility, and avoiding monolithic or brittle frontend implementations.",
-      "file_count": 3,
-      "bytes": 4092
-    },
-    {
-      "name": "react-error-loading-empty-states",
-      "description": "Design and implement React loading, error, empty, offline, retry, not-found, Suspense, skeleton, and route-boundary states. Use when a website or app needs polished fallbacks for data fetching, async UI, lists, forms, dashboards, product pages, commerce, portfolios, or Next.js route files.",
-      "file_count": 3,
-      "bytes": 5341
-    },
-    {
-      "name": "react-form-patterns",
-      "description": "Implement polished React form patterns. Use for contact forms, lead forms, booking forms, waitlists, checkout steps, newsletter signup, controlled or uncontrolled fields, validation, labels, errors, loading, success states, server actions, autocomplete, accessibility, and conversion-focused form UX.",
-      "file_count": 3,
-      "bytes": 5310
-    },
-    {
-      "name": "react-responsive-components",
-      "description": "Build responsive React components and sections for premium websites. Use when components need mobile, tablet, desktop, container-query, CSS-grid, flex, aspect-ratio, text-fit, overflow, media-crop, navigation, dashboard density, or responsive interaction behavior.",
-      "file_count": 3,
-      "bytes": 5142
-    },
-    {
-      "name": "react-state-and-effects-discipline",
-      "description": "Discipline React state, derived data, effects, refs, reducers, context, and event handlers. Use when components have duplicated state, unnecessary useEffect, prop-to-state syncing, stale closures, event logic in effects, external subscriptions, DOM integration, network sync, or complex UI state.",
-      "file_count": 3,
-      "bytes": 5578
-    },
-    {
-      "name": "reduced-motion-design",
-      "description": "Design reduced-motion alternatives for websites and apps. Use for prefers-reduced-motion, Motion useReducedMotion, CSS media queries, disabling parallax, replacing large movement, simplifying scroll scenes, preserving state feedback, accessibility, vestibular-sensitive animation, and motion QA.",
-      "file_count": 3,
-      "bytes": 5435
-    },
-    {
-      "name": "responsive-visual-polish-qa",
-      "description": "Run responsive visual QA and polish for websites and apps. Use after building or editing any frontend to inspect desktop, laptop, tablet, and mobile widths; fix typography, spacing, overlaps, media crops, interactions, motion, forms, canvas rendering, accessibility, and final build quality.",
-      "file_count": 3,
-      "bytes": 4387
-    },
-    {
-      "name": "section-layout-systems",
-      "description": "Design non-generic website section layouts. Use when a page needs alternatives to card grids, bento overuse, generic feature blocks, repetitive centered sections, bland stat strips, or template-like section sequencing.",
-      "file_count": 3,
-      "bytes": 4563
-    },
-    {
-      "name": "seo-technical-qa",
-      "description": "Run technical SEO QA for websites. Use for metadata, titles, descriptions, canonical URLs, robots, sitemap, Open Graph, structured data, heading structure, internal links, image alt, crawlability, noindex mistakes, redirects, JavaScript-rendered content, and launch readiness.",
-      "file_count": 3,
-      "bytes": 5498
-    },
-    {
-      "name": "surface-shadow-material-systems",
-      "description": "Design surface, shadow, border, material, radius, glass, elevation, overlay, divider, and depth systems for premium websites and apps. Use when cards, panels, modals, nav, product UI, dashboards, luxury sections, or editorial layouts need polished material hierarchy without generic glassmorphism or heavy shadows.",
-      "file_count": 3,
-      "bytes": 5279
-    },
-    {
-      "name": "systematic-debugging",
-      "description": "Diagnose reproducible or intermittent software failures through evidence, hypothesis testing, localization, root-cause repair, and regression verification. Use for failing tests, builds, runtime behavior, integrations, performance regressions, or unexplained errors; not for ordinary implementation with no failure.",
-      "file_count": 3,
-      "bytes": 6893
-    },
-    {
-      "name": "tailwind-design-tokens",
-      "description": "Create token-driven Tailwind and CSS variable systems for premium websites. Use for color tokens, typography tokens, spacing rhythm, radius, shadows, gradients, surfaces, responsive constraints, dark/light modes, and avoiding random utility-class styling.",
-      "file_count": 3,
-      "bytes": 4083
-    },
-    {
-      "name": "tailwind-responsive-layouts",
-      "description": "Build responsive Tailwind CSS layouts for premium websites and apps. Use for breakpoints, mobile-first layout, grids, flex, spacing, container widths, aspect ratios, responsive typography, media crops, nav adaptation, dashboard density, and preventing mobile stacking from looking generic.",
-      "file_count": 3,
-      "bytes": 5733
-    },
-    {
-      "name": "testimonial-proof-systems",
-      "description": "Create testimonial and proof systems for websites. Use for testimonials, reviews, customer quotes, logo walls, metrics, press quotes, case-study excerpts, ratings, social proof, proof strips, trust sections, and copy that must be credible, approved, and specific.",
-      "file_count": 3,
-      "bytes": 6392
-    },
-    {
-      "name": "ui-primitives-shadcn-lucide",
-      "description": "Use shadcn/ui, Radix-style primitives, and lucide-react icons without producing generic default UI. Use for dialogs, menus, accordions, tabs, forms, buttons, toolbars, icons, inputs, and app controls that need accessibility and polished custom styling.",
-      "file_count": 3,
-      "bytes": 4193
-    },
-    {
-      "name": "ui-screenshot-composition",
-      "description": "Compose UI screenshots inside website layouts. Use for product sections, feature blocks, app showcases, case studies, dashboards, mockup stacks, detail crops, callout overlays, annotation systems, responsive screenshot art direction, and avoiding generic SaaS screenshot-card sections.",
-      "file_count": 3,
-      "bytes": 6423
-    },
-    {
-      "name": "verification-before-completion",
-      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
-      "file_count": 1,
-      "bytes": 3646
-    },
-    {
-      "name": "visual-assets-direction",
-      "description": "Direct website imagery, video, generative visuals, product renders, screenshots, gallery crops, hero media, thumbnails, and visual assets. Use when a site needs real or generated media rather than generic gradients, stock-like backgrounds, placeholder images, or uninspected crops.",
-      "file_count": 3,
-      "bytes": 4880
-    },
-    {
-      "name": "visual-polish-qa",
-      "description": "Inspect, test, and refine frontend visual quality before delivery. Use after building or editing websites, landing pages, portfolios, dashboards, games, interactive tools, cinematic sites, luxury sites, or any UI where Codex should run a second polish pass for responsive layout, typography, spacing, hierarchy, motion, accessibility, and browser-rendered correctness.",
+      "description": "Make action labels explain what happens next.",
       "file_count": 3,
       "bytes": 3914
     },
     {
-      "name": "visual-regression-lab",
-      "description": "Use after frontend changes or before delivery to run rendered visual QA with Playwright/browser screenshots, viewport checks, console/network checks, overflow detection, canvas/media verification, before/after comparisons, and responsive polish review.",
+      "name": "deep-research",
+      "description": "Research with scoped depth and counterevidence.",
+      "file_count": 7,
+      "bytes": 17296
+    },
+    {
+      "name": "design-motion-principles",
+      "description": "Motion through Kowalski, Krehel and Jhey lenses.",
+      "file_count": 16,
+      "bytes": 185293
+    },
+    {
+      "name": "editorial-typography-systems",
+      "description": "Define font pairing and responsive hierarchy.",
+      "file_count": 3,
+      "bytes": 3856
+    },
+    {
+      "name": "evidence-reconciliation",
+      "description": "Resolve stale facts and authority conflicts.",
+      "file_count": 3,
+      "bytes": 11750
+    },
+    {
+      "name": "final-client-handoff",
+      "description": "Prepare verified ownership and delivery notes.",
+      "file_count": 6,
+      "bytes": 14703
+    },
+    {
+      "name": "frontend-quality-auditor",
+      "description": "Audit launch readiness; report ship/no-ship.",
+      "file_count": 3,
+      "bytes": 8350
+    },
+    {
+      "name": "frontend-tooling-trust-gate",
+      "description": "Review trust before frontend tooling adoption.",
       "file_count": 2,
-      "bytes": 1466
+      "bytes": 2119
+    },
+    {
+      "name": "gsap-performance",
+      "description": "Diagnose GSAP and ScrollTrigger performance.",
+      "file_count": 2,
+      "bytes": 4728
+    },
+    {
+      "name": "hero-image-art-direction",
+      "description": "Compose text-safe responsive hero media.",
+      "file_count": 3,
+      "bytes": 4667
+    },
+    {
+      "name": "image-crop-responsive-qa",
+      "description": "Verify image focal points across widths.",
+      "file_count": 3,
+      "bytes": 4692
+    },
+    {
+      "name": "image-video-loading-qa",
+      "description": "Verify media loading and failure states.",
+      "file_count": 3,
+      "bytes": 3511
+    },
+    {
+      "name": "logical-thinking",
+      "description": "Determine what premises and evidence warrant.",
+      "file_count": 6,
+      "bytes": 24382
+    },
+    {
+      "name": "mobile-responsive-qa",
+      "description": "Verify phone/tablet input and navigation flows.",
+      "file_count": 3,
+      "bytes": 3755
+    },
+    {
+      "name": "modern-site-engineering",
+      "description": "Integrate systems after frontend direction.",
+      "file_count": 3,
+      "bytes": 5833
+    },
+    {
+      "name": "motion-language-director",
+      "description": "Direct choreography and Viktor-style pacing.",
+      "file_count": 3,
+      "bytes": 3878
+    },
+    {
+      "name": "motion-performance-qa",
+      "description": "Review whole motion-system release resilience.",
+      "file_count": 3,
+      "bytes": 4372
+    },
+    {
+      "name": "motion-react-layout-transitions",
+      "description": "Animate state-driven layout/layoutId changes.",
+      "file_count": 3,
+      "bytes": 4253
+    },
+    {
+      "name": "motion-react-microinteractions",
+      "description": "Design tactile interaction feedback and timing.",
+      "file_count": 3,
+      "bytes": 3090
+    },
+    {
+      "name": "motion-react-page-transitions",
+      "description": "Animate routes; support native View Transitions.",
+      "file_count": 4,
+      "bytes": 9123
+    },
+    {
+      "name": "motion-react-patterns",
+      "description": "Implement Motion APIs, presence and lifecycle.",
+      "file_count": 3,
+      "bytes": 4685
+    },
+    {
+      "name": "nextjs-app-router-routing",
+      "description": "Implement App Router trees and navigation.",
+      "file_count": 3,
+      "bytes": 4751
+    },
+    {
+      "name": "nextjs-server-client-boundaries",
+      "description": "Set use client and Server Function boundaries.",
+      "file_count": 3,
+      "bytes": 5282
+    },
+    {
+      "name": "nextjs-site-architecture",
+      "description": "Coordinate the Next.js foundation and ownership.",
+      "file_count": 3,
+      "bytes": 3651
+    },
+    {
+      "name": "non-generic-web-copy",
+      "description": "Replace vague marketing with credible specifics.",
+      "file_count": 3,
+      "bytes": 3727
+    },
+    {
+      "name": "performance-audit-websites",
+      "description": "Diagnose measured runtime and Core Web Vitals.",
+      "file_count": 4,
+      "bytes": 9123
+    },
+    {
+      "name": "performance-budget-lab",
+      "description": "Set performance budgets before implementation.",
+      "file_count": 2,
+      "bytes": 2140
+    },
+    {
+      "name": "premium-visual-reference-library",
+      "description": "Find references, Viktor Oddy and MotionSites.",
+      "file_count": 11,
+      "bytes": 332545
+    },
+    {
+      "name": "premium-web-build-gate",
+      "description": "Check premium specs before implementation.",
+      "file_count": 2,
+      "bytes": 8319
+    },
+    {
+      "name": "radix-accessible-primitives",
+      "description": "Repair Radix parts, portals and focus mechanics.",
+      "file_count": 3,
+      "bytes": 4885
+    },
+    {
+      "name": "react-accessible-components",
+      "description": "Implement semantic names, keyboard and focus.",
+      "file_count": 3,
+      "bytes": 4455
+    },
+    {
+      "name": "react-component-composition",
+      "description": "Define component boundaries, props and slots.",
+      "file_count": 3,
+      "bytes": 4353
+    },
+    {
+      "name": "react-component-craft",
+      "description": "Build component behavior and presentation.",
+      "file_count": 3,
+      "bytes": 3122
+    },
+    {
+      "name": "react-error-loading-empty-states",
+      "description": "Design async loading, empty and recovery states.",
+      "file_count": 3,
+      "bytes": 4596
+    },
+    {
+      "name": "react-form-patterns",
+      "description": "Build validation and submission; Server Actions.",
+      "file_count": 3,
+      "bytes": 5116
+    },
+    {
+      "name": "react-responsive-components",
+      "description": "Implement size-dependent behavior/geometry.",
+      "file_count": 3,
+      "bytes": 4687
+    },
+    {
+      "name": "react-state-and-effects-discipline",
+      "description": "Repair state ownership, effects and async races.",
+      "file_count": 3,
+      "bytes": 4967
+    },
+    {
+      "name": "reduced-motion-design",
+      "description": "Implement prefers-reduced-motion alternatives.",
+      "file_count": 3,
+      "bytes": 4080
+    },
+    {
+      "name": "responsive-visual-polish-qa",
+      "description": "Verify composition across breakpoints.",
+      "file_count": 3,
+      "bytes": 3978
+    },
+    {
+      "name": "section-layout-systems",
+      "description": "Choose section forms from content shape.",
+      "file_count": 3,
+      "bytes": 3847
+    },
+    {
+      "name": "seo-technical-qa",
+      "description": "Verify crawlability and search/share metadata.",
+      "file_count": 3,
+      "bytes": 3243
+    },
+    {
+      "name": "surface-shadow-material-systems",
+      "description": "Design component surfaces and elevation states.",
+      "file_count": 3,
+      "bytes": 4094
+    },
+    {
+      "name": "systematic-debugging",
+      "description": "Find and repair unresolved root causes.",
+      "file_count": 3,
+      "bytes": 6891
+    },
+    {
+      "name": "tailwind-design-tokens",
+      "description": "Map semantic tokens into Tailwind utilities.",
+      "file_count": 3,
+      "bytes": 3606
+    },
+    {
+      "name": "tailwind-responsive-layouts",
+      "description": "Implement responsive CSS layout with Tailwind.",
+      "file_count": 3,
+      "bytes": 5132
+    },
+    {
+      "name": "testimonial-proof-systems",
+      "description": "Present attributable testimonials and proof.",
+      "file_count": 3,
+      "bytes": 4045
+    },
+    {
+      "name": "ui-primitives-shadcn-lucide",
+      "description": "Customize installed shadcn and Lucide visuals.",
+      "file_count": 3,
+      "bytes": 3189
+    },
+    {
+      "name": "ui-screenshot-composition",
+      "description": "Arrange readable product screenshot evidence.",
+      "file_count": 3,
+      "bytes": 4444
+    },
+    {
+      "name": "verification-before-completion",
+      "description": "Assess nontrivial completion evidence.",
+      "file_count": 2,
+      "bytes": 2957
+    },
+    {
+      "name": "visual-assets-direction",
+      "description": "Define purposeful visual asset strategy.",
+      "file_count": 3,
+      "bytes": 4243
+    },
+    {
+      "name": "visual-polish-qa",
+      "description": "Refine rendered finish at accepted viewports.",
+      "file_count": 3,
+      "bytes": 4137
+    },
+    {
+      "name": "visual-regression-lab",
+      "description": "Compare captures; stitch lazy/animated pages.",
+      "file_count": 6,
+      "bytes": 28367
     },
     {
       "name": "web-design-direction-system",
-      "description": "Use for premium frontend, website, app UI, landing page, dashboard, redesign, image-to-code, or visual-polish work that needs clearer design intent, adjustable visual direction, motion discipline, less generic output, and a final preflight check before handoff.",
-      "file_count": 2,
-      "bytes": 5205
+      "description": "Resolve shared design intent and guidance.",
+      "file_count": 3,
+      "bytes": 11883
     },
     {
       "name": "web-design-vocabulary",
-      "description": "Define vague website taste words as concrete design decisions. Use when prompts include premium, luxury, cinematic, modern, editorial, minimal, polished, brutalist, avant-garde, classy, clean, high-end, professional, Squarespace-like, Framer-like, or any subjective visual adjective that Codex must translate into layout, typography, color, media, and motion rules.",
+      "description": "Translate unclear taste into design constraints.",
       "file_count": 3,
-      "bytes": 5327
+      "bytes": 4349
     },
     {
       "name": "web-imagegen-prompting",
-      "description": "Prompt generated imagery for premium websites. Use when Codex needs hero images, product scenes, editorial visuals, backgrounds, portraits, venue imagery, campaign art, texture assets, mockups, or image-generation direction for luxury, cinematic, Squarespace-polished, Viktor Oddy-adjacent, or non-generic site visuals.",
+      "description": "Write image prompts with crop/placement intent.",
       "file_count": 3,
-      "bytes": 6890
+      "bytes": 5143
     },
     {
       "name": "web-reference-research",
-      "description": "Research and translate website references into reusable design constraints. Use when the user mentions Viktor Oddy, Squarespace, Raycast, Linear, Vercel, Framer, Awwwards, Codrops, luxury sites, cinematic websites, product-led sites, portfolios, or any external web design reference that should influence a build.",
-      "file_count": 3,
-      "bytes": 5571
+      "description": "Analyze selected sources: Viktor or MotionSites.",
+      "file_count": 6,
+      "bytes": 16734
     },
     {
       "name": "web-style-director",
-      "description": "Choose and enforce a precise art direction for modern websites. Use when the user asks for beautiful, premium, luxury, cinematic, editorial, Squarespace-like, Viktor-style, Framer-like, Raycast-like, Linear-like, Vercel-like, portfolio, product, service, agency, commerce, or brand websites.",
+      "description": "Refine an approved visual lane.",
       "file_count": 3,
-      "bytes": 5198
+      "bytes": 4555
     },
     {
       "name": "website-blueprint-first",
-      "description": "Create a website blueprint before coding. Use for new sites, redesigns, image-to-site work, premium landing pages, portfolios, brand sites, product sites, and any frontend project where Codex should define pages, sections, assets, tokens, layout, motion, and QA criteria before implementation.",
+      "description": "Specify missing pages, sections and assets.",
       "file_count": 3,
-      "bytes": 4734
+      "bytes": 4188
     },
     {
       "name": "website-operating-rules",
-      "description": "Apply strict website-building operating rules for any frontend, website, landing page, portfolio, product site, luxury site, Squarespace-like site, modern SaaS/devtool site, or UI build. Use when Codex must inspect first, avoid generic design, explain planned files, run local verification, perform a second visual polish pass, and report tests honestly.",
-      "file_count": 3,
-      "bytes": 5663
+      "description": "Coordinate cross-phase web execution/evidence.",
+      "file_count": 5,
+      "bytes": 15020
     }
   ],
   "notes": [

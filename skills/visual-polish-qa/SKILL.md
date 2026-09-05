@@ -1,22 +1,22 @@
 ---
 name: visual-polish-qa
-description: Inspect, test, and refine frontend visual quality before delivery. Use after building or editing websites, landing pages, portfolios, dashboards, games, interactive tools, cinematic sites, luxury sites, or any UI where Codex should run a second polish pass for responsive layout, typography, spacing, hierarchy, motion, accessibility, and browser-rendered correctness.
+description: "Refine rendered finish at accepted viewports."
 ---
 
 # Visual Polish QA
 
 ## Principle
 
-Do not stop when the code compiles. Inspect the rendered result, identify visible weaknesses, improve it, then run checks again.
+Inspect affected rendered output after implementation. Fix observed weaknesses within authorization and recheck affected behavior; stop when acceptance is met. An analysis-only review reports findings without edits.
 
 ## Required Loop
 
 1. Start or locate the dev server when the project needs one.
 2. Open the site in a browser or capture screenshots when tooling is available.
-3. Check desktop and mobile widths.
+3. Check the accepted target viewports; route a systematic breakpoint problem to `responsive-visual-polish-qa`.
 4. Inspect hero, navigation, major sections, interactive states, forms, media, and footer.
 5. Fix obvious visual defects and weak polish.
-6. Re-run build/lint/test commands available in the repo.
+6. Run relevant required checks; repeat or broaden only after changes, failures or an unresolved risk.
 7. Report what was checked and what could not be checked.
 
 ## What To Look For
@@ -46,3 +46,7 @@ Do not stop when the code compiles. Inspect the rendered result, identify visibl
 Use Playwright, browser tools, screenshots, or the in-app browser when available. For canvas/WebGL/Three.js work, verify that the canvas is nonblank, framed correctly, and active across desktop and mobile.
 
 Read `references/polish-checklist.md` for the detailed pass.
+
+## Scope and evidence
+
+Inspect affected visual finish using relevant viewports and states from the shared evidence matrix. A four-viewport matrix is a useful broad-review starting point, not mandatory for every local edit. Route breakpoint defects to `$responsive-visual-polish-qa`.

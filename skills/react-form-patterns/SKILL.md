@@ -1,21 +1,15 @@
 ---
 name: react-form-patterns
-description: Implement polished React form patterns. Use for contact forms, lead forms, booking forms, waitlists, checkout steps, newsletter signup, controlled or uncontrolled fields, validation, labels, errors, loading, success states, server actions, autocomplete, accessibility, and conversion-focused form UX.
+description: "Build validation and submission; Server Actions."
 ---
 
 # React Form Patterns
 
+For substantial web work, reuse the [scoped web contract](../website-operating-rules/references/scoped-web-contract.md) when available; it replaces duplicated policy here. Match the requested scope and existing decisions; a missing optional sibling does not block this local procedure.
+
 ## Use This Skill
 
-Use this skill for design react forms with validation, feedback, and polished states.
-
-## Operating Contract
-
-1. Inspect the existing project before changing code.
-2. Identify the router/framework, entry files, styling system, and interaction system.
-3. Keep premium visual standards active: no generic copy, no default-looking UI, no unfinished states.
-4. Follow existing project conventions unless a change clearly improves the result.
-5. Run available checks and visually inspect responsive output when the change affects UI.
+Use this skill to design react forms with validation, feedback, and polished states.
 
 ## Required Reference
 

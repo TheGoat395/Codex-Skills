@@ -27,7 +27,7 @@ Prevent generic builds by giving the site a clear visual lane before implementat
 - If the product is software/devtool, bias toward product realism and precise UI proof.
 - If the subject is physical/human/place/lifestyle, bias toward imagery, materiality, and editorial pacing.
 - If the user says Squarespace-like, bias toward clear business flow and elegant practicality.
-- If the user says Viktor-style, bias toward motion choreography and non-template first viewport.
+- If the user names a creator, inspect the selected source and use its observed relevant traits.
 - If references conflict, choose one primary style and one accent style.
 
 ## Implementation Rules
@@ -65,13 +65,6 @@ Prevent generic builds by giving the site a clear visual lane before implementat
 - The site can be described in one specific sentence without generic adjectives.
 - The final page has at least one memorable art-directed moment.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

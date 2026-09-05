@@ -1,3 +1,4 @@
-display_name: "React Component Composition"
-short_description: "Compose reusable React sections and primitives without overengineering"
-default_prompt: "Use react-component-composition to plan and implement this work with official framework guidance, premium UI standards, and a verification pass."
+interface:
+  display_name: "React Component Composition"
+  short_description: "Shape React component boundaries, props and slots"
+  default_prompt: "Use $react-component-composition to shape React component boundaries, props and slots, matching the requested scope and existing project."

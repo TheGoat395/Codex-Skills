@@ -1,22 +1,20 @@
 ---
 name: motion-react-patterns
-description: Implement Motion for React animation patterns for premium websites and apps. Use for motion/react, motion components, variants, initial/animate/exit, whileHover, whileTap, whileInView, useAnimate, useInView, useReducedMotion, MotionConfig, LazyMotion, microinteractions, reveal animations, and React-state-driven UI motion.
+description: "Implement Motion APIs, presence and lifecycle."
 ---
 
 # Motion React Patterns
 
+For substantial web work, reuse the [scoped web contract](../website-operating-rules/references/scoped-web-contract.md) when available; it replaces duplicated policy here. Match the requested scope and existing decisions; a missing optional sibling does not block this local procedure.
+
 ## Use This Skill
 
-Use this skill for use motion for react microinteractions and component animation.
-
-## Operating Contract
-
-1. Inspect the existing project before changing code.
-2. Identify the motion stack, scroll behavior, component lifecycle, reduced-motion handling, and available verification commands.
-3. Keep motion purposeful: clarify sequence, focus, depth, tactility, or product understanding.
-4. Follow existing project conventions unless a change clearly improves the result.
-5. Run available checks and visually inspect responsive/reduced-motion output when the change affects UI.
+Use this skill to use motion for react microinteractions and component animation.
 
 ## Required Reference
 
 Read [references/motion-react-patterns-guide.md](references/motion-react-patterns-guide.md) before making architectural or visible UI changes with this skill.
+
+## Ownership
+
+Own Motion APIs, animation state and lifecycle. Route shared layout to `motion-react-layout-transitions`, navigation to `motion-react-page-transitions`, and new feedback/timing direction to `motion-react-microinteractions` only when those decisions are needed.

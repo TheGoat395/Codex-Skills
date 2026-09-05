@@ -1,6 +1,8 @@
 # Anti-Checklist
 
-This file is the audit's quality gate. The categories below describe motion patterns to **flag** in audited code — AI-generated motion anti-patterns at the top (where many 2026 motion problems live), followed by perspective-specific anti-patterns from Emil, Jakub, and Jhey, then general motion mistakes and code-shaped red flags. When audited code matches a pattern here, the audit surfaces a finding and the agent generates a per-finding motion suggestion by reading the relevant philosophy reference (`emil-kowalski.md`, `jakub-krehel.md`, `jhey-tompkins.md`).
+These are context-dependent interpretive defaults, not designer-authored authority or universal aesthetic rules. Apply the actual user direction, purpose, frequency, accessible state and measured consequence; purposeful artistic expression remains available.
+
+This file is the audit's quality gate. The categories below describe motion patterns to **flag** in audited code — AI-generated motion anti-patterns at the top (where many 2026 motion problems live), followed by perspective-specific anti-patterns from Emil, Jakub, and Jhey, then general motion mistakes and code-shaped red flags. When audited code matches a pattern here, inspect it as a candidate. Surface a finding only for an observed purpose/feedback/access/performance defect, then generate a per-finding motion suggestion by reading the relevant philosophy reference (`emil-kowalski.md`, `jakub-krehel.md`, `jhey-tompkins.md`).
 
 The file frames patterns as "things to flag," not "mistakes to avoid" — language that makes the audit's adversarial posture explicit.
 
@@ -22,7 +24,7 @@ Glowing dots, breathing CTAs, throbbing rings, "live"/"online"/"recording"/"AI a
 - `box-shadow` or `opacity` loops on status icons
 - Tailwind `animate-pulse` on indicator dots or active-state elements
 
-**Heuristic:** Flag *any* instance. Pulsing indicators often signal low-quality generated motion — the only exception is a single brand element with explicit design rationale stated in code comments or design docs.
+**Heuristic:** Inspect each pulse for actual distraction, frequency, purpose, pause/reduced-motion access and the approved brief. A purposeful status or brand pulse is not a defect merely because its rationale was not recorded in code.
 
 **Fix lens:** Emil — purposeful restraint. See `references/emil-kowalski.md`.
 
@@ -67,7 +69,7 @@ Glowing dots, breathing CTAs, throbbing rings, "live"/"online"/"recording"/"AI a
 - `animation-delay: calc(...)` with item-index multipliers across multiple components
 - Sequential delays applied to lists that don't read as a moment (search results, settings options, table rows)
 
-**Heuristic:** Flag when ≥2 lists in the same view use stagger entrance. One intentional moment is fine; two or more is the tell.
+**Heuristic:** Flag when ≥2 lists in the same view use stagger entrance. Multiple moments can be intentional; report observed monotony or impaired access, not the count alone.
 
 **Fix lens:** Emil for utility lists (no stagger); Jhey for delight moments (selective). See `references/emil-kowalski.md` and `references/jhey-tompkins.md`.
 
@@ -82,7 +84,7 @@ Glowing dots, breathing CTAs, throbbing rings, "live"/"online"/"recording"/"AI a
 - CSS `cubic-bezier(...)` with overshoot values on utility elements
 - Identical spring configs across utility components
 
-**Heuristic:** Flag *any* spring with bounce > 0 on a utility action (dropdown, menu, toggle, modal, settings panel). Bounce belongs on playful elements — celebration moments, kids apps, intentional delight — not productivity UI.
+**Heuristic:** Inspect bounce on utility actions for repeated friction or disrupted control. Restraint is a strong productivity default, but an approved playful or tactile interaction can be correct.
 
 **Fix lens:** Emil — speed and purpose. See `references/emil-kowalski.md`.
 
@@ -97,7 +99,7 @@ Identical `opacity + translateY` (with or without blur) enter animations applied
 - `whileInView` with identical viewport options applied to every block on a page
 - CSS keyframes with generic names (`fadeInUp`, `enter`, `reveal`) attached to many selectors
 
-**Heuristic:** Flag when ≥4 distinct components share identical enter animations (same opacity, same translateY, same duration, same easing). Three is acceptable polish baseline; four is a uniformity problem.
+**Heuristic:** Flag when ≥4 distinct components share identical enter animations (same opacity, same translateY, same duration, same easing). This is a candidate heuristic, not a defect count: consistent repeated controls may legitimately share motion; report observed monotony or impaired hierarchy in context.
 
 **Fix lens:** Jakub — selective polish with hierarchy. See `references/jakub-krehel.md`.
 
@@ -112,7 +114,7 @@ Entrance animations on headings, body paragraphs, navigation links, and other co
 - `whileInView` on body copy (paragraphs, articles, prose)
 - `animation` rules on text-only components without functional reason
 
-**Heuristic:** Flag any motion on a text-only or navigation element when the motion's only purpose is the entrance itself. Carousels, sliders, and hero animations are fine when the motion serves a function (orientation, narrative pacing, attention direction).
+**Heuristic:** Flag any motion on a text-only or navigation element when the entrance causes delay or distracts from the actual brief. Artistic expression and narrative pacing can be legitimate purposes. Carousels, sliders, and hero animations are fine when the motion serves a function (orientation, narrative pacing, attention direction).
 
 **Fix lens:** Emil — animations should serve a purpose, not announce themselves. See `references/emil-kowalski.md`.
 
@@ -120,12 +122,12 @@ Entrance animations on headings, body paragraphs, navigation links, and other co
 
 ## From Emil's Perspective (Purposeful Restraint)
 
-- **Animating high-frequency interactions** — If users trigger this 100s of times daily, remove the animation
-- **Animating keyboard-initiated actions** — Keyboard shortcuts should NEVER animate
-- **Animations over 300ms** — UI animations should be under 300ms; 180ms feels more responsive than 400ms
-- **Animating from scale(0)** — Start from `scale(0.9)` or higher for natural motion
+- **High-frequency friction** — Prefer immediate or minimal transitions; retain useful brief feedback when it does not delay repeated work
+- **Delaying keyboard actions or disrupting focus** — respond immediately; useful brief feedback may remain
+- **Long UI transitions** — Under 300ms is a productivity starting point; judge frequency, distance, interruption and measured impact
+- **Large scale entrances** — A 0.9 start often feels restrained; a deliberate emergence may start smaller if its effect and access remain appropriate
 - **Same tooltip behavior everywhere** — First tooltip: delayed + animated. Subsequent: instant
-- **Using default CSS easing** — Built-in `ease` and `ease-in-out` lack strength; use custom curves
+- **Unconsidered easing** — Use a suitable built-in curve, custom curve or spring for continuity and brand
 - **Ignoring transform-origin** — Dropdowns should expand from their trigger, not center
 - **Expecting delight in productivity tools** — Users of high-frequency tools prioritize speed over delight
 - **Using keyframes for interruptible animations** — Keyframes can't retarget mid-flight; use CSS transitions with state
@@ -159,8 +161,8 @@ Entrance animations on headings, body paragraphs, navigation links, and other co
 
 ## General Motion Design Mistakes
 
-- **Animating layout-triggering properties** (width, height, top, left) — Use transform instead
-- **No animation at all** — Instant state changes feel broken to modern users
+- **Unmeasured layout cost** — Prefer transform/opacity when equivalent; bounded size/layout/FLIP is valid for content flow and must be measured
+- **Missing perceptible feedback** — Instant states can be correct; test comprehension, focus and accessible status before recommending motion
 - **Same duration for all animations** — Smaller elements should animate faster
 - **Forgetting `prefers-reduced-motion`** — Not optional
 
@@ -173,10 +175,10 @@ Entrance animations on headings, body paragraphs, navigation links, and other co
 Watch for these patterns:
 
 ```jsx
-// BAD: Animating layout properties
+// Measure: bounded size animation can be appropriate for content flow
 animate={{ width: 200, height: 100 }}
 
-// GOOD: Use transform
+// Alternative: use transform when scaling the visual is the intended effect
 animate={{ scale: 1.2 }}
 ```
 
@@ -204,12 +206,12 @@ exit={{ opacity: 0, y: -8 }}
 /* BAD: will-change everywhere */
 * { will-change: transform; }
 
-/* GOOD: Targeted will-change */
+/* Conditional hint: add shortly before measured preparation cost and remove after. */
 .animated-button { will-change: transform, opacity; }
 ```
 
 ```jsx
-// BAD: Animating from scale(0) (Emil)
+// A full scale emergence is strong; use only when the effect warrants it.
 initial={{ scale: 0 }}
 animate={{ scale: 1 }}
 
@@ -239,7 +241,7 @@ transition={{ duration: 0.18 }}
 ```
 
 ```css
-/* BAD: Keyframes can't be interrupted (Emil) */
+/* Plain keyframes can be cancelled, but do not automatically retarget smoothly. */
 @keyframes slideIn {
   from { transform: translateY(100%); }
   to { transform: translateY(0); }
@@ -257,10 +259,10 @@ transition={{ duration: 0.18 }}
 ```
 
 ```javascript
-// BAD: CSS variables cause cascade recalc (Emil)
+// Inherited CSS variables may invalidate descendants; measure the affected scope.
 element.style.setProperty('--drag-y', `${y}px`);
 
-// GOOD: Direct style update
+// Direct style update can narrow invalidation; actual rendering cost remains.
 element.style.transform = `translateY(${y}px)`;
 ```
 

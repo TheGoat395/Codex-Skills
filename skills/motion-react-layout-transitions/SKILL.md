@@ -1,21 +1,15 @@
 ---
 name: motion-react-layout-transitions
-description: Implement Motion for React layout transitions. Use for layout prop, layoutId, shared element transitions, tabs, expanding cards, accordions, reordering lists, filterable grids, animated underline nav, product UI panels, portfolio previews, and smooth size/position changes in React.
+description: "Animate state-driven layout/layoutId changes."
 ---
 
 # Motion React Layout Transitions
 
+For substantial web work, reuse the [scoped web contract](../website-operating-rules/references/scoped-web-contract.md) when available; it replaces duplicated policy here. Match the requested scope and existing decisions; a missing optional sibling does not block this local procedure.
+
 ## Use This Skill
 
-Use this skill for create shared layout and component transitions with motion.
-
-## Operating Contract
-
-1. Inspect the existing project before changing code.
-2. Identify the motion stack, scroll behavior, component lifecycle, reduced-motion handling, and available verification commands.
-3. Keep motion purposeful: clarify sequence, focus, depth, tactility, or product understanding.
-4. Follow existing project conventions unless a change clearly improves the result.
-5. Run available checks and visually inspect responsive/reduced-motion output when the change affects UI.
+Use this skill to create shared layout and component transitions with motion.
 
 ## Required Reference
 

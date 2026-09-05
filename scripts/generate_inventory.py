@@ -36,7 +36,9 @@ def read_description(skill_md: Path) -> str:
 
 
 def skill_info(path: Path) -> dict[str, object]:
-    files = [p for p in path.rglob("*") if p.is_file()]
+    files = [p for p in path.rglob("*") if p.is_file()
+             and "__pycache__" not in p.parts
+             and p.name != ".DS_Store" and p.suffix not in {".pyc", ".pyo"}]
     return {
         "name": path.name,
         "description": read_description(path / "SKILL.md"),

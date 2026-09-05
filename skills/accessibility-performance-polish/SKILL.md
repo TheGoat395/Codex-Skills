@@ -1,6 +1,6 @@
 ---
 name: "accessibility-performance-polish"
-description: "Improve website accessibility and performance polish. Use for semantic HTML, keyboard navigation, focus states, contrast, alt text, reduced motion, image/video loading, canvas fallbacks, bundle caution, animation performance, and final production readiness for polished websites."
+description: "Finish accessibility and performance details."
 ---
 
 # Accessibility Performance Polish
@@ -13,14 +13,14 @@ Keep high-end websites usable, readable, fast, and stable.
 
 Use this skill when the trigger description applies. Keep the `SKILL.md` lean, then read `references/accessibility-performance-polish-guide.md` for concrete rules before planning or editing a meaningful website change.
 
-## Operating Contract
+## Scoped execution
 
-1. Inspect before coding when code exists.
-2. Convert vague taste into concrete rules.
-3. Explain planned files before major changes unless the user clearly said to proceed.
-4. Build, inspect, polish, and verify.
-5. Report commands run, files changed, and anything not tested.
+Apply the [shared web contract](../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
 
 ## Detailed Guide
 
 Read `references/accessibility-performance-polish-guide.md` when this skill is active for a build, redesign, review, or implementation plan.
+
+## Scope and evidence
+
+Keep this a focused finishing pass. Route a formal accessibility assessment to `$accessibility-audit-websites` and measured performance diagnosis to `$performance-audit-websites`; neither expands the authorized scope automatically.

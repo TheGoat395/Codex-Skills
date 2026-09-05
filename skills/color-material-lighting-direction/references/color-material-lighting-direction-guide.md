@@ -12,7 +12,7 @@ Make palette, surface, and lighting choices support the site concept and readabi
 
 ## Do Not Use When
 
-- A strict brand palette exists and should not be changed.
+- The task requires no color/material refinement. A strict palette stays locked while semantic surfaces, contrast and lighting roles may still be refined.
 - The task does not touch visual design.
 
 ## Discovery Questions
@@ -63,13 +63,6 @@ Make palette, surface, and lighting choices support the site concept and readabi
 - Color roles are reusable and concept-aligned.
 - The palette supports hierarchy and does not feel random.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

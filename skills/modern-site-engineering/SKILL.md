@@ -1,26 +1,17 @@
 ---
 name: modern-site-engineering
-description: Implement beautiful modern websites and web apps with an opinionated premium frontend stack. Use for Next.js, React, Tailwind, Motion, GSAP, Lenis, Three.js/React Three Fiber, shadcn/ui customization, responsive layouts, landing pages, portfolios, cinematic sites, luxury brand sites, Squarespace-like sites, and any frontend build where Codex should produce polished modern UI by default.
+description: "Integrate systems after frontend direction."
 ---
 
 # Modern Site Engineering
 
 ## Operating Mode
 
-Inspect before coding. Identify structure, framework, entry files, styling system, interaction system, and build commands. If the user has not clearly said to proceed, explain planned files before major changes.
+Inspect relevant structure, framework, entry files, styling and interaction systems, and available build commands. Proceed within existing authorization and explain material choices.
 
-## Preferred Stack
+## Selected stack
 
-For new projects, prefer:
-
-```bash
-npx create-next-app@latest <name> --typescript --tailwind --eslint --app --src-dir
-npm install motion gsap lenis lucide-react clsx tailwind-merge
-npm install three @react-three/fiber @react-three/drei
-npm install -D @playwright/test
-```
-
-Use existing project tools when working inside an existing repo. Do not add major dependencies without explaining why.
+Retain the selected framework and existing package manager. For a new project with an unresolved choice, use `route-enterprise-web-stack`; then select only dependencies required by the actual components. The roles below are optional capabilities, not an installation list.
 
 ## Dependency Roles
 
@@ -39,11 +30,11 @@ Use existing project tools when working inside an existing repo. Do not add majo
 ## Build Workflow
 
 1. Inspect project and commands.
-2. Define visual system: type, color, spacing, media, motion.
+2. Reuse the approved visual system; establish type, color, spacing, media and motion only when those decisions are in scope.
 3. Build version 1 with real content structure.
 4. Run the app locally when possible.
-5. Inspect in browser/screenshots across desktop and mobile.
-6. Do a second polish pass for spacing, typography, hierarchy, hover states, motion, and responsiveness.
+5. Inspect changed visual output in the browser at the requested supported sizes.
+6. Correct observed spacing, type, hierarchy, interaction, motion or responsive defects on affected surfaces. Repeat checks after edits or unresolved findings, not by fixed cycle.
 7. Run available lint/build/test commands.
 8. Report files changed, commands run, and any errors honestly.
 
@@ -62,3 +53,7 @@ Use existing project tools when working inside an existing repo. Do not add majo
 Use CSS transitions for tiny state changes. Use Motion for component/state animation. Use GSAP only when timeline control or scroll choreography is actually needed. Use Three/R3F only when visual concept benefits from spatial or material interaction.
 
 Read `references/stack-recipes.md` when starting a new project or adding dependencies.
+
+## Ownership
+
+Coordinate integration once framework and direction are chosen. Use `route-enterprise-web-stack` only for an unresolved architecture decision. A localized task goes directly to its implementation owner; this skill does not require a new site blueprint or full tool stack.

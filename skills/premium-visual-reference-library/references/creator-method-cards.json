@@ -1,0 +1,358 @@
+{
+  "verified_on": "2026-08-16",
+  "count": 22,
+  "records": [
+    {
+      "id": "CR-01",
+      "creator": "Victor Work",
+      "first_party_url": "https://victor.work/",
+      "observed_method": "Tier effect intensity as full, moderate, or simple; let motion communicate.",
+      "adaptable_principle": "Budget and audience choose intensity; preserve a plain content path.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-02",
+      "creator": "Cyd Stumpel",
+      "first_party_url": "https://cydstumpel.nl/",
+      "observed_method": "Progressively enhance a strong DOM surface with GSAP, Three.js, and View Transitions.",
+      "adaptable_principle": "Core navigation and content survive every graphics failure.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-03",
+      "creator": "Adrien Vanderpotte",
+      "first_party_url": "https://avdp.xyz/",
+      "observed_method": "Pair unusually smooth motion with a terse, user-friendly portfolio structure.",
+      "adaptable_principle": "Smoothness never overrides direct navigation or input expectations.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-04",
+      "creator": "Corentin Bernadou",
+      "first_party_url": "https://corentinbernadou.com/about",
+      "observed_method": "Unify editorial type, rhythm, motion, and shaders under one visual grammar.",
+      "adaptable_principle": "Keep the information architecture quieter than the surface.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-05",
+      "creator": "Vladyslav Peniev",
+      "first_party_url": "https://penev.tech/about",
+      "observed_method": "Treat performance and custom graphics tooling as design constraints.",
+      "adaptable_principle": "Expose ownership and avoid opaque one-off systems.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-06",
+      "creator": "Dylan Brouwer",
+      "first_party_url": "https://www.dylanbrouwer.design/services",
+      "observed_method": "Carry strategy through structure, CMS, responsive behavior, SEO, and accessibility.",
+      "adaptable_principle": "Price the complete delivery system, not the animation layer.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-07",
+      "creator": "Nathan Dallaire",
+      "first_party_url": "https://nathan.cx/",
+      "observed_method": "Use a terse, characterful identity and make selected work the proof.",
+      "adaptable_principle": "Add explicit objections, proof, and conversion for client sites.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-08",
+      "creator": "Pavel Mazhuga",
+      "first_party_url": "https://pavelmazhuga.com/lab/",
+      "observed_method": "Maintain an R&D lab for WebGPU, TSL, shaders, particles, and interaction.",
+      "adaptable_principle": "Promote experiments only after product, access, and performance gates.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-09",
+      "creator": "Adri\u00e1n Gubrica",
+      "first_party_url": "https://www.gubrica.com/work",
+      "observed_method": "Combine WebGL storytelling with CMS-backed production delivery.",
+      "adaptable_principle": "Editors and maintainers must own the experience after launch.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-10",
+      "creator": "Karim Maaloul",
+      "first_party_url": "https://yakudoo.com/about/",
+      "observed_method": "Use illustration, story, play, and interaction as one authored world.",
+      "adaptable_principle": "Make play specific to the brand argument.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-11",
+      "creator": "Tomoya Okada",
+      "first_party_url": "https://tomoyaokada.com/",
+      "observed_method": "Build a broad indexed practice of small graphics and interaction studies.",
+      "adaptable_principle": "Studies are a technique library, not page strategy.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-12",
+      "creator": "Robin Payot",
+      "first_party_url": "https://robinpayot.com/",
+      "observed_method": "Pair Vue, DatoCMS, and Three.js for editable immersive work.",
+      "adaptable_principle": "Validate touch, narrow screens, and motion preferences early.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-13",
+      "creator": "Bruno Simon",
+      "first_party_url": "https://bruno-simon.com/",
+      "observed_method": "Join 3D, physics, camera, sound, and inspectable web assets into a coherent world.",
+      "adaptable_principle": "Offer immediate conventional access to content and CTA.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-14",
+      "creator": "Victor Laplace",
+      "first_party_url": "https://victorlaplace.com/",
+      "observed_method": "Balance WebGL craft with UX, maintainability, backend, and accessibility.",
+      "adaptable_principle": "Awards never excuse an unmaintainable handoff.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-15",
+      "creator": "Hon Tran",
+      "first_party_url": "https://www.hontran.dev/",
+      "observed_method": "Combine GSAP/Three/Next with CMS, i18n, SEO, and agency collaboration.",
+      "adaptable_principle": "Treat creative polish and delivery reliability as one standard.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-16",
+      "creator": "Active Theory",
+      "first_party_url": "https://activetheory.net/",
+      "observed_method": "Build custom rendering and spatial systems through artist-engineer collaboration.",
+      "adaptable_principle": "Reserve bespoke engines for value that warrants their lifecycle cost.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-17",
+      "creator": "Resn",
+      "first_party_url": "https://resn.co.nz/",
+      "observed_method": "Start with a distinct story system, then use technology to make it stranger and more memorable.",
+      "adaptable_principle": "Experimental technology amplifies the story rather than replacing it.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-18",
+      "creator": "Dogstudio",
+      "first_party_url": "https://dogstudio.co/",
+      "observed_method": "Create emotional digital experiences at the intersection of art, design, and technology.",
+      "adaptable_principle": "Every expressive scene needs a strategic job and outcome.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-19",
+      "creator": "Locomotive",
+      "first_party_url": "https://locomotive.ca/en",
+      "observed_method": "Carry bespoke digital identity from strategy through deployment and maintenance.",
+      "adaptable_principle": "Choose the framework from ownership and outcome.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-20",
+      "creator": "Immersive Garden",
+      "first_party_url": "https://immersive-g.com/",
+      "observed_method": "Unite strategy, art direction, storytelling, 3D, motion, and development.",
+      "adaptable_principle": "Keep a performant path for content, growth, and maintenance.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-21",
+      "creator": "Unseen Studio",
+      "first_party_url": "https://unseen.co/",
+      "observed_method": "Use internal R&D to connect brand, digital, and motion in unexpected systems.",
+      "adaptable_principle": "Test novel tools against brand truth and extensibility.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    },
+    {
+      "id": "CR-22",
+      "creator": "14islands",
+      "first_party_url": "https://14islands.com/",
+      "observed_method": "Join product and brand thinking with React, motion, CMS, and case-study delivery.",
+      "adaptable_principle": "Show business result, architecture, and client ownership.",
+      "do_not_copy": "Do not reuse their brand, assets, copy, signature composition, or project-specific interaction verbatim.",
+      "best_fit": [
+        "premium brand narrative",
+        "portfolio/case study",
+        "signature interaction research"
+      ],
+      "implementation_inference": "Likely implementation choices must be reverified per live project; the method card records observable practice, not hidden source code.",
+      "inference_confidence": "medium",
+      "reviewed_on": "2026-08-16"
+    }
+  ]
+}

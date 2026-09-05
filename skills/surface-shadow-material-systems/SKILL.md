@@ -1,6 +1,6 @@
 ---
 name: surface-shadow-material-systems
-description: Design surface, shadow, border, material, radius, glass, elevation, overlay, divider, and depth systems for premium websites and apps. Use when cards, panels, modals, nav, product UI, dashboards, luxury sections, or editorial layouts need polished material hierarchy without generic glassmorphism or heavy shadows.
+description: "Design component surfaces and elevation states."
 ---
 
 # Surface Shadow Material Systems
@@ -9,13 +9,9 @@ description: Design surface, shadow, border, material, radius, glass, elevation,
 
 Use this skill for design surfaces, shadows, borders, and material depth with restraint.
 
-## Operating Contract
+## Scoped execution
 
-1. Inspect the existing project before changing code.
-2. Identify the styling system, token source, component primitive strategy, and available verification commands.
-3. Keep premium visual standards active: no generic library defaults, no weak states, no one-off styling chaos.
-4. Follow existing project conventions unless a change clearly improves the result.
-5. Run available checks and visually inspect responsive output when the change affects UI.
+Apply the [shared web contract](../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
 
 ## Required Reference
 

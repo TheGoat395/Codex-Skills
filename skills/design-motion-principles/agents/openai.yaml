@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Motion Principles"
+  short_description: "Create or audit purposeful interface motion"
+  default_prompt: "Use $design-motion-principles to judge and implement purposeful motion using contextual lenses within the requested scope."

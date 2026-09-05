@@ -1,3 +1,4 @@
-display_name: "Nextjs App Router Routing"
-short_description: "Plan Next.js App Router pages, layouts, and route files"
-default_prompt: "Use nextjs-app-router-routing to plan and implement this work with official framework guidance, premium UI standards, and a verification pass."
+interface:
+  display_name: "Nextjs App Router Routing"
+  short_description: "Implement Next.js App Router navigation and route files"
+  default_prompt: "Use $nextjs-app-router-routing to implement Next.js App Router navigation and route files, matching the requested scope and existing project."

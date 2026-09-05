@@ -1,13 +1,20 @@
 ---
 name: deep-research
-description: "Run adaptive, evidence-led, multi-pass research for consequential, complex, disputed, niche, or fast-changing questions without requiring repeated prompts for missing depth. Use for exhaustive research, due diligence, investigations, audits, fact checking, landscape mapping, comparative ranking, or source-backed decisions across any domain where coverage, freshness, contradictions, confidence, access recovery, and traceable claims matter."
+description: "Research with scoped depth and counterevidence."
 ---
 
 # Deep Research
 
 Produce a decision-ready result whose material claims can be traced to inspected evidence. Derive the necessary research universe from the objective, pursue it broadly and deeply in proportion to consequence, challenge the leading conclusion, and finish the natural in-scope work without waiting for follow-up prompts.
 
-Read [references/evidence-standard.md](references/evidence-standard.md) completely before substantive research.
+## Read for the chosen depth
+
+- **Focused:** apply the contract, hierarchy, exact claim support and stopping rule below; use the relevant sections of [evidence standard](references/evidence-standard.md) when evidence ambiguity or an auditable ledger matters.
+- **Deep or exhaustive:** read [coverage and research passes](references/coverage-and-research-passes.md) and [evidence standard](references/evidence-standard.md) before substantive research. Map, screen, deepen, challenge and verify; source count is not coverage.
+- **Exhaustive coverage, exceptional consecutive maximum-reasoning passes, or joint `$godmode` work:** also read [challenger and handoff](references/challenger-and-handoff.md). Deep Research establishes the decision; separately authorized GODMODE execution implements and verifies it.
+- **Material access/search failure or long, multi-surface, compaction-prone work:** read the applicable recovery or checkpoint sections of [access and continuity](references/access-and-continuity.md).
+
+Inspect exact artifacts; snippets are discovery aids. Preserve protected-source exclusions on alternate routes. Challenge the strongest countercase and complete material in-scope omissions. Separate screened and deeply inspected coverage. For deep/exhaustive or consequential delivery, read [research delivery](references/research-delivery.md); otherwise lead with the answer, exact supporting citations and material uncertainty. Instruction authority controls work, not empirical truth: test factual claims even in governing sources. Do not expand scope or force durable ledgers on small work.
 
 ## Establish the Research Contract
 
@@ -27,111 +34,20 @@ Classify the task before gathering evidence:
 - **Deep:** map the credible field, verify decisive claims, investigate contradictions, and recommend a direction.
 - **Exhaustive:** derive the full relevant research graph, screen the broad field, deeply inspect the strongest bounded subset, run an adversarial completion pass, and create a decision-to-execution handoff in one invocation.
 
-Treat explicit requests for deep, exhaustive, maximum, or complete research as exhaustive within the stated objective. Do not make the user discover and request natural subquestions one at a time. Do not make a focused task exhaustive merely because more sources exist.
-
-## Derive the Coverage Graph
-
-Before searching, infer the dimensions that could materially change the answer. Represent the task as a dynamic graph containing only applicable elements:
-
-- questions, claims, unknowns, and decision criteria;
-- relevant entities, artifacts, events, systems, and alternatives;
-- relationships, dependencies, incentives, and conflicts;
-- authoritative, independent, experiential, and contradictory evidence classes;
-- time, version, geography, population, plan, environment, or other scope boundaries;
-- available access surfaces and materially different fallback paths;
-- practical constraints such as cost, capacity, complexity, ownership, risk, and scale;
-- existing decisions or baselines that the result must confirm, revise, or reject.
-
-Expand the graph when evidence reveals a material adjacent branch. Prune branches that cannot affect the decision. This graph, not a hardcoded source list or quota, determines coverage.
+Use deep mode for explicit deep research. Reserve exhaustive bounded coverage for explicit exhaustive, maximum or complete research intent; keep focused, deep and exhaustive modes distinct. Do not make the user discover and request natural subquestions one at a time. Do not make a focused task exhaustive merely because more sources exist.
 
 ## Apply the Evidence Hierarchy
 
-Use the strongest source appropriate to each claim:
+Use current explicit instructions and governing sources to establish the requested scope and approved operating decisions. They do not make an empirical claim true. For factual support, use the strongest applicable evidence:
 
-1. Current explicit instructions and governing sources.
-2. Verified live state and direct records.
-3. Original authoritative evidence, including first-party data, official documentation, filings, standards, source code, and primary materials.
-4. Independent analysis with visible methods and incentives.
-5. Credible specialist reporting.
-6. Community experience and anecdotal evidence as field signal.
-7. Metadata, summaries, snippets, and remembered context only as discovery aids.
+1. Verified live state and direct records.
+2. Original authoritative evidence, including relevant governing records, first-party data, official documentation, filings, standards, source code, and primary materials.
+3. Independent analysis with visible methods and incentives.
+4. Credible specialist reporting.
+5. Community experience and anecdotal evidence as field signal.
+6. Metadata, summaries, snippets, and remembered context only as discovery aids.
 
 Verify unstable facts live. Test incentivized claims independently when the decision warrants it. Do not inflate confidence by counting multiple retellings of one origin as independent evidence.
-
-## Run the Research Passes
-
-### 1. Frame
-
-Build the coverage graph, define comparison criteria, expose assumptions, and identify what would reverse the expected conclusion.
-
-### 2. Discover
-
-Map the credible field before selecting favorites. Search across materially different terminology, source origins, adjacent categories, counterexamples, and relationship paths implied by the graph.
-
-### 3. Screen
-
-Use lightweight evidence to rank relevance and evidentiary value. Deduplicate repeated origins, resolve uncertain identities, remove immaterial candidates, and choose a bounded high-value subset for deeper inspection. Size the funnel to the decision rather than a predetermined count.
-
-### 4. Deepen
-
-Inspect the complete evidence needed for each decisive claim. Preserve dates, scope, definitions, units, versions, exceptions, methods, and incentives. Follow citations and dependencies back to their strongest practical origin.
-
-### 5. Challenge
-
-Seek credible contrary evidence, negative cases, alternate explanations, incentive conflicts, methodological weaknesses, implementation failures, and omitted categories. Resolve conflicts by authority, currency, scope, method, and directness; leave genuine disputes visible.
-
-### 6. Synthesize and Verify
-
-Compare alternatives using one consistent framework. Separate verified fact, source-supported interpretation, inference, estimate, recommendation, disputed claim, and unknown. Verify that every material citation supports the exact nearby claim.
-
-## Recover From Access and Search Failures
-
-When material evidence cannot be reached through the preferred route:
-
-1. classify what was actually accessible;
-2. identify another authorized, documented, materially different access path;
-3. retry using a different query, representation, interface, archive, export, index, or originating source when applicable;
-4. record each meaningful attempt and result;
-5. reduce the claim or confidence only after practical alternate routes are exhausted.
-
-Never represent metadata, a title, a snippet, an inaccessible body, or another source's description as direct inspection.
-
-## Maintain Resumable Research State
-
-For long, multi-surface, or compaction-prone work, maintain a task-scoped checkpoint using the evidence standard. Keep it concise and recoverable. Record:
-
-- objective, acceptance criteria, scope, and current thesis;
-- coverage graph and status by material dimension;
-- inspected sources and atomic claims;
-- candidates screened versus deeply inspected;
-- access failures and alternate attempts;
-- contradictions, unresolved questions, and next highest-value actions;
-- decisions changed during the challenger pass.
-
-Resume from the checkpoint instead of restarting or relying on compressed conversation memory. Do not create durable files for a small task when an internal ledger is sufficient. Remove temporary artifacts after delivery unless they remain useful to the project or the user asks to retain them.
-
-## Make Consecutive Passes Additive
-
-When a research task is exceptionally ambiguous, high-impact, system-wide, or repeatedly unresolved, divide consecutive passes deliberately:
-
-- **Pass 1 — Discovery and thesis:** map the field, build the evidence-backed working model, and identify decisive unknowns.
-- **Pass 2 — Challenger and completion:** pursue omissions, counterevidence, weak identities, alternate interpretations, and unresolved branches; record what changed, survived, or remained uncertain.
-
-Do not use the second pass to restate the first. De-escalate implementation or repetition once the difficult direction is settled.
-
-## Run the Autonomous Completion Check
-
-Before delivery, test whether a rigorous reviewer could expose a material omission by asking about:
-
-- an adjacent entity, alternative, evidence class, relationship, or counterexample implied by the scope;
-- a mismatch between claims and observable behavior, delivery, economics, incentives, or implementation;
-- direct evidence versus inferred connection;
-- current constraints, total cost, operational burden, ownership, scale, or failure behavior;
-- duplication, regression, or an unjustified change from the existing baseline;
-- an untried practical access route;
-- evidence that points away from the initial belief or the working thesis.
-
-Continue automatically when the omission is material and in scope. Do not expand into a different objective.
 
 ## Stop at Decision Sufficiency
 
@@ -145,17 +61,3 @@ Stop when:
 - additional work is unlikely to change the decision enough to justify its cost.
 
 Do not stop at the first plausible answer. Do not continue collecting repetitive evidence after the decision is stable.
-
-## Deliver the Result
-
-Lead with the answer. Include only what the task needs:
-
-1. decision or executive conclusion;
-2. scope, date, method, and meaningful coverage;
-3. decisive findings with exact citations;
-4. comparisons or rankings when useful;
-5. counterevidence, uncertainty, inaccessible evidence, and failed access paths;
-6. recommendation, tradeoffs, and reconsideration triggers;
-7. explicit status of what was verified, inferred, estimated, disputed, or not checked.
-
-Never claim exhaustive coverage, direct access, source inspection, current state, or verification that the evidence ledger does not support.

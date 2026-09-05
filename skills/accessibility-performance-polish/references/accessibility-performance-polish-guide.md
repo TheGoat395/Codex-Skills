@@ -64,13 +64,6 @@ Keep high-end websites usable, readable, fast, and stable.
 - The beautiful version is still usable and reasonably fast.
 - Major a11y/performance tradeoffs are fixed or clearly reported.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

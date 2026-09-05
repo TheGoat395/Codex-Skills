@@ -21,7 +21,7 @@ Make the default website workflow disciplined enough to prevent rushed, generic 
 - What is the site category: business, portfolio, product, luxury/editorial, commerce, dashboard, docs, game, tool?
 - What are the existing framework, entry file, styling system, and motion/JS systems?
 - What assets exist and which are missing: logo, copy, imagery, video, screenshots, product UI, fonts?
-- Did the user clearly say proceed, or should planned files be confirmed before major changes?
+- What deliverable and scope has the user already authorized, and what material information is actually missing?
 
 ## Decision Tree
 
@@ -63,15 +63,8 @@ Make the default website workflow disciplined enough to prevent rushed, generic 
 
 - The final work is traceable from brief to files to verification.
 - The user can understand what changed and how to view it.
-- The visible page has had at least one deliberate polish pass.
+- The affected page was inspected; observed defects were fixed when authorized. No gratuitous edit is required when acceptance already holds.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

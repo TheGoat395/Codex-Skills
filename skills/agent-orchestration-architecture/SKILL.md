@@ -1,6 +1,6 @@
 ---
 name: agent-orchestration-architecture
-description: Design reliable AI-agent and multi-agent systems. Use when deciding whether a workflow needs one agent, tools, specialist agents, manager control, handoffs, durable execution, human approval, model routing, retries, or an operating boundary for an AI workflow.
+description: "Resolve agent ownership and handoff design."
 ---
 
 # Agent Orchestration Architecture
@@ -35,9 +35,17 @@ Parallelize only independent work whose outputs can be reconciled without confli
 - Use a manager when one agent must enforce shared policy, combine specialist work, or own the user-facing answer.
 - Use a handoff when the specialist needs a focused interaction and clear transfer of responsibility.
 - Pass structured task packets, not vague conversation history. Minimize context to the specialist's need.
-- Keep external writes, money, sending, publishing, and irreversible operations behind explicit approval gates.
+- Delegate only a concrete, independent workstream with a defined output. Parallelism can reduce latency, but every subagent performs separate model and tool work and therefore increases usage.
+- Designing a delegation architecture does not authorize spawning agents. Follow current global and native tool constraints: preserve the selected parent model/effort and apply the current global child-model and reasoning policy. Do not freeze a session-specific model or effort into this specialist. Use only supported context controls and sufficient task context; do not override native inheritance constraints for a preferred packet format.
+- Give each specialist the exact sources, constraints, output schema, stopping condition, and useful result-size limit. Ask for distilled findings instead of raw logs or copied source material.
+- Keep the parent thread as the canonical decision owner. Do not spawn several agents to reread the same corpus, and do not use subagents merely to avoid doing a bounded task locally.
+- Use inherited authorization for routine reversible in-scope writes, drafts and configuration. Require explicit authorization for actual sends, spending, binding commitments, publication and materially irreversible actions at their real boundaries; do not reopen an already clear authorization.
 - Design every loop with a maximum attempt count and a useful terminal state.
 
 ## Required outputs
 
-Produce an execution diagram, role/tool matrix, state and approval map, operating limits, and an evaluation plan. Route persistent-context design to `$agent-memory-provenance`; route quality and release testing to `$agent-evaluation-operations`; define explicit integration contracts for external events.
+For a material architecture request, produce the smallest useful combination of an execution diagram, role/tool matrix, state/approval map, operating limits, and evaluation plan. Do not create every artifact for a simple routing decision. Route persistent-context design to `$agent-memory-provenance`; route quality and release testing to `$agent-evaluation-operations`; route external events to `$integration-contract-reliability`.
+
+## Optional specialists
+
+For external events, integration-contract-reliability is optional. Without it, define typed inputs/outputs, authentication, idempotency, retries, duplicate handling, uncertain-effect reconciliation and the actual success boundary in the project contract.

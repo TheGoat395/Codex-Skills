@@ -28,7 +28,7 @@ Lock the plan before coding so the build does not drift into generic filler.
 - If the site category is unclear, classify it before writing a blueprint.
 - If assets are missing, define asset slots and acceptable generation/search strategy.
 - If the user asked to proceed, keep blueprint brief and immediately implement.
-- If confirmation is required, stop after planned files and design contract.
+- Ask only when an unresolved consequential choice or actual authorization boundary blocks the next action; otherwise proceed within existing authorization.
 
 ## Implementation Rules
 
@@ -61,13 +61,6 @@ Lock the plan before coding so the build does not drift into generic filler.
 - Another agent could build from the blueprint and land in the same direction.
 - The user can approve/reject the direction before large edits.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

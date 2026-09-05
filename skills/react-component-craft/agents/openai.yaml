@@ -1,4 +1,4 @@
 interface:
   display_name: "React Component Craft"
-  short_description: "Craft reusable polished components"
-  default_prompt: "Use $react-component-craft to improve a modern website."
+  short_description: "Coordinate polished React component delivery"
+  default_prompt: "Use $react-component-craft to coordinate polished React component delivery, matching the requested scope and existing project."

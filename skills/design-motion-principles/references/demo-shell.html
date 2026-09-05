@@ -32,7 +32,7 @@
         "180ms · ease-out", "300ms · ease-out-quint"). The subhead
         ALWAYS renders — populate it for every demo so card heights
         stay consistent across the report.
-     e. Renumber the four radio ids from st1-* to st{n}-*, and the
+     e. Renumber the three radio ids from st1-* to st{n}-*, and the
         labels' for= attributes to match.
 
   3. Per-finding code MUST honor these contracts:
@@ -44,9 +44,9 @@
        per-finding @keyframes 100% state MUST match the motion-target
        element's default static rendering so the reduce-motion fallback
        shows the correct final visual.
-     - Per-finding @keyframes use the 0% / ~60% / 100% cadence:
-       0% = start state, ~60% = motion complete (~1.8s in),
-       100% = hold (~1.2s). The shell uses animation-duration: 3s.
+     - Per-finding active motion ends at duration_ms / 3000 * 100 percent:
+       180ms ends at 6%, 300ms at 10%; hold the settled state to 100%.
+       A 3s replay envelope is not the labeled active duration.
 
   4. Motion targets and ANY UI primitives inside the stage (.ui-btn,
      .ui-card, .ui-row, .ui-check, .ui-num, .ui-label, badge, etc.)
@@ -54,22 +54,20 @@
      other page tokens. This guarantees the demo contrasts correctly
      when its stage is locked to a different theme than the report.
 
-  5. Demo cards are non-interactive. The stage toggle radios are the
-     only interactive element. tabindex on the radios is fine; the
+  5. Only stage controls and pause/replay are interactive. The demonstrated component is illustrative. tabindex on the radios is fine; the
      stage itself stays out of focus order.
 
   Loop pacing
   -----------
-  animation-duration: 3s. Keyframes 0% / ~60% / 100%. Motion 0–60% ≈ 1.8s,
-  hold 60–100% ≈ 1.2s, then restart. Every demo in a report uses this
-  cadence so all cards share the same rhythm.
+  The 3s replay envelope has a variable active phase matching its label,
+  followed by a settled hold. The standalone example is 300ms/10%;
+  adapt the endpoint percentage to each finding and label slow motion.
 
   Standalone preview
   ------------------
   Opening this file directly in a browser shows one .demo card with the
   loop indicator, the segmented Auto/Light/Dark stage toggle, and a
-  placeholder motion target (a simple shape that fades in). No real
-  per-finding motion plays — the agent injects motion per finding when
+  placeholder motion target (a simple shape that fades in). A labeled 300ms example plays — the agent injects motion per finding when
   this template is embedded in a report. The shell also honors the
   viewer's prefers-color-scheme for standalone rendering.
 -->
@@ -79,9 +77,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Demo Shell — design-motion-principles</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
       /* Cool slate-graphite neutrals (hue 255). In the full report these
@@ -97,9 +92,9 @@
       --line:       oklch(0.95 0.01 255 / 0.09);
       --line-strong:oklch(0.95 0.01 255 / 0.16);
 
-      --display: "Familjen Grotesk", "Hanken Grotesk", system-ui, sans-serif;
-      --sans: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-      --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+      --display: system-ui, sans-serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      --mono: ui-monospace, "SF Mono", Menlo, monospace;
     }
 
     @media (prefers-color-scheme: light) {
@@ -207,7 +202,7 @@
        @media (prefers-reduced-motion: no-preference) {
          @keyframes m1 {
            0%   { opacity: 0; transform: translateY(8px); filter: blur(4px); }
-           60%  { opacity: 1; transform: translateY(0);   filter: blur(0);  }
+           10%  { opacity: 1; transform: translateY(0);   filter: blur(0);  }
            100% { opacity: 1; transform: translateY(0);   filter: blur(0);  }
          }
          .demo-1__mt {
@@ -217,18 +212,25 @@
     */
 
     /* Placeholder motion for standalone preview only — agent strips this
-       when composing the report. Demonstrates the 0 / 60 / 100 cadence. */
+       when composing the report. Demonstrates 300ms active motion then a hold in a 3s cycle. */
     @media (prefers-reduced-motion: no-preference) {
       @keyframes m-placeholder {
         0%   { opacity: 0; transform: translateY(8px); filter: blur(4px); }
-        60%  { opacity: 1; transform: translateY(0);   filter: blur(0);  }
+        10%  { opacity: 1; transform: translateY(0);   filter: blur(0);  }
         100% { opacity: 1; transform: translateY(0);   filter: blur(0);  }
       }
       .demo-1__mt {
         animation: m-placeholder 3s cubic-bezier(0.22, 1, 0.36, 1) infinite;
       }
     }
-  </style>
+
+  .demo input:focus-visible ~ .demo__bar .seg { outline: 2px solid var(--paper); outline-offset: 3px; }
+  button:focus-visible, input:focus-visible + label { outline: 2px solid currentColor; outline-offset: 3px; }
+  .demo[data-paused="true"] [class*="__mt"], .demo[data-paused="true"] [class*="__mt"] * { animation-play-state: paused !important; }
+  .demo__playback { display:flex; gap:8px; margin-top:10px; }
+  .demo__playback button { font:inherit; font-size:12px; color:var(--paper); background:var(--surface-2); border:1px solid var(--line-strong); border-radius:6px; padding:6px 10px; }
+  @media(max-width:600px) { body { padding:20px; } .demo { max-width:100%; } .demo__bar { flex-wrap:wrap; } }
+</style>
 </head>
 <body>
 
@@ -271,5 +273,16 @@
     </div>
   </div>
 
+<script>
+// Local-only controls; no external requests. Reduced motion still disables playback.
+for (const demo of document.querySelectorAll('.demo')) {
+  const controls=document.createElement('div');controls.className='demo__playback';
+  const pause=document.createElement('button');pause.type='button';pause.textContent='Pause';pause.setAttribute('aria-pressed','false');
+  pause.addEventListener('click',()=>{const paused=demo.dataset.paused!=='true';demo.dataset.paused=String(paused);pause.textContent=paused?'Resume':'Pause';pause.setAttribute('aria-pressed',String(paused));});
+  const replay=document.createElement('button');replay.type='button';replay.textContent='Replay';
+  replay.addEventListener('click',()=>{for(const animation of demo.getAnimations({subtree:true})){animation.currentTime=0;} });
+  controls.append(pause,replay);demo.append(controls);
+}
+</script>
 </body>
 </html>

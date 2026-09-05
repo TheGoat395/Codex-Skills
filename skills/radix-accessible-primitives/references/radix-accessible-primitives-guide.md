@@ -56,7 +56,7 @@ Get robust interaction semantics while keeping full control over visual design.
 ## QA Checklist
 
 - Test keyboard behavior: Tab, Shift+Tab, Enter, Space, Escape, Arrow keys where relevant.
-- Check focus trap and restore for dialogs/popovers.
+- Verify the intended modality. Modal dialogs/popovers require appropriate focus containment; nonmodal popovers need normal Tab flow and intentional focus return. Radix Popover defaults to `modal=false`; do not introduce a focus trap for a nonmodal design.
 - Inspect open/closed/selected/disabled styles.
 - Run available accessibility checks.
 
@@ -66,18 +66,14 @@ Get robust interaction semantics while keeping full control over visual design.
 - Styling is custom and premium, not default or generic.
 - Accessibility remains intact after visual customization.
 
-## Shared Website Requirements
+## Shared scope
 
-- Inspect before coding: project structure, framework, styling system, token files, component primitives, entry CSS, build commands, and existing visual conventions.
-- Prefer the existing styling approach before introducing Tailwind, shadcn/ui, Radix, class-variance tools, or custom CSS architecture.
-- Use design tokens to make choices repeatable, but keep the site-specific art direction alive. Tokens should support taste, not flatten it.
-- Avoid generic AI website tells: default card grids, template spacing, random gradients, one-note palettes, weak buttons, unstyled forms, and placeholder copy.
-- Check desktop and mobile. Prevent overflow, text collisions, unstable control sizes, inaccessible focus, and broken media crops.
-- Respect accessibility, color contrast, keyboard navigation, focus-visible states, and reduced-motion preferences.
-- Run available lint, build, test, and local browser checks when possible; report exact commands and untested areas.
+For applicable substantial web work, reuse the [shared scoped web contract](../../website-operating-rules/references/scoped-web-contract.md) when available. Preserve current authorization, stack and requested scope; this optional reference does not require another planning or approval cycle.
 
 ## Official Source Anchors
 
 - Radix Primitives introduction: https://www.radix-ui.com/primitives/docs/overview/introduction
 - shadcn/ui docs: https://ui.shadcn.com/docs
 - MDN focus-visible: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible
+
+Modality reference: [Radix Popover](https://www.radix-ui.com/primitives/docs/components/popover).

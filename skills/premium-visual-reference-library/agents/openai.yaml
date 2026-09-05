@@ -1,4 +1,4 @@
 interface:
   display_name: "Premium Visual Reference Library"
   short_description: "Find premium website inspiration fast"
-  default_prompt: "Use $premium-visual-reference-library to choose high-quality visual references for this website."
+  default_prompt: "Use $premium-visual-reference-library to retrieve dated reference evidence and adaptable methods within the requested scope."

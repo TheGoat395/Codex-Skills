@@ -1,120 +1,55 @@
 ---
 name: verification-before-completion
-description: Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always
+description: "Assess nontrivial completion evidence."
 ---
 
 # Verification Before Completion
 
-## Overview
+## Core principle
 
-**Core principle:** Evidence before claims, always.
+Evidence before claims. Verification should be fresh, decisive, and proportionate to the result being asserted. For an obvious low-impact local edit, apply the direct check without loading this skill or creating a formal verification artifact. Use this fuller workflow when the evidence choice, failure interpretation or completion boundary is nontrivial, or when explicitly invoked.
 
-**Violating the letter of this rule is violating the spirit of this rule.**
+## Lightweight gate
 
-## The Iron Law
+Before claiming that work is complete, fixed, passing, deployed, sent, published, or otherwise in a verified state:
 
-```
-NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE
-```
+1. Name the exact claim and its consequence.
+2. Choose the smallest fresh check that can actually prove it.
+3. Run the check and read the exit status, failures, and material output.
+4. Report the result with exact coverage and anything not verified.
 
-If you haven't run the verification command in this message, you cannot claim it passes.
+Do not replace a required runtime check with source inspection, a build with lint, or end-to-end evidence with an agent's success message. Do not run an entire test universe when a targeted regression plus the repository's required gate proves the claim.
 
-## The Gate Function
+## Match evidence to the claim
 
-```
-BEFORE claiming any status or expressing satisfaction:
+| Claim | Decisive evidence |
+|---|---|
+| Targeted bug fixed | Reproduce the original symptom or run its regression test |
+| Tests pass | The named test command exits successfully with zero relevant failures |
+| Build succeeds | The actual build command exits successfully |
+| Visual issue fixed | Inspect the rendered affected state at relevant viewports |
+| Requirements met | Check each material acceptance criterion against code, output, or runtime evidence |
+| External state changed | Read back the exact account, message, deployment, or service state |
+| Research complete | State sources searched, semantic coverage, exclusions, and unresolved limits |
 
-1. IDENTIFY: What command proves this claim?
-2. RUN: Execute the FULL command (fresh, complete)
-3. READ: Full output, check exit code, count failures
-4. VERIFY: Does output confirm the claim?
-   - If NO: State actual status with evidence
-   - If YES: State claim WITH evidence
-5. ONLY THEN: Make the claim
+## Coverage language
 
-Skip any step = lying, not verifying
-```
+Use precise labels such as:
 
-## Common Failures
+- source-inspected;
+- structurally verified;
+- targeted test passed;
+- runtime-tested;
+- visually inspected;
+- external state confirmed;
+- untested or blocked.
 
-| Claim | Requires | Not Sufficient |
-|-------|----------|----------------|
-| Tests pass | Test command output: 0 failures | Previous run, "should pass" |
-| Linter clean | Linter output: 0 errors | Partial check, extrapolation |
-| Build succeeds | Build command: exit 0 | Linter passing, logs look good |
-| Bug fixed | Test original symptom: passes | Code changed, assumed fixed |
-| Regression test works | Red-green cycle verified | Test passes once |
-| Agent completed | VCS diff shows changes | Agent reports "success" |
-| Requirements met | Line-by-line checklist | Tests passing |
+Never imply whole-system certification from a sample. Previous evidence may provide context, but a current completion claim needs current verification when the state could have changed.
 
-## Red Flags - STOP
+## Delegated work
 
-- Using "should", "probably", "seems to"
-- Expressing satisfaction before verification ("Great!", "Perfect!", "Done!", etc.)
-- About to commit/push/PR without verification
-- Trusting agent success reports
-- Relying on partial verification
-- Thinking "just this once"
-- Tired and wanting work over
-- **ANY wording implying success without having run verification**
+A subagent report is evidence about what the subagent observed, not automatic proof of completion. Inspect the relevant diff or artifact and run the smallest decisive verification before adopting its claim.
 
-## Rationalization Prevention
+## Stop condition
 
-| Excuse | Reality |
-|--------|---------|
-| "Should work now" | RUN the verification |
-| "I'm confident" | Confidence ≠ evidence |
-| "Just this once" | No exceptions |
-| "Linter passed" | Linter ≠ compiler |
-| "Agent said success" | Verify independently |
-| "I'm tired" | Exhaustion ≠ excuse |
-| "Partial check is enough" | Partial proves nothing |
-| "Different words so rule doesn't apply" | Spirit over letter |
-
-## Key Patterns
-
-**Tests:**
-```
-✅ [Run test command] [See: 34/34 pass] "All tests pass"
-❌ "Should pass now" / "Looks correct"
-```
-
-**Regression tests (TDD Red-Green):**
-```
-✅ Write → Run (pass) → Revert fix → Run (MUST FAIL) → Restore → Run (pass)
-❌ "I've written a regression test" (without red-green verification)
-```
-
-**Build:**
-```
-✅ [Run build] [See: exit 0] "Build passes"
-❌ "Linter passed" (linter doesn't check compilation)
-```
-
-**Requirements:**
-```
-✅ Re-read plan → Create checklist → Verify each → Report gaps or completion
-❌ "Tests pass, phase complete"
-```
-
-**Agent delegation:**
-```
-✅ Agent reports success → Check VCS diff → Verify changes → Report actual state
-❌ Trust agent report
-```
-
-## When To Apply
-
-**ALWAYS before:**
-- ANY variation of success/completion claims
-- ANY expression of satisfaction
-- ANY positive statement about work state
-- Committing, PR creation, task completion
-- Moving to next task
-- Delegating to agents
-
-**Rule applies to:**
-- Exact phrases
-- Paraphrases and synonyms
-- Implications of success
-- ANY communication suggesting completion/correctness
+Stop when the acceptance criteria are supported at the required confidence. Record residual limitations instead of adding ceremonial checks that cannot change the decision.

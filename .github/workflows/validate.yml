@@ -22,6 +22,9 @@ jobs:
       - name: Validate skill catalog
         run: python3 scripts/validate_skills.py
 
+      - name: Test catalog and replacement recovery
+        run: python3 scripts/test_catalog.py
+
       - name: Validate installer paths
         run: |
           python3 scripts/install_skills.py --list-collections

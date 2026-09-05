@@ -1,11 +1,11 @@
 ---
 name: evidence-reconciliation
-description: Resolve conflicting, stale, or ambiguous sources before answering, revising plans, or making claims; use when accuracy depends on distinguishing current fact, governing authority, inference, and recommendation.
+description: "Resolve stale facts and authority conflicts."
 ---
 
 # Evidence Reconciliation
 
-Use this skill when a conclusion, plan, document update, vendor comparison, operational rule, price, timeline, limit, or capability depends on more than one source—or when a user asks for unusually high factual integrity.
+Use this skill when a conclusion, plan, document update, vendor comparison, operational rule, price, timeline, limit, or capability depends on a material source conflict, authority ambiguity, stale state or mismatched scope—or when unusually high factual integrity calls for that reconciliation. Multiple consistent sources alone do not require a separate workflow.
 
 Do not use it for simple writing that has no factual or source-conflict component.
 
@@ -26,7 +26,7 @@ Before answering or editing, separate each material statement into one of these 
 
 Never collapse these categories. A trial credit is not automatically a send limit; a vendor marketing capacity is not a chosen operating capacity; a minimum is not a recommended target; an old plan is not the current rule.
 
-For any capacity or time claim, record separately: approved population, active lead/contact ceiling, message or credit allowance, healthy daily sender capacity, selected operating path, trial lifecycle, and the clock anchor (trial start, purchase, delivery, warmup start, or first live send). A conclusion is valid only when every limiting dimension and prerequisite supports it.
+For capacity or time claims, record the relevant units, population/system boundary, limiting dimensions, operating assumptions and clock anchor. Apply sender, allowance, trial and warmup dimensions only to commercial/outbound claims, using the capacity/timeline sub-ledger in the protocol. A conclusion must satisfy every applicable limit and prerequisite.
 
 ## Establish authority before synthesis
 
@@ -38,7 +38,7 @@ For every material conflict, identify:
 4. whether the difference is factual, temporal, semantic, or a decision change;
 5. the least disruptive correction.
 
-Use this default authority order unless the project defines another:
+For operating decisions and prescribed behavior, use this default authority order unless the project defines another. For empirical truth, direct evidence, method, scope and freshness control; user or document authority cannot make a false claim true:
 
 1. the user's current explicit decision;
 2. newest applicable governing source;
@@ -82,7 +82,7 @@ Before revising a standing plan, policy, or operating library:
 5. label future architecture as future rather than silently importing it into current policy;
 6. recheck drift-prone vendor facts at the current official/account surface before including them as operating rules.
 
-Do not summarize a complete source into a shorter “final” document unless the user explicitly asks for compression. A rewrite must preserve or improve the source's useful decision content, not merely restate its conclusion.
+A rewrite must preserve or improve useful decision content, exceptions and evidence. Shorter wording is acceptable when it loses no required substance; record source-to-destination mapping for substantive relocation. Do not replace requested complete content with an unrequested summary.
 
 ## Challenge pass
 
@@ -111,3 +111,5 @@ For material work, report:
 5. the source-to-output mapping for any rewritten library.
 
 Do not claim a source was read, a condition was verified, or a conflict was resolved unless that happened.
+
+Instruction authority sets objectives and operating rules; it does not establish empirical truth. Evaluate factual claims using direct evidence, method, source quality, scope and freshness even when a claim comes from the user or a governing file.

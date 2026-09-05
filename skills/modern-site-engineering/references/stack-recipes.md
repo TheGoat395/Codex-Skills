@@ -1,18 +1,10 @@
 # Stack Recipes
 
-## New Luxury/Cinematic Site
+## Conditional recipe selection
 
-Use this when there is no existing repo and the target is a polished marketing, portfolio, brand, or product site.
+Use the existing framework and package manager. For a genuinely new Next.js project, verify the current official scaffolder and required options after Next.js is selected; do not run a whole-stack install recipe. Add Motion only for earned React animation, GSAP only for timeline/scroll choreography, Lenis only for a selected smooth-scroll requirement, Three/R3F/Drei only for actual graphics, and browser tooling only when existing tooling cannot verify the result. A localized Vite/React task remains Vite/React.
 
-```bash
-npx create-next-app@latest site --typescript --tailwind --eslint --app --src-dir
-cd site
-npm install motion gsap lenis lucide-react clsx tailwind-merge
-npm install three @react-three/fiber @react-three/drei
-npm install -D @playwright/test
-```
-
-Add only what the concept needs. Skip Three/R3F for editorial sites that are better served by photography/video. Skip GSAP when Motion and CSS cover the interaction.
+The directory example below applies only to a Next.js App Router project and is not a required migration for another framework or an existing sound structure.
 
 ## Suggested Structure
 
@@ -47,8 +39,8 @@ public/
 
 ## Quality Gates
 
-- `npm run lint`
-- `npm run build`
+- Discover available package scripts and use the repository package manager.
+- Run relevant lint/type/test/build scripts that actually exist.
 - local browser inspection
 - mobile viewport inspection
 - check reduced motion

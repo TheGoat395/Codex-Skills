@@ -14,7 +14,7 @@ Make Tailwind responsive behavior feel composed rather than mechanically stacked
 
 - The project does not use Tailwind.
 - The component has no visible layout or breakpoint behavior.
-- The existing design system already prescribes exact responsive rules.
+- Existing responsive behavior is already correct and the request neither changes nor reviews it. When implementation or repair is requested, follow the exact existing design-system rules rather than inventing new breakpoints.
 
 ## Discovery Questions
 
@@ -33,7 +33,7 @@ Make Tailwind responsive behavior feel composed rather than mechanically stacked
 
 ## Implementation Rules
 
-- Do not scale font size directly with viewport width.
+- Avoid unbounded `vw`-only typography. Bounded fluid type such as `clamp()` with readable minimum/maximum and font-relative sizing is valid; test zoom, reflow and long content.
 - Use stable dimensions for buttons, icon controls, galleries, cards, tiles, and mockups.
 - Make media crops reveal the subject at every breakpoint.
 - Limit breakpoint soup. Each responsive class should have a visible reason.
@@ -66,18 +66,14 @@ Make Tailwind responsive behavior feel composed rather than mechanically stacked
 - Mobile layout feels intentionally composed.
 - No visible overflow, overlap, or accidental resizing remains.
 
-## Shared Website Requirements
+## Shared scope
 
-- Inspect before coding: project structure, framework, styling system, token files, component primitives, entry CSS, build commands, and existing visual conventions.
-- Prefer the existing styling approach before introducing Tailwind, shadcn/ui, Radix, class-variance tools, or custom CSS architecture.
-- Use design tokens to make choices repeatable, but keep the site-specific art direction alive. Tokens should support taste, not flatten it.
-- Avoid generic AI website tells: default card grids, template spacing, random gradients, one-note palettes, weak buttons, unstyled forms, and placeholder copy.
-- Check desktop and mobile. Prevent overflow, text collisions, unstable control sizes, inaccessible focus, and broken media crops.
-- Respect accessibility, color contrast, keyboard navigation, focus-visible states, and reduced-motion preferences.
-- Run available lint, build, test, and local browser checks when possible; report exact commands and untested areas.
+For applicable substantial web work, reuse the [shared scoped web contract](../../website-operating-rules/references/scoped-web-contract.md) when available. Preserve current authorization, stack and requested scope; this optional reference does not require another planning or approval cycle.
 
 ## Official Source Anchors
 
 - Tailwind utility classes: https://tailwindcss.com/docs/styling-with-utility-classes
 - Tailwind responsive design: https://tailwindcss.com/docs/responsive-design
 - MDN CSS container queries: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries
+
+Preserve semantic DOM reading and keyboard order across responsive arrangements; visual reordering must not create a conflicting interaction sequence. Test the supported viewport scope rather than imposing a mobile rebuild on an explicitly desktop-only brief.

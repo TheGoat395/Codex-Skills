@@ -1,3 +1,4 @@
-display_name: "Tailwind Responsive Layouts"
-short_description: "Compose responsive Tailwind layouts that feel designed on mobile and desktop"
-default_prompt: "Use tailwind-responsive-layouts to shape this styling or design-system work with premium visual constraints, accessible states, and a verification pass."
+interface:
+  display_name: "Tailwind Responsive Layouts"
+  short_description: "Implement responsive Tailwind layouts and media crops"
+  default_prompt: "Use $tailwind-responsive-layouts to implement responsive Tailwind layouts and media crops, matching the requested scope and existing project."

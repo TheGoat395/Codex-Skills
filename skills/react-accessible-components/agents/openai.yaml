@@ -1,3 +1,4 @@
-display_name: "React Accessible Components"
-short_description: "Build accessible React controls, navigation, and interactive UI"
-default_prompt: "Use react-accessible-components to plan and implement this work with official framework guidance, premium UI standards, and a verification pass."
+interface:
+  display_name: "React Accessible Components"
+  short_description: "Build React semantics, keyboard and focus behavior"
+  default_prompt: "Use $react-accessible-components to build React semantics, keyboard and focus behavior, matching the requested scope and existing project."

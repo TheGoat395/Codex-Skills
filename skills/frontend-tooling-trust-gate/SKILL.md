@@ -1,6 +1,6 @@
 ---
 name: frontend-tooling-trust-gate
-description: "Use before installing or recommending npm packages, GitHub repos, templates, MCP servers, plugins, Codex skills, ChatGPT skills, scripts, CLI tools, design libraries, scraping tools, or AI agent tools for frontend or website work. Produces trust classifications, install-safety decisions, safer alternatives, and project-local/global install guidance."
+description: "Review trust before frontend tooling adoption."
 ---
 
 # Frontend Tooling Trust Gate
@@ -36,3 +36,7 @@ Return:
 - red flags
 - install stance: `install`, `project-local only`, `do not install`, or `needs user auth`
 - safer official alternative if rejected
+
+## Scope and evidence
+
+Apply to frontend tooling adoption only. Reuse recent verified adoption decisions if no relevant version, source, permission or requirement changed. Stale maintenance is a factor, not proof of malice. Existing authorization covers routine approved installs; spending and external commitments keep their actual boundaries.

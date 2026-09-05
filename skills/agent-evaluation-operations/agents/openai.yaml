@@ -1,4 +1,4 @@
 interface:
   display_name: "Agent Evaluation Operations"
-  short_description: "Evaluate, observe, and release AI agents."
-  default_prompt: "Use $agent-evaluation-operations to define an AI-agent evaluation gate."
+  short_description: "Test agents, skills, triggers, and regressions"
+  default_prompt: "Use $agent-evaluation-operations to compare this agent or skill change against a stable regression baseline."

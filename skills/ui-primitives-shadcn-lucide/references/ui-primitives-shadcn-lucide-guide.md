@@ -29,12 +29,6 @@ Accessible primitives save time, but default styling is not design direction.
 - Primitives feel native to the site design.
 - Accessibility basics remain intact.
 
-## Shared Requirements
+## Shared scope
 
-- Inspect before coding: structure, framework, homepage or main entry file, styling system, JavaScript or interaction system, assets, and build commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, or fix.
-- Use existing project conventions first. Explain major new dependencies before adding them.
-- Never ship generic visual work: no default card grids, placeholder copy, weak type, random gradients, stock-like media, or template heroes.
-- Build version 1, inspect the rendered result, improve spacing, type, hierarchy, motion, media, hover states, and responsiveness, then run checks again.
-- Run available lint, build, and test commands when possible. Report commands, changed files, and any untested areas honestly.
-- Check desktop and mobile. Respect accessibility, semantic markup, focus states, and reduced-motion preferences.
+For applicable substantial web work, reuse the [shared scoped web contract](../../website-operating-rules/references/scoped-web-contract.md) when available. Preserve current authorization, stack and requested scope; this optional reference does not require another planning or approval cycle.

@@ -1,3 +1,4 @@
-display_name: "React State And Effects Discipline"
-short_description: "Use React state and effects only where they belong"
-default_prompt: "Use react-state-and-effects-discipline to plan and implement this work with official framework guidance, premium UI standards, and a verification pass."
+interface:
+  display_name: "React State And Effects Discipline"
+  short_description: "Repair React state, effects and async response ownership"
+  default_prompt: "Use $react-state-and-effects-discipline to repair React state, effects and async response ownership, matching the requested scope and existing project."

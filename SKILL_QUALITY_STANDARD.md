@@ -13,7 +13,7 @@ description: Use this skill when...
 ---
 ```
 
-The description should explain when the skill should trigger. It should be specific enough that Codex can choose it without guessing.
+Use the shortest description that distinguishes the actual trigger. There is no minimum prose length. Avoid broad keyword inventories, duplicated ownership and catchall language that attracts unrelated tasks. Judge correct selection with representative positive and negative cases; a metadata check alone cannot prove it.
 
 ## Acceptance Criteria
 
@@ -63,3 +63,11 @@ Reject or rewrite a skill when it:
 - implies guaranteed output quality
 - hides risk from users
 - contains private data, credential material, or account-specific instructions
+
+## Instruction delivery
+
+Assume a capable model. Preserve non-obvious domain knowledge, task boundaries, required formats and meaningful verification; remove generic encouragement and unnecessary itineraries. Keep shared invariants and workflow selection in the root. Move substantial conditional procedures to linked references with explicit read conditions. Simple skills need no extra routing files.
+
+Guidance must fit the requested scope and chosen model. Do not hardcode personal model hierarchies, force project-wide reading for localized changes, repeat already-settled decisions, require unnecessary confirmations or run unrelated suites. Define completion through the required implementation, execution, inspection, correction and validation stages. Preserve intentional approval and production boundaries.
+
+A collection is optional, not a requirement to load every skill. Optional cross-skill references must have a useful fallback. Do not install additional skills merely to satisfy a reference. Report structural validation separately from measured model behavior or performance.

@@ -1,4 +1,4 @@
 interface:
   display_name: "Section Layout Systems"
   short_description: "Use varied non-card section patterns"
-  default_prompt: "Use $section-layout-systems to guide a high-quality website build."
+  default_prompt: "Use $section-layout-systems to choose section form from content shape within the requested scope."

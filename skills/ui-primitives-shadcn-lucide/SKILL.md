@@ -1,32 +1,28 @@
 ---
 name: "ui-primitives-shadcn-lucide"
-description: "Use shadcn/ui, Radix-style primitives, and lucide-react icons without producing generic default UI. Use for dialogs, menus, accordions, tabs, forms, buttons, toolbars, icons, inputs, and app controls that need accessibility and polished custom styling."
+description: "Customize installed shadcn and Lucide visuals."
 ---
 
 # UI Primitives Shadcn Lucide
+
+For substantial web work, reuse the [scoped web contract](../website-operating-rules/references/scoped-web-contract.md) when available; it replaces duplicated policy here. Match the requested scope and existing decisions; a missing optional sibling does not block this local procedure.
 
 ## Overview
 
 Use primitives as structure, not as the visual identity. Accessible primitives save time, but default styling is not design direction.
 
-## Website Nonnegotiables
-
-- Inspect before coding: structure, framework, homepage or main entry file, styling system, JavaScript or interaction system, assets, and build commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, or fix.
-- Use existing project conventions first. Explain major new dependencies before adding them.
-- Never ship generic visual work: no default card grids, placeholder copy, weak type, random gradients, stock-like media, or template heroes.
-- Build version 1, inspect the rendered result, improve spacing, type, hierarchy, motion, media, hover states, and responsiveness, then run checks again.
-- Run available lint, build, and test commands when possible. Report commands, changed files, and any untested areas honestly.
-- Check desktop and mobile. Respect accessibility, semantic markup, focus states, and reduced-motion preferences.
-
 ## Workflow
 
-1. Read the user's brief and identify the website category, audience, content reality, visual references, and asset availability.
+1. Identify the requested component or architecture outcome, affected files and existing decisions; reuse established content and visual direction.
 2. Inspect the project before editing when code exists.
 3. Apply this skill's specific rules from `references/ui-primitives-shadcn-lucide-guide.md`.
-4. Explain planned files before major changes unless the user has clearly said to proceed.
-5. Build, inspect, polish, and verify before final delivery.
+4. Explain material implementation choices while continuing authorized work.
+5. Implement when requested, inspect affected output, fix observed defects, and run the smallest decisive relevant checks.
 
 ## Reference
 
 Read `references/ui-primitives-shadcn-lucide-guide.md` when this skill triggers for a concrete website build, redesign, visual review, or implementation plan.
+
+## Ownership
+
+Own customization of installed shadcn source and Lucide visual states. Preserve the selected underlying primitive family; use `radix-accessible-primitives` only for actual Radix mechanics and `react-accessible-components` for semantic requirements. Do not reinstall or replace primitives for a styling change.

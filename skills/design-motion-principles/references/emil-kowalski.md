@@ -1,5 +1,7 @@
 # Emil Kowalski's Animation Principles
 
+These are context-dependent interpretive defaults, not designer-authored authority or universal aesthetic rules. Apply the actual user direction, purpose, frequency, accessible state and measured consequence; purposeful artistic expression remains available.
+
 Emil Kowalski is a Design Engineer at Linear (previously Vercel). Creator of Sonner, Vaul, and the "Animations on the Web" course. His approach emphasizes **restraint, speed, and purposeful motion**.
 
 This file is Emil's **philosophy and decision frameworks** — the judgment for *whether* and *when* to animate. Implementation code lives in `motion-cookbook.md` (cross-referenced below).
@@ -22,8 +24,8 @@ Animation appropriateness depends on interaction frequency:
 |-----------|----------------|
 | Rare (monthly) | Delightful, morphing animations welcome |
 | Occasional (daily) | Subtle, fast animations |
-| Frequent (100s/day) | No animation or instant transitions |
-| Keyboard-initiated | Never animate |
+| Frequent (100s/day) | Immediate or minimal feedback, tested for repeated use |
+| Keyboard-initiated | Immediate response, preserved focus; useful brief preference-respecting feedback is allowed |
 
 **The Raycast example**: A tool used constantly throughout the day benefits from zero animation. Users with clear goals "don't expect to be delighted" and prioritize frictionless workflow.
 
@@ -40,11 +42,11 @@ A 180ms animation feels more responsive than 400ms. Speed creates perceived perf
 Emil's decision checklist. Code for each is in the cookbook section noted.
 
 1. **Scale your buttons** — Subtle `scale(0.97)` on `:active` for immediate tactile feedback. → cookbook §10
-2. **Don't animate from `scale(0)`** — It creates unnatural motion. Start from `scale(0.9)` or higher. → cookbook §10
+2. **Prefer restrained scale when appropriate** — A 0.9+ start minimizes motion; other ranges can support deliberate emergence. → cookbook §10
 3. **Tooltip delay patterns** — First tooltip in a group: delay + animation. Subsequent: instant. → cookbook §10
-4. **Custom easing is essential** — *"Easing is the most important part of any animation. It can make a bad animation feel great."* Built-in `ease`/`ease-in-out` lack strength; use custom Bézier curves (easing.dev, easings.co). → cookbook §2
+4. **Custom easing is essential** — *"Easing is the most important part of any animation. It can make a bad animation feel great."* Choose suitable built-in or custom Bézier curves (easing.dev, easings.co). → cookbook §2
 5. **Origin-aware animations** — Motion should originate from its logical source; a dropdown expands from its trigger, not from center. → cookbook §13
-6. **Keep animations fast** — Under 300ms for UI; remove animation entirely for high-frequency interactions.
+6. **Keep animations fast** — Under 300ms is a productivity default; keep high-frequency action immediate and retain only useful brief feedback.
 7. **Use blur when nothing else works** — `filter: blur(2px)` masks imperfections during rough state transitions. → cookbook §10
 
 ---
@@ -53,10 +55,10 @@ Emil's decision checklist. Code for each is in the cookbook section noted.
 
 | Technique | When Emil reaches for it | Cookbook |
 |-----------|--------------------------|----------|
-| Clip-path animations | Reveals and tab transitions — hardware-accelerated, no layout shift, no extra DOM | §9 |
+| Clip-path animations | Reveals and tab transitions — no layout shift; compositing/paint cost depends on browser and shape | §9 |
 | Spring physics | Any value that should interpolate smoothly rather than snap (e.g. mouse position) | §12 |
-| CSS transitions over keyframes | Anything the user can rapidly re-trigger — keyframes can't retarget mid-flight | §11 |
-| Direct style updates | Frequent updates like drag — CSS variables cause cascade recalculation | §11 |
+| CSS transitions over keyframes | Anything the user can rapidly re-trigger — plain CSS keyframes do not automatically retarget smoothly | §11 |
+| Direct style updates | Frequent updates like drag — compare scoped variables and direct styles in measured traces | §11 |
 | Momentum-based dismissal | Swipe-to-dismiss — use velocity, not distance thresholds | §11 |
 
 ---
@@ -71,7 +73,7 @@ Great animations can be interrupted mid-play and respond naturally. Framer Motio
 
 | Context | Approach |
 |---------|----------|
-| Keyboard shortcuts | No animation |
+| Keyboard shortcuts | Immediate action and stable focus; optional brief useful feedback |
 | High-frequency tool | Minimal or no animation |
 | Daily-use feature | Fast, subtle animation (180-250ms) |
 | Onboarding/first-time | Delightful animations welcome |

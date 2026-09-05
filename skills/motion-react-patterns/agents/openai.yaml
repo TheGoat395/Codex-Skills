@@ -1,3 +1,4 @@
-display_name: "Motion React Patterns"
-short_description: "Use Motion for React microinteractions and component animation"
-default_prompt: "Use motion-react-patterns to design and implement this interaction with purposeful motion, reduced-motion support, cleanup, and visual QA."
+interface:
+  display_name: "Motion React Patterns"
+  short_description: "Apply Motion APIs with sound React lifecycle ownership"
+  default_prompt: "Use $motion-react-patterns to apply Motion APIs with sound React lifecycle ownership, matching the requested scope and existing project."

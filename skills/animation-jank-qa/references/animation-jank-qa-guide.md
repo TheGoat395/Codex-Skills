@@ -46,16 +46,9 @@
 - No obvious jank, scroll traps, or broken reduced-motion path remains.
 - Animation risk is documented.
 
-## Shared Website Requirements
+## Shared scope
 
-- Inspect before changing or shipping: framework, package scripts, build output, routes, forms, media, animation stack, deployment target, environment variables, analytics, SEO metadata, accessibility risks, and available browser QA tooling.
-- Do not claim something was tested unless it was actually tested; report exact commands, URLs, screenshots, viewports, failures, skipped checks, and remaining risk.
-- Verify desktop and mobile rendered output, not only source code. For visual or motion work, inspect screenshots, browser behavior, console errors, network failures, and responsive layout.
-- Treat forms, checkout, booking, CMS content, analytics, environment variables, and deployments as production surfaces with error, loading, empty, success, and rollback states.
-- Respect accessibility, performance, reduced-motion, and no-JavaScript/no-WebGL/no-autoplay fallbacks where relevant.
-- Keep secrets out of code, logs, screenshots, summaries, widgets, and committed files.
-- Prefer project-local tooling and existing scripts before adding dependencies. Explain any new dependency before installing it.
-- End with a concise handoff: changed files, commands run, checks passed, checks not run, deployment URL if any, and next risks.
+For applicable substantial web work, reuse the [shared scoped web contract](../../website-operating-rules/references/scoped-web-contract.md) when available. Preserve current authorization, stack and requested scope; this optional reference does not require another planning or approval cycle.
 
 ## Official Source Anchors
 

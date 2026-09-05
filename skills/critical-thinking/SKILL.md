@@ -1,11 +1,20 @@
 ---
 name: critical-thinking
-description: Evaluate a material claim, argument, explanation, forecast, or recommendation by reconstructing its reasoning, testing evidence and assumptions, and comparing the strongest alternatives. Use when the task centers on whether something deserves belief or confidence. Do not invoke for routine retrieval, simple editing, or a purely formal entailment problem.
+description: "Judge claims through evidence and alternatives."
 ---
 
 # Critical Thinking
 
 Produce a defensible judgment, not reflexive agreement, reflexive skepticism, or a catalog of fallacy names. Critical thinking combines disposition, task-specific analysis, argument reconstruction, evidence evaluation, inference, explanation, and metacognitive monitoring.
+
+## Route the actual judgment
+
+Reconstruct the exact position fairly: conclusion, evidence, assumptions, scope and rivals. Test the strongest alternative with discriminating evidence; do not invent doubt or average incompatible claims.
+
+- **Argument, explanation, causal, forecast, normative, decision or source audit with material reasoning:** read [argument review protocol](references/argument-review-protocol.md); consequential or multi-branch arguments also need [argument and evidence mapping](references/argument-evidence-mapping.md).
+- **Consequential judgment or live competing explanations:** read [challenge protocol](references/challenge-protocol.md); consequential work also needs [verification and confidence](references/verification-confidence.md). Correlated self-review is not proof.
+
+Bounded claim audits use the core checks directly. Formal entailment belongs to `logical-thinking`; missing evidence to `deep-research`; source conflicts to `evidence-reconciliation`; assertion strength to `honesty`.
 
 ## Hold the thinking disposition
 
@@ -35,19 +44,6 @@ Identify the central task before choosing checks:
 
 Select and adapt only the reasoning modules that fit the task. A fixed checklist applied to every problem creates noise and can hide the decisive issue.
 
-## Reconstruct before criticizing
-
-Represent the position in its strongest fair form:
-
-1. precise conclusion;
-2. supporting premises and evidence;
-3. linked premises that work only together versus independent reasons;
-4. hidden assumptions or warrants;
-5. scope, definitions, quantifiers, timeframe, and comparison baseline;
-6. objections, rebuttals, and credible competing conclusions.
-
-Do not critique a stronger, weaker, or different claim than the one presented. For a consequential or multi-branch argument, read [argument and evidence mapping](references/argument-evidence-mapping.md) and use its compact map.
-
 ## Evaluate evidence at the claim level
 
 For each decisive claim, determine:
@@ -62,49 +58,6 @@ For each decisive claim, determine:
 Quality and diagnostic value matter more than source count. Several retellings of one origin are one evidentiary line. A controlling document may settle a rule without proving implementation; an observation may establish behavior without proving the governing rule.
 
 Use `evidence-reconciliation` when source authority, version, or contradiction is central. Use `deep-research` when decisive evidence has not yet been gathered.
-
-## Ask scheme-specific critical questions
-
-Identify how the argument is supposed to work, then ask the questions that can defeat that form:
-
-- expert or authority: relevant expertise, source basis, agreement, independence, applicability;
-- cause: temporal order, mechanism, confounding, selection, reverse causality, intervention evidence;
-- analogy: relevant similarities, material differences, causal transfer, counteranalogies;
-- example or sign: representativeness, denominator, alternative causes, selection process;
-- consequence: probability, magnitude, distribution, second-order effects, reversibility;
-- practical recommendation: goal, alternatives, constraints, costs, risks, feasibility, evidence of effect;
-- rule or documentation: authority, version, scope, prerequisites, exceptions, mandatory versus advisory language.
-
-A critical question is useful only when its answer can affect the conclusion. Do not treat every unanswered question as a refutation; track who bears the burden for the claim and how much support the stakes require.
-
-## Challenge with discriminating alternatives
-
-Construct the strongest credible alternative, not a token objection. Compare alternatives against observations that would differ if each were true.
-
-Seek:
-
-- counterexamples and boundary cases;
-- rival mechanisms or interpretations;
-- base rates and relevant reference classes;
-- sensitivity to definitions, assumptions, weights, and missing data;
-- incentives or selection processes that could generate the same evidence;
-- a narrower conclusion that survives if the weakest premise fails.
-
-Do not average incompatible claims into a compromise. Do not preserve a preferred conclusion by continuously changing the standard of evidence.
-
-## Verify independently
-
-Ungrounded instructions to "review your answer" are not proof and can degrade a correct answer. For consequential work, read [verification and confidence](references/verification-confidence.md).
-
-Prefer, in order:
-
-1. external feedback from authoritative sources, tests, calculators, solvers, code, data, or runtime behavior;
-2. independent verification questions answered without relying on the draft's wording;
-3. reconstruction of a key condition from the proposed answer;
-4. a counterexample or countermodel search;
-5. a second materially different reasoning path when the result has a checkable answer.
-
-Treat agreement between correlated reasoning paths as weaker than independent evidence. Never change an answer solely because a generic self-critique produced a new concern.
 
 ## Calibrate and stop
 

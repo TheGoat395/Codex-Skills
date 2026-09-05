@@ -1,6 +1,6 @@
 ---
 name: "section-layout-systems"
-description: "Design non-generic website section layouts. Use when a page needs alternatives to card grids, bento overuse, generic feature blocks, repetitive centered sections, bland stat strips, or template-like section sequencing."
+description: "Choose section forms from content shape."
 ---
 
 # Section Layout Systems
@@ -13,13 +13,9 @@ Match section layout to content shape instead of defaulting to cards.
 
 Use this skill when the trigger description applies. Keep the `SKILL.md` lean, then read `references/section-layout-systems-guide.md` for concrete rules before planning or editing a meaningful website change.
 
-## Operating Contract
+## Scoped execution
 
-1. Inspect before coding when code exists.
-2. Convert vague taste into concrete rules.
-3. Explain planned files before major changes unless the user clearly said to proceed.
-4. Build, inspect, polish, and verify.
-5. Report commands run, files changed, and anything not tested.
+Apply the [shared web contract](../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
 
 ## Detailed Guide
 

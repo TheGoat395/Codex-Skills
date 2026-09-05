@@ -1,0 +1,4 @@
+interface:
+  display_name: "GSAP Performance"
+  short_description: "Diagnose and improve GSAP animation performance"
+  default_prompt: "Use $gsap-performance to diagnose and improve GSAP animation performance, matching the requested scope and existing project."

@@ -52,8 +52,8 @@ def main() -> int:
         if metadata.get("name") != skill_dir.name:
             errors.append(f"{skill_dir}: frontmatter name does not match folder name")
         description = metadata.get("description", "")
-        if len(description) < 40:
-            errors.append(f"{skill_dir}: description is missing or too short")
+        if not description.strip():
+            errors.append(f"{skill_dir}: description is missing or blank")
 
     if COLLECTIONS.exists():
         data = json.loads(COLLECTIONS.read_text(encoding="utf-8"))

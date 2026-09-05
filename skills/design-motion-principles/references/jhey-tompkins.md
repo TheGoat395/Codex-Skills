@@ -1,5 +1,7 @@
 # Jhey Tompkins' Animation Principles
 
+These are context-dependent interpretive defaults, not designer-authored authority or universal aesthetic rules. Apply the actual user direction, purpose, frequency, accessible state and measured consequence; purposeful artistic expression remains available.
+
 Jhey Tompkins (@jh3yy) is a design engineer known for pushing the boundaries of CSS and creative coding. His approach emphasizes **playful experimentation** — learning through building whimsical projects where the joy of creation drives skill development.
 
 This file is Jhey's **philosophy and decision frameworks** — the judgment for *creative expression* and *easing personality*. Implementation code lives in `motion-cookbook.md` (cross-referenced below).
@@ -40,7 +42,7 @@ His key question for any interaction: **"What could this become?"**
 
 > "The best animation is that which goes unnoticed."
 
-Even in playful contexts, effective motion enhances the experience without demanding attention, feels natural and expected, serves a functional purpose, and doesn't fatigue users on repeated interactions.
+Even in playful contexts, effective motion enhances the experience without demanding attention, feels natural and expected, serves the approved experiential or functional purpose, and doesn't fatigue users on repeated interactions.
 
 ---
 
@@ -92,10 +94,10 @@ CSS art teaches real skills that transfer to production: clip-path mastery, bord
 | Learning a new CSS feature | Build something weird and fun |
 | Portfolio piece | Push boundaries, show creativity |
 | Personal project | Follow your joy |
-| Client work | Apply Jakub's production polish instead |
+| Client work | Preserve approved playful expression and apply production accessibility, reliability and polish |
 | High-frequency tool | Apply Emil's restraint instead |
 
-The playful approach is for **learning and exploration**. For production, switch to Jakub or Emil's mindset.
+Playful expression can be the production goal for a creative brand, portfolio or campaign. Combine it with relevant restraint, access and performance checks rather than excluding it merely because the work is for a client.
 
 ---
 
