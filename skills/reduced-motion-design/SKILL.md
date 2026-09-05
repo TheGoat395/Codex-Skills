@@ -1,6 +1,6 @@
 ---
 name: reduced-motion-design
-description: Design reduced-motion alternatives for websites and apps. Use for prefers-reduced-motion, Motion useReducedMotion, CSS media queries, disabling parallax, replacing large movement, simplifying scroll scenes, preserving state feedback, accessibility, vestibular-sensitive animation, and motion QA.
+description: "Implement prefers-reduced-motion alternatives."
 ---
 
 # Reduced Motion Design
@@ -9,13 +9,9 @@ description: Design reduced-motion alternatives for websites and apps. Use for p
 
 Use this skill for design reduced-motion alternatives for premium interactions.
 
-## Operating Contract
+## Scoped execution
 
-1. Inspect the existing project before changing code.
-2. Identify the motion stack, scroll behavior, component lifecycle, reduced-motion handling, and available verification commands.
-3. Keep motion purposeful: clarify sequence, focus, depth, tactility, or product understanding.
-4. Follow existing project conventions unless a change clearly improves the result.
-5. Run available checks and visually inspect responsive/reduced-motion output when the change affects UI.
+Apply the [shared web contract](../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
 
 ## Required Reference
 

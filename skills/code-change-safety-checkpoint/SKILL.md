@@ -1,6 +1,6 @@
 ---
 name: code-change-safety-checkpoint
-description: Preserve a rollback path before risky code or website edits. Use when changes may touch many files, delete files, overwrite generated output, alter user work, refactor shared behavior, modify deployment config, or otherwise risk losing working code.
+description: "Preserve rollback before materially risky edits."
 ---
 
 # Code Change Safety Checkpoint
@@ -27,14 +27,14 @@ Do not run heavy backup steps for tiny read-only analysis or single-line edits u
    - Treat uncommitted user changes as protected.
 
 2. Choose the rollback path.
-   - If the repo is clean, create a new branch for substantial work.
-   - If the repo has user changes, avoid overwriting them and describe the risk.
+   - Follow the current repository/worktree branch policy. Record a recoverable base commit for tracked data; a branch label alone does not preserve uncommitted or untracked files.
+   - If the repo has user changes, preserve the affected hunks and untracked targets with an appropriate patch, snapshot or scoped backup when the edit could destroy them. Avoid redundant copies of already protected targets.
    - If there is no git repo or the work involves generated assets, make a timestamped local backup of the files or folders you will touch.
 
 3. Explain planned edits before changing files.
    - List the main files or directories you expect to edit.
    - Call out any deletion, move, or overwrite.
-   - Ask for confirmation unless the user clearly said proceed, build, create, implement, fix, or continue.
+   - A clear task instruction authorizes routine in-scope edits regardless of its verbs. Ask only for a materially ambiguous destructive target or another genuinely missing authorization.
 
 4. Edit narrowly.
    - Avoid unrelated refactors.

@@ -1,3 +1,4 @@
-display_name: "Animation Jank QA"
-short_description: "Audit motion for jank, layout thrash, reduced motion, and scroll breakage"
-default_prompt: "Use $animation-jank-qa to verify, QA, deploy, or hand off a website with concrete evidence, exact commands, honest risks, and production-grade polish."
+interface:
+  display_name: "Animation Jank QA"
+  short_description: "Diagnose and repair a concrete animation symptom"
+  default_prompt: "Use $animation-jank-qa to diagnose and repair a concrete animation symptom, matching the requested scope and existing project."

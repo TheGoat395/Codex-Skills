@@ -1,4 +1,4 @@
 interface:
   display_name: "Tailwind Design Tokens"
-  short_description: "Token-driven Tailwind visual systems"
-  default_prompt: "Use $tailwind-design-tokens to improve a modern website."
+  short_description: "Map design tokens to version-aware Tailwind utilities"
+  default_prompt: "Use $tailwind-design-tokens to map design tokens to version-aware Tailwind utilities, matching the requested scope and existing project."

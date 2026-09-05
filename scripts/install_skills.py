@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
+import tempfile
 from datetime import datetime
 from pathlib import Path
 
@@ -68,18 +69,26 @@ def copy_skill(src: Path, dest: Path, dry_run: bool, replace: bool, backups: Pat
         return "skipped"
     if dry_run:
         return "would_replace" if target.exists() else "would_install"
-    if target.exists():
-        backups.mkdir(parents=True, exist_ok=True)
+    if target.is_symlink():
+        raise ValueError(f"Refusing to replace a symbolic-link target: {target}")
+    # Prepare the replacement before moving the user's existing installation.
+    with tempfile.TemporaryDirectory(prefix=".skill-stage-", dir=dest) as scratch:
+        staged = Path(scratch) / src.name
+        shutil.copytree(src, staged, ignore=shutil.ignore_patterns("__pycache__", ".DS_Store", "*.pyc"))
+        replaced = target.exists()
         backup = backups / src.name
-        if backup.exists():
-            shutil.rmtree(backup)
-        shutil.move(str(target), str(backup))
-    shutil.copytree(
-        src,
-        target,
-        ignore=shutil.ignore_patterns("__pycache__", ".DS_Store", "*.pyc"),
-    )
-    return "replaced" if (backups / src.name).exists() else "installed"
+        if replaced:
+            backups.mkdir(parents=True, exist_ok=True)
+            if backup.exists() or backup.is_symlink():
+                raise FileExistsError(f"Existing backup must be preserved: {backup}")
+            target.rename(backup)
+        try:
+            staged.rename(target)
+        except OSError:
+            if replaced and not target.exists():
+                backup.rename(target)
+            raise
+    return "replaced" if replaced else "installed"
 
 
 def main() -> None:
@@ -109,7 +118,7 @@ def main() -> None:
     if not skills:
         raise SystemExit(f"No matching skill folders found in {source}")
 
-    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    stamp = datetime.now().strftime("%Y%m%d-%H%M%S-%f")
     backups = dest / f".backup-before-shared-skills-{stamp}"
     counts: dict[str, int] = {}
     if not args.dry_run:

@@ -65,18 +65,16 @@ Prevent premium interfaces from collapsing into raw errors or empty blank boxes.
 - Users know what happened and what they can do next.
 - Fallbacks match the quality of the main interface.
 
-## Shared Website Requirements
+## Shared scope
 
-- Inspect before coding: project structure, framework, router, homepage or main entry, styling system, JavaScript or motion system, assets, and available commands.
-- Prefer the existing project stack and conventions before adding dependencies or moving architecture.
-- For Next.js App Router projects, keep Server Components as the default and introduce Client Components only for interactivity, browser APIs, effects, or client-only libraries.
-- For React work, keep components pure, derive render data during render, and use Effects only to synchronize with external systems.
-- Default website output must still follow the premium visual baseline: strong type, real content, designed states, responsive polish, and no generic card-grid filler.
-- Run available lint, build, test, and local browser checks when possible; report exactly what ran and what was not tested.
-- Check desktop and mobile behavior when changing visible UI, especially overflow, focus, loading, empty, error, and reduced-motion states.
+For applicable substantial web work, reuse the [shared scoped web contract](../../website-operating-rules/references/scoped-web-contract.md) when available. Preserve current authorization, stack and requested scope; this optional reference does not require another planning or approval cycle.
 
 ## Official Source Anchors
 
 - App Router layouts and pages: https://nextjs.org/docs/app/getting-started/layouts-and-pages
 - React Learn: https://react.dev/learn
 - React reference: https://react.dev/reference/react
+
+## Scoped recovery
+
+Cover the states affected by the request. Preserve useful existing data during background refresh, entered values across retryable failures and predictable focus/announcements during recovery. Do not clear the whole page or redesign unrelated states to repair one fallback. Test the actual retry outcome and interrupted/stale requests when relevant.

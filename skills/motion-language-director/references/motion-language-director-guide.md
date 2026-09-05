@@ -26,7 +26,7 @@ Make animation feel choreographed, purposeful, and appropriate to the brand.
 
 - If simple hover/state, use CSS first.
 - If React component lifecycle/layout transitions, use Motion.
-- If scroll choreography/timelines/pinning/masks, use GSAP and official GSAP skills.
+- If scroll choreography/timelines/pinning/masks, use GSAP and available GSAP guidance verified in the installed skill catalog or current official documentation.
 - If smooth scroll supports cinematic flow, consider Lenis with accessibility caution.
 - If depth/material/space is core, consider R3F/WebGL.
 
@@ -64,13 +64,6 @@ Make animation feel choreographed, purposeful, and appropriate to the brand.
 - Every motion choice has a purpose and fallback.
 - The animation system feels consistent with the site category.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

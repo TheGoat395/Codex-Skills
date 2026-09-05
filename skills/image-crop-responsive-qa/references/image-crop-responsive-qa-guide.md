@@ -14,7 +14,7 @@
 
 - No raster/vector images are present.
 - The task is only server-side or data-layer work.
-- Browser inspection is impossible and the user only wants code review.
+- No crop-related review is requested. Source-only review is allowed when browser inspection is unavailable; rendered crop conclusions remain unverified.
 
 ## Discovery Questions
 
@@ -66,15 +66,9 @@
 - Images load with stable layout and appropriate priority.
 - The final page feels composed on mobile and desktop.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: framework, image/video components, asset folders, CMS or source content, styling system, responsive breakpoints, performance checks, accessibility checks, and available browser QA commands.
-- Treat images and video as content strategy, not decoration: every asset should reveal the real product, person, venue, object, interface, proof, or mood needed by the page.
-- Avoid generic stock-like visuals, dark blurred filler, random gradients, and media that crops away the subject users need to inspect.
-- Plan desktop, mobile, high-density, slow-network, reduced-motion, no-autoplay, failed-asset, and screen-reader states.
-- Reserve layout space with dimensions, aspect-ratio, CSS constraints, or framework image components to avoid layout shift.
-- Use meaningful alt text for informative images, empty alt for decorative images, captions/transcripts/tracks for media that needs them, and visible text for critical information.
-- Before delivery, inspect rendered desktop and mobile media crops, verify assets load without 404s, and run available lint/build/test/browser checks.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
 
 ## Official Source Anchors
 

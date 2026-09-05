@@ -1,6 +1,6 @@
 ---
 name: "color-material-lighting-direction"
-description: "Design website color, material, surface, and lighting direction. Use for premium visual systems, avoiding one-note palettes, defining luxury or cinematic color without cliches, setting contrast, backgrounds, gradients, surfaces, shadows, glass, and material accents."
+description: "Define palette, material and lighting roles."
 ---
 
 # Color Material Lighting Direction
@@ -13,13 +13,9 @@ Make palette, surface, and lighting choices support the site concept and readabi
 
 Use this skill when the trigger description applies. Keep the `SKILL.md` lean, then read `references/color-material-lighting-direction-guide.md` for concrete rules before planning or editing a meaningful website change.
 
-## Operating Contract
+## Scoped execution
 
-1. Inspect before coding when code exists.
-2. Convert vague taste into concrete rules.
-3. Explain planned files before major changes unless the user clearly said to proceed.
-4. Build, inspect, polish, and verify.
-5. Report commands run, files changed, and anything not tested.
+Apply the [shared web contract](../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
 
 ## Detailed Guide
 

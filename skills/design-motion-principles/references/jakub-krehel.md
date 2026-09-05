@@ -1,5 +1,7 @@
 # Jakub Krehel's Animation Principles
 
+These are context-dependent interpretive defaults, not designer-authored authority or universal aesthetic rules. Apply the actual user direction, purpose, frequency, accessible state and measured consequence; purposeful artistic expression remains available.
+
 Jakub Krehel is a design engineer known for his work at jakub.kr. His approach emphasizes **subtle production polish** — animations that enhance the experience invisibly, designed for real client work where users interact repeatedly.
 
 This file is Jakub's **philosophy and decision frameworks** — the judgment for *how polished* and *how subtle* motion should be. Implementation code lives in `motion-cookbook.md` (cross-referenced below).
@@ -39,19 +41,19 @@ Jakub's work embodies **refinement for production use**. His animations are:
 
 | Technique | When Jakub reaches for it | Cookbook |
 |-----------|---------------------------|----------|
-| Enter recipe (opacity + translateY + blur) | Any element appearing — blur creates a "materializing" feel more physical than fade alone | §1 |
-| Subtler exits | Always — exits don't need the same movement or attention as enters; the user is moving on | §1 |
+| Enter recipe (opacity + translateY + blur) | A selected meaningful entrance — blur can create a "materializing" feel more physical than fade alone | §1 |
+| Subtler exits | Usually — exits don't need the same movement or attention as enters; the user is moving on | §1 |
 | Spring animations (`bounce: 0`) | Production motion — smooth deceleration without overshoot; reserve `bounce > 0` for playful contexts | §2 |
 | Shadows instead of borders | Light mode on varied backgrounds — shadows adapt via transparency where solid borders clash | §3 |
 | oklch gradients | Any gradient — interpolates through perceptually uniform space, avoiding muddy midpoints | §3 |
 | Blur as a signal | Materializing in/out — blur→sharp = entering focus, sharp→blur = losing relevance | §3 |
 | Optical alignment | Buttons with icons, play buttons, asymmetric shapes — trust your eyes over math | §4 |
-| Animated icon swaps (opacity + scale + blur) | Contextual icon changes (copy→check) — instant swaps feel jarring and get missed | §5 |
+| Animated icon swaps (opacity + scale + blur) | Contextual icon changes (copy→check) — optional reinforcement when instant state changes are being missed | §5 |
 | Shared layout via `layoutId` | Smooth FLIP transitions between different components (card→modal) | §6 |
 | Targeted `will-change` | Specific properties about to animate — never global | see `performance.md` |
 
 **Decision rules baked into the techniques:**
-- Exits should always be subtler than enters — smaller movement, same blur.
+- Exits usually carry less weight; meaningful dismissal or directional continuity may justify a stronger exit.
 - `bounce: 0` is the production default; bounce above zero reads as playful.
 - Borders are fine in dark mode or when you want intentional hard edges.
 

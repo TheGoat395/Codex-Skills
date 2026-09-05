@@ -13,7 +13,7 @@ Replace vague AI-sounding marketing with copy that proves the site is real.
 ## Do Not Use When
 
 - The user provided exact final copy and requested no copy changes.
-- Legal/regulated copy where edits need explicit approval.
+- Governed copy whose current project rules require approval not already granted; honor established authorization and remain read-only only at that actual boundary.
 
 ## Discovery Questions
 
@@ -63,13 +63,6 @@ Replace vague AI-sounding marketing with copy that proves the site is real.
 - The copy cannot be pasted unchanged onto a random different site.
 - The reader knows what is offered and what to do next.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

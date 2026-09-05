@@ -68,9 +68,19 @@
 - Three.js and React Three Fiber examples: 3D interaction patterns.
 - Codrops: experimental interaction tutorials; inspect freshness and accessibility.
 
+## Large Live Example Indexes
+
+- [Motion examples](https://motion.dev/examples): official React, JavaScript, and Vue examples; the page displayed 410 patterns on 2026-08-16. Recheck the live count before quoting it.
+- [Codrops Creative Hub](https://tympanus.net/codrops/): tutorials, case studies, creator spotlights, and a hand-picked exhibition described as containing more than 2,000 sites on 2026-08-16.
+- [Three.js examples](https://threejs.org/examples/): renderer, shader, post-processing, loader, interaction, WebGPU, and WebXR examples maintained with Three.js.
+- [React Three Fiber examples](https://r3f.docs.pmnd.rs/getting-started/examples): React scene patterns; verify package-version compatibility before reuse.
+- [GSAP demos and showcase](https://gsap.com/demos/): timeline, scroll, text, SVG, and interaction patterns; inspect the exact demo source and current license.
+- [Lapa Ninja motion archive](https://www.lapa.ninja/motion/): commercial landing-page videos and filters; use for pacing and category comparison, not source code.
+- [Awwwards](https://www.awwwards.com/), [The FWA](https://thefwa.com/), and [CSS Design Awards](https://www.cssdesignawards.com/): award discovery; validate live behavior and business fit independently.
+
 ## Research Rules
 
 - Pick sources by category, not popularity.
-- Use at least one live product/site reference and one gallery/reference source.
+- For broad open-ended research, mix useful source types; a supplied exact reference needs no mandatory extra gallery.
 - Treat social posts and gallery screenshots as leads until the live site or artifact is opened.
 - Avoid fake premium: decorative blobs, glass panels, generic bento grids, fake dashboards, and meaningless AI copy.

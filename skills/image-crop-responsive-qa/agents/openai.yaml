@@ -1,3 +1,4 @@
-display_name: "Image Crop Responsive QA"
-short_description: "QA responsive image crops, focal points, dimensions, and layout stability"
-default_prompt: "Use $image-crop-responsive-qa to direct, implement, and QA website media so it feels specific, responsive, accessible, and premium."
+interface:
+  display_name: "Image Crop Responsive QA"
+  short_description: "QA responsive image crops, focal points, dimensions, and layout stability"
+  default_prompt: "Use $image-crop-responsive-qa to verify focal points and image layout across widths within the requested scope."

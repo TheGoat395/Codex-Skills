@@ -34,6 +34,7 @@ Codex Premium Website Skills ships a curated `public-core` of 80 skills. The pub
 | Skill | Why Users Reach For It |
 |---|---|
 | `website-blueprint-first` | Turns vague website requests into a concrete plan before implementation. |
+| `web-design-direction-system` | Frames the reader's job, evidence-bearing composition, and repeatable design guidance before visual implementation. |
 | `web-style-director` | Converts the brief into a clear visual direction instead of generic UI language. |
 | `anti-generic-website-review` | Finds visible AI-site patterns before they ship. |
 | `responsive-visual-polish-qa` | Checks mobile and desktop composition, spacing, overflow, and visual balance. |

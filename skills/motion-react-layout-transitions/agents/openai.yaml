@@ -1,3 +1,4 @@
-display_name: "Motion React Layout Transitions"
-short_description: "Create shared layout and component transitions with Motion"
-default_prompt: "Use motion-react-layout-transitions to design and implement this interaction with purposeful motion, reduced-motion support, cleanup, and visual QA."
+interface:
+  display_name: "Motion React Layout Transitions"
+  short_description: "Implement Motion layout and shared-element transitions"
+  default_prompt: "Use $motion-react-layout-transitions to implement Motion layout and shared-element transitions, matching the requested scope and existing project."

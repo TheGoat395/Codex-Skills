@@ -1,0 +1,1562 @@
+{
+  "reviewed_on": "2026-09-04",
+  "classification": "source-preserving interpretation overlay",
+  "raw_files": {
+    "style-playbooks.json": {
+      "sha256": "589daafbc62025d9e5e76d19925692f38de3660fd6b2c88025e0f05dd0b18e49",
+      "count": 50,
+      "interpretation": "author-created style synthesis; repeated layout/motion defaults"
+    },
+    "reference-example-patterns.json": {
+      "sha256": "860460e420fcb2fd121ff1c7082c94891adba8072e9a1efef1f0d4fc6fafa813",
+      "count": 100,
+      "interpretation": "implementation leads with generalized mechanism inference"
+    },
+    "creator-method-cards.json": {
+      "sha256": "bd3911391cf2cb9122d0cf139320364efd034ee44d56d3e26d962a57e8f248b7",
+      "count": 22,
+      "interpretation": "dated source-attributed method interpretations"
+    },
+    "viktor-visual-studies.json": {
+      "sha256": "25cbdec7c0fdb8ac63bb3d100cff938fc30b1a1f75a28217b24b965f1bba45b7",
+      "count": 20,
+      "interpretation": "dated visual-study claims with generic repeated synthesis"
+    }
+  },
+  "records": [
+    {
+      "file": "style-playbooks.json",
+      "id": "S-01",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-02",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-03",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-04",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-05",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-06",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-07",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-08",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-09",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-10",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-11",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-12",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-13",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-14",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-15",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-16",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-17",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-18",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-19",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-20",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-21",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-22",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-23",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-24",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-25",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-26",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-27",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-28",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-29",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-30",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-31",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-32",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-33",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-34",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-35",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-36",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-37",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-38",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-39",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-40",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-41",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-42",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-43",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-44",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-45",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-46",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-47",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-48",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-49",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "style-playbooks.json",
+      "id": "S-50",
+      "classification": "author-created style synthesis; repeated layout/motion defaults",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-01",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-02",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-03",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-04",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-05",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-06",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-07",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-08",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-09",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-10",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-11",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-12",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-13",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-14",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-15",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-16",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-17",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-18",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-19",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-20",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-21",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-22",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-23",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-24",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "M-25",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-01",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-02",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-03",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-04",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-05",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-06",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-07",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-08",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-09",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-10",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-11",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-12",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-13",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-14",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-15",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-16",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-17",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-18",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-19",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-20",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-21",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-22",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-23",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-24",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "G-25",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-01",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-02",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-03",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-04",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-05",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-06",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-07",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-08",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-09",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-10",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-11",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-12",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-13",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-14",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-15",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-16",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-17",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-18",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-19",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-20",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-21",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-22",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-23",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-24",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "T-25",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-01",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-02",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-03",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-04",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-05",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-06",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-07",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-08",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-09",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-10",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-11",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-12",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-13",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-14",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-15",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-16",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-17",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-18",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-19",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-20",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-21",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-22",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-23",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-24",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "reference-example-patterns.json",
+      "id": "C-25",
+      "classification": "implementation leads with generalized mechanism inference",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-01",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-02",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-03",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-04",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-05",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-06",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-07",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-08",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-09",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-10",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-11",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-12",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-13",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-14",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-15",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-16",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-17",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-18",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-19",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-20",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-21",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "creator-method-cards.json",
+      "id": "CR-22",
+      "classification": "dated source-attributed method interpretations",
+      "source_mode": "reference-data, not adopted project instruction"
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-01",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/aUwxrsHU73g-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/aUwxrsHU73g-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/aUwxrsHU73g-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/aUwxrsHU73g-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-02",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/-0zReivPgBM-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/-0zReivPgBM-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/-0zReivPgBM-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/-0zReivPgBM-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-03",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/6uwrRGARVlg-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/6uwrRGARVlg-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/6uwrRGARVlg-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/6uwrRGARVlg-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-04",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/IeR5ZMKssSc-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/IeR5ZMKssSc-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/IeR5ZMKssSc-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/IeR5ZMKssSc-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-05",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/cjmGJoayrAA-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/cjmGJoayrAA-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/cjmGJoayrAA-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/cjmGJoayrAA-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-06",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/Nii3SCxm3ig-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/Nii3SCxm3ig-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/Nii3SCxm3ig-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/Nii3SCxm3ig-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-07",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/zqb25KQZdYQ-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/zqb25KQZdYQ-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/zqb25KQZdYQ-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/zqb25KQZdYQ-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-08",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/ye8NgDjAkC4-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/ye8NgDjAkC4-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/ye8NgDjAkC4-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/ye8NgDjAkC4-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-09",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/IR1tzLU-r_4-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/IR1tzLU-r_4-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/IR1tzLU-r_4-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/IR1tzLU-r_4-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-10",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/RMcx1t_mK20-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/RMcx1t_mK20-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/RMcx1t_mK20-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/RMcx1t_mK20-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-11",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/uEJIbPQYq18-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/uEJIbPQYq18-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/uEJIbPQYq18-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/uEJIbPQYq18-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-12",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/hadO9QfUjkw-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/hadO9QfUjkw-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/hadO9QfUjkw-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/hadO9QfUjkw-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-13",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/9RiV-_MUiCI-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/9RiV-_MUiCI-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/9RiV-_MUiCI-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/9RiV-_MUiCI-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-14",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/pURVNX29Lrg-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/pURVNX29Lrg-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/pURVNX29Lrg-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/pURVNX29Lrg-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-15",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/AXYVNAKCwHw-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/AXYVNAKCwHw-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/AXYVNAKCwHw-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/AXYVNAKCwHw-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-16",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/1BDi4Vy8Uzg-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/1BDi4Vy8Uzg-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/1BDi4Vy8Uzg-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/1BDi4Vy8Uzg-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-17",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/4XHlUhayPLg-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/4XHlUhayPLg-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/4XHlUhayPLg-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/4XHlUhayPLg-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-18",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/kf3OpxxmC9E-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/kf3OpxxmC9E-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/kf3OpxxmC9E-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/kf3OpxxmC9E-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-19",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/g2qFv8Bkdqw-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/g2qFv8Bkdqw-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/g2qFv8Bkdqw-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/g2qFv8Bkdqw-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    },
+    {
+      "file": "viktor-visual-studies.json",
+      "id": "VO-20",
+      "classification": "dated visual-study claims with generic repeated synthesis",
+      "source_mode": "reference-data, not adopted project instruction",
+      "historical_evidence": "work/motionsites-crawl/viktor-visual-studies/bOCyOI3ZCRY-contact.jpg",
+      "checked_known_paths": [
+        {
+          "path": "not-distributed/bOCyOI3ZCRY-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/bOCyOI3ZCRY-contact.jpg",
+          "status": "missing"
+        },
+        {
+          "path": "not-distributed/bOCyOI3ZCRY-contact.jpg",
+          "status": "missing"
+        }
+      ],
+      "recovered_evidence": [],
+      "current_visual_observation": "not performed",
+      "visual_study_claim_class": "generic repeated synthesis; not independent item-specific observations",
+      "confidence_boundary": "Title/URL/transcript and historical capture claims retain their original scope; no current visual confidence assigned without recovered/inspected evidence."
+    }
+  ],
+  "boundary": "No new per-item visual observations; historical inspection claims retained as dated claims, not denied or recertified.",
+  "public_export_note": "Machine-specific search paths are omitted. Historical availability checks do not establish availability on another machine. Local contact-sheet images are not distributed."
+}

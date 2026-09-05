@@ -24,8 +24,8 @@ Catch the visible patterns that make AI-built sites feel cheap or interchangeabl
 
 ## Decision Tree
 
-- If the hero is centered headline plus two buttons plus cards, redesign first viewport.
-- If more than two consecutive sections use cards, vary layout grammar.
+- If a centered hero and cards feel generic against the brief, identify the visible mismatch before redesigning; retain a deliberate approved composition.
+- If consecutive card sections obscure distinct content roles, vary layout grammar; retain intentional comparable collections.
 - If imagery is absent for visual categories, add real/generated media strategy.
 - If copy could fit any company, rewrite before adding decoration.
 - If buttons/forms look default, design states and hierarchy.
@@ -35,7 +35,7 @@ Catch the visible patterns that make AI-built sites feel cheap or interchangeabl
 - Name defects specifically before fixing them.
 - Replace generic card grids with ledgers, tables, editorial spreads, sticky scenes, galleries, timelines, or real UI.
 - Remove decoration that has no concept, content, or interaction purpose.
-- Make at least three decisions that would not fit a different random website.
+- Make enough concrete brand/content decisions to establish authorship; do not vary the page to meet a count.
 
 ## Useful Patterns
 
@@ -63,13 +63,6 @@ Catch the visible patterns that make AI-built sites feel cheap or interchangeabl
 - Layout variety serves content rather than decoration.
 - The copy and visuals are specific to the brief.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

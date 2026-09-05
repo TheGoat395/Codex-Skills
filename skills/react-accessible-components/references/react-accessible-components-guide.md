@@ -13,7 +13,7 @@ Make polished UI actually usable by keyboard, screen reader, and reduced-motion 
 ## Do Not Use When
 
 - The task is pure content editing with no UI behavior.
-- A proven accessible primitive library is already used correctly and no new component is added.
+- Existing semantics and behavior are correct and the task does not change or review them. Existing primitives do not exclude a requested accessibility repair.
 - The project is non-React and another accessibility skill applies better.
 
 ## Discovery Questions
@@ -42,7 +42,7 @@ Make polished UI actually usable by keyboard, screen reader, and reduced-motion 
 ## Useful Patterns
 
 - Icon button: visible icon, `aria-label`, stable square size, focus ring, disabled state.
-- Dialog: focus trap, escape/overlay close, labelled title, restore focus, scroll lock.
+- Modal dialog: focus containment, Escape, labelled title, intentional close behavior, restore focus and scroll lock. Nonmodal dialogs/popovers preserve ordinary focus navigation.
 - Tabs: roving focus or library primitive, selected state, panel association.
 
 ## Anti-Patterns
@@ -65,15 +65,9 @@ Make polished UI actually usable by keyboard, screen reader, and reduced-motion 
 - Semantics match behavior.
 - Accessibility states look designed, not bolted on.
 
-## Shared Website Requirements
+## Shared scope
 
-- Inspect before coding: project structure, framework, router, homepage or main entry, styling system, JavaScript or motion system, assets, and available commands.
-- Prefer the existing project stack and conventions before adding dependencies or moving architecture.
-- For Next.js App Router projects, keep Server Components as the default and introduce Client Components only for interactivity, browser APIs, effects, or client-only libraries.
-- For React work, keep components pure, derive render data during render, and use Effects only to synchronize with external systems.
-- Default website output must still follow the premium visual baseline: strong type, real content, designed states, responsive polish, and no generic card-grid filler.
-- Run available lint, build, test, and local browser checks when possible; report exactly what ran and what was not tested.
-- Check desktop and mobile behavior when changing visible UI, especially overflow, focus, loading, empty, error, and reduced-motion states.
+For applicable substantial web work, reuse the [shared scoped web contract](../../website-operating-rules/references/scoped-web-contract.md) when available. Preserve current authorization, stack and requested scope; this optional reference does not require another planning or approval cycle.
 
 ## Official Source Anchors
 

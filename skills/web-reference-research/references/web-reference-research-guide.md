@@ -35,7 +35,7 @@ Convert taste references into concrete, verifiable design decisions.
 
 - Do not pretend to have verified X content if it was not accessible.
 - Use reference names as shorthand only after defining the concrete traits.
-- Avoid copying proprietary assets, exact layouts, or brand identity.
+- Honor the authorized source mode. Preserve supplied/exact details when requested; adapt principles and original assets for original brand work.
 - Translate references by site category: a hotel should not become a devtool homepage because Vercel was mentioned.
 - Keep citations in final answers when web research materially shaped the recommendation.
 
@@ -45,7 +45,7 @@ Convert taste references into concrete, verifiable design decisions.
 - Raycast: command surface, fast ergonomic interactions, product UI details, controlled playfulness.
 - Linear: dense product realism, restrained glow, workflow clarity, serious speed language.
 - Vercel: monochrome precision, strong type, developer trust, minimal surfaces, system clarity.
-- Viktor-style motion shorthand: smooth scroll choreography, layered reveals, precise timing, non-template composition.
+- Viktor Oddy/MotionSites: verified public sources include `motionsites.ai`, `x.com/viktoroddy`, `youtube.com/@ViktorOddy`, and `designrocket.io`. Extract cinematic hero concepts, prompt-to-build workflows, scroll/video/3D choreography, disciplined type, conversion intent, and delivery limits from the current source—not from the name alone.
 - Codrops/Awwwards: sticky scenes, masks, WebGL galleries, scroll rhythm, experimental transitions.
 
 ## Anti-Patterns
@@ -57,23 +57,16 @@ Convert taste references into concrete, verifiable design decisions.
 
 ## QA Checklist
 
-- Check that the final brief has at least three concrete traits and three avoid rules.
+- Check that the brief has concrete source-supported traits and relevant avoid rules, scaled to the requested scope.
 - Confirm the chosen reference family matches the site category.
 - Verify any current/public claims if the user asked for research.
 
 ## Acceptance Criteria
 
 - Another builder could implement the direction without needing the original inspiration link.
-- The design borrows principles, not copyrighted assets or exact brand identity.
+- The result follows the requested fidelity mode, preserves provenance, and distinguishes observed source details from new authorship.
 - The final site can be judged against named traits, not vibes.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

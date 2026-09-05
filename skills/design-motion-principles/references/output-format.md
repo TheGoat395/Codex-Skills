@@ -1,11 +1,15 @@
+# Output mode boundary
+
+Inline prioritized findings are the default. Load the rich report procedure below only when a substantial/requested visual report benefits the deliverable. Preserve useful per-lens interpretation without duplicate findings. Use the actual template's `.demo-{n}__mt`, `@keyframes m{n}` and stage tokens. Write to a unique UTC timestamp + random suffix with exclusive creation; no overwrite. Worked template facts are fictional examples, never evidence.
+
 # Output Format
 
 The audit produces one of two outputs:
 
-- **HTML mode (default)** — a self-contained `.html` file written to the audited project's `motion-audits/` directory and opened in the user's default browser. Each Critical or Important finding gets a live, looping CSS demo card beside it.
-- **Terminal mode (flag-triggered)** — a decorated-markdown report rendered inline in the conversation. Use when the user passes `--terminal`, `--inline`, `--no-html`, "show the full report inline," or any natural-language equivalent. No HTML file is written.
+- **HTML mode (optional)** — a self-contained `.html` file written to the audited project's `motion-audits/` directory and opened in the user's default browser. Each Critical or Important finding gets a live, looping CSS demo card beside it.
+- **Inline mode (default)** — a decorated-markdown report rendered inline in the conversation. Use for ordinary audits. Explicit `--terminal`, `--inline`, `--no-html` or equivalent wording also selects it. No HTML file is written.
 
-Both modes carry the same audit content; only the rendering differs. Do not summarize — users want full per-lens perspectives.
+Both modes preserve material findings and relevant lens reasoning. Scale depth to scope and avoid duplicate findings; rich output is optional.
 
 ---
 
@@ -22,7 +26,7 @@ The agent builds the report by reading these two files and adapting them to the 
 
 ### File structure
 
-Single self-contained `.html`. All CSS inlined. No external JS. Fonts loaded via Google Fonts CDN (Familjen Grotesk / Public Sans / Geist Mono) with full system-stack fallbacks so the file degrades gracefully offline.
+Single self-contained `.html`. All CSS inlined. No external requests. Use system/local fonts and small inline pause/replay controls; no external JS.
 
 ```
 <!DOCTYPE html>
@@ -31,9 +35,6 @@ Single self-contained `.html`. All CSS inlined. No external JS. Fonts loaded via
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{project-name} motion audit — {ISO date}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     /* 1. :root token block (neutrals, accent aliases, severity, timing ramp, spacing, fonts)
        2. :root:has(#theme-light:checked) light-mode token override
@@ -62,9 +63,9 @@ Neutral-default, dual-mode, severity-driven.
 
 - **Neutrals.** Cool slate-graphite at hue 255, very low chroma (0.003–0.010). `--ink` is the page background; `--paper` is the foreground text. In light mode the two swap values via the `:root:has(#theme-light:checked)` override — every other token derives from these two and flips automatically.
 - **Severity (FIXED, never adaptive).** Red `oklch(0.655 0.185 25)` (critical) · Amber `oklch(0.805 0.125 78)` (important) · Green `oklch(0.745 0.135 152)` (opportunity). Light-mode counterparts deepen L for contrast on white; hues stay constant.
-- **Timing-budget ramp (FIXED).** Same hues as severity; used in section 02 only. Instant + responsive = green, deliberate = amber, sluggish = red.
+- **Timing-budget ramp (FIXED).** Same hues as severity; used in section 02 only. Use ranges as contextual timing references, not automatic severity; extended durations may be intentional.
 - **Accent (NEUTRAL by default).** `--accent`, `--accent-soft`, `--accent-tint` alias to `--paper`, `--paper-dim`, and a low-alpha paper tint. The report has no chromatic primary color — severity is the only color in the document. An individual audit MAY repoint these three to a sampled brand color, but ONLY if the brand has at least ~40° hue clearance from each of the severity hues and is verified not to fall in the AI-cliché zone (neon cyan, purple-to-blue gradients).
-- **Fonts.** Display = Familjen Grotesk, body = Public Sans, mono = Geist Mono. The mono carries timing values (`240ms · ease-out`) and all small labels — never substitute a more generic mono for the timing values.
+- **Fonts.** Use system/local display, sans and monospace stacks. Timing labels stay tabular and legible. The report makes no external font requests.
 
 ### Dual theme
 
@@ -101,14 +102,14 @@ One short paragraph in larger display type. Does this feel polished? Too much? T
 3-row table, one row per practitioner. Columns: Lens (with name and weight chip) · Verdict (`Strong` / `Concern` / `Problem` / `Mixed` with a colored dot) · One-line read. Weight chips indicate `Primary` / `Secondary` / `Selective` per audit context.
 
 #### 02 · Where the timings land — duration-budget diagram
-Motion-native analog of thumb-first's thumb-zone diagram. A horizontal SVG (`viewBox="0 0 660 300"`) plots Tally's animations as numbered dots on a 0–600ms scale with four zone bands:
+Motion-native analog of thumb-first's thumb-zone diagram. A horizontal SVG (`viewBox="0 0 660 300"`) plots the audited surface's measured animations as numbered dots on a 0–600ms scale with four zone bands:
 
 | Zone | Range | Color |
 |---|---|---|
 | Instant | 0–100ms | green (`--t-good`) |
 | Responsive | 100–300ms | green (`--t-good`) |
 | Deliberate | 300–500ms | amber (`--t-mid`) |
-| Sluggish | 500ms+ | red (`--t-slow`) |
+| Extended, context-dependent | 500ms+ | contextual (`--t-slow`) |
 
 Animations with NO transition are plotted as hollow dashed circles at `x=40` (= 0ms). The paired key list to the right carries the action names and durations. A "What's off" block below explains the misalignments.
 
@@ -227,7 +228,7 @@ Motion-target elements (`.ui-btn`, `.ui-card`, `.ui-row`, `.ui-check`, `.ui-num`
 For each Critical or Important finding `{n}`:
 
 1. **Generate motion code.** Read the audited code, the relevant lens reference (`emil-kowalski.md` / `jakub-krehel.md` / `jhey-tompkins.md`), and `references/motion-cookbook.md` for the concrete recipe. Author a `@keyframes m{n}` block and a `.demo-{n}__mt { animation: m{n} 3s {easing} infinite; }` rule.
-2. **Loop pacing.** `animation-duration: 3s`. Keyframes at `0%` / `~60%` / `100%`. Motion completes by ~60% (~1.8s), then holds until `100%` (~1.2s) before looping. The `100%` state MUST match the motion-target's default (no-animation) static rendering — this is the `prefers-reduced-motion` fallback contract.
+2. **Truthful replay timing.** Use a 3000ms cycle only as a replay-plus-hold envelope. Complete active motion at `duration_ms / 3000 * 100` percent (180ms = 6%, 300ms = 10%), then hold to 100%. Label slow motion explicitly. The 100% state matches the static reduced-motion state. Provide pause/replay and visible keyboard focus.
 3. **Inject into `<style>`.** Append the `@keyframes m{n}` + `.demo-{n}__mt` block to the report's `<style>`, after the layout CSS, inside a `@media (prefers-reduced-motion: no-preference) { ... }` guard.
 4. **Inject demo-card markup.** Append the `.demo` block to the finding's `.finding-row`. Set `.demo__title` to a short motion title (e.g., "Quick tab crossfade"). Set `.demo__timing` to duration + easing (e.g., "180ms · ease-out").
 5. **Honor reduced-motion.** The shell's `@media (prefers-reduced-motion: reduce)` block disables all `[class*="__mt"]` animations and hides the `↻` loop indicator. The per-finding `100%` keyframe state must match the motion-target's default static rendering. Do NOT write per-finding overrides inside the reduce-motion block.
@@ -261,9 +262,9 @@ When the audit produces zero Critical + zero Important findings:
 
 ---
 
-## Terminal mode (flag-triggered fallback)
+## Inline mode (default)
 
-When the user passes `--terminal` / `--inline` / a natural-language equivalent, do not write an HTML file. Render the decorated-markdown report inline in the conversation.
+Ordinary audits render prioritized findings inline. The extended per-lens presentation below is available when useful; explicit inline flags also prevent HTML creation.
 
 ### Quick Summary (show first)
 
@@ -337,10 +338,10 @@ Opportunities · Could Enhance
 
 ## Mode selection
 
-Default to HTML mode. Trigger terminal mode only when the user explicitly signals it via:
+Default to inline. The following explicit signals also select inline and suppress HTML:
 
 - `--terminal` / `--inline` / `--no-html` flag
 - Natural-language equivalent: "show the full report inline," "skip the HTML," "no HTML," "terminal only"
 - Any headless or CI environment where opening a browser doesn't apply
 
-When defaulting to HTML, mention in the 3-line confirmation summary (see `workflows/audit.md`) that `--terminal` is the alternative — so the user knows it exists.
+Inline is the default; for an optional rich report, provide its path and concise findings without requiring a flag.

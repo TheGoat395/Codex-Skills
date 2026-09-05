@@ -8,6 +8,7 @@ Before a release or pull request that changes skills, collections, scripts, docs
 
 ```bash
 python3 scripts/validate_skills.py
+python3 scripts/test_catalog.py
 python3 scripts/install_skills.py --list-collections
 python3 scripts/install_skills.py --dry-run
 python3 -m py_compile scripts/*.py

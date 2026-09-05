@@ -25,7 +25,7 @@ Ensure the site has credible visual material and that assets are framed, optimiz
 ## Decision Tree
 
 - If subject is physical/human/place, use photography or generated bitmap imagery.
-- If subject is software, use real/plausible UI screenshots, workflows, code, or interface scenes.
+- If subject is software, use real UI for factual proof, or explicitly labeled prototype UI for illustration screenshots, workflows, code, or interface scenes.
 - If subject is abstract service, use practitioner/workspace/process imagery or typographic proof.
 - If assets are missing, define temporary asset slots and ask/produce what is needed.
 
@@ -63,13 +63,6 @@ Ensure the site has credible visual material and that assets are framed, optimiz
 - The page feels materially real rather than placeholder-driven.
 - Visual assets clarify the site rather than merely decorate it.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

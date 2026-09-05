@@ -1,26 +1,25 @@
 ---
 name: animation-jank-qa
-description: "Run animation jank QA. Use for GSAP, Motion, CSS transitions, scroll animation, pinned scenes, parallax, hover states, page transitions, mobile motion, reduced-motion fallbacks, performance-heavy animations, and final motion polish before delivery."
+description: "Diagnose a concrete rendered hitch or stutter."
 ---
 
 # Animation Jank QA
 
-Use this skill to make motion feel intentional, smooth, and respectful instead of fragile.
+Use this skill for symptom-led runtime diagnosis. Start from a reproducible jank case and determine whether it comes from main-thread work, layout/paint, asset pressure, scroll coupling, competing animation systems, or lifecycle cleanup.
 
 ## Workflow
 
-1. Inspect the project, scripts, routes, local/deployed URL, production surfaces, and available QA/deployment tooling.
-2. Read [Animation Jank QA Guide](references/animation-jank-qa-guide.md) before claiming the site is ready.
-3. Run the narrowest meaningful checks for the risk: visual, mobile, accessibility, performance, forms, media, SEO, analytics, deployment, or handoff.
+1. Reproduce the exact affected route, interaction, viewport, and device class.
+2. Read [Animation Jank QA Guide](references/animation-jank-qa-guide.md) for relevant diagnosis and retesting steps.
+3. Run the narrowest meaningful trace or rendered check for the symptom; inspect frame timing, long tasks, forced layout, paint/compositing, asset decode, observers, timers, and RAF loops as applicable.
 4. Fix issues when they are in scope; otherwise record exact evidence and remaining risk.
-5. Summarize commands, URLs, screenshots/checks, changed files, and what was not tested.
+5. Retest the original symptom and summarize commands, URLs, traces/screenshots, changed files, and what was not tested.
 
 ## Always Protect
 
-- Inspect before changing or shipping: framework, package scripts, build output, routes, forms, media, animation stack, deployment target, environment variables, analytics, SEO metadata, accessibility risks, and available browser QA tooling.
+- Inspect the framework, motion stack, affected media, component lifecycle, and available browser/performance tooling before changing code.
 - Do not claim something was tested unless it was actually tested; report exact commands, URLs, screenshots, viewports, failures, skipped checks, and remaining risk.
-- Verify desktop and mobile rendered output, not only source code. For visual or motion work, inspect screenshots, browser behavior, console errors, network failures, and responsive layout.
-- Treat forms, checkout, booking, CMS content, analytics, environment variables, and deployments as production surfaces with error, loading, empty, success, and rollback states.
+- Reproduce and retest rendered output on the affected route and supported viewport/device classes; inspect console, trace, network and layout evidence relevant to that symptom.
 - Respect accessibility, performance, reduced-motion, and no-JavaScript/no-WebGL/no-autoplay fallbacks where relevant.
 - Keep secrets out of code, logs, screenshots, summaries, widgets, and committed files.
 - Prefer project-local tooling and existing scripts before adding dependencies. Explain any new dependency before installing it.

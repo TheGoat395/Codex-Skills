@@ -1,3 +1,4 @@
-display_name: "React Responsive Components"
-short_description: "Build responsive React components that do not collapse on mobile"
-default_prompt: "Use react-responsive-components to plan and implement this work with official framework guidance, premium UI standards, and a verification pass."
+interface:
+  display_name: "React Responsive Components"
+  short_description: "Build React-aware responsive behavior and composition"
+  default_prompt: "Use $react-responsive-components to build React-aware responsive behavior and composition, matching the requested scope and existing project."

@@ -1,6 +1,6 @@
 ---
 name: systematic-debugging
-description: Diagnose reproducible or intermittent software failures through evidence, hypothesis testing, localization, root-cause repair, and regression verification. Use for failing tests, builds, runtime behavior, integrations, performance regressions, or unexplained errors; not for ordinary implementation with no failure.
+description: "Find and repair unresolved root causes."
 ---
 
 # Systematic Debugging
@@ -28,7 +28,7 @@ Read [debugging playbook](references/debugging-playbook.md) for layer-specific p
 
 - Repair the root cause or the closest controllable cause; label containment or mitigation honestly.
 - Make one logically related change at a time where practical.
-- Add a regression guard at the lowest stable observable seam when the behavior is testable.
+- Add a regression guard at the lowest stable observable seam. Use `$selective-test-driven-development` when a behavior is testable.
 - Re-run the focused reproduction, relevant broader suite/build, and the original end-to-end scenario.
 - Check for side effects created by instrumentation, temporary configuration, caches, or test fixtures.
 
@@ -41,3 +41,7 @@ Distinguish reproduced, localized, root cause confirmed, plausible cause, fixed,
 ## Deliver
 
 Report expected versus observed behavior, reproduction status, the discriminating evidence and retired hypotheses, confirmed or leading root cause, repair versus mitigation, regression guard, exact verification commands/results, and remaining uncertainty or next signal. Do not claim root cause when the evidence supports only correlation or disappearance.
+
+## Optional specialists
+
+selective-test-driven-development is optional. Without it, write the smallest failing regression that expresses the defect, implement the correction, and rerun affected checks using repository conventions.

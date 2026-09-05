@@ -58,7 +58,7 @@ Use `animation-fill-mode` to prevent jarring visual resets:
 ### Custom Easing is Essential (Emil)
 > "Easing is the most important part of any animation. It can make a bad animation feel great."
 
-Built-in CSS easing (`ease`, `ease-in-out`) lacks strength. Always use custom Bézier curves for professional results. Resources: easing.dev, easings.co
+Choose easing for context and continuity. Custom Bézier curves and springs give control; a suitable built-in curve is not automatically defective. Resources: easing.dev, easings.co
 
 ### Easing Selection Guidelines (Jhey)
 Each easing curve communicates something to the viewer. **Context matters more than rules.**
@@ -199,30 +199,38 @@ Blur (via `filter: blur()`) combined with opacity and translate creates a "mater
 ## 5. Icon & State Animations (Jakub)
 
 ### Contextual Icon Transitions
-When icons change contextually (copy → check, loading → done), animate:
+When useful for a contextual icon state (copy → check, loading → done), consider:
 - Opacity
 - Scale
 - Blur
 
 ```jsx
-<AnimatePresence mode="wait">
-  {isCopied ? (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8, filter: "blur(4px)" }}
-      animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-      exit={{ opacity: 0, scale: 0.8, filter: "blur(4px)" }}
-    >
-      <CheckIcon />
-    </motion.div>
-  ) : (
-    <motion.div ...>
-      <CopyIcon />
-    </motion.div>
-  )}
-</AnimatePresence>
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+
+// Presentation only: the caller performs the real copy and owns isCopied.
+export function CopyStateIcon({ isCopied }) {
+  const reduce = useReducedMotion();
+  return (
+    <span aria-hidden="true" style={{ display: "inline-grid", width: 20, height: 20 }}>
+      <AnimatePresence initial={false} mode="wait">
+        <motion.span
+          key={isCopied ? "copied" : "copy"}
+          initial={reduce ? false : { opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={reduce ? { opacity: 1 } : { opacity: 0, scale: 0.95 }}
+          transition={{ duration: reduce ? 0 : 0.15 }}
+          style={{ display: "inline-grid", placeItems: "center" }}
+        >
+          {isCopied ? "✓" : "⧉"}
+        </motion.span>
+      </AnimatePresence>
+    </span>
+  );
+}
+// Caller supplies the accessible button label and status announcement.
 ```
 
-**Why animate icon swaps?** Instant swaps feel jarring and can be missed. Animated transitions:
+**Why consider icon motion?** When a change is being missed, a brief transition can reinforce it; an understandable instant swap is valid. Suitable transitions:
 - Draw attention to the state change
 - Feel responsive and polished
 - Give the user confidence their action registered
@@ -244,8 +252,8 @@ Motion's `layoutId` prop enables smooth transitions between completely different
 Motion automatically animates between them using the FLIP technique (First, Last, Inverse, Play).
 
 ### Best Practices
-- Keep elements with `layoutId` **outside** of `AnimatePresence` to avoid conflicts
-- If inside `AnimatePresence`, the initial/exit animations will trigger during layout animation (looks bad with opacity)
+- `layoutId` works with `AnimatePresence`, which can retain the outgoing element for its exit/shared transition.
+- Coordinate presence, layout and opacity deliberately; test shared transitions and avoid unintended overlapping effects.
 - Multiple elements can animate if each has a unique `layoutId`
 - Works for different heights, widths, positions, and even component types (card → modal)
 
@@ -273,7 +281,7 @@ The `@property` rule lets you declare types for CSS variables, enabling smooth i
 **Why this matters**: Without `@property`, CSS sees custom properties as strings. Strings can't interpolate—they just swap. With a declared type, the browser knows how to smoothly transition between values.
 
 ### Decompose Complex Transforms
-Instead of animating a monolithic transform (which can't interpolate curved paths), split into typed properties:
+For independently eased axes, split motion into typed properties. Monolithic keyframes, motion paths or wrappers can also express curved paths:
 
 ```css
 @property --x { syntax: '<percentage>'; initial-value: 0%; inherits: false; }
@@ -291,7 +299,7 @@ Instead of animating a monolithic transform (which can't interpolate curved path
 }
 ```
 
-This creates curved motion paths that would be impossible with standard transform animation—the ball arcs through space rather than moving in straight lines.
+This gives the axes independent interpolation; validate the intended arc and intermediate keyframe values. CSS motion paths or ordinary multi-keyframe transforms are alternatives.
 
 ### Scoped Variables for Dynamic Behavior (Jhey)
 CSS custom properties respect scope, enabling powerful patterns:
@@ -336,10 +344,10 @@ Use CSS variables for dimensions and `vmin` units:
 ## 9. Clip-Path Animations (Emil)
 
 ### Why clip-path?
-- Hardware-accelerated rendering
+- Potential compositing benefits for supported shapes; measure actual paint/raster cost
 - No layout shifts
 - No additional DOM elements needed
-- Smoother than width/height animations
+- Can avoid layout work; bounded size/layout animation may still fit content flow better
 
 ### Basic Syntax
 ```css
@@ -389,12 +397,12 @@ button:active {
 }
 ```
 
-### Don't Animate from scale(0)
+### Choose an Appropriate Scale Range
 ```jsx
-// BAD: Unnatural motion
+// Strong emergence: reserve for an effect that warrants the range
 initial={{ scale: 0 }}
 
-// GOOD: Natural, gentle motion
+// Restrained alternative for routine UI
 initial={{ scale: 0.9, opacity: 0 }}
 animate={{ scale: 1, opacity: 1 }}
 ```
@@ -420,7 +428,7 @@ When state transitions aren't smooth enough, add blur to mask imperfections:
 ## 11. CSS Transitions vs Keyframes (Emil)
 
 ### Interruptibility Problem
-CSS keyframes can't be interrupted mid-animation. When users rapidly trigger actions, elements "jump" to new positions rather than smoothly retargeting.
+CSS keyframe animations can be cancelled, paused or controlled through animation APIs, but changing their endpoint does not automatically provide smooth retargeting. Test rapid retriggering; transitions or a suitable motion API may preserve continuity better.
 
 **Solution**: Use CSS transitions with state-driven classes:
 ```jsx
@@ -440,13 +448,13 @@ useEffect(() => {
 ```
 
 ### Direct Style Updates for Performance
-CSS variables cause style recalculation across all children. For frequent updates (drag operations), update styles directly:
+Inherited CSS variables can cause wider style invalidation. For frequent updates, compare scoped/non-inherited variables and direct styles in actual traces; use the smallest measured update surface:
 
 ```javascript
-// BAD: CSS variable (expensive cascade)
+// May invalidate descendants when inherited; measure and scope carefully
 element.style.setProperty('--drag-y', `${y}px`);
 
-// GOOD: Direct style (no cascade)
+// Direct update narrows the changed style; rendering cost still depends on the property
 element.style.transform = `translateY(${y}px)`;
 ```
 
@@ -480,7 +488,7 @@ const x = useSpring(mouseX, springConfig);
 const y = useSpring(mouseY, springConfig);
 ```
 
-Use `useSpring` for any value that should interpolate smoothly rather than snap—nothing in the real world changes instantly.
+Use `useSpring` when interpolation improves the interaction; instant values and direct manipulation remain valid.
 
 ### Interruptibility
 Great animations can be interrupted mid-play:

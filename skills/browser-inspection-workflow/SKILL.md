@@ -1,6 +1,6 @@
 ---
 name: browser-inspection-workflow
-description: "Run browser inspection for websites and apps. Use after building or changing frontend work to open the rendered site, inspect console and network errors, verify layout and interactions, test links/forms/media, capture screenshots, check responsive behavior, and perform the second visual polish pass before final delivery."
+description: "Coordinate rendered behavior and state evidence."
 ---
 
 # Browser Inspection Workflow
@@ -9,19 +9,19 @@ Use this skill to make rendered-browser inspection a default part of shipping fr
 
 ## Workflow
 
-1. Inspect the project, scripts, routes, local/deployed URL, production surfaces, and available QA/deployment tooling.
+1. Inspect the affected surface, relevant project scripts, target URL and available inspection tooling; reuse existing context.
 2. Read [Browser Inspection Workflow Guide](references/browser-inspection-workflow-guide.md) before claiming the site is ready.
 3. Run the narrowest meaningful checks for the risk: visual, mobile, accessibility, performance, forms, media, SEO, analytics, deployment, or handoff.
 4. Fix issues when they are in scope; otherwise record exact evidence and remaining risk.
-5. Summarize commands, URLs, screenshots/checks, changed files, and what was not tested.
+5. After fixes, recheck affected rendered states; repeat broader polish only for an observed defect or unresolved quality risk.
+6. Summarize commands, URLs, screenshots/checks, changed files, and what was not tested.
 
-## Always Protect
+If a native `fullPage` screenshot is blank, sparse, missing lower content, frozen before reveal animation, or inconsistent with the working scroll experience, do not use it as visual proof. Route the capture through `$visual-regression-lab` and its stitched viewport workflow.
 
-- Inspect before changing or shipping: framework, package scripts, build output, routes, forms, media, animation stack, deployment target, environment variables, analytics, SEO metadata, accessibility risks, and available browser QA tooling.
-- Do not claim something was tested unless it was actually tested; report exact commands, URLs, screenshots, viewports, failures, skipped checks, and remaining risk.
-- Verify desktop and mobile rendered output, not only source code. For visual or motion work, inspect screenshots, browser behavior, console errors, network failures, and responsive layout.
-- Treat forms, checkout, booking, CMS content, analytics, environment variables, and deployments as production surfaces with error, loading, empty, success, and rollback states.
-- Respect accessibility, performance, reduced-motion, and no-JavaScript/no-WebGL/no-autoplay fallbacks where relevant.
-- Keep secrets out of code, logs, screenshots, summaries, widgets, and committed files.
-- Prefer project-local tooling and existing scripts before adding dependencies. Explain any new dependency before installing it.
-- End with a concise handoff: changed files, commands run, checks passed, checks not run, deployment URL if any, and next risks.
+## Scoped execution
+
+Apply the [shared web contract](../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
+
+## Scope and evidence
+
+Coordinate one route/viewport/state evidence matrix shared by QA specialists. Reuse current evidence; recheck affected coverage after relevant changes. Captures require actual visual inspection before quality claims.
