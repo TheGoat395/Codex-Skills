@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Change Safety Checkpoint"
+  short_description: "Preserve a rollback path before risky edits"
+  default_prompt: "Use $code-change-safety-checkpoint to protect the current work before making these multi-file changes."

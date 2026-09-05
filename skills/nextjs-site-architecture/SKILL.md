@@ -1,32 +1,28 @@
 ---
 name: "nextjs-site-architecture"
-description: "Structure modern Next.js websites and landing pages. Use for App Router projects, TypeScript, metadata, fonts, images, static pages, route groups, sections, component organization, performance, SEO basics, and production-ready architecture for premium websites."
+description: "Coordinate the Next.js foundation and ownership."
 ---
 
 # Next.js Site Architecture
+
+For substantial web work, reuse the [scoped web contract](../website-operating-rules/references/scoped-web-contract.md) when available; it replaces duplicated policy here. Match the requested scope and existing decisions; a missing optional sibling does not block this local procedure.
 
 ## Overview
 
 Set a clean, maintainable Next.js foundation. Architecture should let the design stay consistent while keeping pages easy to refine.
 
-## Website Nonnegotiables
-
-- Inspect before coding: structure, framework, homepage or main entry file, styling system, JavaScript or interaction system, assets, and build commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, or fix.
-- Use existing project conventions first. Explain major new dependencies before adding them.
-- Never ship generic visual work: no default card grids, placeholder copy, weak type, random gradients, stock-like media, or template heroes.
-- Build version 1, inspect the rendered result, improve spacing, type, hierarchy, motion, media, hover states, and responsiveness, then run checks again.
-- Run available lint, build, and test commands when possible. Report commands, changed files, and any untested areas honestly.
-- Check desktop and mobile. Respect accessibility, semantic markup, focus states, and reduced-motion preferences.
-
 ## Workflow
 
-1. Read the user's brief and identify the website category, audience, content reality, visual references, and asset availability.
+1. Identify the requested component or architecture outcome, affected files and existing decisions; reuse established content and visual direction.
 2. Inspect the project before editing when code exists.
 3. Apply this skill's specific rules from `references/nextjs-site-architecture-guide.md`.
-4. Explain planned files before major changes unless the user has clearly said to proceed.
-5. Build, inspect, polish, and verify before final delivery.
+4. Explain material implementation choices while continuing authorized work.
+5. Implement when requested, inspect affected output, fix observed defects, and run the smallest decisive relevant checks.
 
 ## Reference
 
 Read `references/nextjs-site-architecture-guide.md` when this skill triggers for a concrete website build, redesign, visual review, or implementation plan.
+
+## Ownership
+
+Own the Next.js foundation and integration map. Let `nextjs-app-router-routing` own detailed route-file/navigation behavior and `nextjs-server-client-boundaries` own import, serialization and rendering boundaries. Apply only the relevant specialist rather than repeating their full workflows.

@@ -53,3 +53,7 @@ Any code-changing skill should prefer:
 - explaining restore or revert options
 
 These principles are also encoded in the `code-change-safety-checkpoint` and `code-change-undo-revert` skills.
+
+## Replacement recovery
+
+Each selected skill is copied to a temporary staging directory before an existing installation is moved. Backup collisions fail without deleting the older backup. If activating a staged replacement fails, the prior installation is restored when the target remains available. This is per-skill recovery, not an all-or-nothing transaction across an entire collection. Symbolic-link targets are not replaced.

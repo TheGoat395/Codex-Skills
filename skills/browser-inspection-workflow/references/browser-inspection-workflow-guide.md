@@ -17,6 +17,8 @@
 - Check console and failed requests.
 - Test links/buttons/forms, not just static appearance.
 - Use screenshots for visual claims.
+- Warm lazy and reveal-heavy pages by scrolling through them before final captures.
+- Reject native full-page screenshots that disagree with settled viewport behavior; use the stitched workflow in `$visual-regression-lab`.
 - Report what was not inspectable.
 
 ## Useful Patterns
@@ -25,6 +27,7 @@
 - Desktop and mobile smoke path through homepage, nav, CTA, form.
 - Console/network capture before final answer.
 - Screenshot proof for hero, mid-page, and mobile menu.
+- Settled viewport stitching for Framer, WebGL, lazy media, pinned scenes, or scroll-reveal pages when one-shot full-page capture fails.
 
 ## Anti-Patterns
 
@@ -46,16 +49,9 @@
 - Console/network issues are fixed or documented.
 - The final report reflects actual inspection.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before changing or shipping: framework, package scripts, build output, routes, forms, media, animation stack, deployment target, environment variables, analytics, SEO metadata, accessibility risks, and available browser QA tooling.
-- Do not claim something was tested unless it was actually tested; report exact commands, URLs, screenshots, viewports, failures, skipped checks, and remaining risk.
-- Verify desktop and mobile rendered output, not only source code. For visual or motion work, inspect screenshots, browser behavior, console errors, network failures, and responsive layout.
-- Treat forms, checkout, booking, CMS content, analytics, environment variables, and deployments as production surfaces with error, loading, empty, success, and rollback states.
-- Respect accessibility, performance, reduced-motion, and no-JavaScript/no-WebGL/no-autoplay fallbacks where relevant.
-- Keep secrets out of code, logs, screenshots, summaries, widgets, and committed files.
-- Prefer project-local tooling and existing scripts before adding dependencies. Explain any new dependency before installing it.
-- End with a concise handoff: changed files, commands run, checks passed, checks not run, deployment URL if any, and next risks.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
 
 ## Official Source Anchors
 

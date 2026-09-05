@@ -1,3 +1,4 @@
-display_name: "Radix Accessible Primitives"
-short_description: "Use Radix primitives for accessible custom UI behavior"
-default_prompt: "Use radix-accessible-primitives to shape this styling or design-system work with premium visual constraints, accessible states, and a verification pass."
+interface:
+  display_name: "Radix Accessible Primitives"
+  short_description: "Implement Radix parts, focus and keyboard behavior"
+  default_prompt: "Use $radix-accessible-primitives to implement Radix parts, focus and keyboard behavior, matching the requested scope and existing project."

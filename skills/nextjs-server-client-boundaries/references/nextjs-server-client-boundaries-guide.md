@@ -30,6 +30,7 @@ Protect performance, security, and maintainability by keeping interactivity narr
 - Pass server data into Client Components as serializable props.
 - Use `children` slots to nest server-rendered content inside client shells such as modals.
 - Move providers as deep as possible instead of wrapping the whole document.
+- Start independent server data work together; do not introduce a fetch waterfall merely to preserve component nesting.
 
 ## Implementation Rules
 
@@ -37,6 +38,8 @@ Protect performance, security, and maintainability by keeping interactivity narr
 - Keep animation and interaction components narrow; the whole page should not become a client component for one reveal.
 - Prefer server-rendered content for SEO, perceived speed, and lower JavaScript cost.
 - Check imports after adding `use client`; everything imported becomes part of the client graph.
+- Minimize and deduplicate serialized props crossing into client components.
+- Do not hold request-specific mutable state at module scope.
 - Use client-only effects with cleanup for listeners, observers, timers, and animation instances.
 
 ## Useful Patterns
@@ -48,7 +51,7 @@ Protect performance, security, and maintainability by keeping interactivity narr
 ## Anti-Patterns
 
 - Adding `use client` to `app/layout.tsx` without a very strong reason.
-- Passing functions, class instances, or non-serializable data into Client Components.
+- Passing ordinary nonserializable functions, unsupported class instances or server-only data across the client boundary. Supported Server Function references are allowed by React serialization; preserve their server authorization and input validation.
 - Importing server-only helpers into client files.
 - Using Effects to copy server props into redundant state.
 
@@ -65,18 +68,14 @@ Protect performance, security, and maintainability by keeping interactivity narr
 - Server-rendered content stays server-rendered where possible.
 - The component boundary improves performance and does not hide generic design shortcuts.
 
-## Shared Website Requirements
+## Shared scope
 
-- Inspect before coding: project structure, framework, router, homepage or main entry, styling system, JavaScript or motion system, assets, and available commands.
-- Prefer the existing project stack and conventions before adding dependencies or moving architecture.
-- For Next.js App Router projects, keep Server Components as the default and introduce Client Components only for interactivity, browser APIs, effects, or client-only libraries.
-- For React work, keep components pure, derive render data during render, and use Effects only to synchronize with external systems.
-- Default website output must still follow the premium visual baseline: strong type, real content, designed states, responsive polish, and no generic card-grid filler.
-- Run available lint, build, test, and local browser checks when possible; report exactly what ran and what was not tested.
-- Check desktop and mobile behavior when changing visible UI, especially overflow, focus, loading, empty, error, and reduced-motion states.
+For applicable substantial web work, reuse the [shared scoped web contract](../../website-operating-rules/references/scoped-web-contract.md) when available. Preserve current authorization, stack and requested scope; this optional reference does not require another planning or approval cycle.
 
 ## Official Source Anchors
 
 - Server and Client Components: https://nextjs.org/docs/app/getting-started/server-and-client-components
 - React reference: https://react.dev/reference/react
 - You Might Not Need an Effect: https://react.dev/learn/you-might-not-need-an-effect
+
+Serialization reference: [React use client](https://react.dev/reference/rsc/use-client). Follow the installed React/framework contract rather than banning every function prop.

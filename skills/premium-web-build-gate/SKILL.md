@@ -1,6 +1,6 @@
 ---
 name: premium-web-build-gate
-description: Premium website pre-build gate for cinematic, editorial, Squarespace-polished, Raycast/Linear/Vercel-precise, or motion-heavy web work. Use before implementing or redesigning a homepage, landing page, portfolio, product site, agency/studio site, or high-polish web app when the user wants non-generic visual quality, strong scroll/motion choreography, strict content scope, or an award-level result. Produces a build-ready UI spec, source-trust decisions, motion storyboard, and QA gates before code.
+description: "Check premium specs before implementation."
 ---
 
 # Premium Web Build Gate
@@ -15,18 +15,20 @@ Follow this sequence for premium web work:
 
 1. Inspect the current project, repo instructions, design docs, route structure, live/local render, assets, and existing copy.
 2. Research or re-check current reference sources when the references, tools, product standards, or external sites may have changed.
-3. Classify sources as `use`, `distill`, `inspiration only`, or `avoid`.
-4. Produce the Build-Ready UI Spec.
-5. Wait for user confirmation unless the user explicitly said to proceed, build, implement, continue, or fix.
-6. Build version 1 using the approved spec.
-7. Run local browser QA on desktop and mobile, then perform a second polish pass.
-8. Report files changed, commands run, visual QA status, and anything blocked.
+3. Select Tier 1, Tier 2, or Tier 3 from [the shared quality tiers](../website-operating-rules/references/website-quality-tiers.md); higher tiers inherit lower-tier requirements.
+4. Classify sources as `use`, `distill`, `inspiration only`, or `avoid`.
+5. Produce the Build-Ready UI Spec.
+6. Proceed within the existing task authorization after stating material assumptions; ask only for an actually blocking unresolved choice.
+7. Build version 1 using the approved spec.
+8. Inspect affected rendered desktop/mobile states; fix observed defects and recheck relevant coverage.
+9. Report files changed, commands run, visual QA status, and anything blocked.
 
 ## Build-Ready UI Spec
 
 Before coding, write a concise spec with these headings:
 
 - `Current System`: framework, entry files, styling system, interaction/motion system, source vs generated assets, junk folders, and planned edit files.
+- `Quality Tier`: selected tier, inherited gates, and why the requested commercial outcome maps to it.
 - `Business Truth`: what the organization actually does, stated without invented specifics, fake proof, or copied claims.
 - `Page Scope`: what belongs on this page, what belongs on later subpages, and what must be removed to avoid content crowding.
 - `Reference Contract`: 3-5 concrete reference behaviors to borrow, 3-5 to avoid, and which references are verified vs user shorthand.
@@ -45,17 +47,17 @@ Use references as behavior contracts, not vibes:
 - Squarespace-polished means elegant business flow, strong first viewport, real category clarity, and polished templates without looking generic.
 - Viktor Oddy references must be treated as a named designer/source, not vague shorthand. When accessible, verify `viktoroddy.com`, `x.com/viktoroddy`, `motionsites.ai`, `designrocket.io`, and current public articles/videos, then extract concrete traits such as compact studio positioning, AI-site-builder workflows, premium hero/prompt libraries, motion-heavy hero previews, tight CTAs, GIF/video demonstrations, and disciplined type systems. Only use "Viktor-style" shorthand after the actual source has been checked or the user has supplied the traits.
 
-Never copy a reference site. Extract structural rules, then adapt them to the product, brand, and content.
+In original-work mode, extract structural rules and adapt them to the brand/content. In authorized exact-fidelity mode, preserve the requested source details and identify unavailable evidence.
 
 ## Content Discipline
 
 Premium pages fail when they become content dumps. Enforce these rules:
 
-- Keep homepage content generalized: business model, promise, system, proof shape, and routes into deeper pages.
+- Choose homepage depth from user tasks, content and page architecture; a detailed single-page site can be correct.
 - Move detailed services, project examples, process minutiae, and long proof lists to subpages unless the current page specifically needs them.
 - Use real copy from the repo/site/docs when available. If copy must be clarified, preserve truth and remove fluff.
 - No fake metrics, fake testimonials, fake client names, fake awards, or vague claims like "world-class" unless sourced.
-- Every section must have one job. If a section needs two paragraphs to explain why it exists, redesign the section.
+- Give each section a clear content role; split or reorganize only when observed crowding or comprehension calls for it.
 
 ## Visual Rules
 
@@ -70,7 +72,7 @@ Prefer a few decisive moves over many decorative ones:
 
 ## Motion Rules
 
-Motion must clarify sequence, depth, focus, or tactility:
+Motion should serve sequence, depth, focus, tactility, narrative, artistic expression or deliberate delight:
 
 - Create fewer, stronger scroll scenes rather than many small ambient animations.
 - Each motion beat needs a reason: reveal hierarchy, transform context, guide attention, compare states, or resolve a scene.
@@ -88,6 +90,7 @@ Before installing or adopting a new tool/skill:
 - Do not install broad style packs that overlap existing skills unless they add a clear missing gate.
 - Install frontend libraries per project, not globally, unless the tool is a CLI or Codex skill.
 - Explain why the new dependency or skill materially improves the result.
+- Only when Cables Standalone is actually selected, account for its unsandboxed Node integration and external operator code. Use only trusted patches, operators, and npm dependencies; keep client assets separated and export audited web bundles for delivery.
 
 ## Final QA
 
@@ -98,3 +101,11 @@ Before final delivery after implementation:
 - Check text overflow, visual overlap, awkward wraps, content density, hover/focus states, reduced motion, console errors, and performance risks.
 - Perform an anti-generic pass: remove anything that could belong to any random SaaS/agency template.
 - Be honest about anything not tested, especially browser/screenshot QA if tooling or credits blocked it.
+
+## Scope and evidence
+
+Check the applicable gaps in the shared direction/build spec. `$route-sellable-web-tier` owns requested-tier interpretation; preserve that capability floor without rerunning full release governance for a small edit. Do not add a new spec, media generation or deployment solely because this gate is selected.
+
+## Optional specialists
+
+route-sellable-web-tier is optional. Without it, select the requested quality depth using the shared quality-tier reference, preserve project requirements, and avoid imposing enterprise governance on a localized edit.

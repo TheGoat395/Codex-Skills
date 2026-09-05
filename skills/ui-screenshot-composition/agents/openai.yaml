@@ -1,3 +1,4 @@
-display_name: "UI Screenshot Composition"
-short_description: "Compose screenshots inside pages with rhythm, scale, callouts, and crop logic"
-default_prompt: "Use $ui-screenshot-composition to direct, implement, and QA website media so it feels specific, responsive, accessible, and premium."
+interface:
+  display_name: "UI Screenshot Composition"
+  short_description: "Compose screenshots inside pages with rhythm, scale, callouts, and crop logic"
+  default_prompt: "Use $ui-screenshot-composition to arrange readable product screenshot evidence within the requested scope."

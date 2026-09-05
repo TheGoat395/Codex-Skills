@@ -1,3 +1,4 @@
-display_name: "Hero Image Art Direction"
-short_description: "Choose and crop hero imagery that makes the first viewport decisive"
-default_prompt: "Use $hero-image-art-direction to direct, implement, and QA website media so it feels specific, responsive, accessible, and premium."
+interface:
+  display_name: "Hero Image Art Direction"
+  short_description: "Choose and crop hero imagery that makes the first viewport decisive"
+  default_prompt: "Use $hero-image-art-direction to compose first-view media around subject and text within the requested scope."

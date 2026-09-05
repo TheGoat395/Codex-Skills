@@ -34,7 +34,7 @@ Make depth and surfaces support hierarchy instead of decorating everything.
 ## Implementation Rules
 
 - Do not use glassmorphism, blur, blobs, or glow as default premium styling.
-- Keep card radius at 8px or less unless the existing design system requires otherwise.
+- Treat 8px or less as one restrained starting point; use optically tested radii that fit the approved brand, material and component scale.
 - Surfaces must clarify grouping, state, or hierarchy.
 - Use shadows that match light direction and background.
 - Make dark-mode elevation rely more on borders/tints than opaque shadows.
@@ -65,15 +65,9 @@ Make depth and surfaces support hierarchy instead of decorating everything.
 - Depth feels restrained and project-specific.
 - The UI avoids generic card/glass visual tropes.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, styling system, token files, component primitives, entry CSS, build commands, and existing visual conventions.
-- Prefer the existing styling approach before introducing Tailwind, shadcn/ui, Radix, class-variance tools, or custom CSS architecture.
-- Use design tokens to make choices repeatable, but keep the site-specific art direction alive. Tokens should support taste, not flatten it.
-- Avoid generic AI website tells: default card grids, template spacing, random gradients, one-note palettes, weak buttons, unstyled forms, and placeholder copy.
-- Check desktop and mobile. Prevent overflow, text collisions, unstable control sizes, inaccessible focus, and broken media crops.
-- Respect accessibility, color contrast, keyboard navigation, focus-visible states, and reduced-motion preferences.
-- Run available lint, build, test, and local browser checks when possible; report exact commands and untested areas.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
 
 ## Official Source Anchors
 

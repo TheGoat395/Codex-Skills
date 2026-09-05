@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Change Undo and Revert"
+  short_description: "Restore code safely without losing user work"
+  default_prompt: "Use $code-change-undo-revert to identify and safely undo the requested changes while preserving unrelated work."

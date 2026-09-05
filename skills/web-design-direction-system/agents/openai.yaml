@@ -1,4 +1,5 @@
 interface:
+  default_prompt: "Use $web-design-direction-system to own design intent, scoped decisions and iteration evidence within the requested scope."
   display_name: Web Design Direction System
   short_description: Sets design mode, direction dials, redesign protocol, image-to-code protocol, and final preflight checks for premium frontend work.
   icon: 🎛️

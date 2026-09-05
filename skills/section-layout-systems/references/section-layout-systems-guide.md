@@ -31,7 +31,7 @@ Match section layout to content shape instead of defaulting to cards.
 
 ## Implementation Rules
 
-- Use at least three distinct layout patterns on long pages.
+- Use distinct layout patterns where content roles need them; an intentional repeated rhythm is valid when it supports comparison and comprehension.
 - Cards are allowed only when the repeated item shape earns them.
 - Avoid nested cards and floating-card page sections.
 - Use full-width bands, rules, ledgers, tables, sticky panels, media slabs, and asymmetry.
@@ -50,7 +50,7 @@ Match section layout to content shape instead of defaulting to cards.
 - Every section inside a rounded rectangle.
 - Bento grids where all boxes are just cards.
 - Stat strips with fake animated counters.
-- Uniform section padding from top to bottom of the page.
+- Uniform section padding that obscures content hierarchy; intentional consistent rhythm is valid.
 
 ## QA Checklist
 
@@ -63,13 +63,6 @@ Match section layout to content shape instead of defaulting to cards.
 - Each section has a reason for its layout.
 - The page has rhythm without chaos.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

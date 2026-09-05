@@ -1,6 +1,6 @@
 ---
 name: accessibility-audit-websites
-description: "Audit website accessibility. Use for semantic structure, headings, alt text, forms, focus states, keyboard navigation, color contrast, labels, ARIA misuse, reduced motion, captions, skip links, modals, menus, carousels, and final frontend QA aligned with WCAG-style accessibility expectations."
+description: "Audit semantic and keyboard accessibility."
 ---
 
 # Accessibility Audit Websites
@@ -9,19 +9,16 @@ Use this skill to make sites usable for more people and prevent polished visuals
 
 ## Workflow
 
-1. Inspect the project, scripts, routes, local/deployed URL, production surfaces, and available QA/deployment tooling.
+1. Inspect the affected surface, relevant project scripts, target URL and available inspection tooling; reuse existing context.
 2. Read [Accessibility Audit Websites Guide](references/accessibility-audit-websites-guide.md) before claiming the site is ready.
 3. Run the narrowest meaningful checks for the risk: visual, mobile, accessibility, performance, forms, media, SEO, analytics, deployment, or handoff.
 4. Fix issues when they are in scope; otherwise record exact evidence and remaining risk.
 5. Summarize commands, URLs, screenshots/checks, changed files, and what was not tested.
 
-## Always Protect
+## Scoped execution
 
-- Inspect before changing or shipping: framework, package scripts, build output, routes, forms, media, animation stack, deployment target, environment variables, analytics, SEO metadata, accessibility risks, and available browser QA tooling.
-- Do not claim something was tested unless it was actually tested; report exact commands, URLs, screenshots, viewports, failures, skipped checks, and remaining risk.
-- Verify desktop and mobile rendered output, not only source code. For visual or motion work, inspect screenshots, browser behavior, console errors, network failures, and responsive layout.
-- Treat forms, checkout, booking, CMS content, analytics, environment variables, and deployments as production surfaces with error, loading, empty, success, and rollback states.
-- Respect accessibility, performance, reduced-motion, and no-JavaScript/no-WebGL/no-autoplay fallbacks where relevant.
-- Keep secrets out of code, logs, screenshots, summaries, widgets, and committed files.
-- Prefer project-local tooling and existing scripts before adding dependencies. Explain any new dependency before installing it.
-- End with a concise handoff: changed files, commands run, checks passed, checks not run, deployment URL if any, and next risks.
+Apply the [shared web contract](../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
+
+## Scope and evidence
+
+Report the audited surfaces, manual keyboard/accessibility checks, sampled coverage and unassessed areas. Sampled success does not establish whole-site WCAG conformance.

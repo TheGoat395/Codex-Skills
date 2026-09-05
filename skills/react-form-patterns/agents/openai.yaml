@@ -1,3 +1,4 @@
-display_name: "React Form Patterns"
-short_description: "Design React forms with validation, feedback, and polished states"
-default_prompt: "Use react-form-patterns to plan and implement this work with official framework guidance, premium UI standards, and a verification pass."
+interface:
+  display_name: "React Form Patterns"
+  short_description: "Build accessible forms and truthful submission states"
+  default_prompt: "Use $react-form-patterns to build accessible forms and truthful submission states, matching the requested scope and existing project."

@@ -66,15 +66,9 @@ Keep routing clear, idiomatic, and visually useful instead of turning every page
 - Navigation feels intentional and does not require excess client JavaScript.
 - Every touched route has a polished success, loading, and failure path when relevant.
 
-## Shared Website Requirements
+## Shared scope
 
-- Inspect before coding: project structure, framework, router, homepage or main entry, styling system, JavaScript or motion system, assets, and available commands.
-- Prefer the existing project stack and conventions before adding dependencies or moving architecture.
-- For Next.js App Router projects, keep Server Components as the default and introduce Client Components only for interactivity, browser APIs, effects, or client-only libraries.
-- For React work, keep components pure, derive render data during render, and use Effects only to synchronize with external systems.
-- Default website output must still follow the premium visual baseline: strong type, real content, designed states, responsive polish, and no generic card-grid filler.
-- Run available lint, build, test, and local browser checks when possible; report exactly what ran and what was not tested.
-- Check desktop and mobile behavior when changing visible UI, especially overflow, focus, loading, empty, error, and reduced-motion states.
+For applicable substantial web work, reuse the [shared scoped web contract](../../website-operating-rules/references/scoped-web-contract.md) when available. Preserve current authorization, stack and requested scope; this optional reference does not require another planning or approval cycle.
 
 ## Official Source Anchors
 

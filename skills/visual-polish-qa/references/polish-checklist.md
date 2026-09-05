@@ -41,6 +41,6 @@
 
 ## Build Hygiene
 
-- Run the project's available lint/build/test commands.
+- Run the relevant required checks; do not rerun unrelated passing suites.
 - Note any command that cannot run because dependencies, network, credentials, or environment are missing.
 - Keep unrelated files untouched.

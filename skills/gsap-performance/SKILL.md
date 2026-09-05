@@ -1,6 +1,6 @@
 ---
 name: gsap-performance
-description: GSAP performance guidance — prefer transforms, avoid layout thrashing, use will-change selectively, and batch animation work. Use when optimizing GSAP animations, reducing jank, or when the user asks about animation performance, FPS, or smooth 60fps.
+description: "Diagnose GSAP and ScrollTrigger performance."
 license: MIT
 ---
 
@@ -8,13 +8,13 @@ license: MIT
 
 ## When to Use This Skill
 
-Apply when optimizing GSAP animations for smooth 60fps, reducing layout/paint cost, or when the user asks about performance, jank, or best practices for fast animations.
+Apply when the affected animation uses GSAP or ScrollTrigger. Diagnose measured frame, layout/paint or lifecycle cost. Generic motion diagnosis belongs to `animation-jank-qa`, and a broad release review to `motion-performance-qa`.
 
 **Related skills:** `motion-performance-qa`, `animation-jank-qa`, `animation-tool-router`, and `reduced-motion-design`.
 
 ## Prefer Transform and Opacity
 
-Animating **transform** (`x`, `y`, `scaleX`, `scaleY`, `rotation`, `rotationX`, `rotationY`, `skewX`, `skewY`) and **opacity** keeps work on the compositor and avoids layout and most paint. Avoid animating layout-heavy properties when a transform can achieve the same effect.
+Animating **transform** (`x`, `y`, `scaleX`, `scaleY`, `rotation`, `rotationX`, `rotationY`, `skewX`, `skewY`) and **opacity** usually avoids layout and can reduce paint cost; compositor isolation depends on the browser, layer composition and effect. Measure instead of assuming GPU acceleration. Avoid animating layout-heavy properties when a transform can achieve the same effect.
 
 - Prefer: **x**, **y**, **scale**, **rotation**, **opacity**.
 - Avoid when possible: **width**, **height**, **top**, **left**, **margin**, **padding** because they trigger layout and can cause jank.
@@ -57,8 +57,8 @@ document.querySelector("#container").addEventListener("mousemove", (e) => {
 
 ## ScrollTrigger and Performance
 
-- **pin: true** promotes the pinned element; pin only what is needed.
-- **scrub** with a small value, such as `scrub: 1`, can reduce work during scroll; test on lower-end devices.
+- **pin: true** pins the trigger element during the active range; it is not a GPU-promotion guarantee. Pin only the intended surface and inspect spacing and surrounding layout.
+- Numeric **scrub** sets catch-up smoothing (seconds). Animation can continue after scrolling stops; it does not inherently reduce work. Measure total frame cost and responsiveness on relevant devices.
 - Call **ScrollTrigger.refresh()** only when layout actually changes, such as after content load. Debounce refresh calls when possible.
 
 ## Reduce Simultaneous Work
@@ -79,3 +79,5 @@ document.querySelector("#container").addEventListener("mousemove", (e) => {
 - Set **will-change** or **force3D** on every element just in case; reserve them for elements that actually need them.
 - Create hundreds of overlapping tweens or ScrollTriggers without testing on lower-end devices.
 - Ignore cleanup; stray tweens and ScrollTriggers keep running and can hurt performance and correctness.
+
+Technical semantics: [GSAP ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/). Verify the installed version for implementation details.

@@ -36,7 +36,7 @@ Make subjective taste actionable so Codex does not hallucinate generic aesthetic
 - Modern means current, precise, fast, product-grade, interaction-aware, and visually disciplined; not empty minimalism.
 - Squarespace-polished means elegant practical clarity, real business paths, image-forward sections, and complete conversion flows.
 - Raycast/Linear/Vercel-polished means product realism, crisp copy, dense details, speed, and refined technical trust.
-- Viktor-style means precise motion, smooth scroll choreography, layered reveals, and non-template composition, unless the user provides exact references.
+- For Viktor-style, inspect the exact supplied/current source and name observed traits; do not infer a universal creator formula from the name.
 
 ## Useful Patterns
 
@@ -54,7 +54,7 @@ Make subjective taste actionable so Codex does not hallucinate generic aesthetic
 
 ## QA Checklist
 
-- Check that every adjective used in the plan has at least three concrete implementation consequences.
+- Translate taste words into enough concrete choices to make the direction implementable; no arbitrary count.
 - Remove any adjective that does not affect the actual design.
 - Use the definitions to guide polish edits.
 
@@ -63,13 +63,6 @@ Make subjective taste actionable so Codex does not hallucinate generic aesthetic
 - The design vocabulary can be used as a checklist during implementation.
 - The final page visibly embodies the defined terms.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: project structure, framework, homepage/main entry, styling system, interaction/motion system, assets, and available commands.
-- Before major changes, explain planned files and wait unless the user clearly says proceed, build, create, implement, fix, continue, or similar.
-- Use existing project conventions first; explain major dependencies before adding them.
-- Default to premium modern quality without generic SaaS/agency/template patterns.
-- Prefer real, generated, or art-directed visuals when the subject benefits from images, video, product UI, or spatial media.
-- Build version 1, inspect the rendered result, improve visual quality, then run available checks again.
-- Check desktop and mobile. Keep text readable, avoid overlaps, respect focus states and reduced motion.
-- Report files changed, commands run, visual checks completed, and anything not tested.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.

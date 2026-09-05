@@ -1,11 +1,17 @@
 ---
 name: web-design-direction-system
-description: Use for premium frontend, website, app UI, landing page, dashboard, redesign, image-to-code, or visual-polish work that needs clearer design intent, adjustable visual direction, motion discipline, less generic output, and a final preflight check before handoff.
+description: "Resolve shared design intent and guidance."
 ---
 
 # Web Design Direction System
 
 Use this as the high-level router before detailed build, redesign, or polish work.
+
+## Design Guidance Contract
+
+When a project has repeated design decisions, a named design system, or a recurring review failure, read [the design guidance evidence loop](references/design-guidance-evidence-loop-guide.md) before changing the standard. Start with the reader's job and the strongest supported answer, then choose the smallest destination that can enforce the decision: guidance, a component primitive, a deterministic check, an exemplar, or an evaluation case.
+
+Do not turn one screenshot, one reviewer preference, or one shipped implementation into a universal rule. Record scope, rationale, evidence, exceptions, and a bad/good example. Keep unresolved decisions visible instead of hiding them inside CSS or component code.
 
 ## Infer The Design Mode
 
@@ -80,16 +86,22 @@ When the user supplies a reference image or generated comp:
 
 ## Motion Rules
 
-Motion must explain sequence, focus, depth, state, or continuity. If it does not, remove it.
+Motion should serve sequence, focus, depth, state, continuity, narrative, artistic expression or deliberate delight. Remove motion that lacks a purpose in the actual brief.
 
 Prefer one memorable motion idea over many identical entrance effects. Always define reduced-motion behavior. Never hide content behind animation that may fail in a paused tab, slow browser, or headless QA run.
+
+## Evidence Loop
+
+For a repeated design correction, freeze a representative prompt, inputs, viewport, model, and skill version. Save one baseline without the proposed guidance, then compare first-attempt treatment output under the same conditions. Review the pair against a written rubric, keep a small holdout case, and encode only corrections that generalize.
+
+Separate retrieval from application: confirm that the right skill or reference loaded before judging whether the rule was followed. Keep deterministic checks for observable mechanics and keep product judgment in scoped prose. Feed repeated production corrections back into a pending review record rather than editing the standard automatically.
 
 ## Preflight Before Handoff
 
 Check:
 
 - design lane matches the brief
-- dials are visible in the output
+- optional dials support the chosen direction without overriding the brief
 - generic output has been removed
 - typography is readable and not cramped
 - color contrast is acceptable for body, muted, and placeholder text
@@ -98,3 +110,9 @@ Check:
 - motion has purpose and reduced-motion fallback
 - no unsupported claims were added
 - final summary says what was changed and what was not verified
+
+Read the evidence-loop reference when a change updates a shared design standard, evaluation protocol, or recurring correction pattern.
+
+## Scope and evidence
+
+Own the shared direction record. Preserve explicit user direction and adequate existing context; blueprint, style director and build gate consume the same spec. Dials are optional internal tools and need not appear in a deliverable.

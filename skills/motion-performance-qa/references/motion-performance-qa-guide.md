@@ -6,7 +6,7 @@ Catch the animation issues that make a premium site feel fragile or slow.
 
 ## Use When
 
-- Any visible motion or scroll choreography has changed.
+- A substantial motion-system change or pre-delivery motion review needs broad lifecycle/performance coverage.
 - A site uses Motion, GSAP, Lenis, WebGL, observers, timers, or custom RAF loops.
 - The user expects high-end animation quality before final delivery.
 
@@ -66,15 +66,9 @@ Catch the animation issues that make a premium site feel fragile or slow.
 - Known risks or untested paths are honestly reported.
 - The site feels premium because motion supports the experience.
 
-## Shared Website Requirements
+## Scoped execution
 
-- Inspect before coding: framework, router, rendering mode, styling system, motion libraries, scroll setup, entry files, reduced-motion handling, and available verification commands.
-- Use the existing project motion stack first. Add Motion, GSAP, Lenis, or other animation libraries only when the interaction requires them and explain why.
-- Prefer CSS transitions for simple local state changes; use Motion for React-state, layout, gesture, and component transitions; use GSAP for timeline-heavy, scroll-pinned, SVG, text, or advanced choreography.
-- Keep animation purposeful: clarify sequence, depth, focus, tactility, or product understanding. Do not use motion to hide weak layout or generic copy.
-- Respect accessibility: reduced motion, keyboard access, focus management, no hover-only essential behavior, and no motion that blocks content.
-- Protect performance: prefer transform and opacity, avoid layout thrashing, clean up timelines/listeners/observers, and test mobile.
-- Run available lint, build, test, and local browser checks when possible; report exact commands and untested areas.
+Apply the [shared web contract](../../website-operating-rules/references/scoped-web-contract.md) once when execution crosses phases; reuse it if already read. Load only the specialist guidance relevant to the requested surface and deliverable.
 
 ## Official Source Anchors
 

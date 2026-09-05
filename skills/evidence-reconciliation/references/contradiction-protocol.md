@@ -22,12 +22,7 @@ Allowed states:
 
 ### Capacity and timeline sub-ledger
 
-For volume, capacity, credit, warmup, trial, or date claims, use this additional row before making a conclusion:
-
-| Population | Active lead/contact cap | Credit/message cap | Sender pool and daily cap | Selected path | Clock anchor | Preconditions | Claimed result | State |
-|---|---|---|---|---|---|---|---|---|
-
-Do not infer that a numeric allowance remains usable after an upgrade, expiry, migration, or provider change without direct current evidence.
+For capacity/time claims, check applicable units, system boundary, limits and clock anchors. For commercial/outbound claims, use the project-governed capacity model: distinguish available credits, qualified records, delivery capacity, pacing, eligibility and actual operating time; identify the bottleneck before deriving an output or date. Do not impose sender or lead fields on unrelated systems.
 
 ## 2. Conflict types
 

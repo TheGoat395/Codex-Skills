@@ -9,3 +9,5 @@ Provider/account integrations, deployment-specific skills, local OS tooling, and
 Before publishing a new release, review every file in `skills/` for private paths, credentials, non-public links, bundled assets, and third-party materials that require attribution or separate licensing.
 
 The added reasoning and agent-quality skills cite public research and inspiration sources for context; they do not bundle third-party source text, code, or assets.
+
+The design-guidance evidence loop and native React View Transition reference were written as provider-neutral adaptations after reviewing Vercel's public `design.md`, design-agent articles, and agent-skills repository. They do not bundle Vercel wording, CSS, logos, assets, or copied skill files; source links are recorded in each reference.

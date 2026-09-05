@@ -12,8 +12,8 @@ Make forms feel trustworthy and complete instead of unstyled utility afterthough
 
 ## Do Not Use When
 
-- The form backend, action, or destination is unknown and the user only wants visual mockup.
-- A form library and design system already define exact patterns.
+- The task has no form/input surface. A requested visual mockup remains in scope: provide real labels, semantics and state designs with an explicitly inactive or mocked submit adapter.
+- Existing form behavior is correct and this request neither changes nor reviews it. Follow an established library/design pattern when implementing or repairing a form.
 - The task is unrelated to input or conversion.
 
 ## Discovery Questions
@@ -54,7 +54,7 @@ Make forms feel trustworthy and complete instead of unstyled utility afterthough
 
 ## QA Checklist
 
-- Submit empty, invalid, valid, and repeated submissions.
+- Test empty, invalid, valid and repeated submissions through a local fixture, test route or authorized test destination. Never create a real payment, booking, message or client record merely to satisfy QA.
 - Test keyboard and mobile input behavior.
 - Check loading, disabled, success, and error states.
 - Verify network/backend behavior or explicitly report if mocked.
@@ -65,18 +65,16 @@ Make forms feel trustworthy and complete instead of unstyled utility afterthough
 - Every submission state is designed.
 - The implementation truthfully reflects backend availability.
 
-## Shared Website Requirements
+## Shared scope
 
-- Inspect before coding: project structure, framework, router, homepage or main entry, styling system, JavaScript or motion system, assets, and available commands.
-- Prefer the existing project stack and conventions before adding dependencies or moving architecture.
-- For Next.js App Router projects, keep Server Components as the default and introduce Client Components only for interactivity, browser APIs, effects, or client-only libraries.
-- For React work, keep components pure, derive render data during render, and use Effects only to synchronize with external systems.
-- Default website output must still follow the premium visual baseline: strong type, real content, designed states, responsive polish, and no generic card-grid filler.
-- Run available lint, build, test, and local browser checks when possible; report exactly what ran and what was not tested.
-- Check desktop and mobile behavior when changing visible UI, especially overflow, focus, loading, empty, error, and reduced-motion states.
+For applicable substantial web work, reuse the [shared scoped web contract](../../website-operating-rules/references/scoped-web-contract.md) when available. Preserve current authorization, stack and requested scope; this optional reference does not require another planning or approval cycle.
 
 ## Official Source Anchors
 
 - React reference: https://react.dev/reference/react
 - You Might Not Need an Effect: https://react.dev/learn/you-might-not-need-an-effect
 - Next.js docs overview: https://nextjs.org/docs
+
+## Submission integrity
+
+Show success only after the adapter confirms its defined outcome; distinguish accepted/enqueued from delivered or completed. Preserve entered values on recoverable failure and provide an appropriate retry path. Pending UI prevents accidental repeats but does not replace backend duplicate protection for nonidempotent actions. Use the established backend idempotency/duplicate mechanism where applicable and test delayed responses, duplicate attempts and failures using an authorized test destination. Mockups must remain visibly mock/inactive and must not imply delivery.

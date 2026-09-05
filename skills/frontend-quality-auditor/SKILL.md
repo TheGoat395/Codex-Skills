@@ -1,6 +1,6 @@
 ---
 name: frontend-quality-auditor
-description: Audit frontend websites and apps before launch. Use for production-readiness reviews, visual polish checks, responsive QA, accessibility risks, performance and SEO basics, interaction states, forms, media, copy clarity, trust signals, and ship/no-ship recommendations for React, Next.js, static sites, dashboards, landing pages, portfolios, and product UI.
+description: "Audit launch readiness; report ship/no-ship."
 ---
 
 # Frontend Quality Auditor
@@ -61,3 +61,7 @@ Use this structure unless the user asks for something else:
 6. **Verification Notes**: Commands, URLs, viewports, screenshots, and checks actually performed.
 
 Read `references/audit-checklist.md` for the full checklist when performing a complete launch-readiness review.
+
+## Scope and evidence
+
+Add `insufficient evidence / not assessed` when source-only or sampled evidence cannot support readiness. Qualify every verdict by surface and claimed stage. Recommendations remain recommendations in an analysis-only audit.

@@ -13,7 +13,7 @@ Read before generating:
 
 ## STEP 1: Light Discovery
 
-Establish two things — project context and designer weighting — before generating. Keep it to 1-2 questions.
+Establish two things — project context and designer weighting — before generating. Infer from available context first.
 
 ### Infer First, Ask Second
 
@@ -31,21 +31,13 @@ Project context: [inferred — e.g. "productivity SaaS dashboard"]
 Proposed weighting: Primary [Designer] · Secondary [Designer]
 ```
 
-If `AskUserQuestion` is available and the weighting is genuinely ambiguous, offer:
-- **Confirm** — proceed with the proposed weighting
-- **Adjust** — change primary/secondary designer
-
-Otherwise ask in plain text: "Does this weighting sound right, or should I adjust?"
-
-### Wait Gate
-
-For non-trivial components, **confirm context before generating**. For a small, well-specified request ("add a press-scale to this button"), state the inference in one line and skip straight to STEP 3 — don't manufacture a question.
+Use current user direction and adequate existing context without asking again. State reversible assumptions and proceed. Ask only when a consequential missing choice actually blocks implementation; weighting itself is not an approval boundary.
 
 ---
 
 ## STEP 2: Load Weighted Knowledge
 
-Based on the confirmed weighting, read the relevant designer file(s):
+Based on the context-supported weighting, read the relevant designer file(s):
 - **Read `references/emil-kowalski.md`** if Emil is primary/secondary — restraint, the frequency rule, when NOT to animate
 - **Read `references/jakub-krehel.md`** if Jakub is primary/secondary — production polish judgment, subtlety bar
 - **Read `references/jhey-tompkins.md`** if Jhey is primary/secondary — playful expression, what motion could become
@@ -61,10 +53,10 @@ If the component involves complex or numerous animations, also read `references/
 Build the component. Apply, in order:
 
 1. **The frequency gate (Emil)** — Should this animate at all? High-frequency or keyboard-initiated interactions get minimal or no motion. Decide before adding anything.
-2. **Recipes from the cookbook** — Use the weighted designer's patterns. Enter = opacity + translateY + blur. Exit subtler than enter. Custom easing or springs, never bare `ease`.
+2. **Recipes from the cookbook** — Use the weighted designer's patterns. Choose instant, opacity-only or movement to fit the purpose. Blur is optional and measured. Exits usually carry less visual weight; choose easing/springs for the actual brand and behavior.
 3. **Accessibility** — Every animation ships with `prefers-reduced-motion` handling, in the same code. No exceptions, no follow-up.
-4. **Performance** — Animate `transform` / `opacity` / `filter` only. Never `width` / `height` / `top` / `left`.
-5. **Context-appropriate timing** — Emil-weighted → under 300ms. Jakub → 200-500ms polish. Jhey → whatever serves the effect.
+4. **Performance** — Prefer transform/opacity; filter/clip effects can paint and must be measured. Use measured layout/FLIP or bounded size animation when it serves content flow; avoid layout thrash.
+5. **Context-appropriate timing** — Use the weighted ranges as starting points: under 300ms for frequent productivity actions, 200–500ms for some transitions, longer expressive scenes when earned. The actual brief, interruption, preference and measured consequence control.
 
 ---
 
@@ -78,10 +70,10 @@ Then briefly tell the user the motion decisions you made and why — which desig
 
 ## Success Criteria
 
-- [ ] Context and weighting confirmed (or inference stated for trivial requests)
+- [ ] Context and weighting grounded in user direction or available evidence
 - [ ] Frequency gate applied — motion is purposeful, not decorative-by-default
 - [ ] Recipes drawn from the cookbook, matched to the designer weighting
 - [ ] `prefers-reduced-motion` handled in all generated motion
-- [ ] Only `transform` / `opacity` / `filter` animated
+- [ ] Rendering cost measured where needed; layout/effect exceptions justified
 - [ ] Code self-checked against creation-gotchas.md
 - [ ] Motion decisions explained to the user

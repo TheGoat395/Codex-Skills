@@ -1,21 +1,15 @@
 ---
 name: tailwind-responsive-layouts
-description: Build responsive Tailwind CSS layouts for premium websites and apps. Use for breakpoints, mobile-first layout, grids, flex, spacing, container widths, aspect ratios, responsive typography, media crops, nav adaptation, dashboard density, and preventing mobile stacking from looking generic.
+description: "Implement responsive CSS layout with Tailwind."
 ---
 
 # Tailwind Responsive Layouts
 
+For substantial web work, reuse the [scoped web contract](../website-operating-rules/references/scoped-web-contract.md) when available; it replaces duplicated policy here. Match the requested scope and existing decisions; a missing optional sibling does not block this local procedure.
+
 ## Use This Skill
 
-Use this skill for compose responsive tailwind layouts that feel designed on mobile and desktop.
-
-## Operating Contract
-
-1. Inspect the existing project before changing code.
-2. Identify the styling system, token source, component primitive strategy, and available verification commands.
-3. Keep premium visual standards active: no generic library defaults, no weak states, no one-off styling chaos.
-4. Follow existing project conventions unless a change clearly improves the result.
-5. Run available checks and visually inspect responsive output when the change affects UI.
+Use this skill to compose responsive tailwind layouts that feel designed on mobile and desktop.
 
 ## Required Reference
 
