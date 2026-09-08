@@ -29,7 +29,7 @@ Generated from `skills/*/SKILL.md`.
 | `css-grid-editorial-systems` | Implement asymmetric editorial CSS Grid layouts. | 3 | 4200 |
 | `cta-language-systems` | Make action labels explain what happens next. | 3 | 3883 |
 | `deep-research` | Research with scoped depth and counterevidence. | 7 | 17636 |
-| `design-motion-principles` | Motion through Kowalski, Krehel and Jhey lenses. | 16 | 187128 |
+| `design-motion-principles` | Motion through Kowalski, Krehel and Jhey lenses. | 16 | 187127 |
 | `editorial-typography-systems` | Define font pairing and responsive hierarchy. | 3 | 3758 |
 | `evidence-reconciliation` | Resolve stale facts and authority conflicts. | 3 | 11963 |
 | `final-client-handoff` | Prepare verified ownership and delivery notes. | 6 | 14669 |
