@@ -11,7 +11,7 @@ Inspect relevant structure, framework, entry files, styling and interaction syst
 
 ## Selected stack
 
-Retain the selected framework and existing package manager. For a new project with an unresolved choice, use `route-enterprise-web-stack`; then select only dependencies required by the actual components. The roles below are optional capabilities, not an installation list.
+Retain the selected framework and existing package manager. For a new project with an unresolved choice, use `route-enterprise-web-stack` if installed. Otherwise, compare the actual rendering, interaction, hosting and maintenance requirements, and choose the smallest compatible stack. Select only dependencies required by the actual components. The roles below are optional capabilities, not an installation list.
 
 ## Dependency Roles
 
@@ -56,4 +56,4 @@ Read `references/stack-recipes.md` when starting a new project or adding depende
 
 ## Ownership
 
-Coordinate integration once framework and direction are chosen. Use `route-enterprise-web-stack` only for an unresolved architecture decision. A localized task goes directly to its implementation owner; this skill does not require a new site blueprint or full tool stack.
+Coordinate integration once framework and direction are chosen. The optional architecture specialist is useful only for an unresolved decision; its absence does not block the local procedure above. A localized task goes directly to its implementation owner; this skill does not require a new site blueprint or full tool stack.
