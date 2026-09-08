@@ -25,4 +25,4 @@ Read `references/tailwind-design-tokens-guide.md` when this skill triggers for a
 
 ## Ownership
 
-Own token consumption by the installed Tailwind version and mapping to utilities/aliases. Use `design-token-production-pipeline` only when generation, validation or multiple output consumers require a compiler contract.
+Own token consumption by the installed Tailwind version and mapping to utilities/aliases. Use `design-token-production-pipeline`, if installed, only when generation, validation or multiple output consumers require a compiler contract. Otherwise, retain the existing token source, document its output consumers, and check generated values and aliases against that source. Do not add a compiler just to replace a missing specialist.
