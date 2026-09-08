@@ -54,7 +54,7 @@ Route deep follow-up work to focused skills instead of bloating this audit:
 Use this structure unless the user asks for something else:
 
 1. **Verdict**: Ship, ship after fixes, or do not ship yet.
-2. **Top Risks**: The 3-5 issues most likely to affect users or trust.
+2. **Top Risks**: The material issues most likely to affect users or trust, if any; do not invent a minimum count.
 3. **Findings**: Severity, location, evidence, impact, and recommended fix.
 4. **Quick Wins**: Small improvements with high visible payoff.
 5. **Specialist Follow-Ups**: Which focused skills or checks should be run next.

@@ -1,4 +1,4 @@
 interface:
   display_name: "Cross Browser QA"
-  short_description: "Smoke-test sites across Chromium, WebKit/Safari-like, and Firefox behavior"
+  short_description: "Verify browser-engine compatibility."
   default_prompt: "Use $cross-browser-qa to verify engine-sensitive behavior within the requested scope."

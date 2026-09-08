@@ -29,7 +29,7 @@ Identify what kind of change is needed:
 - **Invent:** create a mechanism, format, or concept not implied by the current defaults.
 - **Repair:** escape a stale, generic, overconstrained, or repeatedly failing direction.
 
-Use `creative-direction-divergence` for a formal premium-website art-direction process. Use `cross-domain-creative-divergence` for a formal business or campaign creative brief. Use this skill when the central need is general creative cognition or problem-solving across domains.
+If installed, `creative-direction-divergence` can own a formal website direction study and `cross-domain-creative-divergence` a business or campaign brief. Neither is required by this public collection. Otherwise use the search, development and selection references below, adapting evaluation criteria to the brief. Preserve an already selected direction unless revisiting it is in scope.
 
 ## Frame a useful search space
 

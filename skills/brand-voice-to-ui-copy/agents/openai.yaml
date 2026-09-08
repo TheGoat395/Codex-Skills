@@ -1,4 +1,4 @@
 interface:
   display_name: "Brand Voice To UI Copy"
-  short_description: "Translate brand voice into buttons, labels, states, errors, and product copy"
+  short_description: "Translate brand voice into interface microcopy."
   default_prompt: "Use $brand-voice-to-ui-copy to translate voice into functional microcopy within the requested scope."

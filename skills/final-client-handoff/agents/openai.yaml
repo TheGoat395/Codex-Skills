@@ -1,4 +1,4 @@
 interface:
   display_name: "Final Client Handoff"
-  short_description: "Prepare final website handoff with files, URLs, commands, checks, and open risks"
+  short_description: "Prepare verified ownership and delivery notes."
   default_prompt: "Use $final-client-handoff to deliver an accurate closeout and a complete release record when needed within the requested scope."

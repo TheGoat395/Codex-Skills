@@ -5,9 +5,9 @@ Build interactive components with purposeful motion. Light discovery, then gener
 ## Required Reading
 
 Read before generating:
-1. `references/motion-cookbook.md` — the recipe source for all motion code
+1. `references/motion-cookbook.md` — read the sections for the selected effect; other recipes stay unloaded
 2. `references/accessibility.md` — `prefers-reduced-motion` is mandatory in everything you generate
-3. `references/creation-gotchas.md` — Claude's failure modes when writing motion; self-check against these
+3. `references/creation-gotchas.md` — Common implementation failure modes when writing motion; self-check against these
 
 ---
 
@@ -19,7 +19,7 @@ Establish two things — project context and designer weighting — before gener
 
 Check what you can already see:
 - **The request** — what component, what interaction, what stack (React / Framer Motion / CSS / HTML)?
-- **CLAUDE.md, package.json, existing components** — project type and existing animation conventions (durations, easing, libraries)
+- **Applicable project instructions, package.json and affected components** — project type and existing animation conventions; reuse unchanged context
 
 ### Propose Context + Weighting
 
@@ -62,7 +62,7 @@ Build the component. Apply, in order:
 
 ## STEP 4: Self-Check
 
-Before presenting, verify the generated code against every item in `references/creation-gotchas.md`. Fix anything that matches a gotcha.
+Check applicable implementation risks from `references/creation-gotchas.md`. Run and inspect the affected interaction, including rapid reversal, keyboard/focus and reduced motion; repair observed defects and repeat the affected check. A matching code pattern alone is not a defect. If runtime inspection is unavailable, state that boundary and complete feasible source checks.
 
 Then briefly tell the user the motion decisions you made and why — which designer weighting drove the timing, easing, and whether something was deliberately left un-animated.
 

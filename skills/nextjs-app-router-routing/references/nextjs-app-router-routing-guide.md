@@ -75,3 +75,7 @@ For applicable substantial web work, reuse the [shared scoped web contract](../.
 - Next.js docs overview: https://nextjs.org/docs
 - App Router layouts and pages: https://nextjs.org/docs/app/getting-started/layouts-and-pages
 - Server and Client Components: https://nextjs.org/docs/app/getting-started/server-and-client-components
+
+## Version-aware route inputs
+
+Check the installed Next.js version before typing route props. Current App Router page conventions provide `params` and `searchParams` as promises: unwrap with `await` in an async Server Component or React `use` in a Client Component. Do not copy older synchronous examples into a current project or migrate a legacy router merely to match this guide. Verify direct loads and query-driven navigation after changing these inputs. [Page conventions](https://nextjs.org/docs/app/api-reference/file-conventions/page).

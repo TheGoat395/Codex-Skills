@@ -7,7 +7,7 @@ Prevent generic builds by giving the site a clear visual lane before implementat
 ## Use When
 
 - The user asks for a beautiful, premium, modern, cinematic, luxury, editorial, or reference-driven website.
-- A site has no strong design direction yet.
+- An existing direction needs concrete type, color, media or motion decisions. For a genuinely unresolved overall direction, use `web-design-direction-system` when available; otherwise establish the missing intent within the current brief.
 - The task is a redesign or new build where visual quality matters.
 
 ## Do Not Use When
@@ -32,7 +32,7 @@ Prevent generic builds by giving the site a clear visual lane before implementat
 
 ## Implementation Rules
 
-- Define type, color, media, layout grammar, motion language, and copy voice before coding.
+- Reuse established type, color, media, layout, motion and voice; resolve only the missing decisions needed by this change.
 - Use one primary lane and avoid mixing every influence.
 - Make the first viewport a composition with a subject, not a content slot.
 - Name what is being intentionally avoided.

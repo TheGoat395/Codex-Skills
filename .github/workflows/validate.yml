@@ -22,8 +22,14 @@ jobs:
       - name: Validate skill catalog
         run: python3 scripts/validate_skills.py
 
+      - name: Validate public package portability
+        run: python3 scripts/validate_public_package.py
+
       - name: Test catalog and replacement recovery
         run: python3 scripts/test_catalog.py
+
+      - name: Test bundled skill helpers
+        run: python3 scripts/test_skill_helpers.py
 
       - name: Validate installer paths
         run: |

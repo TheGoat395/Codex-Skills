@@ -11,7 +11,7 @@ Produce a decision-ready result whose material claims can be traced to inspected
 
 - **Focused:** apply the contract, hierarchy, exact claim support and stopping rule below; use the relevant sections of [evidence standard](references/evidence-standard.md) when evidence ambiguity or an auditable ledger matters.
 - **Deep or exhaustive:** read [coverage and research passes](references/coverage-and-research-passes.md) and [evidence standard](references/evidence-standard.md) before substantive research. Map, screen, deepen, challenge and verify; source count is not coverage.
-- **Exhaustive coverage, exceptional consecutive maximum-reasoning passes, or joint `$godmode` work:** also read [challenger and handoff](references/challenger-and-handoff.md). Deep Research establishes the decision; separately authorized GODMODE execution implements and verifies it.
+- **Exhaustive coverage, exceptional consecutive maximum-reasoning passes, or joint `$godmode` work:** also read [challenger and handoff](references/challenger-and-handoff.md). Deep Research establishes the decision. If a separately installed `$godmode` skill is explicitly invoked, use it for authorized execution; otherwise complete authorized implementation and verification directly. Its absence is not a blocker.
 - **Material access/search failure or long, multi-surface, compaction-prone work:** read the applicable recovery or checkpoint sections of [access and continuity](references/access-and-continuity.md).
 
 Inspect exact artifacts; snippets are discovery aids. Preserve protected-source exclusions on alternate routes. Challenge the strongest countercase and complete material in-scope omissions. Separate screened and deeply inspected coverage. For deep/exhaustive or consequential delivery, read [research delivery](references/research-delivery.md); otherwise lead with the answer, exact supporting citations and material uncertainty. Instruction authority controls work, not empirical truth: test factual claims even in governing sources. Do not expand scope or force durable ledgers on small work.
@@ -21,7 +21,7 @@ Inspect exact artifacts; snippets are discovery aids. Preserve protected-source 
 1. Identify the decision, deliverable, or truth claim the research must support.
 2. Derive scope, exclusions, time horizon, freshness, jurisdiction, acceptable uncertainty, and failure conditions from the request and governing sources.
 3. Define observable acceptance criteria and what evidence could change the answer.
-4. Read named governing files, records, datasets, accounts, repositories, or primary sources completely before claiming adoption.
+4. Inspect the exact named sources and the governing material applicable to the decision. Read complete operative sections and enough surrounding context to preserve meaning; expand to full documents or collections when requested or needed. Report partial coverage honestly rather than requiring an unrelated repository or account tour.
 5. Make reasonable reversible assumptions when they preserve the objective; surface only assumptions that materially affect the result.
 
 Keep research read-only unless the request separately authorizes implementation, communication, purchasing, publication, or account mutation.

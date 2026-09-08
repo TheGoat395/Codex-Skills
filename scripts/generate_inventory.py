@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import json
-import re
+from validate_skills import parse_frontmatter
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -14,25 +14,7 @@ INVENTORY = ROOT / "SKILL_INVENTORY.md"
 
 
 def read_description(skill_md: Path) -> str:
-    text = skill_md.read_text(encoding="utf-8")
-    match = re.match(r"^---\n(.*?)\n---\n", text, re.DOTALL)
-    if not match:
-        return ""
-    frontmatter = match.group(1)
-    lines = frontmatter.splitlines()
-    for index, line in enumerate(lines):
-        if not line.startswith("description:"):
-            continue
-        value = line.split(":", 1)[1].strip()
-        if value in {">", ">-", "|", "|-"}:
-            block: list[str] = []
-            for follow in lines[index + 1 :]:
-                if follow and not follow.startswith(" "):
-                    break
-                block.append(follow.strip())
-            return " ".join(part for part in block if part)
-        return value.strip('"')
-    return ""
+    return parse_frontmatter(skill_md).get("description", "")
 
 
 def skill_info(path: Path) -> dict[str, object]:

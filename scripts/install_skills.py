@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import shutil
 import tempfile
 from datetime import datetime
@@ -12,7 +13,7 @@ from pathlib import Path
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Install shared Codex skills.")
     parser.add_argument("--source", default=str(Path(__file__).resolve().parents[1] / "skills"))
-    parser.add_argument("--dest", default=str(Path.home() / ".codex" / "skills"))
+    parser.add_argument("--dest", default=str(Path(os.environ.get("CODEX_HOME") or Path.home() / ".codex").expanduser() / "skills"))
     parser.add_argument(
         "--collection",
         action="append",
@@ -63,6 +64,17 @@ def select_skills(skills: list[Path], collections: dict[str, dict[str, object]],
     return [skill for skill in skills if skill.name in selected_names]
 
 
+def check_source_tree(src: Path) -> None:
+    """Reject nonportable links before copytree can follow them."""
+    if src.is_symlink():
+        raise ValueError(f"Symbolic-link skill source is not supported: {src}")
+    for current, dirs, files in os.walk(src, followlinks=False):
+        for name in dirs + files:
+            path = Path(current) / name
+            if path.is_symlink():
+                raise ValueError(f"Symbolic-link package member is not supported: {path}")
+
+
 def copy_skill(src: Path, dest: Path, dry_run: bool, replace: bool, backups: Path) -> str:
     target = dest / src.name
     if target.exists() and not replace:
@@ -71,6 +83,9 @@ def copy_skill(src: Path, dest: Path, dry_run: bool, replace: bool, backups: Pat
         return "would_replace" if target.exists() else "would_install"
     if target.is_symlink():
         raise ValueError(f"Refusing to replace a symbolic-link target: {target}")
+    check_source_tree(src)
+    if dest.resolve().is_relative_to(src.resolve()):
+        raise ValueError("Installation destination cannot be inside the source skill")
     # Prepare the replacement before moving the user's existing installation.
     with tempfile.TemporaryDirectory(prefix=".skill-stage-", dir=dest) as scratch:
         staged = Path(scratch) / src.name

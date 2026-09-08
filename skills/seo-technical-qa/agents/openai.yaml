@@ -1,4 +1,4 @@
 interface:
   display_name: "SEO Technical QA"
-  short_description: "Audit technical SEO, metadata, indexing, sitemap, canonicals, and structured data"
+  short_description: "Verify crawlability and search/share metadata."
   default_prompt: "Use $seo-technical-qa to verify accurate discoverability metadata and routes within the requested scope."

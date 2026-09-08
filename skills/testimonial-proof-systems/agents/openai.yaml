@@ -1,4 +1,4 @@
 interface:
   display_name: "Testimonial Proof Systems"
-  short_description: "Write and organize testimonials, reviews, logos, metrics, and proof without fakery"
+  short_description: "Present attributable testimonials and proof."
   default_prompt: "Use $testimonial-proof-systems to present attributable proof with honest context within the requested scope."

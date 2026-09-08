@@ -64,7 +64,7 @@ Classify a deductive target as:
 - **Unknown:** both C and `not C` remain compatible with the premises.
 - **Premises inconsistent:** the premise set itself requires repair before ordinary inference.
 
-This three-way classification is often more accurate than forcing true or false.
+Check premise consistency first, then classify the target as entailed, contradicted or unknown; do not force a binary answer from incomplete evidence.
 
 ## Coordinate boundaries
 

@@ -45,7 +45,7 @@ For a smaller first install:
 python3 scripts/install_skills.py --collection taste-and-build-gates
 ```
 
-Prefer a packaged archive? Download the latest release from [GitHub Releases](https://github.com/TheGoat395/Codex-Skills/releases/latest), extract it, then run the same install commands from the extracted folder.
+For the newest reviewed skill changes, use the current `main` branch. Published release archives are versioned snapshots and may predate later fixes. To use a specific published snapshot, download it from [GitHub Releases](https://github.com/TheGoat395/Codex-Skills/releases/latest), extract it, then run the same install commands from the extracted folder.
 
 ## Premium Website Showcase
 
@@ -141,7 +141,7 @@ Replace existing skills only after review:
 python3 scripts/install_skills.py --replace
 ```
 
-The installer skips existing skills by default. When `--replace` is used, existing skill folders are moved into a timestamped backup folder under `~/.codex/skills`.
+The installer uses `$CODEX_HOME/skills` when `CODEX_HOME` is set, otherwise `~/.codex/skills`; an explicit `--dest` takes precedence. It skips existing skills by default. When `--replace` is used, existing skill folders are moved into a timestamped backup folder inside the selected destination.
 
 After installing, start a new Codex conversation so skill discovery refreshes.
 

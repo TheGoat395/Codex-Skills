@@ -94,9 +94,9 @@ Conditional UI changes are candidates for inspection, not findings. Instant tran
 - [ ] Prefer transform/opacity; measure rendering cost and justify layout/effect exceptions
 - [ ] Tested on low-end devices
 - [ ] No continuous animations without purpose
-- [ ] CSS transitions (not keyframes) for interruptible animations (Emil)
-- [ ] Direct style updates for drag operations (not CSS variables) (Emil)
-- [ ] Velocity-based thresholds (not distance) for swipe dismiss (Emil)
+- [ ] Rapid reversal and cancellation preserve continuity; choose transitions or an animation API that supports the required retargeting
+- [ ] Compare scoped custom properties and direct style updates when a trace shows drag-related invalidation cost
+- [ ] Gesture completion considers direction, displacement and recent velocity; test slow drags, quick flicks and reversal
 
 ---
 

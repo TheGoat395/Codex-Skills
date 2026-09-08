@@ -123,7 +123,8 @@ async function requireImageMagick() {
 
 async function refuseExisting(file, force) {
   try {
-    await fs.access(file);
+    const entry = await fs.lstat(file);
+    if (!entry.isFile() || entry.isSymbolicLink()) throw new Error("capture destination must be a regular file, not a symlink or directory");
     if (!force) throw new Error(`refusing to overwrite existing file without --force: ${file}`);
   } catch (error) {
     if (error.code !== 'ENOENT') throw error;
@@ -227,6 +228,7 @@ async function main() {
   let httpErrorCount = 0;
   let pageErrorCount = 0;
   let networkIdleTimedOut = false;
+  let fontReadyTimedOut = false;
   let page;
 
   try {
@@ -254,9 +256,10 @@ async function main() {
     } catch (error) {
       throw new Error(`navigation failed (${error?.name || 'Error'}); inspect the target and server state separately`);
     }
-    await page.evaluate(async () => {
-      if (document.fonts?.ready) await Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,3000))]);
+    fontReadyTimedOut = await page.evaluate(async () => {
+      const ready = await Promise.race([document.fonts.ready.then(() => true),new Promise(r=>setTimeout(() => r(false),3000))]);
       document.documentElement.style.setProperty('scroll-behavior', 'auto', 'important');
+      return !ready;
     });
     try {
       await page.waitForLoadState('networkidle', { timeout: Math.min(8000, args.navigationTimeout) });
@@ -335,7 +338,7 @@ async function main() {
       reducedMotion: args.reducedMotion,
       animationsDisabledDuringCapture: true,
       browserEngine: "chromium", viewportEmulation: true, scrollBehaviorOverridden: true,
-      navigationTimeoutMs: args.navigationTimeout, maxHeight: args.maxHeight, networkIdleTimedOut,
+      navigationTimeoutMs: args.navigationTimeout, maxHeight: args.maxHeight, networkIdleTimedOut, fontReadyTimedOut, fontReadyTimeoutMs: 3000,
       pageHeight: captureHeight,
       step: args.step,
       waitMs: args.wait,
@@ -354,7 +357,7 @@ async function main() {
     try {
       // Backups live beside each destination so restoration stays on that filesystem.
       for(const [,dest] of destinations){
-        try { await fs.access(dest); if(!args.force) throw new Error('output appeared during capture'); const backup=dest+'.backup-'+Date.now()+'-'+Math.random().toString(16).slice(2); await fs.copyFile(dest,backup,1); backups.push([backup,dest]); }
+        try { const entry=await fs.lstat(dest); if(!entry.isFile() || entry.isSymbolicLink()) throw new Error('capture destination must remain a regular file'); if(!args.force) throw new Error('output appeared during capture'); const backup=dest+'.backup-'+Date.now()+'-'+Math.random().toString(16).slice(2); await fs.copyFile(dest,backup,1); backups.push([backup,dest]); }
         catch(error){if(error.code!=='ENOENT') throw error;}
       }
       for(const [src,dest] of destinations){ await fs.copyFile(src,dest,args.force?0:1); published.push(dest); }

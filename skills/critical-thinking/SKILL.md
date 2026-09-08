@@ -14,7 +14,7 @@ Reconstruct the exact position fairly: conclusion, evidence, assumptions, scope 
 - **Argument, explanation, causal, forecast, normative, decision or source audit with material reasoning:** read [argument review protocol](references/argument-review-protocol.md); consequential or multi-branch arguments also need [argument and evidence mapping](references/argument-evidence-mapping.md).
 - **Consequential judgment or live competing explanations:** read [challenge protocol](references/challenge-protocol.md); consequential work also needs [verification and confidence](references/verification-confidence.md). Correlated self-review is not proof.
 
-Bounded claim audits use the core checks directly. Formal entailment belongs to `logical-thinking`; missing evidence to `deep-research`; source conflicts to `evidence-reconciliation`; assertion strength to `honesty`.
+Bounded claim audits use the core checks directly. Formal entailment belongs to `logical-thinking`; missing evidence to `deep-research`; source conflicts to `evidence-reconciliation`; assertion calibration can use `honesty` if separately installed. Without it, use the confidence and delivery rules below; the public collection has no required dependency on that skill.
 
 ## Hold the thinking disposition
 
