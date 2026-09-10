@@ -5,19 +5,19 @@ description: "Compare captures; stitch lazy/animated pages."
 
 # Visual Regression Lab
 
-Use this skill to prove the site looks right in a browser, not just in code.
+Use this skill to capture comparable browser evidence and inspect visual regressions. Scope routes, viewports and states to the requested comparison; a capture alone does not prove quality.
 
 ## Required Checks
 
 1. Start or identify the local server.
 2. Open the relevant route in a browser or Playwright.
-3. Capture desktop and mobile screenshots.
+3. Capture the relevant supported viewports and states, using the same conditions for baseline and candidate.
 4. Check console errors, failed requests, layout overflow, missing media, and text clipping.
 5. Inspect first viewport composition, hierarchy, spacing, typography, image crops, and CTA visibility.
 6. Test key interactions: nav, forms, menus, tabs, accordions, hover states, focus states, and modals.
 7. For animation-heavy work, test reduced-motion behavior and watch for jank.
 8. For canvas/WebGL/video, verify nonblank rendered pixels and stable framing.
-9. Do one second-pass polish edit when the result feels generic or cramped.
+9. Report observed differences with evidence. Repair only when authorized, then recapture affected states; no fixed polish-pass or edit quota applies.
 
 Read [baseline contract](references/baseline-contract.md). When a project has Playwright installed, run `node "<skill-root>/scripts/capture-settled-baseline.mjs" <url> <output-dir>` to capture settled desktop/mobile/reduced-motion states and a machine-readable inspection manifest.
 

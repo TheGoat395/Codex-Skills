@@ -19,6 +19,18 @@
 - Clean up timelines/listeners on route changes.
 - Test rapid scroll and resize.
 
+## Discriminate the cause
+
+| Evidence in the failing interaction | Next probe |
+|---|---|
+| Long main-thread task overlaps the hitch | Inspect its call stack; isolate expensive render, parsing or script work |
+| Repeated layout follows DOM writes | Separate measurement from mutation and compare the trace |
+| Paint/raster dominates a large effect | Reduce its painted area or temporarily disable the effect in a diagnostic run |
+| Jank begins after route return | Count active listeners, observers and timelines before/after remount |
+| First reveal stalls but repeat does not | Compare asset decode, font readiness and initialization under matched cache conditions |
+
+Change one plausible cause and repeat the original interaction under the same conditions. A diagnostic disabled effect is not an accepted visual repair until the intended result is restored and checked. Report traced causality separately from a visually smoother sample.
+
 ## Useful Patterns
 
 - Reduced-motion static equivalent.

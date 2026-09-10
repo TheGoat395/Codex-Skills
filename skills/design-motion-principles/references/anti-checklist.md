@@ -130,9 +130,9 @@ Entrance animations on headings, body paragraphs, navigation links, and other co
 - **Unconsidered easing** — Use a suitable built-in curve, custom curve or spring for continuity and brand
 - **Ignoring transform-origin** — Dropdowns should expand from their trigger, not center
 - **Expecting delight in productivity tools** — Users of high-frequency tools prioritize speed over delight
-- **Using keyframes for interruptible animations** — Keyframes can't retarget mid-flight; use CSS transitions with state
-- **CSS variables for frequent updates** — Causes expensive style recalculation; update styles directly on element
-- **Distance thresholds for dismissal** — Use velocity (distance/time) instead; fast short gestures should work
+- **Using keyframes for interruptible animations** — Plain CSS keyframes do not automatically retarget smoothly; use CSS transitions with state
+- **Broad inherited-variable updates** — May invalidate descendants; compare scoped/non-inherited properties and direct styles in a trace
+- **Rigid dismissal thresholds** — Consider displacement and recent release velocity together; preserve direction, bounds and a non-gesture alternative
 - **Abrupt boundary stops** — Use damping; things slow down before stopping in real life
 
 ---
@@ -266,11 +266,4 @@ element.style.setProperty('--drag-y', `${y}px`);
 element.style.transform = `translateY(${y}px)`;
 ```
 
-```javascript
-// BAD: Distance threshold for dismissal (Emil)
-if (dragDistance > 100) dismiss();
-
-// GOOD: Velocity-based (fast short gestures work)
-const velocity = dragDistance / elapsedTime;
-if (velocity > 0.11) dismiss();
-```
+Gesture dismissal should consider direction, displacement and recent release velocity together. Test slow drags, quick flicks, pauses and reversal; see the cookbook's momentum section. Avoid copying an unqualified velocity constant or removing a useful distance path.

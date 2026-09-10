@@ -75,3 +75,7 @@ For applicable substantial web work, reuse the [shared scoped web contract](../.
 - Motion layout animations: https://motion.dev/docs/react-layout-animations
 - Motion for React: https://motion.dev/docs/react
 - MDN prefers-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
+
+## Measurement-specific failures
+
+For the installed Motion version, check `layoutScroll` on a scroll container and `layoutRoot` on a fixed layout root when coordinates drift during scroll. Non-replaced inline elements cannot be transformed; choose an appropriate display type. For scale distortion, inspect child layout participation and set supported radius/shadow values through Motion-readable styles. Scope repeated shared IDs with `LayoutGroup` when unrelated instances collide. Verify the original scroll/open/reorder path after changing measurement ownership. [Official layout guidance](https://motion.dev/docs/react-layout-animations).

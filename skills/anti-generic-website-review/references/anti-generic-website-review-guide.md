@@ -6,7 +6,7 @@ Catch the visible patterns that make AI-built sites feel cheap or interchangeabl
 
 ## Use When
 
-- Before final delivery of any website/app UI.
+- A requested design-quality review needs to assess specificity against the brief.
 - When the user says the design looks generic, AI, template, weak, basic, cheap, or boring.
 - After version 1 of a build, before the polish pass.
 
@@ -17,7 +17,7 @@ Catch the visible patterns that make AI-built sites feel cheap or interchangeabl
 
 ## Discovery Questions
 
-- What are the top five AI tells in the current page?
+- Which visible choices, if any, conflict with the brief or feel interchangeable? A well-scoped page may need no changes.
 - Which sections use the same layout/container pattern?
 - Where is copy too generic to belong to this specific brand?
 - Where do visuals fail to show the product/person/place/service?
@@ -33,7 +33,7 @@ Catch the visible patterns that make AI-built sites feel cheap or interchangeabl
 ## Implementation Rules
 
 - Name defects specifically before fixing them.
-- Replace generic card grids with ledgers, tables, editorial spreads, sticky scenes, galleries, timelines, or real UI.
+- When repeated cards obscure different content roles, consider ledgers, tables, editorial spreads, galleries, timelines or real UI. Retain intentional card collections that fit the content and approved design.
 - Remove decoration that has no concept, content, or interaction purpose.
 - Make enough concrete brand/content decisions to establish authorship; do not vary the page to meet a count.
 

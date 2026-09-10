@@ -38,7 +38,7 @@ For every material conflict, identify:
 4. whether the difference is factual, temporal, semantic, or a decision change;
 5. the least disruptive correction.
 
-For operating decisions and prescribed behavior, use this default authority order unless the project defines another. For empirical truth, direct evidence, method, scope and freshness control; user or document authority cannot make a false claim true:
+Within user-owned guidance and subject to higher-priority platform instructions, use this default authority order for operating decisions unless the project defines another. For empirical truth, direct evidence, method, scope and freshness control; user or document authority cannot make a false claim true:
 
 1. the user's current explicit decision;
 2. newest applicable governing source;
@@ -75,7 +75,7 @@ Never use vague agreement such as “yes, exactly” when the evidence supports 
 
 Before revising a standing plan, policy, or operating library:
 
-1. inventory every source document and its unique job;
+1. inventory the affected source documents and their unique jobs; expand to the full library only when the requested revision or its dependencies span it;
 2. map source sections to destination sections;
 3. preserve all useful detail unless a deliberate removal is recorded as superseded, duplicated, wrong, or out of scope;
 4. keep legal, quick-reference, template, and long-form operating documents separate when they have separate use cases;
@@ -93,7 +93,7 @@ Before concluding, run these checks:
 - **Authority:** Did a noncontrolling source override the governing one?
 - **Scope:** Did a proposed future capability become a current promise?
 - **Economics:** Did a vendor price, usage charge, labor cost, or client-owned cost disappear?
-- **Lifecycle/timeline:** Does the claimed date name its start point and survive trial expiry, conversion/upgrade behavior, delivery, authentication, warmup, ramp, and reply-operation gates?
+- **Lifecycle/timeline:** Does the claimed date name its clock anchor and satisfy applicable dependencies? For outbound/commercial capacity, include trial expiry, upgrade, authentication, warmup, ramp and reply-operation gates only where relevant.
 - **Ownership:** Did the revision weaken client control, isolation, recovery, or handoff?
 - **Completeness:** Did any document, source, exception, or user requirement get silently dropped?
 - **Truth:** Does every strong claim have direct evidence at the claimed verification layer?

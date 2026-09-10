@@ -1,4 +1,4 @@
 interface:
   display_name: "Image Crop Responsive QA"
-  short_description: "QA responsive image crops, focal points, dimensions, and layout stability"
+  short_description: "Verify image focal points across widths."
   default_prompt: "Use $image-crop-responsive-qa to verify focal points and image layout across widths within the requested scope."

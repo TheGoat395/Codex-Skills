@@ -2,7 +2,7 @@
 
 These are context-dependent interpretive defaults, not designer-authored authority or universal aesthetic rules. Apply the actual user direction, purpose, frequency, accessible state and measured consequence; purposeful artistic expression remains available.
 
-Where Claude typically fails when **writing** motion (as opposed to auditing it). Self-check generated code against every item before presenting.
+Use the applicable checks when writing motion. Verify rendered behavior, not only the generated source; unrelated patterns need no extra workflow.
 
 ---
 
@@ -25,7 +25,7 @@ Where Claude typically fails when **writing** motion (as opposed to auditing it)
 
 - **Avoid unmeasured layout animation.** Prefer transform/opacity; bounded size animation and layout/FLIP can be appropriate when measured and needed for content flow.
 - **Don't sprinkle `will-change` everywhere.** It's a targeted hint for elements about to animate, not a global fix.
-- **Don't use keyframes for interruptible animations.** Keyframes can't retarget mid-flight. Use state-driven CSS transitions for anything the user can re-trigger rapidly.
+- **Test interruptibility.** Plain CSS keyframes do not automatically retarget smoothly. Use state-driven transitions or an animation API that preserves the required continuity during rapid retriggering.
 
 ## Accessibility omissions
 

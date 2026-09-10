@@ -51,7 +51,7 @@ The corpus repeatedly connects visual direction and motion with AI-assisted prod
 
 - 20 public videos were sampled with four real frames each at approximately 8%, 34%, 64%, and 90% of runtime.
 - The frame contacts were visually inspected after replacing an unusable MHTML/storyboard attempt; the current evidence contains real browser, design-tool, prompt, build, and rendered-site frames rather than placeholder color bands.
-- Machine-readable records live in `references/viktor-visual-studies.json`; the global research copy is under `~/.codex/toolchains/enterprise-web/research/viktor-oddy-public-corpus/`.
+- Bundled machine-readable records live in `viktor-visual-studies.json`. Original local captures and the research toolchain are not distributed in this public package; inspect a selected public source again for new visual claims.
 - Treat the sampled frames as bounded evidence of those moments, not as proof that every full-resolution frame of every video was watched.
 
 ## Three-tier prompt output layer
@@ -61,13 +61,13 @@ The corpus repeatedly connects visual direction and motion with AI-assisted prod
 - Every variant carries a public Refero style-system overlay, its source mode, its visual-confidence boundary, and a tier-specific delivery/verification gate.
 - Eleven existing prompt or demo records from a user-owned `Codex-Skills` repository are indexed separately as exact user-owned sources. They remain visually unqualified until inspected.
 
-Use `sellable-web-prompts stats`, `sellable-web-prompts search "<concept>" --tier <1|2|3>`, and `sellable-web-prompts show <source-id> --tier <1|2|3>`.
+The historical `sellable-web-prompts` tool and its database are not included here. These counts describe the original environment, not installed public capability. Use the bundled catalogs as leads and inspect selected public sources directly.
 
 ## Refero public style-system layer
 
 - The local public catalog contains 1,290 style records and 51 public design/prompt collection records captured from the public sitemaps.
 - Each style record retains its visual north star, typography, color roles, components, do rules, do-not rules, public screenshot, and public source page.
-- Search and export with `refero-style-catalog`. This is a local public-reference database, not Refero's private server or account backend.
+- The historical `refero-style-catalog` helper and database are not bundled. The public Refero site remains a discovery route; do not imply local database or private account access.
 - No legal, privacy, terms, account, admin, or private extraction-service page is part of this catalog.
 
 ## Supplementary public footprint

@@ -2,7 +2,7 @@
 
 These are context-dependent interpretive defaults, not designer-authored authority or universal aesthetic rules. Apply the actual user direction, purpose, frequency, accessible state and measured consequence; purposeful artistic expression remains available.
 
-Emil Kowalski is a Design Engineer at Linear (previously Vercel). Creator of Sonner, Vaul, and the "Animations on the Web" course. His approach emphasizes **restraint, speed, and purposeful motion**.
+This lens draws on Emil Kowalski's public work on Sonner, Vaul and "Animations on the Web". His approach emphasizes **restraint, speed, and purposeful motion**.
 
 This file is Emil's **philosophy and decision frameworks** — the judgment for *whether* and *when* to animate. Implementation code lives in `motion-cookbook.md` (cross-referenced below).
 
@@ -91,7 +91,9 @@ Emil's open-source libraries (Sonner for toasts, Vaul for drawers) reveal his ph
 
 Details that matter: matching native motion curves for familiarity (Vaul uses iOS's `cubic-bezier(0.32, 0.72, 0, 1)`), damping near boundaries (*"things in real life don't suddenly stop, they slow down first"*), multi-touch protection, pointer capture during drags, pausing timers when the tab is inactive.
 
-### Sonner Defaults
+### Historical Sonner reference values
+
+These are illustrative values from the source study, not a version-pinned API contract. Verify the installed package before relying on defaults.
 
 | Setting | Value | Rationale |
 |---------|-------|-----------|
@@ -100,7 +102,7 @@ Details that matter: matching native motion curves for familiarity (Vaul uses iO
 | Position | bottom-right | Convention, out of primary content |
 | Dismissible | true | User control by default |
 
-### Vaul Defaults
+### Historical Vaul reference values
 
 | Setting | Value | Rationale |
 |---------|-------|-----------|

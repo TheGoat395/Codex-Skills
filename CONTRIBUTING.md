@@ -17,6 +17,9 @@ Run:
 
 ```bash
 python3 scripts/validate_skills.py
+python3 scripts/validate_public_package.py
+python3 scripts/test_catalog.py
+python3 scripts/test_skill_helpers.py
 python3 scripts/generate_inventory.py
 git diff --check
 ```
