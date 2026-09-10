@@ -23,19 +23,43 @@ def parse_frontmatter(path: Path) -> dict[str, str]:
     data: dict[str, str] = {}
     lines = match.group(1).splitlines()
     for index, line in enumerate(lines):
-        if ":" in line:
-            key, value = line.split(":", 1)
-            key = key.strip()
-            value = value.strip()
-            if value in {">", ">-", "|", "|-"}:
-                block: list[str] = []
-                for follow in lines[index + 1 :]:
-                    if follow and not follow.startswith(" "):
-                        break
-                    block.append(follow.strip())
-                data[key] = " ".join(part for part in block if part)
-            else:
-                data[key] = value.strip('"')
+        # Only root fields control the skill; nested UI metadata must not override them.
+        if not line or line[0].isspace() or line.startswith("#") or ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        key, value = key.strip(), value.strip()
+        if key not in {"name", "description"}:
+            continue
+        if key in data:
+            return {}  # Ambiguous required metadata is not a valid catalog entry.
+        if value in {">", ">-", "|", "|-"}:
+            block = []
+            for follow in lines[index + 1:]:
+                if follow and not follow[0].isspace():
+                    break
+                block.append(follow.strip())
+            value = " ".join(part for part in block if part)
+        elif value.startswith('"'):
+            try:
+                decoded, end = json.JSONDecoder().raw_decode(value)
+                remainder = value[end:].strip()
+                if remainder and not remainder.startswith("#"):
+                    return {}
+                value = decoded
+            except ValueError:
+                return {}
+        elif value.startswith("'"):
+            match = re.fullmatch(r"'((?:[^']|'')*)'\s*(?:#.*)?", value)
+            if not match:
+                return {}
+            value = match.group(1).replace("''", "'")
+        else:
+            value = re.split(r"\s+#", value, maxsplit=1)[0].strip()
+            if value.lower() in {"null", "~", "true", "false"} or re.fullmatch(r"[-+]?\d+(?:\.\d+)?", value) or value.startswith(("[", "{", "*", "&", "!")):
+                return {}
+        if not isinstance(value, str):
+            return {}
+        data[key] = value
     return data
 
 

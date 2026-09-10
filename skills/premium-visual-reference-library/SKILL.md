@@ -18,10 +18,21 @@ Use this skill to pick reference sources before designing a premium website.
 7. State what not to copy.
 8. When implementation is in scope, add selected traits to the shared build spec; a reference-only request ends with the source-backed study.
 
-For systematic direction work, consult `references/style-playbooks.json`, `references/reference-example-patterns.json`, `references/creator-method-cards.json`, and `references/viktor-visual-studies.json`. They contain 50 author-created direction playbooks, 100 primary-source implementation leads with generalized mechanism interpretations, 22 dated creator-method interpretations, and 20 historical visual-study records whose repeated study text is generic synthesis. The 172 URLs across the first three catalogs passed a live reachability check on 2026-08-16; refresh mutable URLs before consequential reuse.
+## Retrieve only the selected material
+
+Use the bundled read-only helper from any working directory:
+
+```bash
+python3 "<skill-root>/scripts/query_catalog.py" --search "reorder" --limit 5
+python3 "<skill-root>/scripts/query_catalog.py" --id M-01
+```
+
+Resolve `<skill-root>` to this skill's actual installation. Search returns bounded discovery results; exact ID returns the original record with its provenance and limitations. The helper checks source fingerprints against the overlay, makes no external requests and writes nothing. If Python is unavailable, search the named JSON file for the selected ID and read that record plus its matching overlay record; no helper installation is required.
+
+The four raw catalogs preserve 50 author-created style playbooks, 100 implementation leads, 22 dated creator-method interpretations and 20 historical video-study records. Repeated mechanism text is generic inference, not verified example code; repeated video-study text is synthesis, not independent per-video observation. Fixed palette, timing, target-size, frame-time and DPR values are illustrative starting choices, not universal standards or measured budgets. Inspect the selected live source and current technical documentation before relying on its actual behavior. Do not load or recrawl every catalog for one reference.
 
 ## Source Fidelity
 
 Preserve exact user-supplied or user-owned prompts when requested. Otherwise use references to understand quality and label independent reconstructions accurately; do not claim third-party brand assets, copy, or unobserved behavior as owned or verified.
 
-Read [catalog provenance overlay](references/catalog-provenance-overlay.json) before item-level evidence claims. Raw catalogs retain all original text/URLs unchanged. The overlay separates dated claims, generalized defaults and currently recoverable evidence. Generic repeated study text is not independently observed per-item evidence. Inspect exact selected references when reusing them; do not recrawl every catalog or assume all historical image paths still resolve.
+Use the matching record in the [catalog provenance overlay](references/catalog-provenance-overlay.json) before item-level evidence claims; the exact-ID helper includes it. Raw catalogs retain all original text/URLs unchanged. The overlay separates dated claims, generalized defaults and currently recoverable evidence. Generic repeated study text is not independently observed per-item evidence. Inspect exact selected references when reusing them; do not recrawl every catalog or assume all historical image paths still resolve.

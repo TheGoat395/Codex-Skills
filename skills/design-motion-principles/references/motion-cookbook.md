@@ -358,13 +358,13 @@ clip-path: polygon(coordinates);
 
 ### Image Reveal Effect
 ```css
-.reveal {
-  clip-path: inset(0 0 100% 0); /* Hidden */
-  animation: reveal 1s forwards cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-@keyframes reveal {
-  to { clip-path: inset(0 0 0 0); } /* Fully visible */
+.reveal { clip-path: inset(0); } /* Complete without animation. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { animation: reveal 1s both cubic-bezier(0.77, 0, 0.175, 1); }
+  @keyframes reveal {
+    from { clip-path: inset(0 0 100% 0); }
+    to { clip-path: inset(0); }
+  }
 }
 ```
 
@@ -459,13 +459,7 @@ element.style.transform = `translateY(${y}px)`;
 ```
 
 ### Momentum-Based Dismissal
-Use velocity (distance / time) instead of distance thresholds:
-```javascript
-const velocity = dragDistance / elapsedTime;
-if (velocity > 0.11) dismiss();
-```
-
-Fast, short gestures should work—users shouldn't need to drag far.
+Consider displacement and recent release velocity together. Define the axis, direction, units and thresholds from the interaction; average speed across the entire drag can misread a paused or reversed gesture. Test slow deliberate drags, quick short flicks, cancellation and a non-gesture close control. A framework's documented gesture velocity can supply the recent sample; do not treat a unitless magic number as a universal threshold.
 
 ### Damping for Natural Boundaries
 When dragging past boundaries, reduce movement progressively. Things in real life slow down before stopping.
@@ -518,17 +512,19 @@ Animations should originate from their logical source:
 ## 14. Scroll-Driven Animations (Jhey)
 
 ### The Core Problem
-Scroll-driven animations are tied to scroll **speed**. If users scroll slowly, animations play slowly. This feels wrong for most UI—you want animations to trigger at a scroll position, not be controlled by scroll speed.
+A scroll/view-progress timeline maps scroll position or visibility to animation progress. This is useful for scrubbing and spatial narratives. A one-shot entrance instead needs a trigger followed by a time-based animation; choose from the requested behavior, not a rule that scrubbing is wrong.
 
 ### Duration Control Pattern
-Use two coordinated animations:
+For a compatible experimental setup, one approach uses two coordinated animations:
 1. **Trigger animation**: Scroll-driven, toggles a custom property when element enters view
 2. **Main animation**: Traditional duration-based, activated via Style Query
 
 This severs the connection between scroll speed and animation timing—the animation runs over a fixed duration once triggered, regardless of how fast the user scrolled.
 
 ### Progressive Enhancement
-Always provide fallbacks:
+Verify support for every feature in the chosen pattern, including style queries; an `animation-timeline` check alone does not prove the entire composition works. A conventional IntersectionObserver trigger is sufficient for many one-shot entrances. Preserve visible static content and reduced motion. [Timeline semantics](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline).
+
+Provide fallbacks:
 ```javascript
 // IntersectionObserver fallback for browsers without scroll-driven animation support
 if (!CSS.supports('animation-timeline', 'scroll()')) {

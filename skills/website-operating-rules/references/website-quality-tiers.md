@@ -1,8 +1,8 @@
 # Premium website quality tiers
 
-Compatibility summary retained for capability continuity. The current `$route-sellable-web-tier` skill owns tier selection and requirements; resolve conflicts there rather than evolving a second policy here.
+Portable reference for this public collection. Current user direction, applicable project requirements and accepted delivery scope control. If a separately installed `route-sellable-web-tier` specialist is adopted by the project, reconcile with it; its absence never blocks these criteria. These are adaptable delivery profiles, not automatic scope expansion or a mandatory animation quota.
 
-Select one tier before art direction or implementation. These tiers describe the required outcome, not the price of a library or the framework used.
+Select a profile only when the requested delivery depth is unresolved; reuse an adequate existing brief. These tiers describe the required outcome, not the price of a library or the framework used.
 
 ## Tier 1 - Regular wow-effect
 
@@ -54,10 +54,10 @@ Tier 3 must be visually memorable and operationally trustworthy. A cinematic sur
 
 ## Routing rule
 
-When the user names a tier, use it. When he describes one, map the description explicitly:
+When the user names a tier, preserve its agreed meaning. Otherwise treat the following as discovery hints and resolve actual deliverables from the brief:
 
 - “Viktor Oddy,” “MotionSites,” “wow-effect modernization” -> Tier 1 baseline;
-- “agency-style,” “SaaS,” “sellable $5k+” -> Tier 2 baseline;
+- Commercial agency/SaaS delivery with ongoing content or integrations -> consider Tier 2; price alone does not establish scope;
 - “enterprise,” “best Framer/Webflow,” “flagship,” “top-tier award-level” -> Tier 3 baseline.
 
 Higher tiers inherit all lower-tier requirements. A project may deliberately borrow a Tier 1 visual language while still requiring Tier 2 or Tier 3 delivery depth.

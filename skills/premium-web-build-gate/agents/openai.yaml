@@ -1,4 +1,4 @@
 interface:
   display_name: "Premium Web Build Gate"
-  short_description: "Locks premium website direction before code"
+  short_description: "Resolve missing premium-build decisions"
   default_prompt: "Use $premium-web-build-gate to coordinate a build-ready premium specification within the requested scope."

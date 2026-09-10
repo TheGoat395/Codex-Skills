@@ -1,4 +1,4 @@
 interface:
   display_name: "Hero Image Art Direction"
-  short_description: "Choose and crop hero imagery that makes the first viewport decisive"
+  short_description: "Compose text-safe responsive hero media."
   default_prompt: "Use $hero-image-art-direction to compose first-view media around subject and text within the requested scope."

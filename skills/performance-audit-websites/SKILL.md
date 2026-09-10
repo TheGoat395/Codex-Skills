@@ -13,7 +13,7 @@ Own measured diagnosis and implementation. Route pre-build numeric budgets, acce
 
 1. Inspect the affected surface, relevant project scripts, target URL and available inspection tooling; reuse existing context.
 2. Read [Performance Audit Websites Guide](references/performance-audit-websites-guide.md) before claiming the site is ready. For React or Next.js implementation work, also read [React and Next.js performance](references/react-next-performance.md).
-3. Run the narrowest meaningful checks for the risk: visual, mobile, accessibility, performance, forms, media, SEO, analytics, deployment, or handoff.
+3. Record a reproducible baseline and identify the dominant request, rendering, interaction or layout-shift cost. When optimization is authorized, change the measured bottleneck and compare under matched build/device/cache conditions.
 4. Fix issues when they are in scope; otherwise record exact evidence and remaining risk.
 5. Summarize commands, URLs, screenshots/checks, changed files, and what was not tested.
 

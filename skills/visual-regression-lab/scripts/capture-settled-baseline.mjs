@@ -46,7 +46,7 @@ const cases = [
 ];
 const records = [];
 for (const item of cases) {
-  const context = await browser.newContext({ viewport: { width: item.width, height: item.height }, reducedMotion: item.reducedMotion });
+  const context = await browser.newContext({ viewport: { width: item.width, height: item.height }, reducedMotion: item.reducedMotion, colorScheme: 'light', deviceScaleFactor: 1 });
   const page = await context.newPage(); let consoleErrorCount = 0; let failedRequestCount = 0; let pageErrorCount = 0; const failedResponses = [];
   page.on('console', message => { if (message.type() === 'error') consoleErrorCount += 1; });
   page.on('pageerror', () => { pageErrorCount += 1; });
@@ -64,18 +64,18 @@ for (const item of cases) {
   }
   let networkIdleTimedOut = false;
   try { await page.waitForLoadState('networkidle', {timeout: 3000}); } catch { networkIdleTimedOut = true; }
-  const warm = await page.evaluate(async () => { await Promise.race([document.fonts.ready, new Promise(r => setTimeout(r,3000))]); document.documentElement.style.setProperty('scroll-behavior','auto','important'); const initialHeight=document.documentElement.scrollHeight; if(initialHeight>80000) throw new Error('page exceeds 80000px capture bound'); const stop=Math.min(initialHeight,80000); let steps=0; for (let y=0;y<stop && steps<120;y+=innerHeight*.8,steps++){scrollTo(0,y);await new Promise(r=>setTimeout(r,80));} scrollTo(0,0); return {initialHeight,steps,finalHeight:document.documentElement.scrollHeight}; });
+  const warm = await page.evaluate(async () => { const fontReady = await Promise.race([document.fonts.ready.then(() => true), new Promise(r => setTimeout(() => r(false),3000))]); document.documentElement.style.setProperty('scroll-behavior','auto','important'); const initialHeight=document.documentElement.scrollHeight; if(initialHeight>80000) throw new Error('page exceeds 80000px capture bound'); const stop=Math.min(initialHeight,80000); let steps=0; for (let y=0;y<stop && steps<120;y+=innerHeight*.8,steps++){scrollTo(0,y);await new Promise(r=>setTimeout(r,80));} scrollTo(0,0); return {initialHeight,steps,finalHeight:document.documentElement.scrollHeight,fontReadyTimedOut:!fontReady}; });
   if(warm.finalHeight>80000 || warm.finalHeight>warm.initialHeight+4) throw new Error('page grew during bounded warmup; use a scoped capture or stabilize content');
   await page.waitForTimeout(item.reducedMotion === 'reduce' ? 150 : 1300);
   const layout = await page.evaluate(() => ({ overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth, canvases: [...document.querySelectorAll('canvas')].map(canvas => ({ width: canvas.width, height: canvas.height })) }));
   const screenshot = resolve(directory, `${item.id}.png`); const stagedScreenshot = resolve(staging, `${item.id}.png`); await page.screenshot({ path: stagedScreenshot, fullPage: true, timeout:30000, animations:"disabled" });
   const sha256 = createHash('sha256').update(await readFile(stagedScreenshot)).digest('hex');
-  records.push({ ...item, screenshot, sha256, consoleErrorCount, pageErrorCount, failedRequestCount, failedResponses, networkIdleTimedOut, warm, ...layout }); await context.close();
+  records.push({ ...item, colorScheme: 'light', deviceScaleFactor: 1, screenshot, sha256, consoleErrorCount, pageErrorCount, failedRequestCount, failedResponses, networkIdleTimedOut, warm, ...layout }); await context.close();
 }
 await browser.close(); browser = null;
 const recordedUrl = `${targetUrl.origin}${targetUrl.pathname}`;
 const manifestPath = resolve(directory, 'visual-baseline-manifest.json');
-await writeFile(resolve(staging, "visual-baseline-manifest.json"), JSON.stringify({ url: recordedUrl, capturedAt: new Date().toISOString(), method:"bounded-warmed-full-page", browserEngine:"chromium", viewportEmulation:true, animationsDisabledDuringCapture:true, scrollBehaviorOverridden:true, visualInspectionRequired:true, navigationTimeoutMs:30000, networkIdleTimeoutMs:3000, maxHeight:80000, maxWarmSteps:120, records }, null, 2) + '\n');
+await writeFile(resolve(staging, "visual-baseline-manifest.json"), JSON.stringify({ url: recordedUrl, capturedAt: new Date().toISOString(), method:"bounded-warmed-full-page", browserEngine:"chromium", viewportEmulation:true, animationsDisabledDuringCapture:true, scrollBehaviorOverridden:true, visualInspectionRequired:true, navigationTimeoutMs:30000, networkIdleTimeoutMs:3000, fontReadyTimeoutMs:3000, maxHeight:80000, maxWarmSteps:120, records }, null, 2) + '\n');
 const hasIssues = records.some(r => r.overflow || r.consoleErrorCount || r.pageErrorCount || r.failedRequestCount || r.failedResponses.length);
 for (const filename of outputFiles) { const dest=resolve(directory,filename); await copyFile(resolve(staging,filename),dest,1); published.push(dest); }
 console.log(`${hasIssues ? 'CAPTURED_WITH_ISSUES' : 'CAPTURED_REQUIRES_VISUAL_INSPECTION'}: ${records.length} settled baseline states in ${directory}`);

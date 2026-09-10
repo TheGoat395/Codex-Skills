@@ -11,7 +11,7 @@ Use this skill to help search engines and shared previews understand the same pa
 
 1. Inspect the affected surface, relevant project scripts, target URL and available inspection tooling; reuse existing context.
 2. Read [SEO Technical QA Guide](references/seo-technical-qa-guide.md) before claiming the site is ready.
-3. Run the narrowest meaningful checks for the risk: visual, mobile, accessibility, performance, forms, media, SEO, analytics, deployment, or handoff.
+3. Check affected HTTP status, indexability directives, canonical and sitemap destinations, rendered/source metadata and visible structured-data facts. Use the intended deployment environment.
 4. Fix issues when they are in scope; otherwise record exact evidence and remaining risk.
 5. Summarize commands, URLs, screenshots/checks, changed files, and what was not tested.
 

@@ -5,7 +5,7 @@ description: "Resolve shared design intent and guidance."
 
 # Web Design Direction System
 
-Use this as the high-level router before detailed build, redesign, or polish work.
+Use when shared visual intent is unresolved or a recurring design correction requires revising the governing guidance. A settled design or localized implementation goes directly to its specialist; this is not a mandatory router.
 
 ## Design Guidance Contract
 
@@ -27,14 +27,14 @@ Turn those choices into concrete layout, type, color, media, and motion decision
 
 ## Direction Dials
 
-Set these dials from 1 to 10 before designing when the brief is open-ended:
+For an open brief, these optional internal dials can help compare directions. They are descriptive aids, not scores or required deliverables:
 
 - `layout_variance`: 1 centered conventional, 5 balanced asymmetry, 10 experimental composition
 - `motion_depth`: 1 static with hover, 5 section transitions, 10 scroll/canvas/spatial choreography
 - `surface_density`: 1 spacious editorial, 5 normal product page, 10 compact operator dashboard
 - `brand_commitment`: 1 neutral system UI, 5 clear accent identity, 10 brand carried by color, material, and type
 
-Defaults for premium public sites: 6 / 5 / 4 / 6. Defaults for product dashboards: 4 / 3 / 7 / 3. Defaults for campaign or portfolio sites: 8 / 7 / 4 / 8.
+Illustrative starting profiles: premium public site 6 / 5 / 4 / 6; product dashboard 4 / 3 / 7 / 3; expressive campaign 8 / 7 / 4 / 8. Derive actual choices from the brief; do not impose these values.
 
 ## Design Lanes
 
@@ -70,7 +70,7 @@ For existing projects:
 
 1. Inspect the rendered UI or existing files before proposing direction.
 2. Preserve working IA, routes, real copy, assets, and brand anchors unless they are the issue.
-3. Identify the top three failures: hierarchy, spacing, type, color, states, motion, content, accessibility, or responsiveness.
+3. Identify the material failures, if any: hierarchy, spacing, type, color, states, motion, content, accessibility, or responsiveness.
 4. Change the smallest set of files that fixes the visible problem.
 5. Compare before and after behavior, not just code diffs.
 

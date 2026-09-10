@@ -2,7 +2,7 @@
 
 Use this as a discovery map, not a list of identities or compositions to imitate. Inspect current work directly before relying on a name.
 
-## Verified Viktor Oddy identity
+## Dated Viktor Oddy identity evidence
 
 `Viktor Oddy` is a verified public creator identity, not merely user shorthand. The connected public source set includes [MotionSites](https://motionsites.ai/), [Viktor Oddy on X](https://x.com/viktoroddy), [Viktor Oddy on YouTube](https://www.youtube.com/@ViktorOddy), and [DesignRocket](https://designrocket.io/). MotionSites links directly to the YouTube channel. Use [motionsites-viktor-evidence.md](motionsites-viktor-evidence.md) for the dated corpus audit and refresh mutable counts before quoting them.
 

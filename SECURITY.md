@@ -22,7 +22,7 @@ Default behavior:
 
 Replacement behavior:
 
-- `--replace` moves existing skill folders into a timestamped backup folder before copying replacements
+- `--replace` moves existing skill folders into a timestamped backup folder after the replacement is staged successfully
 - review the dry run before replacing anything
 
 Recommended first command:
@@ -57,3 +57,7 @@ These principles are also encoded in the `code-change-safety-checkpoint` and `co
 ## Replacement recovery
 
 Each selected skill is copied to a temporary staging directory before an existing installation is moved. Backup collisions fail without deleting the older backup. If activating a staged replacement fails, the prior installation is restored when the target remains available. This is per-skill recovery, not an all-or-nothing transaction across an entire collection. Symbolic-link targets are not replaced.
+
+Skill-source symlinks are rejected before copying or moving the existing installation. Public-package checks reject machine-specific home paths and missing local references; they complement, rather than replace, human review and secret scanning.
+
+An installation destination inside the source skill is rejected to avoid recursive staging/copying. Required-field metadata validation is intentionally limited to supported scalar forms; it is not a general YAML linter.

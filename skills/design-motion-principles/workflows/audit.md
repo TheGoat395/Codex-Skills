@@ -9,8 +9,8 @@ Read as you reach each step (not all upfront):
 2. The weighted designer file(s) — `emil-kowalski.md`, `jakub-krehel.md`, `jhey-tompkins.md` (STEP 2)
 3. `references/accessibility.md` — mandatory every audit (STEP 2)
 4. `references/anti-checklist.md` — the quality gate: AI-generated motion anti-pattern categories and motion issues to flag (STEP 2)
-5. `references/output-format.md` — the report template, HTML mode + terminal mode (STEP 3)
-6. `references/demo-shell.html` — the demo-card template for HTML-mode per-finding demos (STEP 3)
+5. `references/output-format.md` — only for a requested/substantial rich report (STEP 3)
+6. `references/demo-shell.html` — only for applicable HTML demonstrations (STEP 3)
 
 ---
 
@@ -121,7 +121,7 @@ Default to prioritized inline findings with evidence location, observed conseque
    - **Audited project root**: run `git rev-parse --show-toplevel` from the agent's cwd. If it succeeds, use that path. If it fails (no `.git` ancestor), use cwd.
    - **`{project-name}`**: the `name` field from `package.json` at the project root if it exists; else the `name` field from `pyproject.toml`; else the basename of the project root. Strip any scoping prefix (`@scope/pkg` → `pkg`) and sanitize to lowercase kebab-case (`[a-z0-9-]`, replace others with `-`).
    - **`{UTC-timestamp}-{unique-suffix}`**: UTC timestamp plus a random suffix; use exclusive file creation and never overwrite a prior report.
-   - Example: `<project-root>/motion-audits/my-app-2026-05-20.html`.
+   - Example: `<project-root>/motion-audits/my-app-20260908T120000Z-a1b2c3.html`.
    - Do not modify `.gitignore`. The user sees `motion-audits/` in `git status` and decides whether to ignore it.
 
 2. **Read `references/demo-shell.html`** and use it as the template for each demo card. Embed one card per Critical + Important finding (Opportunities do not get demo cards). Use the suffixed-naming contract — `@keyframes m{n}` and `.demo-{n}__mt`, `{n}` = the finding's 1-indexed position across the whole report — so multiple findings don't collide on CSS names.
@@ -133,16 +133,16 @@ Default to prioritized inline findings with evidence location, observed conseque
 5. **Open in the default browser** via OS-detected Bash dispatch:
 
    ```bash
-   path="<absolute path to the HTML file>"
+   motion_report_path="<absolute path to the HTML file>"
    if [ -n "$WSL_DISTRO_NAME" ] || grep -qi microsoft /proc/version 2>/dev/null; then
-     win_path=$(wslpath -w "$path")
+     win_path=$(wslpath -w "$motion_report_path")
      cmd.exe /c start "" "$win_path" 2>/dev/null
    else
      case "$(uname -s)" in
-       Darwin)               open "$path" ;;
-       Linux)                xdg-open "$path" ;;
-       MINGW*|MSYS*|CYGWIN*) start "" "$path" ;;
-       *)                    echo "Unknown platform — open this file manually: $path" ;;
+       Darwin)               open "$motion_report_path" ;;
+       Linux)                xdg-open "$motion_report_path" ;;
+       MINGW*|MSYS*|CYGWIN*) start "" "$motion_report_path" ;;
+       *)                    echo "Unknown platform — open this file manually: $motion_report_path" ;;
      esac
    fi
    ```
@@ -183,7 +183,7 @@ Common failure modes during HTML report generation. Most break silently or only 
 
 ## Success Criteria
 
-- [ ] Context gathered (CLAUDE.md, package.json, existing animations, structure)
+- [ ] Applicable governing context and affected motion inspected; unchanged context reused
 - [ ] Transition candidates inspected; missing-animation findings require observed consequences
 - [ ] Weighting follows user direction or a stated context-supported inference
 - [ ] Audit checklist worked through systematically

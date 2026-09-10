@@ -773,7 +773,7 @@
 
     <div class="lens-take">
       <span class="mono-label">Through Jakub's lens</span>
-      <p>The vocabulary is right; the sentences are unfinished. Pair every enter with an exit, give the streak its moment, and Tally crosses from "animated" to "polished."</p>
+      <p>The vocabulary is right; the sentences are unfinished. Restore dismissal focus and semantic success feedback first. Add optional continuity only where it improves the interaction.</p>
     </div>
   </section>
 
@@ -806,7 +806,7 @@
             <div class="find-body">
               <p><span class="label">What</span>The four bottom tabs cross-slide the full panel width over 600ms with an <code>ease-in-out</code>. In this illustrative test, input is disabled until that 600ms slide completes; repeated navigation therefore blocks the next action.</p>
               <p><span class="label">Why it matters</span>Emil's rule: the more often an action fires, the less it should animate. At this duration the motion stops being feedback and becomes a toll. <code>ease-in-out</code> also adds a slow start, compounding the lag.</p>
-              <div class="fix"><p><span class="label">Recommended motion</span>Drop to a 180ms opacity crossfade with a 7px slide, <code>ease-out</code>. Better still: consider no slide at all — a fast crossfade is plenty of orientation for a tab.</p></div>
+              <div class="fix"><p><span class="label">Recommended motion</span>Remove the input lock and verify immediate repeat navigation. As an optional treatment, use a 180ms opacity crossfade with a 7px slide, <code>ease-out</code>. Better still: consider no slide at all — a fast crossfade is plenty of orientation for a tab.</p></div>
               <p class="find-loc"><code>navigation/TabView.tsx:63</code></p>
             </div>
           </div>
@@ -815,7 +815,7 @@
             <input class="vh" type="radio" name="st1" id="st1-l">
             <input class="vh" type="radio" name="st1" id="st1-d">
             <div class="demo__bar">
-              <div class="demo__meta"><span class="demo__title">Quick tab crossfade</span><span class="demo__timing">180ms · ease-out</span></div>
+              <div class="demo__meta"><span class="demo__title">Quick tab crossfade</span><span class="demo__timing">180ms · custom ease-out</span></div>
               <div class="demo__controls">
                 <div class="seg"><label for="st1-a">Auto</label><label for="st1-l">Light</label><label for="st1-d">Dark</label></div>
                 <span class="demo__loop">↻</span>
@@ -848,7 +848,7 @@
             <input class="vh" type="radio" name="st3" id="st3-l">
             <input class="vh" type="radio" name="st3" id="st3-d">
             <div class="demo__bar">
-              <div class="demo__meta"><span class="demo__title">Calm check, no bounce</span><span class="demo__timing">200ms · ease-out</span></div>
+              <div class="demo__meta"><span class="demo__title">Calm check, no bounce</span><span class="demo__timing">200ms · custom ease-out</span></div>
               <div class="demo__controls">
                 <div class="seg"><label for="st3-a">Auto</label><label for="st3-l">Light</label><label for="st3-d">Dark</label></div>
                 <span class="demo__loop">↻</span>
@@ -908,7 +908,7 @@
             <input class="vh" type="radio" name="st5" id="st5-l">
             <input class="vh" type="radio" name="st5" id="st5-d">
             <div class="demo__bar">
-              <div class="demo__meta"><span class="demo__title">Milestone badge enter</span><span class="demo__timing">260ms · ease-out + sparkle</span></div>
+              <div class="demo__meta"><span class="demo__title">Milestone badge enter</span><span class="demo__timing">260ms · custom ease-out + sparkle</span></div>
               <div class="demo__controls">
                 <div class="seg"><label for="st5-a">Auto</label><label for="st5-l">Light</label><label for="st5-d">Dark</label></div>
                 <span class="demo__loop">↻</span>
@@ -959,7 +959,7 @@
       <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable audit table"><table class="rec-table">
         <thead><tr><th>Issue</th><th>File</th><th>Fix</th></tr></thead>
         <tbody>
-          <tr><td>Tab switch runs 600ms on the highest-frequency action</td><td><code>TabView.tsx:63</code></td><td>180ms opacity crossfade + 7px slide, ease-out</td></tr>
+          <tr><td>Tab switch runs 600ms on the highest-frequency action</td><td><code>TabView.tsx:63</code></td><td>Remove input lock; optional 180ms crossfade + 7px slide</td></tr>
           <tr><td>Add-habit dismissal loses keyboard focus</td><td><code>AddSheet.tsx:48</code></td><td>Restore trigger focus; optional exit preserves continuity</td></tr>
         </tbody>
       </table></div>
@@ -996,10 +996,10 @@
     <div class="ref-summary">
       <span class="mono-label">Referenced most</span>
       <p class="big">Jakub Krehel — Production Polish</p>
-      <p class="why">Tally's gaps are craft gaps, not taste gaps: enters without exits, state changes that snap. That's Jakub's territory — finishing what's been started — so his lens drove the ordering. Emil set the durations; Jhey marked the one place to spend.</p>
+      <p class="why">The fictional findings concern lost dismissal focus, blocked navigation and missing success feedback. The lenses help choose optional visual treatments; rendered functional checks must establish the actual fixes.</p>
       <ul class="ref-lean">
         <li><span class="nm">Lean Emil</span><span>Treat every duration as a budget. Push tab, check, and toggle timings under 200ms and question any motion on a high-frequency action.</span></li>
-        <li><span class="nm">Lean Jakub</span><span>Audit every conditional render for a missing exit. Pair enters and exits, and give meaningful state changes a transition.</span></li>
+        <li><span class="nm">Lean Jakub</span><span>Inspect conditional states for lost feedback, focus or continuity. An instant transition can be correct.</span></li>
         <li><span class="nm">Lean Jhey</span><span>Pick the single highest-emotion moment — the milestone — and over-invest there, with @property, springs, or scroll-driven touches.</span></li>
       </ul>
     </div>

@@ -1,5 +1,19 @@
 # Changelog
 
+## Unreleased — public quality and portability
+
+- Complete content review of all 80 public skills; repairs span 46 skill folders.
+- Add bounded reference lookup with fingerprinted provenance and clarify optional/private-only dependencies.
+- Remove duplicate guide preloads, contradictory design routing, edit quotas and overbroad verification wording.
+- Correct motion example guidance, capture destination guards and settling metadata; test all executable helper families.
+- Publish the [coverage and verification report](docs/public-quality-audit-2026-09-08.md).
+
+- Preserve the September 7 optional-specialist and accessibility updates.
+- Scope premium build preparation to missing decisions; preserve detailed guidance behind a conditional reference.
+- Honor CODEX_HOME and reject symlinked package sources before installation.
+- Harden required metadata parsing and add public-package privacy/portability checks.
+- Document current Next.js route inputs and distinguish main from older release snapshots.
+
 ## Unreleased — instruction architecture refresh
 
 - Refresh all 80 curated skills with concise descriptions, progressive disclosure and scoped execution.

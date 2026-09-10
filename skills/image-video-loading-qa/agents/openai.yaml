@@ -1,4 +1,4 @@
 interface:
   display_name: "Image Video Loading QA"
-  short_description: "Verify image and video loading, dimensions, posters, crops, and errors"
+  short_description: "Verify media loading and failure states."
   default_prompt: "Use $image-video-loading-qa to verify media loading, posters and fallback states within the requested scope."

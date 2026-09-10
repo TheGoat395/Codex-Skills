@@ -29,7 +29,7 @@ Read [debugging playbook](references/debugging-playbook.md) for layer-specific p
 - Repair the root cause or the closest controllable cause; label containment or mitigation honestly.
 - Make one logically related change at a time where practical.
 - Add a regression guard at the lowest stable observable seam. Use `$selective-test-driven-development` when a behavior is testable.
-- Re-run the focused reproduction, relevant broader suite/build, and the original end-to-end scenario.
+- Re-run the focused reproduction or regression and required repository gates. Add broader suite/build or end-to-end checks when the changed dependency surface, consequence or unresolved uncertainty warrants them; use the original user flow when a narrower check cannot prove the repair.
 - Check for side effects created by instrumentation, temporary configuration, caches, or test fixtures.
 
 Use repository-native commands and existing test conventions. Run `git bisect` only in a clean disposable worktree or after an explicit rollback checkpoint; never disturb uncommitted user work to gain diagnostic convenience.

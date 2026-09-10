@@ -6,7 +6,7 @@ Make the default website workflow disciplined enough to prevent rushed, generic 
 
 ## Use When
 
-- Any website/app request involving creation, redesign, visual review, UI implementation, polish, or deployment.
+- Web work crossing multiple phases needs one shared scope and evidence contract; a focused specialist task can proceed directly.
 - Open-ended prompts such as build a beautiful site, make it modern, make it premium, make it like Squarespace, Raycast, Linear, Vercel, or cinematic references.
 - Cases where the user has strong taste expectations but has not yet provided a full brief.
 

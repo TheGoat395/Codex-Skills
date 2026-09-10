@@ -27,7 +27,7 @@ Own the budget and acceptance policy. Route measured runtime diagnosis, implemen
 2. Inspect package dependencies and route structure.
 3. Define route, hardware/device, network/cache state and measurement method.
 4. Run Lighthouse or browser performance checks when feasible.
-5. Check Core Web Vitals risks: LCP, CLS, INP, TTFB.
+5. Check Core Web Vitals (LCP, CLS, INP) and supporting diagnostics such as TTFB; choose metrics that measure the budgeted user experience.
 6. Set media/JavaScript/font budgets from the intended experience and baseline evidence.
 7. Prefer CSS and Motion for small interactions; reserve GSAP/R3F/video for clear value.
 8. Report tradeoffs honestly when visual richness costs performance.

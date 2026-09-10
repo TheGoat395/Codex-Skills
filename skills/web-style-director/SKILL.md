@@ -7,11 +7,7 @@ description: "Refine an approved visual lane."
 
 ## Purpose
 
-Prevent generic builds by giving the site a clear visual lane before implementation.
-
-## Required Use
-
-Use this skill when the trigger description applies. Keep the `SKILL.md` lean, then read `references/web-style-director-guide.md` for concrete rules before planning or editing a meaningful website change.
+Refine type, color, media and motion within the selected visual direction.
 
 ## Scoped execution
 
@@ -19,7 +15,7 @@ Apply the [shared web contract](../website-operating-rules/references/scoped-web
 
 ## Detailed Guide
 
-Read `references/web-style-director-guide.md` when this skill is active for a build, redesign, review, or implementation plan.
+Read [web style director guide](references/web-style-director-guide.md) for the selected workflow. Apply only the requested surface; review-only work reports findings, while authorized changes continue through implementation and relevant verification.
 
 ## Scope and evidence
 

@@ -87,7 +87,7 @@ If a complaint persists after a rule change, test whether the rule is unclear, w
 
 ## Source notes
 
-This provider-neutral workflow was informed by Vercel's public design-guidance and agent-skills material, then adapted for these private Codex skills.
+This provider-neutral workflow was informed by Vercel's public design-guidance and agent-skills material, then adapted for this public skill collection.
 
 - https://vercel.com/design.md
 - https://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md

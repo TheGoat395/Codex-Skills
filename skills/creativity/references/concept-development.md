@@ -30,7 +30,7 @@ For each promising fragment, ask:
 
 ### 3. Develop concept families
 
-Build three to six directions with different organizing mechanisms. Each direction needs:
+For an open direction study, three to six distinct mechanisms can be useful; honor a requested count and stop when the meaningful alternatives are covered. For a selected idea, develop that idea directly. Each developed direction needs:
 
 - premise;
 - mechanism or experience;

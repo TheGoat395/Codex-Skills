@@ -25,7 +25,7 @@ A native full-page capture remains preferable when it accurately matches the ren
 
 The bundled script requires Playwright resolvable from the current project or `--module-root`, plus ImageMagick's `magick` executable. It writes the image and a JSON sidecar with dimensions, segments, checksum, console/failed-request counts, and capture settings. It does not install dependencies.
 
-The helper warms the exact final scroll position, repeats the warm pass when lazy content changes page height, verifies the stitched dimensions before replacing the destination, and stages output so an earlier file is not overwritten by a failed capture. It rejects credential-bearing URLs and omits query strings from the manifest; avoid signed or token-bearing URLs because third-party browser errors can still expose them outside the manifest.
+The helper warms the exact final scroll position, repeats the warm pass when lazy content changes page height, verifies the stitched dimensions before replacing the destination, and stages output so an earlier file is not overwritten by a failed capture. Existing symlink or non-file destinations are rejected, including with `--force`. The manifest records font/network settling timeouts. It rejects credential-bearing URLs and omits query strings from the manifest; avoid signed or token-bearing URLs because third-party browser errors can still expose them outside the manifest.
 
 Useful options:
 

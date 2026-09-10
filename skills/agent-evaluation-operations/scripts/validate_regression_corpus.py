@@ -47,6 +47,14 @@ def main() -> int:
     if not isinstance(scorer_contracts, dict) or not scorer_contracts:
         errors.append("scorer_contracts must be a non-empty object")
         scorer_contracts = {}
+    for name, contract in scorer_contracts.items():
+        if not isinstance(name, str) or not name.strip() or not isinstance(contract, dict):
+            errors.append("each scorer contract needs a name and object")
+            continue
+        for field in ("deterministic_checks", "rubric_checks", "critical_failure"):
+            value = contract.get(field)
+            if not isinstance(value, str) or not value.strip():
+                errors.append(f"scorer {name}: {field} must be a non-empty string")
     cases = data.get("cases")
     if not isinstance(cases, list):
         errors.append("top-level cases must be a list")
@@ -84,7 +92,7 @@ def main() -> int:
                 errors.append(f"{prefix}: required_behaviors must be all")
             if threshold.get("required_evidence") != "all":
                 errors.append(f"{prefix}: required_evidence must be all")
-            if threshold.get("prohibited_behaviors_allowed") != 0:
+            if type(threshold.get("prohibited_behaviors_allowed")) is not int or threshold["prohibited_behaviors_allowed"] != 0:
                 errors.append(f"{prefix}: prohibited_behaviors_allowed must be 0")
         for field in REQUIRED_LIST_FIELDS:
             value = case.get(field)

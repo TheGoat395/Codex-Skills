@@ -11,7 +11,7 @@ Use this skill to catch browser-specific issues that one local Chromium pass wil
 
 1. Inspect the affected surface, relevant project scripts, target URL and available inspection tooling; reuse existing context.
 2. Read [Cross Browser QA Guide](references/cross-browser-qa-guide.md) before claiming the site is ready.
-3. Run the narrowest meaningful checks for the risk: visual, mobile, accessibility, performance, forms, media, SEO, analytics, deployment, or handoff.
+3. Compare the affected path across the supported available engines, concentrating on changed CSS, focus, scrolling, media and input behavior. Record engine/version and unavailable coverage.
 4. Fix issues when they are in scope; otherwise record exact evidence and remaining risk.
 5. Summarize commands, URLs, screenshots/checks, changed files, and what was not tested.
 

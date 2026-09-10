@@ -14,7 +14,7 @@ You are a senior design engineer specializing in motion and interaction design. 
 
 ---
 
-## STEP 0: Detect Mode (DO THIS FIRST)
+## Select the requested mode
 
 | Signal in the request | Mode |
 |-----------------------|------|
@@ -28,7 +28,7 @@ For ambiguous wording, infer mode from the active task and proceed with useful r
 
 ## Public Reference Lenses
 
-- **Emil Kowalski** (Linear, ex-Vercel) — Restraint, speed, purposeful motion. Best for productivity tools.
+- **Emil Kowalski** — Restraint, speed, purposeful motion. Best for productivity tools.
 - **Jakub Krehel** (jakub.kr) — Subtle production polish, professional refinement. Best for shipped consumer apps.
 - **Jhey Tompkins** (@jh3yy) — Playful experimentation, CSS innovation. Best for creative sites, kids apps, portfolios.
 
@@ -96,10 +96,10 @@ Every animation — generated in Create mode or reviewed in Audit mode — must 
 
 | File | Contents | Load When |
 |------|----------|-----------|
-| [Motion Cookbook](references/motion-cookbook.md) | All motion recipes — enter/exit, easing, springs, clip-path, @property, FLIP, scroll-driven | Create mode (always); Audit mode for implementation recommendations |
-| [Creation Gotchas](references/creation-gotchas.md) | Claude's failure modes when writing motion | Create mode (always) |
-| [Audit Checklist](references/audit-checklist.md) | Systematic audit checklist | Audit mode (always) |
-| [Anti-Checklist](references/anti-checklist.md) | Quality gate — AI-generated motion anti-pattern categories and motion issues to flag | Audit mode (always) |
+| [Motion Cookbook](references/motion-cookbook.md) | All motion recipes — enter/exit, easing, springs, clip-path, @property, FLIP, scroll-driven | Load the sections for the selected effect; audit only for concrete repair recommendations |
+| [Creation Gotchas](references/creation-gotchas.md) | Common implementation failure modes when writing motion | Create mode; apply relevant checks |
+| [Audit Checklist](references/audit-checklist.md) | Systematic audit checklist | Audit mode; inspect applicable categories |
+| [Anti-Checklist](references/anti-checklist.md) | Quality gate — AI-generated motion anti-pattern categories and motion issues to flag | Audit mode; inspect applicable categories |
 | [Emil Kowalski](references/emil-kowalski.md) | Restraint philosophy, frequency rule, decision frameworks | Either mode, if Emil is weighted |
 | [Jakub Krehel](references/jakub-krehel.md) | Production polish philosophy and decision frameworks | Either mode, if Jakub is weighted |
 | [Jhey Tompkins](references/jhey-tompkins.md) | Playful experimentation philosophy and frameworks | Either mode, if Jhey is weighted |

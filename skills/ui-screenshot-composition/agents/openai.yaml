@@ -1,4 +1,4 @@
 interface:
   display_name: "UI Screenshot Composition"
-  short_description: "Compose screenshots inside pages with rhythm, scale, callouts, and crop logic"
+  short_description: "Arrange readable product screenshot evidence."
   default_prompt: "Use $ui-screenshot-composition to arrange readable product screenshot evidence within the requested scope."

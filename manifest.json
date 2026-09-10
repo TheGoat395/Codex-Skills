@@ -1,6 +1,6 @@
 {
   "name": "codex-premium-website-skills",
-  "generated_at": "2026-09-05T23:10:57.863628+00:00",
+  "generated_at": "2026-09-08T20:44:47.467890+00:00",
   "source": "skills/",
   "skill_count": 80,
   "skills": [
@@ -8,19 +8,19 @@
       "name": "accessibility-audit-websites",
       "description": "Audit semantic and keyboard accessibility.",
       "file_count": 3,
-      "bytes": 3387
+      "bytes": 5397
     },
     {
       "name": "accessibility-performance-polish",
       "description": "Finish accessibility and performance details.",
       "file_count": 3,
-      "bytes": 3982
+      "bytes": 3884
     },
     {
       "name": "agent-evaluation-operations",
       "description": "Evaluate agent and skill behavior or routing.",
       "file_count": 10,
-      "bytes": 40954
+      "bytes": 43810
     },
     {
       "name": "agent-memory-provenance",
@@ -44,7 +44,7 @@
       "name": "animation-jank-qa",
       "description": "Diagnose a concrete rendered hitch or stutter.",
       "file_count": 3,
-      "bytes": 4363
+      "bytes": 5305
     },
     {
       "name": "animation-tool-router",
@@ -56,19 +56,19 @@
       "name": "anti-generic-website-review",
       "description": "Repair interchangeable website design patterns.",
       "file_count": 3,
-      "bytes": 4000
+      "bytes": 4098
     },
     {
       "name": "brand-voice-to-ui-copy",
       "description": "Translate brand voice into interface microcopy.",
       "file_count": 3,
-      "bytes": 3954
+      "bytes": 3925
     },
     {
       "name": "browser-inspection-workflow",
       "description": "Coordinate rendered behavior and state evidence.",
       "file_count": 3,
-      "bytes": 4397
+      "bytes": 4359
     },
     {
       "name": "code-change-safety-checkpoint",
@@ -86,7 +86,7 @@
       "name": "color-material-lighting-direction",
       "description": "Define palette, material and lighting roles.",
       "file_count": 3,
-      "bytes": 4029
+      "bytes": 3931
     },
     {
       "name": "content-pruning-review",
@@ -110,19 +110,19 @@
       "name": "creativity",
       "description": "Generate original ideas or escape fixation.",
       "file_count": 6,
-      "bytes": 20484
+      "bytes": 20741
     },
     {
       "name": "critical-thinking",
       "description": "Judge claims through evidence and alternatives.",
       "file_count": 6,
-      "bytes": 18426
+      "bytes": 18579
     },
     {
       "name": "cross-browser-qa",
       "description": "Verify browser-engine compatibility.",
       "file_count": 3,
-      "bytes": 3741
+      "bytes": 3743
     },
     {
       "name": "css-grid-editorial-systems",
@@ -134,43 +134,43 @@
       "name": "cta-language-systems",
       "description": "Make action labels explain what happens next.",
       "file_count": 3,
-      "bytes": 3914
+      "bytes": 3883
     },
     {
       "name": "deep-research",
       "description": "Research with scoped depth and counterevidence.",
       "file_count": 7,
-      "bytes": 17296
+      "bytes": 17636
     },
     {
       "name": "design-motion-principles",
       "description": "Motion through Kowalski, Krehel and Jhey lenses.",
       "file_count": 16,
-      "bytes": 185293
+      "bytes": 187127
     },
     {
       "name": "editorial-typography-systems",
       "description": "Define font pairing and responsive hierarchy.",
       "file_count": 3,
-      "bytes": 3856
+      "bytes": 3758
     },
     {
       "name": "evidence-reconciliation",
       "description": "Resolve stale facts and authority conflicts.",
       "file_count": 3,
-      "bytes": 11750
+      "bytes": 11963
     },
     {
       "name": "final-client-handoff",
       "description": "Prepare verified ownership and delivery notes.",
       "file_count": 6,
-      "bytes": 14703
+      "bytes": 14669
     },
     {
       "name": "frontend-quality-auditor",
       "description": "Audit launch readiness; report ship/no-ship.",
       "file_count": 3,
-      "bytes": 8350
+      "bytes": 8419
     },
     {
       "name": "frontend-tooling-trust-gate",
@@ -188,43 +188,43 @@
       "name": "hero-image-art-direction",
       "description": "Compose text-safe responsive hero media.",
       "file_count": 3,
-      "bytes": 4667
+      "bytes": 4640
     },
     {
       "name": "image-crop-responsive-qa",
       "description": "Verify image focal points across widths.",
       "file_count": 3,
-      "bytes": 4692
+      "bytes": 4704
     },
     {
       "name": "image-video-loading-qa",
       "description": "Verify media loading and failure states.",
       "file_count": 3,
-      "bytes": 3511
+      "bytes": 3528
     },
     {
       "name": "logical-thinking",
       "description": "Determine what premises and evidence warrant.",
       "file_count": 6,
-      "bytes": 24382
+      "bytes": 24452
     },
     {
       "name": "mobile-responsive-qa",
       "description": "Verify phone/tablet input and navigation flows.",
       "file_count": 3,
-      "bytes": 3755
+      "bytes": 3832
     },
     {
       "name": "modern-site-engineering",
       "description": "Integrate systems after frontend direction.",
       "file_count": 3,
-      "bytes": 5833
+      "bytes": 6030
     },
     {
       "name": "motion-language-director",
       "description": "Direct choreography and Viktor-style pacing.",
       "file_count": 3,
-      "bytes": 3878
+      "bytes": 3780
     },
     {
       "name": "motion-performance-qa",
@@ -236,7 +236,7 @@
       "name": "motion-react-layout-transitions",
       "description": "Animate state-driven layout/layoutId changes.",
       "file_count": 3,
-      "bytes": 4253
+      "bytes": 4898
     },
     {
       "name": "motion-react-microinteractions",
@@ -260,7 +260,7 @@
       "name": "nextjs-app-router-routing",
       "description": "Implement App Router trees and navigation.",
       "file_count": 3,
-      "bytes": 4751
+      "bytes": 5297
     },
     {
       "name": "nextjs-server-client-boundaries",
@@ -278,31 +278,31 @@
       "name": "non-generic-web-copy",
       "description": "Replace vague marketing with credible specifics.",
       "file_count": 3,
-      "bytes": 3727
+      "bytes": 3629
     },
     {
       "name": "performance-audit-websites",
       "description": "Diagnose measured runtime and Core Web Vitals.",
       "file_count": 4,
-      "bytes": 9123
+      "bytes": 9207
     },
     {
       "name": "performance-budget-lab",
       "description": "Set performance budgets before implementation.",
       "file_count": 2,
-      "bytes": 2140
+      "bytes": 2227
     },
     {
       "name": "premium-visual-reference-library",
       "description": "Find references, Viktor Oddy and MotionSites.",
-      "file_count": 11,
-      "bytes": 332545
+      "file_count": 12,
+      "bytes": 337543
     },
     {
       "name": "premium-web-build-gate",
       "description": "Check premium specs before implementation.",
-      "file_count": 2,
-      "bytes": 8319
+      "file_count": 3,
+      "bytes": 10718
     },
     {
       "name": "radix-accessible-primitives",
@@ -362,37 +362,37 @@
       "name": "responsive-visual-polish-qa",
       "description": "Verify composition across breakpoints.",
       "file_count": 3,
-      "bytes": 3978
+      "bytes": 3880
     },
     {
       "name": "section-layout-systems",
       "description": "Choose section forms from content shape.",
       "file_count": 3,
-      "bytes": 3847
+      "bytes": 3749
     },
     {
       "name": "seo-technical-qa",
       "description": "Verify crawlability and search/share metadata.",
       "file_count": 3,
-      "bytes": 3243
+      "bytes": 3250
     },
     {
       "name": "surface-shadow-material-systems",
       "description": "Design component surfaces and elevation states.",
       "file_count": 3,
-      "bytes": 4094
+      "bytes": 4073
     },
     {
       "name": "systematic-debugging",
       "description": "Find and repair unresolved root causes.",
       "file_count": 3,
-      "bytes": 6891
+      "bytes": 7076
     },
     {
       "name": "tailwind-design-tokens",
       "description": "Map semantic tokens into Tailwind utilities.",
       "file_count": 3,
-      "bytes": 3606
+      "bytes": 3817
     },
     {
       "name": "tailwind-responsive-layouts",
@@ -404,7 +404,7 @@
       "name": "testimonial-proof-systems",
       "description": "Present attributable testimonials and proof.",
       "file_count": 3,
-      "bytes": 4045
+      "bytes": 4007
     },
     {
       "name": "ui-primitives-shadcn-lucide",
@@ -416,7 +416,7 @@
       "name": "ui-screenshot-composition",
       "description": "Arrange readable product screenshot evidence.",
       "file_count": 3,
-      "bytes": 4444
+      "bytes": 4412
     },
     {
       "name": "verification-before-completion",
@@ -428,7 +428,7 @@
       "name": "visual-assets-direction",
       "description": "Define purposeful visual asset strategy.",
       "file_count": 3,
-      "bytes": 4243
+      "bytes": 4145
     },
     {
       "name": "visual-polish-qa",
@@ -440,49 +440,49 @@
       "name": "visual-regression-lab",
       "description": "Compare captures; stitch lazy/animated pages.",
       "file_count": 6,
-      "bytes": 28367
+      "bytes": 29375
     },
     {
       "name": "web-design-direction-system",
       "description": "Resolve shared design intent and guidance.",
       "file_count": 3,
-      "bytes": 11883
+      "bytes": 12063
     },
     {
       "name": "web-design-vocabulary",
       "description": "Translate unclear taste into design constraints.",
       "file_count": 3,
-      "bytes": 4349
+      "bytes": 4251
     },
     {
       "name": "web-imagegen-prompting",
       "description": "Write image prompts with crop/placement intent.",
       "file_count": 3,
-      "bytes": 5143
+      "bytes": 5109
     },
     {
       "name": "web-reference-research",
       "description": "Analyze selected sources: Viktor or MotionSites.",
       "file_count": 6,
-      "bytes": 16734
+      "bytes": 16806
     },
     {
       "name": "web-style-director",
       "description": "Refine an approved visual lane.",
       "file_count": 3,
-      "bytes": 4555
+      "bytes": 4664
     },
     {
       "name": "website-blueprint-first",
       "description": "Specify missing pages, sections and assets.",
       "file_count": 3,
-      "bytes": 4188
+      "bytes": 4090
     },
     {
       "name": "website-operating-rules",
       "description": "Coordinate cross-phase web execution/evidence.",
       "file_count": 5,
-      "bytes": 15020
+      "bytes": 15487
     }
   ],
   "notes": [

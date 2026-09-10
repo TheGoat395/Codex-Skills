@@ -57,7 +57,7 @@ Use this checklist for a complete launch-readiness review. Keep the final report
 
 ## Content And Trust
 
-- Remove placeholder copy, vague claims, unsupported metrics, fake testimonials, and generic AI phrasing.
+- Report placeholder copy, vague claims, unsupported metrics and fake testimonials; repair only when implementation is authorized.
 - Check CTA specificity and whether the user can understand the next step.
 - Confirm pricing, contact, booking, support, legal, privacy, and security signals where expected.
 - Verify testimonials, logos, case studies, and proof points are credible and not overused decoration.
